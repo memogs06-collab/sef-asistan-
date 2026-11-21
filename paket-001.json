@@ -1,0 +1,9353 @@
+{
+ "paket": "paket-001",
+ "surum": "v77",
+ "sayi": 150,
+ "turk": 120,
+ "dunya": 30,
+ "recipes": [
+  {
+   "id": "P01-TR-001",
+   "name": "İstanbul İşkembe Çorbası",
+   "aliases": [
+    "Terbiyeli işkembe çorbası"
+   ],
+   "cat": "Çorbalar",
+   "sub": "İstanbul / sakatat çorbası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış dana işkembe",
+     70,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Un",
+     9,
+     "g"
+    ],
+    [
+     "İşkembe haşlama suyu",
+     260,
+     "ml"
+    ],
+    [
+     "Süt",
+     40,
+     "ml"
+    ],
+    [
+     "Yumurta sarısı",
+     0.5,
+     "adet"
+    ],
+    [
+     "Limon suyu",
+     5,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Sirke",
+     10,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.3,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "İşkembeyi önceden bol suda temizleyip yumuşayana kadar haşla; suyunu süzüp sakla. İşkembeyi ince şeritler hâlinde doğra. Tereyağında unu 2-3 dakika renk aldırmadan kavur, haşlama suyunu azar azar ekleyip çırparak pürüzsüz bir çorba tabanı oluştur. İşkembeyi ekleyip 15 dakika kısık ateşte pişir. Yumurta sarısı, süt ve limon suyunu çırpıp terbiye hazırla; üzerine çorbadan iki kepçe ekleyip ılıştır, sonra tencereye ince bir akışla ekle ve kaynatmadan 1-2 dakika ısıt. Sarımsağı sirkeyle ezip servis masasında ayrı sun; pul biberi tereyağında kızdırıp üzerine gezdir.",
+   "tips": "Terbiye ekledikten sonra çorbayı kaynatma; yumurta kesilir. Işkembe kokusu için haşlama suyunu ilk kaynamadan sonra değiştir.",
+   "equip": "soup",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "roux",
+   "binderNote": "Yağda kavrulan un (meyane) kıvam verir."
+  },
+  {
+   "id": "P01-TR-002",
+   "name": "Gaziantep Beyran Çorbası",
+   "aliases": [
+    "Beyran",
+    "Antep beyranı"
+   ],
+   "cat": "Çorbalar",
+   "sub": "Gaziantep / kuzu etli sabah çorbası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış kuzu incik eti",
+     80,
+     "g"
+    ],
+    [
+     "Pirinç",
+     25,
+     "g"
+    ],
+    [
+     "Kuzu haşlama suyu",
+     280,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     5,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Kırmızı pul biber",
+     1,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Kuzu inciği soğuk sudan başlayarak köpüğünü alıp kısık ateşte 2,5-3 saat yumuşayana kadar haşla; eti kemikten ayırıp elle lif lif didikle, suyu süz. Pirinci yıkayıp haşlama suyunun bir kısmında yumuşayana kadar pişir. Ezilmiş sarımsağı çorbaya ekle. Tereyağını pul biberle kısa süre kızdırıp kırmızı acı yağı hazırla. Kâsede önce pirinci ve didiklenmiş eti, ardından sıcak suyu dök; acı yağı ve karabiberi üzerine gezdir.",
+   "tips": "Beyran bol sarımsaklı ve sıcak servis edilen bir çorbadır; suyu ilk haşlamada köpüğünü iyi alarak berrak tut. Acı yağı servis sırasında ekle ki aroması kaybolmasın.",
+   "equip": "soup",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-003",
+   "name": "Trabzon Karalahana Çorbası",
+   "aliases": [
+    "Karadeniz karalahana çorbası"
+   ],
+   "cat": "Çorbalar",
+   "sub": "Trabzon / Karadeniz kış çorbası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Karalahana",
+     80,
+     "g"
+    ],
+    [
+     "Haşlanmış kuru fasulye",
+     40,
+     "g"
+    ],
+    [
+     "Mısır unu",
+     12,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Su",
+     300,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.1,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Karalahananın damarlarını ayırıp ince şerit doğra, bol suda 10 dakika haşlayıp süz. Soğanı tereyağında yumuşat, haşlanmış fasulye ve lahanayı ekleyip karıştır. Suyu ilave edip 25 dakika pişir. Mısır ununu soğuk suyla topaksız açıp çorbaya ince akışla ekle; sürekli karıştırarak 8-10 dakika kaynat, kıvam gelince baharatla ve tuzla.",
+   "tips": "Mısır unu topaklanırsa pişirme süresi uzar; soğuk suyla açmadan ekleme. Fasulye yerine mısır unlu daha koyu kıvam isteniyorsa un miktarını artırma, fasulyenin bir kısmını ezerek ekle.",
+   "equip": "soup",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-004",
+   "name": "Kelle Paça Çorbası",
+   "aliases": [
+    "Paça çorbası"
+   ],
+   "cat": "Çorbalar",
+   "sub": "Orta Anadolu / sakatat çorbası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış kelle-paça eti",
+     80,
+     "g"
+    ],
+    [
+     "Paça suyu",
+     270,
+     "ml"
+    ],
+    [
+     "Un",
+     10,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     4,
+     "g"
+    ],
+    [
+     "Sirke",
+     10,
+     "ml"
+    ],
+    [
+     "Yumurta sarısı",
+     0.5,
+     "adet"
+    ],
+    [
+     "Limon suyu",
+     5,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.3,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Kelle ve paçaları bol suda ilk kaynamada köpüğünü alarak, kısık ateşte 5-6 saat jölemsi kıvam alıp kemikten ayrılana kadar haşla. Etleri ve kıkırdakları küçük doğra, suyu yağını alıp süz. Tereyağında unu hafifçe kavur, paça suyunu ekleyip pürüzsüz çorba yap; doğranmış etleri ilave et. Yumurta sarısı ve limon suyuyla terbiye edip ılıştırarak ekle. Sirkeli ezilmiş sarımsağı ve pul biberli yağı ayrı sun.",
+   "tips": "Paça suyu soğuduğunda jöleleşmelidir; yağını soğuyunca tabakadan al. Terbiyeyi kaynayan çorbaya doğrudan ekleme.",
+   "equip": "soup",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "roux",
+   "binderNote": "Yağda kavrulan un (meyane) kıvam verir."
+  },
+  {
+   "id": "P01-TR-005",
+   "name": "Anadolu Usulü Un Çorbası",
+   "aliases": [
+    "Un çorbası"
+   ],
+   "cat": "Çorbalar",
+   "sub": "İç Anadolu / geleneksel kış çorbası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     22,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     12,
+     "g"
+    ],
+    [
+     "Su",
+     220,
+     "ml"
+    ],
+    [
+     "Süt",
+     80,
+     "ml"
+    ],
+    [
+     "Domates salçası",
+     4,
+     "g"
+    ],
+    [
+     "Kuru nane",
+     0.3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Tereyağını eritip unu kısık ateşte fındık rengi ve kokusu gelene kadar kavur; salçayı ekleyip bir dakika daha çevir. Sıcak suyu çırparak azar azar ekle ve topaksız bir çorba elde et. Sütü ilave edip kaynama başlayana kadar pişir, 10 dakika kısık ateşte demle. Tuz ve karabiberle tatlandır; naneyi tereyağında kızdırıp servise gezdir.",
+   "tips": "Un ne kadar iyi kavrulursa çorba o kadar aromatik olur; sıcak sıvı eklemek topaklanmayı önler.",
+   "equip": "soup",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "roux",
+   "binderNote": "Yağda kavrulan un (meyane) kıvam verir."
+  },
+  {
+   "id": "P01-TR-006",
+   "name": "Erzurum Cağ Kebabı",
+   "aliases": [
+    "Cağ kebabı"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Erzurum / yatay şişte kuzu",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu but",
+     140,
+     "g"
+    ],
+    [
+     "Rendelenmiş kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.5,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     5,
+     "ml"
+    ],
+    [
+     "Lavaş",
+     45,
+     "g"
+    ],
+    [
+     "Sumaklı soğan",
+     20,
+     "g"
+    ],
+    [
+     "Közlenmiş biber",
+     25,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Kuzu budu yağlı kısımlarıyla birlikte 3 cm kalınlığında, geniş dilimler hâlinde kes; rendelenmiş soğan, tuz ve karabiberle 8-12 saat soğukta marine et. Etleri yatay şişe sıkıca diz, aralarında hava boşluğu bırakma. Orta-yüksek ısıda, şişi sık çevirerek dıştan kızartıp içi sulu kalacak şekilde pişir; iç sıcaklık en az 74°C olmalı. Pişen yüzeyi ince keserek lavaşın üzerine al. Sumaklı soğan, közlenmiş biber ve maydanozla servis et.",
+   "tips": "Yağlı kuzu but kullan; yağ kebabın kendi sosunu verir. Marine süresini uzatma, soğan eti çok yumuşatabilir.",
+   "equip": "grill",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-007",
+   "name": "Şanlıurfa Ciğer Kebabı",
+   "aliases": [
+    "Urfa ciğeri"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Şanlıurfa / kuzu ciğeri şişte",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu ciğeri",
+     120,
+     "g"
+    ],
+    [
+     "Kuyruk yağı",
+     15,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Urfa isot biberi",
+     0.3,
+     "g"
+    ],
+    [
+     "Soğan",
+     40,
+     "g"
+    ],
+    [
+     "Domates",
+     40,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     30,
+     "g"
+    ],
+    [
+     "Lavaş",
+     40,
+     "g"
+    ],
+    [
+     "Sumak",
+     1,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Ciğeri zarlarından arındırıp 2 cm küp doğra, kuyruk yağı parçalarıyla dönüşümlü şişe diz. Tuz ve isot biberini servise yakın ekle. Çok sıcak ızgarada şişleri sık çevirerek dışı kızarıp içi pembeliğini kaybedene kadar, kısa sürede pişir; güvenli iç sıcaklık için en az 71°C hedefle. Domates ve biberi ızgarada közle. Soğanı sumak ve maydanozla harmanla. Lavaşla birlikte sun.",
+   "tips": "Ciğer fazla pişince kuruyup sertleşir; küp boyutunu eşit tut. Taze ve soğuk zincirde saklanmış ciğer kullan.",
+   "equip": "grill",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-008",
+   "name": "Diyarbakır Kağıt Kebabı",
+   "aliases": [
+    "Kağıtta kebap"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Diyarbakır / kâğıtta fırın kebabı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu kuşbaşı",
+     100,
+     "g"
+    ],
+    [
+     "Patates",
+     70,
+     "g"
+    ],
+    [
+     "Domates",
+     60,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     25,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Eti, yarım ay doğranmış soğan, tereyağı, tuz ve karabiberle karıştırıp hafifçe mühürle. Patatesi yarım cm dilimleyip yağlı pişirme kâğıdının ortasına diz, üzerine eti, domates dilimlerini, biberi ve sarımsağı koy. Kâğıdı sıkıca paket yapıp tepsiye al. 180°C fırında 80-90 dakika pişir. Paketi servis tabağında aç; kendi suyuyla servis et.",
+   "tips": "Kâğıdı iyice kapat ki buhar ve et suyu içeride kalsın. Etin pişmesi için kuşbaşıyı küçük kesme.",
+   "equip": "oven",
+   "allergens": [],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-009",
+   "name": "Tokat Kebabı",
+   "aliases": [
+    "Tokat usulü kebap"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Tokat / sebzeli kuzu kebabı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu kuşbaşı",
+     100,
+     "g"
+    ],
+    [
+     "Patlıcan",
+     100,
+     "g"
+    ],
+    [
+     "Patates",
+     70,
+     "g"
+    ],
+    [
+     "Domates",
+     60,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     25,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     5,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     15,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     5,
+     "g"
+    ]
+   ],
+   "method": "Patlıcanı alacalı soyup halkalar hâlinde, patatesi dilimler hâlinde kes; ikisini de az yağda kızartıp yağını süz. Kuzu kuşbaşıyı tereyağında mühürle. Geniş tepsiye patlıcan ve patatesi diz, ortasına eti, kenarlara domates ve biber dilimleri ile sarımsakları yerleştir. Tuz, karabiber ekleyip üzerine yarım su bardağı sıcak su gezdir. 190°C fırında kapakta 40 dakika, ardından kapaksız 15 dakika pişir.",
+   "tips": "Tokat kebabı tepside bütün hâlde servis edildiğinde en iyi sonuç verir. Sebzeleri önceden kızartmak suyun fazla salmasını önler.",
+   "equip": "oven",
+   "allergens": [],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-010",
+   "name": "Konya Fırın Kebabı",
+   "aliases": [
+    "Fırın kebabı"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Konya / kemikli kuzu fırın",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kemikli kuzu but",
+     220,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.8,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Su",
+     80,
+     "ml"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Kemikli kuzu budunu iri parçalara bölüp tuzla ovala ve bir saat dinlendir. Derin bir tepsiye yerleştir, sıcak su ve eritilmiş tereyağı ekle; kapat. 160°C fırında 3-3,5 saat, et kemikten ayrılana kadar pişir. Son 20 dakika kapağı açıp et üzerine kendi suyunu gezdirerek kızart. Kendi sıvısıyla ve pilavla sun.",
+   "tips": "Odun fırını yerine ev tipi fırında kapalı pişirme önemli. Bekleme sırasında et suyunu yağından arındır.",
+   "equip": "oven",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-011",
+   "name": "Kuzu Kapama",
+   "aliases": [
+    "Taze soğanlı kuzu kapama"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Anadolu / bahar kuzu yemeği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu etli kemik",
+     130,
+     "g"
+    ],
+    [
+     "Taze soğan",
+     40,
+     "g"
+    ],
+    [
+     "Taze sarımsak",
+     8,
+     "g"
+    ],
+    [
+     "Marul",
+     40,
+     "g"
+    ],
+    [
+     "Dereotu",
+     5,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Su",
+     120,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     4,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Kuzu etini tereyağında hafifçe kavurup suyunu çekmesini bekle. Üzerine su ekleyip kapalı kapta 50 dakika pişir. Taze soğan, sarımsak ve marulu doğrayıp etin üzerine katman katman ekle; kapağı kapatıp kısık ateşte sebzeler yumuşayana kadar 20 dakika daha pişir. Tuz, karabiber ve dereotunu ekle, limon suyuyla tamamla.",
+   "tips": "Bahar sebzelerinin rengini korumak için pişme sonunu bekletmeden servise al. Marul yerine ıspanak da kullanılabilir.",
+   "equip": "stew",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-012",
+   "name": "Malatya Kayısılı Yahni",
+   "aliases": [
+    "Kayısılı kuzu yahni"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Malatya / kuru kayısılı kuzu yahnisi",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu kuşbaşı",
+     100,
+     "g"
+    ],
+    [
+     "Kuru kayısı",
+     25,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     35,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Su",
+     200,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Tarçın",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Kayısıları sıcak suda 20 dakika bekletip yumuşat. Eti tereyağında mühürle, soğanı ekleyip pembeleştir. Sıcak suyu ilave edip kapalı kapta 40 dakika pişir. Kayısıları ekleyip etin suyunu çekene kadar 20 dakika daha kısık ateşte pişir. Tuz, karabiber ve tarçınla ayarla.",
+   "tips": "Kayısı fazla beklerse dağılır; son 20 dakikada ekle. Ekşi kayısı kullanılıyorsa şeker eklenmez.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-013",
+   "name": "Kuzu Pirzola Izgara",
+   "aliases": [
+    "Izgara pirzola"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Anadolu / ızgara kuzu pirzola",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu pirzola",
+     160,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     8,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Kekik",
+     0.3,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Közlenmiş domates",
+     40,
+     "g"
+    ],
+    [
+     "Közlenmiş biber",
+     30,
+     "g"
+    ]
+   ],
+   "method": "Pirzolaları oda sıcaklığına getir; zeytinyağı, kekik, ezilmiş sarımsak ve karabiberle 30 dakika marine et. Ateşi iyi kızmış ızgarada her yüzü 3-4 dakika pişir; tuzu pişirmenin sonunda ekle. İç sıcaklık 63°C olunca 3 dakika dinlendir. Közlenmiş domates ve biberle servis et.",
+   "tips": "Dinlendirme et suyunun dağılmasını sağlar. Yağ damlaları alev çıkarırsa pirzolayı kısa süre kenara al.",
+   "equip": "grill",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-014",
+   "name": "Kuzu Sac Kavurma",
+   "aliases": [
+    "Sac kavurma"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Anadolu / sac üzerinde kuzu kavurma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu but kuşbaşı",
+     120,
+     "g"
+    ],
+    [
+     "Kuyruk yağı",
+     15,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     30,
+     "g"
+    ],
+    [
+     "Domates",
+     50,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.3,
+     "g"
+    ],
+    [
+     "Kekik",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Kuyruk yağını sacda erit, eti yüksek ateşte kendi suyunu çekene kadar kavur. Soğanı ve sarımsağı ekle, renk alana dek çevir. Biber ve domatesi ilave edip suyu çekilene kadar pişir. Tuz, karabiber, pul biber ve kekikle tamamla. Etleri sacda kalabalık etmeden iki partide kavur ki ızgara etkisi kaybolmasın. Pişme sonunda et yumuşak, yüzeyi koyu ve suyu tamamen çekilmiş olmalı. Sıcak lavaş veya pilavla hemen servis et; bekletilirse sertleşir.",
+   "tips": "Sac sıcaklığı yüksek tutulmalı; et haşlanmaz, kavrulur. Küçük partiler hâlinde pişir.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-015",
+   "name": "Kuzu Haşlama",
+   "aliases": [
+    "Haşlama kuzu"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Doğu Anadolu / sebzeli kuzu haşlama",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kemikli kuzu kol",
+     200,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Havuç",
+     30,
+     "g"
+    ],
+    [
+     "Patates",
+     60,
+     "g"
+    ],
+    [
+     "Su",
+     400,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.5,
+     "g"
+    ],
+    [
+     "Karabiber tane",
+     0.3,
+     "g"
+    ],
+    [
+     "Defne yaprağı",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Eti soğuk sudan başlayıp köpüğünü alarak kaynamaya getir. Soğan, tane karabiber ve defne ekleyip kısık ateşte 90 dakika pişir. Havuç ve patatesi iri doğrayıp ilave et, 25 dakika daha pişir. Tuzu pişmeye yakın ekle. Et ve sebzeleri kendi suyuyla servis et. Pişirme suyunu tencerede 10 dakika dinlendirip üzerindeki yağı kaşıkla al. Etin kemikten kolayca ayrıldığını bıçak ucuyla kontrol et. Servis tabağına et ve sebzeleri alıp üzerine sıcak et suyundan 150 ml dök.",
+   "tips": "Çorba kıvamı yerine temiz bir et suyu hedefle; suyu servis öncesi süz. Haşlama suyu ertesi gün çorbaya baz olur.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-016",
+   "name": "Ege Usulü Kuzu Güveç",
+   "aliases": [
+    "Kuzu güveç"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Ege / sebzeli kuzu güveci",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu but kuşbaşı",
+     100,
+     "g"
+    ],
+    [
+     "Patlıcan",
+     50,
+     "g"
+    ],
+    [
+     "Kabak",
+     40,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     25,
+     "g"
+    ],
+    [
+     "Domates",
+     60,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Su",
+     60,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Kekik",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Eti zeytinyağında mühürle. Soğan, sarımsak ve sebzeleri iri doğra. Güveç kabına eti ve sebzeleri katman katman diz, baharat ve su ekle. Kapalı olarak 180°C fırında 70 dakika pişir; son 15 dakika kapağı açarak suyunu çektir. Pişirme sonunda eti çatalla kontrol et; lif lif ayrılmalı, sebzeler şeklini koruyarak yumuşamış olmalı. Fırından çıkınca güveci 5 dakika dinlendirip servis kabına geçir; sos akışkan değil, hafif yoğun olmalı.",
+   "tips": "Sebzeler pişerken su salar, suyu fazla ekleme. Güveci servis kabında sun.",
+   "equip": "oven",
+   "allergens": [],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-017",
+   "name": "Fırın Dana Kaburga",
+   "aliases": [
+    "Dana kaburga tandır"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Anadolu / uzun pişirmeli dana kaburga",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana kaburga",
+     250,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     4,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     5,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     8,
+     "ml"
+    ],
+    [
+     "Su",
+     150,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.8,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Kimyon",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Kaburgayı tuz, karabiber, kimyon ve salçalı zeytinyağıyla ovalayıp 2 saat marine et. Soğan ve sarımsağı tepsiye ser, kaburgayı üzerine koy; su ekleyip folyoyla kapat. 160°C fırında 3,5-4 saat pişir. Son 20 dakika folyoyu açıp 200°C'de yüzeyini kızart. Pişme suyunu azaltıp sos olarak sun.",
+   "tips": "Kemikler rahatça ayrılıyorsa pişmiştir. Pişirme suyunu yağından arındır.",
+   "equip": "oven",
+   "allergens": [],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-018",
+   "name": "Dana Şiş Kebap",
+   "aliases": [
+    "Marine dana şiş"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Anadolu / yoğurtlu marineli şiş",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana antrikot",
+     120,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     20,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     8,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ],
+    [
+     "Közlenmiş domates",
+     40,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     30,
+     "g"
+    ]
+   ],
+   "method": "Eti 2,5 cm küp doğra; yoğurt, rendelenmiş soğan, zeytinyağı ve baharatla 4-6 saat marine et. Şişlere dizip yüksek ateşli ızgarada her yüzünü 3-4 dakika pişir; iç sıcaklığı 71°C'ye ulaştır. Domates ve biberi közle, şişle birlikte sun. Marine edilmiş eti şişe dizerken parçalar arasında 2-3 mm boşluk bırak ki eşit pişsin. Pişen şişleri 3 dakika dinlendirip sıcak servis et; yanına pilav, közlenmiş sebze ve sumaklı soğan eşlik eder.",
+   "tips": "Yoğurt asidi eti yumuşatır ama 8 saati geçen marine eti lapalaştırır. Tuzu marinede az kullan.",
+   "equip": "grill",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-019",
+   "name": "Anadolu Usulü Tavuk Şiş",
+   "aliases": [
+    "Marine tavuk şiş"
+   ],
+   "cat": "Tavuk yemekleri",
+   "sub": "Anadolu / yoğurtlu marineli şiş",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tavuk but fileto",
+     130,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     25,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     8,
+     "ml"
+    ],
+    [
+     "Domates salçası",
+     4,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.3,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Közlenmiş biber",
+     30,
+     "g"
+    ],
+    [
+     "Közlenmiş domates",
+     40,
+     "g"
+    ]
+   ],
+   "method": "Tavuk but filetoyu 3 cm küp doğra. Yoğurt, zeytinyağı, salça, ezilmiş sarımsak ve baharatla karıştırıp 4-6 saat soğukta marine et. Şişlere diz. Orta-yüksek ısıdaki ızgarada her yüzünü 3-4 dakika pişir; iç sıcaklık en az 74°C olmalı. Közlenmiş biber ve domatesle sun.",
+   "tips": "But kullanmak göğüse göre daha sulu sonuç verir. Marine süresi 12 saati geçmesin.",
+   "equip": "grill",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-020",
+   "name": "Tavuk Tandır",
+   "aliases": [
+    "Fırın tavuk tandır"
+   ],
+   "cat": "Tavuk yemekleri",
+   "sub": "Anadolu / yavaş fırın tavuk but",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tavuk but (kemikli)",
+     220,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Su",
+     100,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.3,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Kimyon",
+     0.2,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Tavuk butları tuz, karabiber, kimyon, pul biber ve ezilmiş sarımsakla ovalayıp en az 2 saat dinlendir. Tepsiye yarım halka soğanları ser, butları derili yüzü yukarı yerleştir; sıcak su ve tereyağı ekle, kapat. 170°C fırında 75 dakika pişir. Son 15 dakika açıp 210°C'de kızart. Pişme suyunu azaltıp servis sosu yap.",
+   "tips": "Et kemikten rahat ayrılacak kadar pişmelidir. Derinin gevrekliği için kızartma öncesi yüzeyi kurula.",
+   "equip": "oven",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-021",
+   "name": "İç Pilavlı Hindi Dolma",
+   "aliases": [
+    "Hindi dolması"
+   ],
+   "cat": "Tavuk yemekleri",
+   "sub": "Anadolu / bayram sofrası hindi dolması",
+   "base": 1,
+   "ingredients": [
+    [
+     "Hindi göğüs ve but eti",
+     200,
+     "g"
+    ],
+    [
+     "Pirinç",
+     35,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     12,
+     "g"
+    ],
+    [
+     "Çam fıstığı",
+     5,
+     "g"
+    ],
+    [
+     "Kuş üzümü",
+     6,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.5,
+     "g"
+    ],
+    [
+     "Tarçın",
+     0.2,
+     "g"
+    ],
+    [
+     "Su",
+     90,
+     "ml"
+    ]
+   ],
+   "method": "Pirinci yıkayıp süz. Tereyağında çam fıstığını kavur, soğanı ve pirinci ekle; kuş üzümü, tarçın, tuz ve karabiberle kavur. Sıcak suyu ekleyip pirinci yarım pişirerek iç pilavı hazırla, soğut. Hindi etini tuz ve karabiberle ovalayıp iç pilavla doldur, dikerek veya bağlayarak kapat. Tepsiye alıp 180°C fırında iç sıcaklık 74°C olana dek yaklaşık 2 saat pişir, üzerini folyoyla koruyup son 20 dakika kızart. Dilimlemeden önce 15 dakika dinlendir.",
+   "tips": "Doldurulan içi tamamen soğutmadan hindiye doldurma; gıda güvenliği için iç sıcaklığı mutlaka ölç.",
+   "equip": "oven",
+   "allergens": [
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-022",
+   "name": "Tavuk Kavurma",
+   "aliases": [
+    "Biberli tavuk kavurma"
+   ],
+   "cat": "Tavuk yemekleri",
+   "sub": "Anadolu / tavada tavuk kavurma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tavuk göğüs",
+     130,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     35,
+     "g"
+    ],
+    [
+     "Domates",
+     60,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     5,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Tavuğu küçük kuşbaşı doğrayıp tuzsuz olarak yüksek ateşte kendi suyunu çekene kadar mühürle. Yağları ve soğanı ekleyip pembeleşene kadar kavur. Biber, sarımsak ve domatesi ilave edip suyunu çekene kadar pişir. Baharatla tamamla. Pişme sonunda tavuk parçalarında pembelik kalmadığını ve iç sıcaklığın 74°C olduğunu kontrol et. Kavurmayı ocaktan alıp 2 dakika dinlendir; yanında pilav veya lavaşla servis et.",
+   "tips": "Tavayı kalabalık doldurma; tavuk haşlanmaz, kavrulur. Tuzu kavurma sonunda ekle.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-023",
+   "name": "Terbiyeli Köfte",
+   "aliases": [
+    "Yumurtalı limonlu köfte"
+   ],
+   "cat": "Köfteler",
+   "sub": "İç Anadolu / terbiyeli sulu köfte",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana kıyma",
+     90,
+     "g"
+    ],
+    [
+     "Pirinç",
+     12,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Un",
+     6,
+     "g"
+    ],
+    [
+     "Yumurta sarısı",
+     0.5,
+     "adet"
+    ],
+    [
+     "Limon suyu",
+     8,
+     "ml"
+    ],
+    [
+     "Tereyağı",
+     6,
+     "g"
+    ],
+    [
+     "Su",
+     250,
+     "ml"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.3,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Kıyma, yıkanmış pirinç, rendelenmiş soğan, tuz, karabiber ve maydanozu yoğur; fındık büyüklüğünde yuvarlayıp una bula. Kaynayan tuzlu suda köfteleri kısık ateşte 25 dakika pişir. Yumurta sarısı, limon suyu ve biraz soğuk suyu çırpıp terbiyeyi hazırla; üzerine pişirme suyundan ekleyip ılıştır, tencereye ince bir akışla ekle. Kaynatmadan 2-3 dakika ısıt, tereyağında yağ ve maydanozla servis et.",
+   "tips": "Köfteler dağılmasın diye kaynar suyun içinde karıştırma. Terbiye sonrası kaynatma yapma.",
+   "equip": "stew",
+   "allergens": [
+    "Gluten",
+    "Yumurta",
+    "Süt"
+   ],
+   "binder": "liaison",
+   "binderNote": "Yumurta/yoğurt terbiyesi ılıştırılarak eklenir; kaynatılmaz."
+  },
+  {
+   "id": "P01-TR-024",
+   "name": "İnegöl Köfte",
+   "aliases": [
+    "Bursa İnegöl köftesi"
+   ],
+   "cat": "Köfteler",
+   "sub": "Bursa / geleneksel ızgara köfte",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana kıyma",
+     70,
+     "g"
+    ],
+    [
+     "Kuzu kıyma",
+     40,
+     "g"
+    ],
+    [
+     "Rendelenmiş soğan",
+     10,
+     "g"
+    ],
+    [
+     "Ekmek içi",
+     8,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.5,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Közlenmiş biber",
+     30,
+     "g"
+    ],
+    [
+     "Domates",
+     40,
+     "g"
+    ]
+   ],
+   "method": "Dana ve kuzu kıymasını rendelenmiş soğan, ıslatılıp sıkılmış ekmek içi, tuz ve karabiberle uzun süre yoğur. Kapalı kapta 3-4 saat soğukta dinlendir. 45 gramlık uzun köfteler şekillendir. Ateşi iyi kızmış ızgarada her yüzünü 3-4 dakika pişir; iç sıcaklık 71°C olmalı. Közlenmiş biber ve domatesle sun.",
+   "tips": "Hamur dinlenmezse köfte ızgarada dağılabilir. Kuzu oranı lezzeti ve yumuşaklığı belirler.",
+   "equip": "grill",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "protein",
+   "binderNote": "Et/yumurta proteini bağlayıcı görevi görür."
+  },
+  {
+   "id": "P01-TR-025",
+   "name": "Akhisar Köfte",
+   "aliases": [
+    "Akhisar köftesi"
+   ],
+   "cat": "Köfteler",
+   "sub": "Manisa / piyazlı ızgara köfte",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana kıyma",
+     120,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Ekmek içi",
+     10,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     1,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.5,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Kimyon",
+     0.3,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ],
+    [
+     "Haşlanmış kuru fasulye",
+     50,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Kıymayı soğan, ekmek içi, sarımsak, tuz ve baharatla yoğurup soğukta 2 saat dinlendir. Uzun parmak şeklinde köfteler yap. Izgarada her yüzünü 3-4 dakika pişir. Haşlanmış fasulyeyi soğan, maydanoz, limon ve zeytinyağıyla piyaz gibi hazırlayıp yanında sun. Köfteleri şekillendirirken ellerini hafif ıslat; yapışma azalır. Pişen köfteleri 2 dakika dinlendirip sıcak servis et. Yanındaki piyazı köfteyle aynı tabakta, ayrı bölmede sun.",
+   "tips": "Piyazı köfteyle aynı anda servis et; fasulye sıcak değil, oda ısısında olmalı.",
+   "equip": "grill",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "protein",
+   "binderNote": "Et/yumurta proteini bağlayıcı görevi görür."
+  },
+  {
+   "id": "P01-TR-026",
+   "name": "Şanlıurfa Etsiz Çiğ Köfte",
+   "aliases": [
+    "Etsiz çiğ köfte"
+   ],
+   "cat": "Köfteler",
+   "sub": "Şanlıurfa / bulgurlu isotlu çiğ köfte",
+   "base": 1,
+   "ingredients": [
+    [
+     "İnce bulgur",
+     60,
+     "g"
+    ],
+    [
+     "Soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     12,
+     "g"
+    ],
+    [
+     "Biber salçası",
+     8,
+     "g"
+    ],
+    [
+     "İsot biber",
+     1.5,
+     "g"
+    ],
+    [
+     "Su",
+     50,
+     "ml"
+    ],
+    [
+     "Sıvı yağ",
+     6,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Kimyon",
+     0.3,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     5,
+     "g"
+    ],
+    [
+     "Yeşil soğan",
+     10,
+     "g"
+    ]
+   ],
+   "method": "İnce bulguru sıcak suyla ıslatıp 15 dakika şişmeye bırak. Soğanı ince rendeleyip yağda kısa süre soteleyerek tuzla ez. Salçaları ekleyip ovarak birleştir. Bulguru, isot ve baharatları ilave edip 15 dakika elle yoğur. Maydanoz ve yeşil soğanı kat. Şekil vererek marul veya lavaşla servis et.",
+   "tips": "Bulgur ne kadar uzun yoğrulursa o kadar bağlı ve lezzetli olur. Etsiz tariftir; et içeren çiğ köfte toplu üretimde risklidir.",
+   "equip": "cold",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-027",
+   "name": "Kapuska",
+   "aliases": [
+    "Kıymalı kapuska"
+   ],
+   "cat": "Sebze yemekleri",
+   "sub": "Karadeniz / kıymalı lahana yemeği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Beyaz lahana",
+     160,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     40,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates",
+     40,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     6,
+     "g"
+    ],
+    [
+     "Pirinç",
+     10,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     8,
+     "ml"
+    ],
+    [
+     "Su",
+     110,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Soğanı yağda soteleyip kıymayı ekle, suyunu çekip kavur. Salçayı ve domatesi ilave edip kokusu çıkana kadar pişir. İnce doğranmış lahanayı ve yıkanmış pirinci ekleyip karıştır; su ve baharatı ilave et. Kapalı kapta 25-30 dakika lahana yumuşayıp su çekilene kadar pişir.",
+   "tips": "Lahanayı çok ince değil, 1 cm şeritler doğra; pişince dağılmasın. Pirinç yoğunluk verir.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-028",
+   "name": "Semizotu Yemeği",
+   "aliases": [
+    "Etli semizotu"
+   ],
+   "cat": "Sebze yemekleri",
+   "sub": "Ege / İç Anadolu / semizotu yemeği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Semizotu",
+     130,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     35,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Pirinç",
+     12,
+     "g"
+    ],
+    [
+     "Domates",
+     40,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     8,
+     "ml"
+    ],
+    [
+     "Su",
+     70,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Semizotunu yıkayıp sap ve yapraklarıyla birlikte 3 cm doğra. Soğan ve kıymayı yağda kavur, domates ve pirinci ekle. Semizotunu ilave edip karıştır; az su koyup kapalı kapta 15-18 dakika pişir. Tuz ve karabiberle tamamla; yanında yoğurt sun. Pişirme sonunda semizotunun yapraklarının yumuşadığı ve suyunun çekildiği kontrol edilmeli. Yemeği ılık servis et; soğuduğunda sünmesi azalır. Yanında sarımsaklı yoğurt eşlik edebilir.",
+   "tips": "Semizotu çok su saldığı için su miktarını az tut. Sap kısımlarını daha önce, yaprakları sonra ekle.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-029",
+   "name": "Trabzon Karalahana Sarması",
+   "aliases": [
+    "Karalahana sarma"
+   ],
+   "cat": "Dolma ve sarma",
+   "sub": "Trabzon / karalahana yaprağı sarması",
+   "base": 1,
+   "ingredients": [
+    [
+     "Karalahana yaprağı",
+     120,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     45,
+     "g"
+    ],
+    [
+     "Pirinç",
+     28,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     8,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     10,
+     "ml"
+    ],
+    [
+     "Su",
+     140,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.3,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Karalahana yapraklarını sert damarlarından arındırıp kaynar suda 3-4 dakika haşla. Soğanı yağda kavur; kıyma, yıkanmış pirinç, salça ve baharatla iç harcı hazırla. Yaprakları dolgu koyup sıkıca sararak dizi. Tencerenin tabanına ek yaprak ser, sarmaları sıkıca diz. Tabak ağırlığıyla bastırıp sıcak suyu ekle; 45 dakika kısık ateşte pişir.",
+   "tips": "Damarı fazla kalın yaprakları ince sıyırarak yumuşat. Sarmalar açılmasın diye üzerini tabakla bastır.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-030",
+   "name": "Etli Lahana Sarması",
+   "aliases": [
+    "Lahana sarması kıymalı"
+   ],
+   "cat": "Dolma ve sarma",
+   "sub": "Anadolu / beyaz lahana sarma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Beyaz lahana yaprağı",
+     100,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     50,
+     "g"
+    ],
+    [
+     "Pirinç",
+     25,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     8,
+     "g"
+    ],
+    [
+     "Kuru nane",
+     0.3,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     10,
+     "ml"
+    ],
+    [
+     "Su",
+     150,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Lahananın çekirdeğini oyup kaynar tuzlu suda yaprakları ayrılabilir hâle gelene kadar haşla. Kıymayı soğan, pirinç, salça, nane ve baharatla yoğur. Yaprakları parmak kalınlığında sararak tenceleye diz, sıcak suyu ekle. Üzerine tabak koyup kısık ateşte 45-50 dakika pişir. Yoğurtla servis edilebilir.",
+   "tips": "Yaprağın kalın damarını incelt; sarma sıkı ama pirinç şişmeye yer bırakacak şekilde sarılmalı.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-031",
+   "name": "Ege Usulü Enginar Dolması",
+   "aliases": [
+    "Etli enginar dolması"
+   ],
+   "cat": "Dolma ve sarma",
+   "sub": "Ege / kıymalı enginar dolması",
+   "base": 1,
+   "ingredients": [
+    [
+     "Enginar kalbi",
+     2,
+     "adet"
+    ],
+    [
+     "Dana kıyma",
+     45,
+     "g"
+    ],
+    [
+     "Pirinç",
+     20,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Dereotu",
+     4,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     4,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     10,
+     "ml"
+    ],
+    [
+     "Un",
+     3,
+     "g"
+    ],
+    [
+     "Su",
+     140,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ]
+   ],
+   "method": "Enginar kalplerini limonlu suda tutarak karartmadan temizle. Soğanı zeytinyağında kavurup kıyma ve yıkanmış pirinci ekle; tuz, otlarla iç harcı hazırla. Enginarları dolgu ile doldur, tencereye diz. Un, limon suyu ve su karışımını üzerine dök, kapağı kapatıp 35-40 dakika pişir. Pişme suyunda soğumaya bırak.",
+   "tips": "Una bulanmış su, enginarın rengini korur. Taze enginar yerine dondurulmuş kalp kullanılırsa süre kısalır.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-032",
+   "name": "Soğan Dolması",
+   "aliases": [
+    "Antep soğan dolması"
+   ],
+   "cat": "Dolma ve sarma",
+   "sub": "Gaziantep / ekşili etli soğan dolması",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuru soğan",
+     130,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     45,
+     "g"
+    ],
+    [
+     "Pirinç",
+     20,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     6,
+     "g"
+    ],
+    [
+     "Nar ekşisi",
+     5,
+     "ml"
+    ],
+    [
+     "Sıvı yağ",
+     8,
+     "ml"
+    ],
+    [
+     "Kuru nane",
+     0.3,
+     "g"
+    ],
+    [
+     "Su",
+     140,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Soğanları kabuğunu soyup uzunlamasına bir kesik at, kaynar suda yumuşatıp katmanlarını ayır. Kıymayı pirinç, salça, nane ve baharatla yoğur. Soğan katmanlarına iç harçtan koyup sararak tencereye diz. Nar ekşisi ve su ekleyip 40 dakika kısık ateşte pişir. Dolmaları tencerede sıkıca diz ki pişerken açılmasınlar; üzerine ters tabak koy. Pişme sonunda iç pilavın şiştiğini ve soğanların yumuşadığını kontrol et. Servis öncesi 10 dakika dinlendir.",
+   "tips": "Soğan katmanlarını çok pişirme; dolma sırasında yırtılır. Nar ekşisi pişme suyuyla dengelenmeli.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-033",
+   "name": "Sivas Madımak Yemeği",
+   "aliases": [
+    "Madımak"
+   ],
+   "cat": "Sebze yemekleri",
+   "sub": "Sivas / otlu yöresel yemek",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış madımak",
+     150,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     5,
+     "ml"
+    ],
+    [
+     "Pirinç pilavı (hazır)",
+     40,
+     "g"
+    ],
+    [
+     "Sumak",
+     0.5,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Madımağı ayıklayıp yıkayarak kum ve kalın saplardan arındır; bol kaynar suda 5 dakika haşlayıp süz, soğuk suyla çalkala ve elle sıkıp iri doğra. Soğanı tereyağı ve sıvı yağda pembeleşene kadar kavur. Madımağı ekleyip yüksek ateşte karıştırarak 10 dakika sote et. Hazır pilavı ilave edip nazikçe birleştir, tuz ve karabiberle tamamla. Yanına sarımsaklı yoğurt ve sumak sun.",
+   "tips": "Madımak aşırı lif içerir; mutlaka yeterince haşla. Alerji ve sindirim hassasiyeti için porsiyon boyutunu küçük tut.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-034",
+   "name": "Ebegümeci Yemeği",
+   "aliases": [
+    "Ege otlu ebegümeci yemeği"
+   ],
+   "cat": "Sebze yemekleri",
+   "sub": "Ege / yabani otlu yemek",
+   "base": 1,
+   "ingredients": [
+    [
+     "Ebegümeci yaprağı",
+     140,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "İnce bulgur",
+     15,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Limon suyu",
+     5,
+     "ml"
+    ],
+    [
+     "Su",
+     80,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Ebegümeci yapraklarını sert saplarından ayırıp birkaç suda yıkayarak kumlarını arındır, iri doğra. Soğanı zeytinyağında yumuşayana kadar soteleyip bulguru ekle ve 2 dakika kavur. Ebegümeci, ezilmiş sarımsak ve suyu ilave edip kapalı kapta kısık ateşte 15 dakika, yapraklar dağılıp bulgur şişene kadar pişir. Ateşten almadan önce limon suyu ve tuzla tamamla; ılık veya sıcak servis et.",
+   "tips": "Ebegümeci sümüksü kıvamdadır; limon ve bulgur bu dokuyu dengeler. Pişirme sonunda fazla karıştırma.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-035",
+   "name": "Düğün Usulü Tavuklu Pilav",
+   "aliases": [
+    "Tavuklu düğün pilavı"
+   ],
+   "cat": "Pilav ve bulgur",
+   "sub": "Anadolu / düğün pilavı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pirinç",
+     55,
+     "g"
+    ],
+    [
+     "Haşlanmış tavuk eti",
+     50,
+     "g"
+    ],
+    [
+     "Tavuk suyu",
+     110,
+     "ml"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     4,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Pirinci ılık tuzlu suda 30 dakika bekletip durula, süz. Tereyağı ve sıvı yağı kızdırıp pirinci tane tane şeffaflaşana kadar kavur. Sıcak tavuk suyunu ekle, tuzla; kaynamaya başlayınca kısık ateşte kapağı kapalı 12-14 dakika pişir. Didiklenmiş tavuk etini ekleyip kapağın altında bir bezle 10 dakika demlendir. Çatalla havalandırıp servis et.",
+   "tips": "Tavuk suyunun sıcak olması pilavın dağılmasını önler. Demleme süresi tane yapısını korur.",
+   "equip": "rice",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-036",
+   "name": "Kavurmalı Bulgur Pilavı",
+   "aliases": [
+    "Güneydoğu usulü kavurmalı bulgur"
+   ],
+   "cat": "Pilav ve bulgur",
+   "sub": "Güneydoğu Anadolu / kavurmalı pilavlık bulgur",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pilavlık bulgur",
+     55,
+     "g"
+    ],
+    [
+     "Kuzu kavurma",
+     40,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     6,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Sıcak su",
+     120,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Soğanı tereyağında pembeleştirip kavurmayı ekle; salçayı kokusu çıkana kadar kavur. Bulguru yıkamadan ekleyip 2 dakika çevir. Sıcak suyu, tuz ve baharatı ilave edip kapalı kapta 12 dakika pişir. Ateşten alıp bez altında 10 dakika demlendir; çatalla karıştır. Demlenme sonunda bulgur taneleri tek tek ayrılmalı ve dipte yapışma olmamalı. Pilavı çatalla kabartıp sıcak servis et; yanına cacık veya turşu iyi gider.",
+   "tips": "Pilavlık bulgur için su oranı yaklaşık 1:2'dir; bulgur çok ince ise su azaltılmalı.",
+   "equip": "rice",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-037",
+   "name": "Yarma Pilavı",
+   "aliases": [
+    "Aşurelik buğday pilavı"
+   ],
+   "cat": "Pilav ve bulgur",
+   "sub": "İç Anadolu / haşlanmış yarma buğday pilavı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yarma (iri buğday)",
+     60,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Su",
+     150,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Yarmayı bir gece önceden soğuk suda ıslat; süzüp kaynar suda 35-40 dakika yumuşayana kadar haşla. Tereyağında soğanı kavurup haşlanmış yarmayı ekle. Tuz, karabiber, pul biber ve az haşlama suyuyla 8-10 dakika kısık ateşte demle. Yanına yoğurt veya kuru et ile sun.",
+   "tips": "Yarma ıslatılmazsa pişme süresi iki katına çıkar. Fazla suyu atma, bir kısmı pilavın nemi için gerekli.",
+   "equip": "rice",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-038",
+   "name": "Safranbolu Usulü Safranlı Pilav",
+   "aliases": [
+    "Safranlı pirinç pilavı"
+   ],
+   "cat": "Pilav ve bulgur",
+   "sub": "Karabük / Safranbolu safranlı pilav",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pirinç",
+     55,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Safran",
+     0.05,
+     "g"
+    ],
+    [
+     "Su",
+     110,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Kuş üzümü",
+     6,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Safranı 2 yemek kaşığı sıcak suda 15 dakika demle. Pirinci yıkayıp ıslat, süz; tereyağında kavur. Safranlı suyu, kalan sıcak suyu ve tuzu ekle. Kuş üzümünü ilave edip kapağı kapalı 14 dakika kısık ateşte pişir; demlendirip karıştır. Pirinç taneleri uzun ve ayrık olmalı; safran rengi homojen yayılmalı. Servis öncesi çatalla havalandırıp sıcak tabaklara al; kuş üzümleri üzerine eşit dağılmalı.",
+   "tips": "Safran az miktarda bile renk ve koku verir; fazla koymak acılık yapar. Gerçek safran kullanıldığı için maliyeti hesapla.",
+   "equip": "rice",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-039",
+   "name": "Kayseri Mantısı",
+   "aliases": [
+    "Kayseri mantı"
+   ],
+   "cat": "Makarna ve erişte",
+   "sub": "Kayseri / küçük kıymalı mantı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     75,
+     "g"
+    ],
+    [
+     "Su",
+     35,
+     "ml"
+    ],
+    [
+     "Yumurta",
+     0.3,
+     "adet"
+    ],
+    [
+     "Dana kıyma",
+     35,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     8,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     100,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.5,
+     "g"
+    ],
+    [
+     "Kuru nane",
+     0.2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Un, yumurta, su ve tuzla sert bir hamur yoğurup 30 dakika dinlendir. İnce aç, 1,5 cm karelere kes. Kıymayı rendelenmiş soğan ve tuzla karıştırıp her karenin ortasına bir parça koy, dört köşeyi birleştirerek küçük mantılar yap. Tepsiye dizip 200°C fırında hafif kızarana kadar 12-15 dakika pişir, sonra sıcak suyla fırınlayıp yumuşat veya tuzlu suda haşla. Sarımsaklı yoğurtla servis et; üzerine eritilmiş tereyağında pul biber ve nane gezdir.",
+   "tips": "Kayseri mantısı özellikle küçük olmalıdır. Haşlama yerine fırında pişirmek mantının dokusunu korur.",
+   "equip": "pasta",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-040",
+   "name": "Eskişehir Çibörek",
+   "aliases": [
+    "Tatar böreği"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Eskişehir / Kırım Tatar kızarmış kıymalı börek",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     80,
+     "g"
+    ],
+    [
+     "Su",
+     40,
+     "ml"
+    ],
+    [
+     "Dana kıyma",
+     60,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     4,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.3,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     40,
+     "ml"
+    ]
+   ],
+   "method": "Un, su ve tuzla yumuşak bir hamur yoğurup dinlendir. Kıymayı soğan, maydanoz, tuz ve karabiberle karıştır; harç sulu olmalı. Hamuru ince açıp daire kes; yarısına harcı yay, üzerini kapatıp kenarlarını kapat. 175°C yağda her yüzünü altın rengi olana kadar kızart; kâğıt havluda süz.",
+   "tips": "Harç ne kadar sulu olursa börek o kadar sulu çıkar ama kenarların mutlaka sıkıca kapanması gerekir. Yağın ısısı sabit tutulmalı.",
+   "equip": "fry",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-041",
+   "name": "Mardin Sembusek",
+   "aliases": [
+    "Sembusek"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Mardin / kıymalı yarım ay hamur kızartma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     80,
+     "g"
+    ],
+    [
+     "Su",
+     40,
+     "ml"
+    ],
+    [
+     "Sıvı yağ (hamur)",
+     6,
+     "ml"
+    ],
+    [
+     "Dana kıyma",
+     50,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Ceviz içi",
+     5,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.3,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Kimyon",
+     0.2,
+     "g"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     40,
+     "ml"
+    ]
+   ],
+   "method": "Un, su, yağ ve tuzla yumuşak bir hamur yoğurup 30 dakika dinlendir. Kıymayı soğan, ceviz, baharat ve tuzla kavurup soğut. Hamuru ince açıp 10 cm daireler kes; ortasına harç koyup yarım ay şeklinde kapat, kenarlarını bastır. Kızgın yağda altın rengi olana kadar kızart; süz.",
+   "tips": "Harç tamamen soğumadan hamura konulmaz. Cevizin yağı kızartma sırasında yağı kirletebilir; yağı temiz tut.",
+   "equip": "fry",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-042",
+   "name": "Kıymalı Gözleme",
+   "aliases": [
+    "Sac gözleme kıymalı"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Anadolu / sacda kıymalı gözleme",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     85,
+     "g"
+    ],
+    [
+     "Su",
+     50,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     50,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     4,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     5,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Un, su ve tuzla yumuşak bir hamur yoğur, 30 dakika dinlendir. Kıymayı soğan ve baharatla kavurup soğut, maydanozu ekle. Hamuru ince aç, harcı yarısına yay, katla. Sıcak sac veya yapışmaz tavada iki yüzünü 3-4 dakika pişirip tereyağını sür. Pişen gözlemeyi 1 dakika dinlendirip dilimle; harcın tamamen pişmiş ve sıcak olduğundan emin ol. Yanına yoğurt veya ayran ile servis et. Servise kadar sıcak tutulacaksa kuru bez altında bekletilebilir.",
+   "tips": "Kıyma tamamen soğuk olmalı. Hamuru çok kalın açma; iç pişsin diye süre uzarsa yüzey yanar.",
+   "equip": "pastry",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-043",
+   "name": "Ispanaklı Gözleme",
+   "aliases": [
+    "Ispanaklı peynirli gözleme"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Anadolu / sac ispanaklı gözleme",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     85,
+     "g"
+    ],
+    [
+     "Su",
+     50,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Ispanak",
+     60,
+     "g"
+    ],
+    [
+     "Beyaz peynir",
+     35,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     5,
+     "ml"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Hamuru un, su ve tuzla yoğurup dinlendir. Ispanağı doğrayıp soğanla zeytinyağında suyunu çekene kadar soteleyip soğut, ezilmiş peynirle karıştır. Hamuru ince açıp harcı yay, katlayarak sac veya tavada iki yüzünü 3-4 dakika pişir. Gözleme iki yüzü de benekli ve çıtır olunca iç harç sıcak olmalı. Dilimleyip hemen servis et; bekletilirse hamur buhardan yumuşar. Peynir tuzlu ise tuzsuz peynir tercih edilebilir.",
+   "tips": "Ispanak suyunu iyice çekmeli; yoksa hamur ıslanır. Peynir tuzluysa ek tuz ekleme.",
+   "equip": "pastry",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-044",
+   "name": "Peynirli Poğaça",
+   "aliases": [
+    "Beyaz peynirli poğaça"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Anadolu / peynirli poğaça",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     90,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     12,
+     "ml"
+    ],
+    [
+     "Yoğurt",
+     25,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.4,
+     "adet"
+    ],
+    [
+     "Beyaz peynir",
+     30,
+     "g"
+    ],
+    [
+     "Kabartma tozu",
+     1.5,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Süt",
+     10,
+     "ml"
+    ],
+    [
+     "Çörek otu",
+     0.5,
+     "g"
+    ]
+   ],
+   "method": "Un, kabartma tozu ve tuzu karıştır. Yağ, yoğurt ve yumurtayı ekleyip yumuşak hamur yoğur; 20 dakika dinlendir. Ezilmiş peyniri hamurun içine yerleştirerek top yap. Yumurta-süt karışımı sürüp çörek otu serp. 180°C fırında 20-22 dakika altın rengi olana kadar pişir.",
+   "tips": "Hamuru fazla yoğurma, poğaça sertleşir. Peynir akmasın diye iyice kapat.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-045",
+   "name": "Açma",
+   "aliases": [
+    "Anadolu açması"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "İstanbul / yumuşak tuzlu açma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     95,
+     "g"
+    ],
+    [
+     "Süt",
+     40,
+     "ml"
+    ],
+    [
+     "Su",
+     20,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     3,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     12,
+     "ml"
+    ],
+    [
+     "Tereyağı",
+     6,
+     "g"
+    ],
+    [
+     "Şeker",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.3,
+     "adet"
+    ]
+   ],
+   "method": "Maya, şeker ve ılık sütü karıştırıp köpürt. Un, tuz, yağ ve yumurtayla yumuşak hamur yoğur; hacmi iki katına çıkana kadar 1 saat mayalandır. 80 gramlık parçalar bölüp halka şekli ver, 20 dakika dinlendir. Üzerine yumurta sür, 190°C fırında 15-18 dakika pişir. Pişen açmaları tel ızgarada ılıt; sıcakken kapatılırsa buharla yumuşar ve dokusu bozulur. Üzerine çok az tereyağı sürmek parlaklık verir. Aynı gün içinde servis edilmesi önerilir.",
+   "tips": "Hamurun tam mayalanması hafif ve pamuk gibi dokunun anahtarıdır.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-046",
+   "name": "İstanbul Simidi",
+   "aliases": [
+    "Gevrek simit"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "İstanbul / pekmezli susamlı simit",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     100,
+     "g"
+    ],
+    [
+     "Su",
+     55,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.5,
+     "g"
+    ],
+    [
+     "Pekmez",
+     15,
+     "ml"
+    ],
+    [
+     "Susam",
+     12,
+     "g"
+    ],
+    [
+     "Şeker",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Un, su, maya, şeker ve tuzla sıkı bir hamur yoğur; 45 dakika mayalandır. Hamuru iki ip hâlinde sarıp halka yap. Pekmezi suyla açıp simitleri banyoda tut, süzdür; susama bula. 220°C fırında 15-18 dakika altın rengi olana kadar pişir. Simit çıkınca tel ızgarada bekletip nemini bırakmasını sağla; kapalı kapta saklamak gevrekliği bozar. Susamlı yüzeyin eşit ve altın rengi olduğunu kontrol et. Aynı gün tüketilmesi uygundur.",
+   "tips": "Pekmezli banyo simidin rengini ve gevrekliğini belirler. Susamı bolca kullan.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Susam"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-047",
+   "name": "Peynirli Sigara Böreği",
+   "aliases": [
+    "Yufkalı peynirli sigara böreği"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Anadolu / ince yufka sigara böreği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yufka",
+     55,
+     "g"
+    ],
+    [
+     "Beyaz peynir",
+     35,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     4,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.3,
+     "adet"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     40,
+     "ml"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Peyniri ezip maydanoz ve yumurtayla karıştır. Yufkayı üçgen kesip dar kenara harçtan koy; yanları içe katlayıp sigara şeklinde sar, ucunu yumurta veya su ile yapıştır. Orta ısıdaki yağda altın rengi olana kadar kızart; süz. Kızarmış böreği süzdürüp kâğıt havluda 1 dakika beklet; fazla yağ gitsin. İç peynirin tamamen sıcak olduğunu kontrol et. Servise kadar 90°C fırında kapaksız tutulabilir; kapalı kapta bekletilirse yumuşar.",
+   "tips": "Börek fazla dolgulu olursa patlar. Yağı yüksek ısıya çıkarma.",
+   "equip": "fry",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-048",
+   "name": "Kayseri Tahinli Çöreği",
+   "aliases": [
+    "Tahinli çörek"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Kayseri / tahinli sarmal çörek",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     100,
+     "g"
+    ],
+    [
+     "Süt",
+     55,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     3,
+     "g"
+    ],
+    [
+     "Şeker",
+     6,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     12,
+     "ml"
+    ],
+    [
+     "Tahin",
+     20,
+     "g"
+    ],
+    [
+     "Pekmez",
+     10,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     5,
+     "g"
+    ]
+   ],
+   "method": "Maya, şeker ve ılık sütü karıştırıp köpürt. Un, tuz ve yağla yumuşak hamur yoğur; 1 saat mayalandır. İnce açıp tahin ve pekmez karışımını sürerek rulo sar. Dilimleyip kesik yüzleri yukarı gelecek şekilde tepsiye diz. 180°C fırında 20-25 dakika pişirip tereyağı sür.",
+   "tips": "Dolgunun kenara çıkmaması için hamuru kenardan 1 cm boş bırak. Fazla pişirme; tahin acılaşır.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Susam",
+    "Süt"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-049",
+   "name": "Karadeniz Hamsi Tava",
+   "aliases": [
+    "Mısır unlu hamsi tava"
+   ],
+   "cat": "Balık ve deniz ürünleri",
+   "sub": "Karadeniz / mısır unlu hamsi tava",
+   "base": 1,
+   "ingredients": [
+    [
+     "Temizlenmiş hamsi",
+     150,
+     "g"
+    ],
+    [
+     "Mısır unu",
+     15,
+     "g"
+    ],
+    [
+     "Buğday unu",
+     10,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     30,
+     "ml"
+    ],
+    [
+     "Limon",
+     10,
+     "g"
+    ],
+    [
+     "Roka",
+     15,
+     "g"
+    ]
+   ],
+   "method": "Hamsiyi başını ve kılçığını ayırarak açık kitap hâline getir, yıka ve süz; tuzla 10 dakika beklet. Mısır unu ve buğday ununu karıştırıp hamsileri bu karışıma bula, fazlasını silkele. Yağı 175°C'ye kadar ısıt; hamsileri kalabalık yapmadan her yüzünü 2-3 dakika altın rengi olana kadar kızart. Kâğıt havluda süz. Limon ve rokayla sıcak servis et.",
+   "tips": "Unlu hamsiyi bekletmeden kızart; nemlenirse gevreklik kaybolur. Yağı her partiden sonra süz.",
+   "equip": "fry",
+   "allergens": [
+    "Balık",
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-050",
+   "name": "Hamsi Buğulama",
+   "aliases": [
+    "Karadeniz hamsi buğulama"
+   ],
+   "cat": "Balık ve deniz ürünleri",
+   "sub": "Karadeniz / buğulama hamsi",
+   "base": 1,
+   "ingredients": [
+    [
+     "Temizlenmiş hamsi",
+     150,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     40,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     12,
+     "ml"
+    ],
+    [
+     "Maydanoz",
+     5,
+     "g"
+    ],
+    [
+     "Limon suyu",
+     8,
+     "ml"
+    ],
+    [
+     "Su",
+     60,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Soğanı halka doğrayıp geniş tencerenin tabanına ser. Yağı gezdirip üzerine hamsileri, maydanozu ve baharatı yerleştir. Su ve limon suyunu ekleyip kapağı kapalı orta ateşte 12-14 dakika buğulayarak pişir. Kaşıkla karıştırma; tencereyi çalkalayarak birleştir. Pişen hamsilerde göz beyazlaşmalı ve et kılçıktan kolay ayrılmalı. Tencereden tabaklara yağlı suyuyla nazikçe aktar. Sıcak veya ılık servis et; ekmek ve limon eşlik eder.",
+   "tips": "Hamsi çabuk dağılır; tencereyi karıştırmak yerine hafifçe sallamak gerekir.",
+   "equip": "stove",
+   "allergens": [
+    "Balık"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-051",
+   "name": "Barbunya Tava",
+   "aliases": [
+    "Barbunya balığı tava"
+   ],
+   "cat": "Balık ve deniz ürünleri",
+   "sub": "Ege / küçük barbunya tava",
+   "base": 1,
+   "ingredients": [
+    [
+     "Temizlenmiş barbunya",
+     140,
+     "g"
+    ],
+    [
+     "Un",
+     15,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     30,
+     "ml"
+    ],
+    [
+     "Limon",
+     10,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Barbunyaları pul ve iç organlarından arındırıp yıka, kurula. Tuzla 10 dakika bekletip una bula. Yağı 175°C'ye ısıtıp her yüzünü 2-3 dakika, kabuğu gevrek olana kadar kızart. Süz; limon ve maydanozla servis et. Barbunya iki yüzü altın renk olunca kâğıt havluya alınıp 1 dakika süzülmeli. Balık eti beyaz ve parçalanır olmalı. Limon ve roka ile hemen servis et; bekletilirse kabuğu yumuşar.",
+   "tips": "Küçük balıkları az sayıda kızart ki yağ ısısı düşmesin. Kuruluk için una bulama işlemini servis öncesi yap.",
+   "equip": "fry",
+   "allergens": [
+    "Balık",
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-052",
+   "name": "İstanbul Lüfer Izgara",
+   "aliases": [
+    "Lüfer ızgara"
+   ],
+   "cat": "Balık ve deniz ürünleri",
+   "sub": "İstanbul / bütün lüfer ızgara",
+   "base": 1,
+   "ingredients": [
+    [
+     "Temizlenmiş lüfer (bütün)",
+     200,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     8,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Limon",
+     10,
+     "g"
+    ],
+    [
+     "Roka",
+     15,
+     "g"
+    ],
+    [
+     "Soğan",
+     15,
+     "g"
+    ]
+   ],
+   "method": "Lüferi temizleyip yıka, kuru kurula; iki yanını çapraz çiz. Zeytinyağı ve tuzla ovala, 10 dakika dinlendir. Ateşi iyi kızmış ızgarada her yüzünü 5-6 dakika pişir; et kılçıktan rahat ayrılınca hazırdır. Roka, ince soğan ve limonla servis et. Pişen lüferin iç sıcaklığı 63°C olmalı; kılçıktan kolay ayrılan et pişmiş demektir. Balığı 2 dakika dinlendirip servis et; yanında roka, ince soğan ve limon bulunur.",
+   "tips": "Balığı çevirirken zorlamadan çevir; yapışma varsa ızgarayı yağla. Fazla pişen lüfer kurur.",
+   "equip": "grill",
+   "allergens": [
+    "Balık"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-053",
+   "name": "Kalamar Tava",
+   "aliases": [
+    "Ege kalamar tava"
+   ],
+   "cat": "Balık ve deniz ürünleri",
+   "sub": "Ege / halka kalamar tava",
+   "base": 1,
+   "ingredients": [
+    [
+     "Temizlenmiş kalamar halkası",
+     120,
+     "g"
+    ],
+    [
+     "Un",
+     20,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     30,
+     "ml"
+    ],
+    [
+     "Limon",
+     10,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Kalamar halkalarını yıkayıp süz ve kurula. Tuz ve karabiberle karıştırıp una bula. Yağı 180°C'ye ısıt; kalamarları 1-2 dakika, altın rengi olana kadar çabuk kızart. Süzdür; limon ve maydanozla hemen servis et. Kızartma sonrası kalamarlar kâğıt havluda süzülmeli; çok bekletilmeden sıcak servis edilmeli. Tartar sos veya limonlu mayonezle sunulabilir. Yağın kalitesi her partiden sonra kontrol edilmeli.",
+   "tips": "Fazla kızartılan kalamar lastiksi olur; süre kısa ve ateş yüksek olmalı.",
+   "equip": "fry",
+   "allergens": [
+    "Yumuşakçalar",
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-054",
+   "name": "Midye Dolma",
+   "aliases": [
+    "Pilavlı midye dolması"
+   ],
+   "cat": "Balık ve deniz ürünleri",
+   "sub": "İstanbul / Mardin / pilavlı midye dolma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Midye",
+     6,
+     "adet"
+    ],
+    [
+     "Pirinç",
+     20,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Kuş üzümü",
+     3,
+     "g"
+    ],
+    [
+     "Çam fıstığı",
+     3,
+     "g"
+    ],
+    [
+     "Tarçın",
+     0.1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Yenibahar",
+     0.1,
+     "g"
+    ],
+    [
+     "Su",
+     40,
+     "ml"
+    ],
+    [
+     "Limon",
+     10,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ]
+   ],
+   "method": "Midyeleri sakallarını ve kabuk kalıntılarını temizleyerek yıka; açılmayan veya kokulu olanları ayıkla, açıp içini çıkar. Soğanı zeytinyağında kavurup çam fıstığını, pirinci ve kuş üzümünü ekle. Baharat ve su ile pilavı yarım pişir, soğut. Midyelerin içine pilavı doldurup kabuklarını kapat. Tencerede dizip sıcak suyla 20 dakika buharda pişir; limonla servis et.",
+   "tips": "Midye tazeliği kritik; satın alma ve soğuk zincir kayıtları tutulmalı. Açılmayan midyeyi kullanma.",
+   "equip": "stove",
+   "allergens": [
+    "Yumuşakçalar",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-055",
+   "name": "Etli Börülce Yemeği",
+   "aliases": [
+    "Etli börülce"
+   ],
+   "cat": "Bakliyat yemekleri",
+   "sub": "Ege / etli kuru börülce",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuru börülce",
+     45,
+     "g"
+    ],
+    [
+     "Dana kuşbaşı",
+     40,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     6,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     8,
+     "ml"
+    ],
+    [
+     "Su",
+     250,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Börülceyi bir gece suda bekletip süz. Eti yağda kavur, soğan ve salçayı ekle. Börülce ve sıcak suyu ilave edip kapalı kapta kısık ateşte 55-60 dakika, börülce yumuşayana kadar pişir. Tuzu pişmeye yakın ekle. Pişme sonunda börülce taneleri bütün ama yumuşak olmalı; et lif lif ayrılmalı. Yemeğin sosu hafif yoğun kalmalı. Ilık servis edilip yanında pilav ve turşu sunulabilir.",
+   "tips": "Börülce fazla pişerse dağılır; kıvamı kontrol et. Islatma suyunu at.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-056",
+   "name": "Gaziantep Kuru Bamya Yemeği",
+   "aliases": [
+    "Antep kuru bamya"
+   ],
+   "cat": "Bakliyat yemekleri",
+   "sub": "Gaziantep / ekşili etli kuru bamya",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuru bamya",
+     30,
+     "g"
+    ],
+    [
+     "Kuzu kuşbaşı",
+     60,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     8,
+     "g"
+    ],
+    [
+     "Nar ekşisi",
+     10,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Su",
+     250,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Kuru bamyaları ılık suda 20 dakika bekletip süz. Eti tereyağında kavurup soğan ve salçayı ekle. Bamya, sarımsak ve sıcak suyu ilave edip kapalı kapta 45 dakika pişir. Nar ekşisini son 10 dakikada ekle; tuz ve karabiberle ayarla. Pişme sonunda bamyaların yumuşadığı, et ve bamyanın sosta uyumlu birleştiği kontrol edilmeli. Nar ekşisinin ekşiliği tadılıp dengelenmeli. Sıcak servis edip yanına bulgur pilavı eşlik ettir.",
+   "tips": "Ekşi lezzet pişirme sonunda eklenmeli ki aroması korunsun. Kuru bamya hasarlı değilse sert kalmaz.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-057",
+   "name": "Zeytinyağlı Pazı Sarması",
+   "aliases": [
+    "Pazı sarma"
+   ],
+   "cat": "Zeytinyağlılar",
+   "sub": "Karadeniz / Ege / zeytinyağlı pazı sarma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pazı yaprağı",
+     100,
+     "g"
+    ],
+    [
+     "Pirinç",
+     20,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     12,
+     "ml"
+    ],
+    [
+     "Dereotu",
+     3,
+     "g"
+    ],
+    [
+     "Kuru nane",
+     0.3,
+     "g"
+    ],
+    [
+     "Su",
+     120,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     5,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Pazı yapraklarını kaynar suda 1-2 dakika haşlayıp sert damarlarını ince. Soğanı zeytinyağında kavurup pirinç, nane, dereotu ve tuzla iç harcı hazırla. Yaprakları dolgu koyup sararak tencereye diz. Sıcak su ve limon suyu ekleyip tabak bastırarak 30 dakika pişir; soğuyana kadar bekletip servis et.",
+   "tips": "Sarmalar ağır bastırıldığında dağılmaz. Soğuk servis edilebilir.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-058",
+   "name": "Zeytinyağlı Bamya",
+   "aliases": [
+    "Bamya zeytinyağlı"
+   ],
+   "cat": "Zeytinyağlılar",
+   "sub": "Ege / zeytinyağlı taze bamya",
+   "base": 1,
+   "ingredients": [
+    [
+     "Taze bamya",
+     140,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates",
+     50,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     12,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     8,
+     "ml"
+    ],
+    [
+     "Şeker",
+     1,
+     "g"
+    ],
+    [
+     "Su",
+     80,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Bamyaların başlarını koni biçiminde ince soyarak temizle, sirkeli suda 15 dakika beklet, durula. Soğanı zeytinyağında kavurup domatesi ekle. Bamya, şeker, tuz ve su ilave edip kapaklı kısık ateşte 25 dakika pişir. Limon suyunu son dakikada ekle; soğuk servis et.",
+   "tips": "Bamyayı karıştırmak sümüksü kıvama yol açar; tencereyi sallayarak birleştir.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-059",
+   "name": "Zeytinyağlı Karnabahar",
+   "aliases": [
+    "Karnabahar zeytinyağlı"
+   ],
+   "cat": "Zeytinyağlılar",
+   "sub": "Ege / zeytinyağlı karnabahar",
+   "base": 1,
+   "ingredients": [
+    [
+     "Karnabahar",
+     150,
+     "g"
+    ],
+    [
+     "Havuç",
+     25,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Patates",
+     30,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     12,
+     "ml"
+    ],
+    [
+     "Su",
+     100,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     5,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Dereotu",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Soğanı zeytinyağında kavurup havuç ve patatesi ekle. Karnabahar çiçeklerini yerleştirip su ve tuz ilave et. Kapalı kapta 20 dakika, karnabahar diri kalacak şekilde pişir. Limon suyu ve dereotuyla tamamlayıp ılık veya soğuk servis et. Pişme sonunda karnabahar çatalla delinecek kadar yumuşak ama dağılmamış olmalı. Pişme suyunda 10 dakika dinlendirip soğutarak veya ılık servis et; üzerine ince doğranmış dereotu ekle.",
+   "tips": "Karnabahar fazla pişerse dağılır ve kokusu keskinleşir; 20 dakikayı geçme.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-060",
+   "name": "Zeytinyağlı Pancar",
+   "aliases": [
+    "Pancar yemeği zeytinyağlı"
+   ],
+   "cat": "Zeytinyağlılar",
+   "sub": "Marmara / Ege / zeytinyağlı pancar",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pancar",
+     150,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Su",
+     80,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     6,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Dereotu",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Pancarı soyup küp doğra. Soğanı zeytinyağında kavurup sarımsak ve pancarı ekle. Sıcak suyla kapalı kapta 25-30 dakika yumuşayana kadar pişir. Limon suyu ve dereotu ekleyip soğutarak servis et. Pişme sonunda pancar parçaları çatalla delinecek yumuşaklıkta olmalı; sıvı hafif sirupsu kıvamda kalmalı. Soğuk veya oda sıcaklığında servis et. Yanına yoğurt eşlik edebilir.",
+   "tips": "Eldiven kullan; pancar suyu lekeler. Fazla suyu azaltılarak parlak renk korunur.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-061",
+   "name": "Zeytinyağlı Radika",
+   "aliases": [
+    "Ege radika yemeği"
+   ],
+   "cat": "Zeytinyağlılar",
+   "sub": "Ege / yabani radika otu yemeği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış radika",
+     130,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     12,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     8,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ]
+   ],
+   "method": "Radikayı bol suda ayıklayıp haşla (acılığı için 8-10 dakika), süz ve soğuk suyla durula. Soğanı zeytinyağında kavurup sarımsakla çevir; radikayı ekleyip birkaç dakika sote et. Limon suyu ve tuzla ayarlayıp ılık veya soğuk sun. Servis öncesi radikayı iyice süzdürüp fazla suyunu al. Zeytinyağı ve limonu tabakta ayarla. Ege usulü olarak ılık veya soğuk, yanında ekmek ve beyaz peynirle sun.",
+   "tips": "Acı sevilmeyecekse haşlama suyunu bir kez değiştir.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-062",
+   "name": "Zeytinyağlı Sakız Kabağı",
+   "aliases": [
+    "Sakız kabağı zeytinyağlı"
+   ],
+   "cat": "Zeytinyağlılar",
+   "sub": "Ege / zeytinyağlı kabak",
+   "base": 1,
+   "ingredients": [
+    [
+     "Sakız kabağı",
+     160,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Domates",
+     40,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Su",
+     50,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Dereotu",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Sakız kabağını kabuğunu hafif soyup yarım ay veya küp doğra. Soğanı zeytinyağında kavurup domatesi ekle. Kabağı yerleştirip az su ve tuzla kapalı kapta 18-20 dakika pişir. Dereotuyla soğuk servis et. Kabak çatalla delinecek kadar yumuşak ama şeklini korumuş olmalı. Pişme suyunda soğumaya bırak; soğuk veya oda sıcaklığında servis et. Üzerine dereotu ve az zeytinyağı ekle.",
+   "tips": "Kabağın suyu kendisinden çıktığı için ilave su azdır.",
+   "equip": "stove",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-063",
+   "name": "Börülce Salatası",
+   "aliases": [
+    "Ege börülce salatası"
+   ],
+   "cat": "Salatalar",
+   "sub": "Ege / haşlanmış börülce salatası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış börülce",
+     80,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     8,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     1,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     4,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Börülceyi yumuşayana kadar haşlayıp süz, ılıtın. Soğanı ince doğrayıp tuzla ovarak sertliğini al. Zeytinyağı, limon, sarımsak ve baharatı çırp. Börülce, soğan ve maydanozu sosla harmanla; 20 dakika dinlendirip servis et. Servisten önce salatayı tadıp limon ve tuzu ayarla. Börülce taneleri dağılmadan bütün olmalı. Oda sıcaklığında, ekmek ve zeytinle sun. Soğuk zincirde en çok 24 saat saklanabilir.",
+   "tips": "Börülce ılıkken sosu daha iyi çeker.",
+   "equip": "salad",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-064",
+   "name": "Hatay Zahter Salatası",
+   "aliases": [
+    "Zahter salata"
+   ],
+   "cat": "Salatalar",
+   "sub": "Hatay / zahterli soğan salatası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Zahter (yeşil kekik)",
+     6,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     35,
+     "g"
+    ],
+    [
+     "Domates",
+     60,
+     "g"
+    ],
+    [
+     "Nar ekşisi",
+     8,
+     "ml"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ]
+   ],
+   "method": "Soğanı ince doğrayıp tuzla yoğurarak sertliğini al, durula. Zahteri kıyıp soğanla karıştır. Domatesi küp doğrayıp ekle. Zeytinyağı, nar ekşisi ve pul biberi çırpıp salatayı harmanla. Soğanı tuzla ovup durulamak keskinliğini alır; fazla suyu sıkılmalı. Salatayı servisten hemen önce harmanla ki domates su salmasın. Yanına sıcak lavaş veya kebap eşlik edebilir.",
+   "tips": "Zahter yoksa taze kekik ve maydanozla yaklaşılır ama aroma farklıdır.",
+   "equip": "salad",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-065",
+   "name": "Çökelek Salatası",
+   "aliases": [
+    "Ege çökelek salata"
+   ],
+   "cat": "Salatalar",
+   "sub": "Ege / çökelek peynirli salata",
+   "base": 1,
+   "ingredients": [
+    [
+     "Çökelek",
+     50,
+     "g"
+    ],
+    [
+     "Domates",
+     60,
+     "g"
+    ],
+    [
+     "Salatalık",
+     50,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Nane",
+     0.3,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.5,
+     "g"
+    ]
+   ],
+   "method": "Çökeleği çatalla ez. Domates ve salatalığı küp, soğanı ince doğra. Zeytinyağı, nane ve tuzla karıştırıp çökeleği ekle. Hemen servis et. Çökeleği çok ezme; hafif parçalı kalmalı. Sebzeleri ve çökeleği servisten kısa süre önce karıştır; çökelek tuzluluk açısından önceden tadılmalı. Soğuk zincirde servise kadar beklet.",
+   "tips": "Çökelek tuzlu olabilir, tuzu çok azaltmak gerekir.",
+   "equip": "salad",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-066",
+   "name": "Ahtapot Salatası",
+   "aliases": [
+    "Ege ahtapot salatası"
+   ],
+   "cat": "Salatalar",
+   "sub": "Ege / haşlanmış ahtapot salatası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış ahtapot",
+     90,
+     "g"
+    ],
+    [
+     "Kırmızı soğan",
+     20,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     12,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     10,
+     "ml"
+    ],
+    [
+     "Maydanoz",
+     4,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     1,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.6,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Ahtapotu bol sıcak suda 45-60 dakika yumuşayana kadar haşla; suyunda soğut, dilimle. Zeytinyağı, limon, sarımsak ve maydanozla sosu hazırla. Ahtapot ve soğanı harmanla; en az 30 dakika dinlendirip servis et. Haşlanan ahtapotu kabuklarından temizleyip dilimlemek için soğuyana kadar bekle. Marine süresi dolunca fazla sıvıyı süz. Soğuk servis et; kullanım süresi buzdolabında 24 saati aşmamalı.",
+   "tips": "Ahtapotun pişme süresi boyutuna göre değişir; bıçakla yumuşaklığı kontrol et.",
+   "equip": "salad",
+   "allergens": [
+    "Yumuşakçalar"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-067",
+   "name": "Yoğurtlu Pancar Salatası",
+   "aliases": [
+    "Pancar salatası"
+   ],
+   "cat": "Salatalar",
+   "sub": "Anadolu / yoğurtlu pancar salatası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış pancar",
+     80,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     60,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Ceviz içi",
+     8,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     5,
+     "ml"
+    ],
+    [
+     "Tuz",
+     0.5,
+     "g"
+    ]
+   ],
+   "method": "Pancarı ince rendele. Yoğurt, ezilmiş sarımsak ve tuzu karıştır. Pancarı yoğurtla harmanla. Üzerine ceviz ve zeytinyağı gezdirip soğuk servis et. Haşlanmış pancarı rendelerken eldiven kullan. Sosu servise yakın harmanlayıp 10 dakika dinlendir. Soğuk servis edilir; renk zamanla yoğurda yayılacağından hazırlandıktan sonra çabuk tüketilmeli.",
+   "tips": "Yoğurt rengi pembeleşir; hazırladıktan sonra beklemeden sun.",
+   "equip": "salad",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-068",
+   "name": "Havuç Tarator",
+   "aliases": [
+    "Ege havuç tarator"
+   ],
+   "cat": "Mezeler",
+   "sub": "Ege / sarımsaklı yoğurtlu havuç meze",
+   "base": 1,
+   "ingredients": [
+    [
+     "Havuç",
+     80,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     60,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Ceviz içi",
+     8,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     5,
+     "ml"
+    ],
+    [
+     "Tuz",
+     0.6,
+     "g"
+    ]
+   ],
+   "method": "Havucu rendele, zeytinyağında 3-4 dakika hafifçe soteleyip soğut. Yoğurt, ezilmiş sarımsak ve tuzu karıştırıp havuçla birleştir. Cevizle süsle. Soteleme sonunda havuç yumuşak ama diri kalmalı. Tamamen soğumadan yoğurtla karıştırma. Servis öncesi cevizi ekle; soğuk zincirde 24 saate kadar saklanabilir.",
+   "tips": "Havuç haşlanmaz, kısa soteleme tatlılığı artırır.",
+   "equip": "cold",
+   "allergens": [
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-069",
+   "name": "Hatay Zeytin Salatası",
+   "aliases": [
+    "Antakya zeytin salatası"
+   ],
+   "cat": "Salatalar",
+   "sub": "Hatay / ezilmiş yeşil zeytin salatası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Çizik yeşil zeytin",
+     50,
+     "g"
+    ],
+    [
+     "Ceviz içi",
+     8,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Nar ekşisi",
+     8,
+     "ml"
+    ],
+    [
+     "Zeytinyağı",
+     8,
+     "ml"
+    ],
+    [
+     "Pul biber",
+     0.3,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Zeytinleri çekirdeklerinden ayırıp ezerek parçala. Soğanı ince doğra, cevizi kırıp zeytine ekle. Nar ekşisi, zeytinyağı ve pul biberle harmanla; maydanozla süsle. Zeytinleri çok ince doğrama; pütürlü kalsın. Nar ekşisi ve pul biberi servise yakın ekle. Oda sıcaklığında ekmekle sun; zeytinin tuzluluğuna göre tuz eklenmez.",
+   "tips": "Zeytin tuzlu olduğu için ek tuz eklenmez; nar ekşisi dengeyi sağlar.",
+   "equip": "salad",
+   "allergens": [
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-070",
+   "name": "Anadolu Usulü Patates Salatası",
+   "aliases": [
+    "Haşlanmış patates salatası"
+   ],
+   "cat": "Salatalar",
+   "sub": "Anadolu / zeytinyağlı patates salatası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış patates",
+     120,
+     "g"
+    ],
+    [
+     "Yeşil soğan",
+     15,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     4,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     8,
+     "ml"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Patatesi haşlayıp ılıkken küp doğra. Zeytinyağı, limon, tuz ve karabiberi çırp. Patates, yeşil soğan ve maydanozu nazikçe harmanla; en az 15 dakika dinlendir. Haşlanan patatesi çok yumuşatma; küpler şeklini korumalı. Sosu ılık patatese ekle ki aromayı çeksin. Soğuk zincirde en çok 24 saat saklanabilir; servis öncesi tuz ve limon ayarla.",
+   "tips": "Patates ılıkken sosu çeker; soğuyunca tutunmaz.",
+   "equip": "salad",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-071",
+   "name": "Güllaç",
+   "aliases": [
+    "Ramazan güllacı"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Anadolu / Ramazan sütlü yaprak tatlısı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Güllaç yaprağı",
+     25,
+     "g"
+    ],
+    [
+     "Süt",
+     180,
+     "ml"
+    ],
+    [
+     "Şeker",
+     25,
+     "g"
+    ],
+    [
+     "Gül suyu",
+     3,
+     "ml"
+    ],
+    [
+     "Ceviz içi",
+     10,
+     "g"
+    ],
+    [
+     "Nar tanesi",
+     10,
+     "g"
+    ]
+   ],
+   "method": "Sütü şekerle ılık hâle gelene kadar ısıt, ocaktan alıp gül suyunu ekle. Geniş bir tepsiye bir yaprak koyup üzerine sıcak sütten gezdir; yaprak yumuşayana kadar bekle, üzerine ikinci yaprağı koy ve işlemi tekrarla. Aralara kırık ceviz serp. Son yaprağı da ıslatıp kenarları katla, kalan sütü dök. Buzdolabında en az 4 saat dinlendirip kesip nar ve cevizle servis et.",
+   "tips": "Süt çok sıcak olursa yapraklar dağılır, ılık olmalı. Yapraklar sütü çekene kadar bekletilmelidir.",
+   "equip": "cold",
+   "allergens": [
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-072",
+   "name": "Zerde",
+   "aliases": [
+    "Safranlı zerde"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Anadolu / safranlı pirinç tatlısı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pirinç",
+     25,
+     "g"
+    ],
+    [
+     "Şeker",
+     35,
+     "g"
+    ],
+    [
+     "Su",
+     260,
+     "ml"
+    ],
+    [
+     "Safran",
+     0.05,
+     "g"
+    ],
+    [
+     "Nişasta",
+     4,
+     "g"
+    ],
+    [
+     "Kuş üzümü",
+     5,
+     "g"
+    ],
+    [
+     "Badem içi",
+     4,
+     "g"
+    ],
+    [
+     "Nar tanesi",
+     5,
+     "g"
+    ]
+   ],
+   "method": "Pirinci yıkayıp suda 20 dakika kısık ateşte lapa olana kadar pişir. Safranı sıcak suyla demleyip ekle. Şekeri ilave et ve eriyene kadar karıştır. Nişastayı az suyla açıp tatlıya ince bir akışla ekle; 3-4 dakika kaynat, kuş üzümü ve kıyılmış bademle servis kâselerine dök. Soğuyunca nar taneleriyle süsle.",
+   "tips": "Safran sıcak suda demlenerek rengi ve aroması açılır. Nişasta ile kıvam çok sıkı olmamalı; soğuyunca kalınlaşır.",
+   "equip": "cold",
+   "allergens": [
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "starch",
+   "binderNote": "Nişasta kontrollü eklenir."
+  },
+  {
+   "id": "P01-TR-073",
+   "name": "Keşkül",
+   "aliases": [
+    "Keşkül-ü fukara"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Osmanlı saray mutfağı / bademli sütlü tatlı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Süt",
+     180,
+     "ml"
+    ],
+    [
+     "Şeker",
+     22,
+     "g"
+    ],
+    [
+     "Pirinç unu",
+     12,
+     "g"
+    ],
+    [
+     "Badem içi",
+     15,
+     "g"
+    ],
+    [
+     "Yumurta sarısı",
+     0.5,
+     "adet"
+    ],
+    [
+     "Hindistan cevizi",
+     3,
+     "g"
+    ],
+    [
+     "Fıstık",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Bademi haşlayıp kabuğunu soy, ince öğüt. Pirinç ununu az sütle açıp kalan süt ve şekerle ocağa al; sürekli karıştırarak kaynamaya getir. Badem ve yumurta sarısını ekleyip koyulaşana kadar 5-6 dakika pişir. Kâselere dök, oda sıcaklığında soğut, buzdolabında dinlendir. Üzerine hindistan cevizi ve fıstık serp.",
+   "tips": "Yumurta sarısı kesilmesin diye karışımı iyice ılıştırarak ekle. Badem kavurma değil, haşlanarak öğütülmeli ki rengi açık kalsın.",
+   "equip": "cold",
+   "allergens": [
+    "Süt",
+    "Sert kabuklu yemişler",
+    "Yumurta"
+   ],
+   "binder": "starch",
+   "binderNote": "Nişasta kontrollü eklenir."
+  },
+  {
+   "id": "P01-TR-074",
+   "name": "İrmik Helvası",
+   "aliases": [
+    "Sütlü irmik helvası"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Anadolu / tereyağlı irmik helvası",
+   "base": 1,
+   "ingredients": [
+    [
+     "İrmik",
+     35,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     25,
+     "g"
+    ],
+    [
+     "Şeker",
+     30,
+     "g"
+    ],
+    [
+     "Süt",
+     90,
+     "ml"
+    ],
+    [
+     "Su",
+     60,
+     "ml"
+    ],
+    [
+     "Çam fıstığı",
+     3,
+     "g"
+    ],
+    [
+     "Tarçın",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Süt, su ve şekeri ısıtıp şeker eriyince kısık ateşte tut. Tereyağını eritip çam fıstığını kavur, irmiği ekleyerek fındık rengi ve kokusu gelene kadar 10-12 dakika sürekli karıştırarak kavur. Sıcak sütlü şerbeti irmiğin üzerine dikkatle ekle; dikkatli ol, fışkırır. Karıştırıp suyunu çekene kadar pişir; kapağı kapatıp 10 dakika demlendir. Tarçınla sun.",
+   "tips": "Sıcak irmik, sıcak şerbetle birleşirse köpürür; dikkatli ekle. Demleme olmazsa helva yoğun ve sert kalır.",
+   "equip": "stove",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-075",
+   "name": "Tulumba Tatlısı",
+   "aliases": [
+    "Şerbetli tulumba"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Anadolu / kızartılmış şerbetli hamur tatlısı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     35,
+     "g"
+    ],
+    [
+     "İrmik",
+     5,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.4,
+     "adet"
+    ],
+    [
+     "Su",
+     45,
+     "ml"
+    ],
+    [
+     "Tereyağı",
+     6,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.3,
+     "g"
+    ],
+    [
+     "Şeker (şerbet)",
+     40,
+     "g"
+    ],
+    [
+     "Su (şerbet)",
+     50,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     2,
+     "ml"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     40,
+     "ml"
+    ]
+   ],
+   "method": "Şerbet için şeker, su ve limonu 8 dakika kaynatıp soğut. Suyu tereyağı ve tuzla kaynat, unu ve irmiği ekleyerek karıştır; hamur tenceredenden ayrılınca ılıt. Yumurtayı ekleyip pürüzsüzleştir. Hamuru yıldız ağızlı süslemeye koyup 5-6 cm'lik parçalar halinde sıcak yağa sık. Orta ateşte altın rengi olana kadar 6-8 dakika kızart, süz. Sıcak tulumbayı soğuk şerbete bırak, 2-3 dakika bekletip süz.",
+   "tips": "Hamur sıcak yağa sıkılırken yağ ısısı 170°C civarı kalmalı; çok sıcak yağda dışı yanar, içi çiğ kalır. Soğuk şerbet tulumbanın gevrek kalmasını sağlar.",
+   "equip": "fry",
+   "allergens": [
+    "Gluten",
+    "Yumurta",
+    "Süt"
+   ],
+   "binder": "dough",
+   "binderNote": "Hamurun kendi yapısı bağlayıcıdır."
+  },
+  {
+   "id": "P01-TR-076",
+   "name": "Lokma Tatlısı",
+   "aliases": [
+    "Şerbetli lokma"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Anadolu / mayalı lokma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     50,
+     "g"
+    ],
+    [
+     "Su",
+     70,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.5,
+     "g"
+    ],
+    [
+     "Şeker (şerbet)",
+     40,
+     "g"
+    ],
+    [
+     "Su (şerbet)",
+     60,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     2,
+     "ml"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     50,
+     "ml"
+    ]
+   ],
+   "method": "Mayayı ılık suda eritip un ve tuzla çırparak akışkan bir hamur hazırla; 45 dakika mayalandır. Şerbeti şeker, su ve limonla 8 dakika kaynatıp soğut. Yağı 170°C'ye ısıt; hamuru ıslak kaşıkla alıp yağa bırak. Çevirerek altın rengi olana kadar 3-4 dakika kızart, süz. Soğuk şerbette 1-2 dakika beklet, süz ve servis et.",
+   "tips": "Hamur ne çok koyu ne çok sulu olmalı; kaşıktan dökülen top şekil almalı. Lokmaları aynı boyda tutmak pişirmeyi eşitler.",
+   "equip": "fry",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-077",
+   "name": "Hanım Göbeği",
+   "aliases": [
+    "Hanım göbeği tatlısı"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Osmanlı / şerbetli göbek şeklinde hamur tatlısı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     30,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.4,
+     "adet"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Su",
+     40,
+     "ml"
+    ],
+    [
+     "Tuz",
+     0.3,
+     "g"
+    ],
+    [
+     "Şeker (şerbet)",
+     40,
+     "g"
+    ],
+    [
+     "Su (şerbet)",
+     50,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     2,
+     "ml"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     40,
+     "ml"
+    ],
+    [
+     "Fındık",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Suyu tereyağı ve tuzla kaynatıp unu ekle; tenceredenden ayrılana kadar çevir. Ilıdıktan sonra yumurtayı ekleyip pürüzsüz bir hamur elde et. Hamurdan ceviz büyüklüğünde parçalar alıp ortasını başparmakla çukurlaştırarak göbek şekli ver. Orta ısılı yağda altın rengi olana kadar 6-7 dakika kızart, süz. Soğuk şerbete 2 dakika bırak; üzerine fındık serp.",
+   "tips": "Göbek ortasını çukur bırakmak pişmeyi eşitler. Şerbet soğuk olmalı.",
+   "equip": "fry",
+   "allergens": [
+    "Gluten",
+    "Yumurta",
+    "Süt"
+   ],
+   "binder": "dough",
+   "binderNote": "Hamurun kendi yapısı bağlayıcıdır."
+  },
+  {
+   "id": "P01-TR-078",
+   "name": "Dilber Dudağı",
+   "aliases": [
+    "Dilber dudağı tatlısı"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Osmanlı / şerbetli dudak şeklinde hamur tatlısı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     35,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.4,
+     "adet"
+    ],
+    [
+     "Su",
+     45,
+     "ml"
+    ],
+    [
+     "Tuz",
+     0.3,
+     "g"
+    ],
+    [
+     "Şeker (şerbet)",
+     40,
+     "g"
+    ],
+    [
+     "Su (şerbet)",
+     50,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     2,
+     "ml"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     40,
+     "ml"
+    ]
+   ],
+   "method": "Suyu tereyağı ve tuzla kaynatıp unu ekle; hamur tenceredenden ayrılana kadar çevir. Ilıtıp yumurtayı ilave ederek pürüzsüzleştir. Hamuru uzun şeritler hâlinde sıkıp 6-7 cm kes, ortasından bükerek dudak şekline getir. Orta ısıdaki yağda altın rengi olana kadar kızart, süz. Soğuk şerbette 2 dakika bekletip servis et.",
+   "tips": "Hamur kıvamı sıkma torbasından rahat çıkmalı. Yağ sıcaklığını sabit tut.",
+   "equip": "fry",
+   "allergens": [
+    "Gluten",
+    "Yumurta",
+    "Süt"
+   ],
+   "binder": "dough",
+   "binderNote": "Hamurun kendi yapısı bağlayıcıdır."
+  },
+  {
+   "id": "P01-TR-079",
+   "name": "Bursa Kemalpaşa Tatlısı",
+   "aliases": [
+    "Kemalpaşa tatlısı"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Bursa / peynirli şerbetli tatlı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Taze tuzsuz Kemalpaşa peyniri",
+     30,
+     "g"
+    ],
+    [
+     "İrmik",
+     25,
+     "g"
+    ],
+    [
+     "Un",
+     15,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.5,
+     "adet"
+    ],
+    [
+     "Şeker",
+     55,
+     "g"
+    ],
+    [
+     "Su",
+     120,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     3,
+     "ml"
+    ],
+    [
+     "Kaymak",
+     15,
+     "g"
+    ]
+   ],
+   "method": "Peyniri ezip irmik, un ve yumurtayla yoğur; pürüzsüz hamuru dinlendir. Cevize büyüklüğünde parçalar alıp yuvarlayarak yağlı tepsiye diz; 180°C fırında 20 dakika altın rengi olana kadar pişir. Şeker, su ve limonla şerbeti 10 dakika kaynat. Tatlıları şerbetle kaynatın ve 15 dakika kaynar şerbette bekletin, ardından soğutun. Kaymakla servis et.",
+   "tips": "Peynir tuzsuz olmalı; tuzlu peynir kullanılırsa suda bekletilerek tuzu alınır. Şerbet soğuk ve tatlı tutulmalı.",
+   "equip": "cold",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "syrup",
+   "binderNote": "Şerbet yapısı ve ısı kontrolü tatlıya kıvam verir."
+  },
+  {
+   "id": "P01-TR-080",
+   "name": "Kaymaklı Ekmek Kadayıfı",
+   "aliases": [
+    "Ekmek kadayıfı"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Anadolu / kuru ekmek kadayıfı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuru ekmek kadayıfı",
+     50,
+     "g"
+    ],
+    [
+     "Şeker",
+     40,
+     "g"
+    ],
+    [
+     "Su",
+     90,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     3,
+     "ml"
+    ],
+    [
+     "Kaymak",
+     30,
+     "g"
+    ],
+    [
+     "Ceviz içi",
+     8,
+     "g"
+    ]
+   ],
+   "method": "Şeker, su ve limonu 10 dakika kaynatıp şerbeti hazırla. Kadayıfları su ile ıslatıp sıkarak yağlı tepsiye dizin. Kaynar şerbeti üzerine dök, kadayıfların şerbeti çekmesi için 20 dakika dinlendir. Kısık ateşte veya 170°C fırında sıcak olana kadar ısıt. Soğuyunca kaymak ve cevizle servis et.",
+   "tips": "Şerbet kadayıfa dökülürken kadayıf sıcak olmamalı. Kaymak ayrı servis edilirse kıvamı korunur.",
+   "equip": "cold",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "syrup",
+   "binderNote": "Şerbet yapısı ve ısı kontrolü tatlıya kıvam verir."
+  },
+  {
+   "id": "P01-TR-081",
+   "name": "Malatya Cevizli Kayısı Tatlısı",
+   "aliases": [
+    "Kaymaklı kayısı tatlısı"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Malatya / kuru kayısı tatlısı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuru kayısı",
+     50,
+     "g"
+    ],
+    [
+     "Şeker",
+     20,
+     "g"
+    ],
+    [
+     "Su",
+     120,
+     "ml"
+    ],
+    [
+     "Ceviz içi",
+     8,
+     "g"
+    ],
+    [
+     "Kaymak",
+     20,
+     "g"
+    ],
+    [
+     "Limon suyu",
+     2,
+     "ml"
+    ]
+   ],
+   "method": "Kayısıları 6 saat suda bekletip yumuşat. Aynı suyla şeker ve limonu ekleyip kısık ateşte 15 dakika pişir; kayısı şişip şerbet koyulaşsın. Her kayısının ortasını açıp ceviz doldur. Şerbetle soğutup kaymakla servis et. Pişen kayısıları şerbetiyle soğutup kaymakla ayrı servis et. Servis sıcaklığı oda sıcaklığı veya soğuk olmalı. Hazırlanan tatlı soğuk zincirde 48 saate kadar saklanabilir.",
+   "tips": "Kayısıların bekletme süresi tane kalitesine göre değişir; çok yumuşarsa dağılır.",
+   "equip": "cold",
+   "allergens": [
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "syrup",
+   "binderNote": "Şerbet yapısı ve ısı kontrolü tatlıya kıvam verir."
+  },
+  {
+   "id": "P01-TR-082",
+   "name": "Mersin Cezeriye",
+   "aliases": [
+    "Cezeriye"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Mersin / havuçlu şekerli tatlı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Havuç",
+     100,
+     "g"
+    ],
+    [
+     "Şeker",
+     45,
+     "g"
+    ],
+    [
+     "Su",
+     30,
+     "ml"
+    ],
+    [
+     "Ceviz içi",
+     8,
+     "g"
+    ],
+    [
+     "Fındık içi",
+     5,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     5,
+     "g"
+    ],
+    [
+     "Hindistan cevizi",
+     2,
+     "g"
+    ]
+   ],
+   "method": "Havucu ince rendele. Şeker ve suyu tencerede eriyene kadar ısıt; rendelenmiş havucu ekleyip kısık ateşte sürekli karıştırarak 18-20 dakika, suyunu çekene kadar pişir. Tereyağını ekle. Ceviz ve fındığı hafifçe kavurup ekle, karıştır. Soğuyunca küçük topaklar şekillendir; hindistan cevizine bula.",
+   "tips": "Havucun suyu çekilene kadar pişirilmeli; fazla su tatlının şekil almasını engeller.",
+   "equip": "stove",
+   "allergens": [
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-083",
+   "name": "Gaziantep Katmer",
+   "aliases": [
+    "Antep katmeri"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Gaziantep / fıstıklı kaymaklı ince hamur tatlısı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     40,
+     "g"
+    ],
+    [
+     "Su",
+     20,
+     "ml"
+    ],
+    [
+     "Sıvı yağ",
+     8,
+     "ml"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Antep fıstığı",
+     20,
+     "g"
+    ],
+    [
+     "Şeker",
+     8,
+     "g"
+    ],
+    [
+     "Kaymak",
+     25,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Un, su, yağ ve tuzla yumuşak hamur yoğurup bez altında 30 dakika dinlendir. Hamuru oklava ile çok ince aç; ortasına şekerli ezilmiş fıstıktan koy, üzerine kaymak ekle. Kenarları katlayıp kare şekil ver. Eritilmiş tereyağı ile yağlanmış sıcak sac veya tavada altın rengi olana kadar pişir. Sıcak servis et.",
+   "tips": "Hamur çok ince olmalıdır ancak delinmemesine dikkat edilmeli. Antep fıstığı yoğunluğu tatlının ana lezzetidir.",
+   "equip": "pastry",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "dough",
+   "binderNote": "Hamurun kendi yapısı bağlayıcıdır."
+  },
+  {
+   "id": "P01-TR-084",
+   "name": "Gaziantep Şöbiyet",
+   "aliases": [
+    "Şöbiyet"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Gaziantep / fıstıklı kaymaklı şerbetli tatlı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     40,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     12,
+     "g"
+    ],
+    [
+     "Su",
+     25,
+     "ml"
+    ],
+    [
+     "Antep fıstığı",
+     18,
+     "g"
+    ],
+    [
+     "Kaymak",
+     25,
+     "g"
+    ],
+    [
+     "Şeker",
+     30,
+     "g"
+    ],
+    [
+     "Su (şerbet)",
+     60,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     2,
+     "ml"
+    ]
+   ],
+   "method": "Un, tereyağı ve suyla yumuşak hamur yoğurup dinlendir. İnce açıp iki kat yap; içine kaymak ve fıstık koyup kapat. Tepsiye dizip 180°C fırında altın rengi olana kadar 20-25 dakika pişir. Şerbeti şeker, su ve limonla 10 dakika kaynatıp ılıt. Sıcak tatlıya ılık şerbet dök; dinlendirip servis et.",
+   "tips": "Şerbet ve tatlı sıcaklık dengesi önemli: sıcak tatlıya ılık şerbet dökülür.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "syrup",
+   "binderNote": "Şerbet yapısı ve ısı kontrolü tatlıya kıvam verir."
+  },
+  {
+   "id": "P01-TR-085",
+   "name": "Bülbül Yuvası",
+   "aliases": [
+    "Antep bülbül yuvası"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Gaziantep / fıstıklı sarma tatlı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yufka",
+     35,
+     "g"
+    ],
+    [
+     "Antep fıstığı",
+     15,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     15,
+     "g"
+    ],
+    [
+     "Şeker",
+     30,
+     "g"
+    ],
+    [
+     "Su",
+     60,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     2,
+     "ml"
+    ]
+   ],
+   "method": "Yufkayı ince şeritler hâlinde kesip eritilmiş tereyağı ile yağla. Ortasına fıstık koyup rulo yaparak yuva şeklinde sar. Tepsiye dizip 180°C fırında 20 dakika altın rengi olana kadar pişir. Şeker, su ve limonla şerbeti hazırlayıp soğuk şerbeti sıcak tatlıya dök.",
+   "tips": "Yufkalar kurumasın diye nemli bezin altında çalış. Şerbet soğuk olmalı.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "syrup",
+   "binderNote": "Şerbet yapısı ve ısı kontrolü tatlıya kıvam verir."
+  },
+  {
+   "id": "P01-TR-086",
+   "name": "Burma Kadayıf",
+   "aliases": [
+    "Antep burma kadayıf"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Gaziantep / tel kadayıf fıstıklı sarma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tel kadayıf",
+     40,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     15,
+     "g"
+    ],
+    [
+     "Antep fıstığı",
+     15,
+     "g"
+    ],
+    [
+     "Şeker",
+     30,
+     "g"
+    ],
+    [
+     "Su",
+     60,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     2,
+     "ml"
+    ]
+   ],
+   "method": "Tel kadayıfı ince ayıkla; tereyağı ile ovalayıp dağıt. Fıstığı ince şerit hâlinde kadayıfa sarıp rulo yap. Tepsiye dizip 180°C fırında altın rengi olana kadar 25-30 dakika pişir. Şerbeti 10 dakika kaynatıp soğut; sıcak kadayıfın üzerine dök, dinlendir. Pişen kadayıfın altın rengi ve gevrek olduğundan emin ol. Şerbetin soğuk, kadayıfın sıcak olmasına dikkat et. Şerbetin çekmesi için 20 dakika dinlendirip porsiyonla.",
+   "tips": "Kadayıf tereyağını tam çekmeli, aksi hâlde kuru kalır. Soğuk şerbet kullanılmalı.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "syrup",
+   "binderNote": "Şerbet yapısı ve ısı kontrolü tatlıya kıvam verir."
+  },
+  {
+   "id": "P01-TR-087",
+   "name": "Sütlü Nuriye",
+   "aliases": [
+    "Nuriye tatlısı"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Gaziantep / sütlü şerbetli baklava türü",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yufka",
+     40,
+     "g"
+    ],
+    [
+     "Süt",
+     100,
+     "ml"
+    ],
+    [
+     "Antep fıstığı",
+     12,
+     "g"
+    ],
+    [
+     "Şeker",
+     25,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Su",
+     40,
+     "ml"
+    ]
+   ],
+   "method": "Yufkaları tereyağı ile yağlayıp üst üste koyarak fıstıkla katmanla; rulo yapıp tepsiye diz. 180°C fırında altın rengi olana kadar 25 dakika pişir. Süt, su ve şekeri 5 dakika kaynatıp ılıt. Sıcak tatlıya ılık süt şerbeti dök ve 30 dakika çektirip servis et. Tatlıyı kesim sırasında dağılmaması için 15 dakika dinlendir. Süt şerbeti çektikten sonra soğuk zincirde sakla; aynı gün servis edilmesi önerilir. Fıstıkla süsle.",
+   "tips": "Sütlü şerbet kısa sürede bozulabilir; hazırlanan tatlı hemen soğuk zincirde saklanmalı.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "syrup",
+   "binderNote": "Şerbet yapısı ve ısı kontrolü tatlıya kıvam verir."
+  },
+  {
+   "id": "P01-TR-088",
+   "name": "Laz Böreği",
+   "aliases": [
+    "Trabzon laz böreği"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Trabzon / muhallebili yufka tatlısı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yufka",
+     40,
+     "g"
+    ],
+    [
+     "Süt",
+     100,
+     "ml"
+    ],
+    [
+     "Şeker",
+     20,
+     "g"
+    ],
+    [
+     "Nişasta",
+     8,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Pudra şekeri",
+     8,
+     "g"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     30,
+     "ml"
+    ]
+   ],
+   "method": "Sütü şeker ve nişastayla karıştırıp koyulaşana kadar pişir, soğut. Yufkayı kareler kes; ortasına muhallebi koyup böreğe katla. Orta ısıdaki yağda altın rengi olana kadar kızartıp süz. Sıcak servis ederken pudra şekeri serp. Pişen böreği süzdürüp ılık servis et; muhallebi sıcakken yanık yapabilir, dikkat. Pudra şekerini servise yakın serp ki erimesin. Taze hazırlanıp aynı gün tüketilmeli.",
+   "tips": "Muhallebi koyu olmalı; akıcı olursa börek patlar. Kenarlar sıkı kapanmalı.",
+   "equip": "fry",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "starch",
+   "binderNote": "Nişasta kontrollü eklenir."
+  },
+  {
+   "id": "P01-TR-089",
+   "name": "Aydın İncir Tatlısı",
+   "aliases": [
+    "Cevizli kaymaklı incir"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Aydın / kuru incir tatlısı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuru incir",
+     60,
+     "g"
+    ],
+    [
+     "Şeker",
+     15,
+     "g"
+    ],
+    [
+     "Su",
+     120,
+     "ml"
+    ],
+    [
+     "Ceviz içi",
+     8,
+     "g"
+    ],
+    [
+     "Kaymak",
+     20,
+     "g"
+    ],
+    [
+     "Limon suyu",
+     2,
+     "ml"
+    ]
+   ],
+   "method": "İncirleri gece boyunca soğuk suda beklet. Süzüp aynı suyla şeker ve limonla kısık ateşte 20 dakika pişir; incir şişip suyu koyulaşsın. İncirlerin içine ceviz doldur, soğutup kaymakla servis et. İncirler yumuşayınca şerbetinde soğumaya bırak. Cevizi servise yakın doldur ki yumuşamasın. Kaymağı ayrı bir kaptan sun; buzdolabında 48 saat saklanabilir.",
+   "tips": "Fazla pişen incir dağılır; sıvı çekilmeye başlayınca ocaktan al.",
+   "equip": "cold",
+   "allergens": [
+    "Süt",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "syrup",
+   "binderNote": "Şerbet yapısı ve ısı kontrolü tatlıya kıvam verir."
+  },
+  {
+   "id": "P01-TR-090",
+   "name": "Çeşme Sakız Muhallebisi",
+   "aliases": [
+    "Sakızlı muhallebi"
+   ],
+   "cat": "Tatlılar",
+   "sub": "Çeşme / sakızlı muhallebi",
+   "base": 1,
+   "ingredients": [
+    [
+     "Süt",
+     180,
+     "ml"
+    ],
+    [
+     "Şeker",
+     22,
+     "g"
+    ],
+    [
+     "Nişasta",
+     10,
+     "g"
+    ],
+    [
+     "Damla sakızı",
+     0.1,
+     "g"
+    ],
+    [
+     "Gül suyu",
+     1,
+     "ml"
+    ],
+    [
+     "Antep fıstığı",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Sakızı şekerle ezip toz hâline getir. Nişastayı soğuk sütün bir kısmıyla açıp kalan süt ve şekerle ocağa al. Sürekli karıştırarak kaynayıp koyulaşana kadar 5 dakika pişir. Gül suyunu ekle, kâselere dök, soğut. Fıstıkla süsle. Muhallebiyi kâselere dökmeden önce süzerek pürüzsüz kıvam al. Oda sıcaklığında soğutup buzdolabında en az 3 saat dinlendir. Servis öncesi üzerine fıstık serp.",
+   "tips": "Sakızı şekerle ezmek topaklanmayı önler. Karıştırmayı bırakırsan tabana yapışır.",
+   "equip": "cold",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "starch",
+   "binderNote": "Nişasta kontrollü eklenir."
+  },
+  {
+   "id": "P01-TR-091",
+   "name": "Elbistan Tava",
+   "aliases": [
+    "Kahramanmaraş Elbistan tavası"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Kahramanmaraş / Elbistan domatesli kuzu tavası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu kuşbaşı",
+     110,
+     "g"
+    ],
+    [
+     "Domates",
+     120,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     35,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     4,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Kuzu kuşbaşıyı tereyağında orta ateşte kendi suyunu salıp çekene kadar mühürle. Soğanı yarım ay doğrayıp ekle ve yumuşat. Domatesleri iri küp, biberleri uzun şerit doğra; sarımsakla birlikte et üzerine yay. Tuz ve baharatı ekle, kapağını kapat. 190°C fırında 50 dakika pişir, son 10 dakika kapağı açıp suyunu çektir. Suyuna ekmek banarak sıcak servis et.",
+   "tips": "Domatesin suyu ana sostur; fazladan su eklenmez. Kuzu etini küçük kesersen pişme süresi kısalır.",
+   "equip": "oven",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-092",
+   "name": "Niğde Tava",
+   "aliases": [
+    "Niğde kuzu tavası"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Niğde / sarımsaklı kuzu tava",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuzu kuşbaşı",
+     110,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     8,
+     "g"
+    ],
+    [
+     "Domates",
+     80,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     30,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Su",
+     60,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Eti tereyağında yüksek ateşte mühürleyip suyunu çekene kadar kavur. Soğan ve bütün sarımsak dişlerini ekle, 5 dakika çevir. Domates ve biberi doğrayıp ekle. Su, tuz ve karabiberle kapaklı tavaya veya güvece al. 180°C fırında 55-60 dakika yavaş yavaş pişir. Sosunu azaltacak şekilde son 10 dakikada kapağı aç.",
+   "tips": "Sarımsak yağda yumuşayarak tatlılaşır, bütün bırakılabilir. Etin yumuşaması için fırın ısısı yüksek tutulmaz.",
+   "equip": "oven",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-093",
+   "name": "Beypazarı Güveci",
+   "aliases": [
+    "Ankara Beypazarı güveç"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Ankara / Beypazarı toprak güveç",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana kuşbaşı",
+     100,
+     "g"
+    ],
+    [
+     "Patates",
+     60,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates",
+     60,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     25,
+     "g"
+    ],
+    [
+     "Havuç",
+     25,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Su",
+     100,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Eti tereyağında mühürle. Soğanı ve havucu doğrayıp ekle. Patatesi küp doğra. Güveç kabına eti, soğan, havuç, patates, domates ve biberi diz; su, tuz ve karabiber ekle. Kapağını kapatıp 180°C fırında 80-90 dakika, et yumuşayana kadar pişir. Servis kabında sıcak sun.",
+   "tips": "Güveç kapağı kapalı kalmalı ki buhar tutulsun. Kısık fırında uzun pişirme dana etini yumuşatır.",
+   "equip": "oven",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-094",
+   "name": "Konya Tiridi",
+   "aliases": [
+    "Konya tirit"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Konya / bayat pideli et tiridi",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış kuzu eti",
+     90,
+     "g"
+    ],
+    [
+     "Kuru pide veya bayat ekmek",
+     60,
+     "g"
+    ],
+    [
+     "Et suyu",
+     150,
+     "ml"
+    ],
+    [
+     "Yoğurt",
+     60,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.4,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ]
+   ],
+   "method": "Bayat pideyi küçük küp doğrayıp servis tabağına yay. Sıcak et suyunu azar azar dökerek ekmek yumuşayana kadar emdir. Üzerine didiklenmiş kuzu etini yerleştir. Yoğurdu ezilmiş sarımsak ve tuzla karıştırıp ekmeğin üzerine kaşıkla koy. Tereyağını pul biberle kızdırıp servis anında gezdir.",
+   "tips": "Et suyunu önceden iyice yağından arındır. Ekmeği çok erken ıslatma; lapaya dönüşür.",
+   "equip": "stew",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-095",
+   "name": "Çarşamba Pidesi",
+   "aliases": [
+    "Samsun Çarşamba pidesi"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Samsun / ince uzun kapalı pide",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     110,
+     "g"
+    ],
+    [
+     "Su",
+     60,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.5,
+     "g"
+    ],
+    [
+     "Dana kuşbaşı",
+     50,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Un, su, maya ve tuzla yumuşak hamur yoğur; 1 saat mayalandır. Eti küçük doğrayıp soğan, tuz ve karabiberle kavur, soğut. Hamuru ince ve uzun açıp ortasına harcı diz; kenarları içe katlayıp ucunu sıkıştırarak kapat. 230°C fırında 10-12 dakika altın rengi olana kadar pişir. Çıkınca üzerine eritilmiş tereyağı sür.",
+   "tips": "Hamur ince açılmalı ama yırtılmamalı. Fırın çok sıcak olmalı ki pide hızla pişsin.",
+   "equip": "pastry",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-096",
+   "name": "Sinop Mantısı",
+   "aliases": [
+    "Cevizli sarımsaklı Sinop mantısı"
+   ],
+   "cat": "Makarna ve erişte",
+   "sub": "Sinop / kulak mantı, cevizli yoğurtlu",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     75,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.3,
+     "adet"
+    ],
+    [
+     "Su",
+     30,
+     "ml"
+    ],
+    [
+     "Dana kıyma",
+     35,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     10,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     90,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Ceviz içi",
+     10,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.4,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Un, yumurta, su ve tuzla sert bir hamur yoğur; 30 dakika dinlendirip ince aç. 4 cm karelere kes. Kıymayı soğan, tuz ve karabiberle karıştırıp her karenin ortasına koy; kare köşelerini kulak şeklinde bükerek kapat. Tuzlu kaynar suda 8-10 dakika haşla, süz. Yarısına sarımsaklı yoğurt, yarısına ezilmiş ceviz ver. Pul biberli tereyağını üzerine gezdir.",
+   "tips": "Mantılar birbirine yapışmasın diye bol sıcak suda haşla. Cevizli kısmı servis anında ekle.",
+   "equip": "pasta",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-097",
+   "name": "Tokat Pancar Sarması",
+   "aliases": [
+    "Pancar yaprağı sarması"
+   ],
+   "cat": "Dolma ve sarma",
+   "sub": "Tokat / pancar yaprağı sarma",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pancar yaprağı",
+     100,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     40,
+     "g"
+    ],
+    [
+     "Pirinç",
+     25,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     8,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     10,
+     "ml"
+    ],
+    [
+     "Su",
+     140,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Nane",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Pancar yapraklarını ayıklayıp yıka, kaynar suda 2 dakika haşla; sert damarlarını incelt. Soğanı yağda kavur; kıyma, yıkanmış pirinç, salça ve baharatla iç harcı yap. Yapraklara dolgu koyup sararak tencereye diz. Sıcak su ekleyip üzerine tabak koyarak 35-40 dakika pişir.",
+   "tips": "Pancar yaprağı pazıdan daha ince olduğu için kısa haşlanmalı. Sıkı sarma pişerken açılmayı önler.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-098",
+   "name": "Uşak Alacatene",
+   "aliases": [
+    "Alacatene yemeği"
+   ],
+   "cat": "Bakliyat yemekleri",
+   "sub": "Uşak / yeşil mercimekli bulgur yemeği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yeşil mercimek",
+     35,
+     "g"
+    ],
+    [
+     "İri bulgur",
+     30,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     6,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     10,
+     "ml"
+    ],
+    [
+     "Su",
+     220,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Yeşil mercimeği yıkayıp suda 15 dakika haşla. Soğanı yağda pembeleştir, salçayı ekle. Haşlanmış mercimek ve yıkanmış bulguru tencereye al; sıcak su, tuz ve baharatı ilave et. Kapalı kapta kısık ateşte 18-20 dakika, su çekilene kadar pişir. 10 dakika demlendirip karıştır.",
+   "tips": "Mercimek pişmeden bulgur eklenirse bulgur lapalaşır; önce mercimeği yarım pişir.",
+   "equip": "stew",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-099",
+   "name": "Karadeniz Yağlaması",
+   "aliases": [
+    "Kolotlu yağlama"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Trabzon / Giresun / kolot peynirli yuvarlak pide",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     100,
+     "g"
+    ],
+    [
+     "Su",
+     55,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.5,
+     "g"
+    ],
+    [
+     "Kolot peyniri veya tuzsuz kaşar",
+     50,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     12,
+     "g"
+    ],
+    [
+     "Mısır unu",
+     5,
+     "g"
+    ]
+   ],
+   "method": "Un, su, maya ve tuzla yumuşak hamur yoğurup 1 saat mayalandır. Hamuru yuvarlak açıp kenarları hafif kıvır. Üzerine rendelenmiş veya ezilmiş peyniri yay, tereyağı parçalarını ekle. Mısır unu serpip 230°C fırında 10-12 dakika altın rengi olana kadar pişir. Pişen yağlamayı 2 dakika dinlendirip dilimle; peynir akışkan, kenarlar çıtır olmalı. Sıcak servis et; üzerine ince tereyağı sürmek aroma katar. Yanına ayran veya çay eşlik eder.",
+   "tips": "Kolot peyniri bulunamazsa tuzsuz, uzun süreli eriyen peynir kullan. Hamurun mayası yavaş çalışırsa daha aromatik olur.",
+   "equip": "pastry",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-100",
+   "name": "Yozgat Saya Çöreği",
+   "aliases": [
+    "Saya çöreği"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Yozgat / katlı sacda çörek",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     100,
+     "g"
+    ],
+    [
+     "Su",
+     55,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     15,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     5,
+     "ml"
+    ],
+    [
+     "Süt",
+     15,
+     "ml"
+    ]
+   ],
+   "method": "Un, su ve tuzla sert bir hamur yoğurup 30 dakika dinlendir. Hamuru ince açıp yüzeyine eritilmiş tereyağı sür; rulo yapıp salyangoz şeklinde sar. Bir kez daha dinlendirip yeniden aç. Sıcak sac veya tavada iki yüzünü 4-5 dakika kızartıp tel tel dağılacak şekilde pişir.",
+   "tips": "Çörek katlanıp tereyağlandıkça tel tel ayrılır. Sac çok sıcak olursa dışı yanar.",
+   "equip": "pastry",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "dough",
+   "binderNote": "Hamurun kendi yapısı bağlayıcıdır."
+  },
+  {
+   "id": "P01-TR-101",
+   "name": "Afyon Haşhaşlı Katmer",
+   "aliases": [
+    "Haşhaşlı katmer"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Afyon / Uşak / haşhaşlı çıtır katmer",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     90,
+     "g"
+    ],
+    [
+     "Su",
+     45,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     15,
+     "g"
+    ],
+    [
+     "Haşhaş",
+     12,
+     "g"
+    ],
+    [
+     "Şeker",
+     6,
+     "g"
+    ],
+    [
+     "Süt",
+     10,
+     "ml"
+    ]
+   ],
+   "method": "Un, su ve tuzla hamur yoğurup dinlendir. Haşhaşı şekerle ezip ince bir harç yap. Hamuru ince açıp tereyağı sür, haşhaşlı harcı yay; rulo yapıp topla. Tekrar açıp iki kat yap. Yağlı tepside 190°C fırında altın rengi olana kadar 20-25 dakika pişir. Pişen katmerin katlarının tel tel ayrıldığını ve kenarlarının çıtır olduğunu kontrol et. Sıcakken dilimle. Haşhaş içeriği nedeniyle alerjen etiketlemesi yap; bekletilirse yumuşar.",
+   "tips": "Haşhaş taze öğütülmeli; bayat haşhaş acılaşır. Gıda alerjeni olduğundan etiketlenmeli.",
+   "equip": "pastry",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Haşhaş"
+   ],
+   "binder": "dough",
+   "binderNote": "Hamurun kendi yapısı bağlayıcıdır."
+  },
+  {
+   "id": "P01-TR-102",
+   "name": "Tunceli Şorbik",
+   "aliases": [
+    "Şorbik çorbası"
+   ],
+   "cat": "Çorbalar",
+   "sub": "Tunceli / yoğurtlu bulgurlu çorba",
+   "base": 1,
+   "ingredients": [
+    [
+     "İnce bulgur",
+     25,
+     "g"
+    ],
+    [
+     "Haşlanmış nohut",
+     30,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     80,
+     "g"
+    ],
+    [
+     "Su",
+     240,
+     "ml"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Kuru nane",
+     0.3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Bulguru az suda yarım pişirip nohut ve soğanı ekle. Yoğurdu bir miktar soğuk suyla çırpıp çorbaya ılıtarak ekle; sürekli karıştırarak bir taşım kaynat. Tereyağında naneyi kızdırıp üzerine gezdir. Sıcak veya ılık servis et. Servis öncesi nane yağını ayrı ısıtıp üzerine gezdir. Çorba ılık veya sıcak olabilir; yoğurt kesilmişse ılık su ile çırparak toparlanabilir. Pişirme sonrası 1 saatten fazla bekletme.",
+   "tips": "Yoğurtlu çorbalar kesilmesin diye kaynama noktasını geçirme. Yoğurt oda sıcaklığında olmalı.",
+   "equip": "soup",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "liaison",
+   "binderNote": "Yumurta/yoğurt terbiyesi ılıştırılarak eklenir; kaynatılmaz."
+  },
+  {
+   "id": "P01-TR-103",
+   "name": "Kayseri Pastırmalı Yumurta",
+   "aliases": [
+    "Pastırmalı yumurta"
+   ],
+   "cat": "Et yemekleri",
+   "sub": "Kayseri / pastırmalı yumurta",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kayseri pastırması",
+     40,
+     "g"
+    ],
+    [
+     "Yumurta",
+     2,
+     "adet"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ],
+    [
+     "Domates",
+     30,
+     "g"
+    ]
+   ],
+   "method": "Pastırma dilimlerini kuru tavada kısa süre ısıtıp yağını salıtın. Tereyağını ekleyip yumurtaları kır. Beyazı tutana kadar kısık ateşte pişir; sarısı akışkan kalabilir. Karabiber ve pul biberle servis et; domates dilimi ile sun. Yumurtanın beyazı tamamen tutmalı; sarısı akışkan kalabilir ancak toplu yemek için iç sıcaklık güvenliği açısından sarı da pişirilebilir. Pastırmanın tuzu nedeniyle ek baharat yeterlidir. Sıcak servis et.",
+   "tips": "Pastırma tuzludur, ek tuz gerekmez. Fazla ısıtma pastırmayı sertleştirir.",
+   "equip": "stove",
+   "allergens": [
+    "Yumurta",
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-104",
+   "name": "Menemen",
+   "aliases": [
+    "Soğanlı biberli menemen"
+   ],
+   "cat": "Türk mutfağı",
+   "sub": "Anadolu / domates biber yumurta",
+   "base": 1,
+   "ingredients": [
+    [
+     "Domates",
+     100,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     35,
+     "g"
+    ],
+    [
+     "Yumurta",
+     2,
+     "adet"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     4,
+     "ml"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Biberleri ince doğrayıp tereyağı ve sıvı yağda 3 dakika soteleyip domatesleri rendeleyerek veya küp doğrayarak ekle. Suyu çekilene kadar 6-8 dakika pişir. Yumurtaları üzerine kır, tuz ve baharat ekle; hafifçe karıştırarak yumurtalar yarı kıvamında kalacak şekilde 2-3 dakika pişir.",
+   "tips": "Yumurtalar çok karıştırılırsa kuru olur. Tavayı ocaktan alarak sıcaklığıyla pişmesini tamamla.",
+   "equip": "stove",
+   "allergens": [
+    "Yumurta",
+    "Süt"
+   ],
+   "binder": "protein",
+   "binderNote": "Et/yumurta proteini bağlayıcı görevi görür."
+  },
+  {
+   "id": "P01-TR-105",
+   "name": "Çılbır",
+   "aliases": [
+    "Yoğurtlu poşe yumurta"
+   ],
+   "cat": "Türk mutfağı",
+   "sub": "Anadolu / sarımsaklı yoğurtla poşe yumurta",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yumurta",
+     2,
+     "adet"
+    ],
+    [
+     "Yoğurt",
+     100,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.5,
+     "g"
+    ],
+    [
+     "Sirke",
+     5,
+     "ml"
+    ],
+    [
+     "Tuz",
+     0.5,
+     "g"
+    ]
+   ],
+   "method": "Yoğurdu ezilmiş sarımsak ve tuzla karıştırıp oda sıcaklığında tut. Kaynama noktasının altındaki suya sirke ekle, yumurtaları tek tek kırıp 3 dakika poşe et. Yumurtaları süzdürüp yoğurdun üzerine yerleştir. Tereyağında pul biberi kızdırıp üzerine dök. Poşe sırasında su kaynamamalı; hafif titremeli. Yumurtayı süzüp kâğıt havluda bir an kurula. Yoğurt oda sıcaklığında olmalı. Pul biberli yağı servis anında dök.",
+   "tips": "Yoğurt soğuk olursa yumurtayı soğutur; ılık servis edilmeli.",
+   "equip": "stove",
+   "allergens": [
+    "Yumurta",
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-106",
+   "name": "Karadeniz Mısır Ekmeği",
+   "aliases": [
+    "Mısır ekmeği"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Karadeniz / mısır unlu ekmek",
+   "base": 1,
+   "ingredients": [
+    [
+     "Mısır unu",
+     70,
+     "g"
+    ],
+    [
+     "Buğday unu",
+     25,
+     "g"
+    ],
+    [
+     "Su",
+     75,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     4,
+     "ml"
+    ]
+   ],
+   "method": "Mısır unu, buğday unu, tuz ve maya karışımına ılık suyu ekleyip yapışkan bir hamur yoğur. Üzerini kapatıp 40 dakika mayalandır. Yağlı tepsiye veya kalıba yayıp 220°C fırında 25-30 dakika, üzeri çatlayıp kızarana kadar pişir. Ekmeği fırından çıkarınca 10 dakika dinlendirip dilimle; sıcakken kesilirse ezilir. Üzerinin çatlak ve altın rengi olması normaldir. Aynı gün tüketilmesi tavsiye edilir.",
+   "tips": "Mısır unu su çektikçe koyulaşır; hamur yapışkan olmalı. Soğuyunca dilimlemek daha kolaydır.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-107",
+   "name": "Anadolu Bazlaması",
+   "aliases": [
+    "Bazlama"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Ege / Anadolu / sac ekmeği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     100,
+     "g"
+    ],
+    [
+     "Su",
+     55,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     15,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     4,
+     "ml"
+    ]
+   ],
+   "method": "Un, su, yoğurt, maya ve tuzla yumuşak hamur yoğur; 1 saat mayalandır. Hamuru bölüp 1 cm kalınlığında yuvarlak aç. Sıcak sac veya tavada iki yüzünü 3-4 dakika, kabarıp benekli renk alana kadar pişir. Bez altında bekleterek yumuşat. Pişen bazlamayı kuru bez altında bekletip yumuşat. Sıcak servis et; yanına beyaz peynir veya sıcak yemek eşlik eder. Soğuyunca tavada tekrar ısıtılabilir.",
+   "tips": "Sacın sıcaklığı yüksek olmalı; ekmek kabarıp içi pişmeli.",
+   "equip": "pastry",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-108",
+   "name": "Hatay Sini Köftesi",
+   "aliases": [
+    "Sini köfte"
+   ],
+   "cat": "Köfteler",
+   "sub": "Hatay / tepside fırın köfte",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana kıyma",
+     100,
+     "g"
+    ],
+    [
+     "İnce bulgur",
+     20,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates",
+     60,
+     "g"
+    ],
+    [
+     "Tahin",
+     6,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     6,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.3,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Kimyon",
+     0.3,
+     "g"
+    ],
+    [
+     "Çam fıstığı",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Bulguru az suyla ıslatıp şişmeye bırak. Kıymayı rendelenmiş soğan, bulgur ve baharatla yoğur; tepsiye ince tabaka halinde yay, üzerine ince domates dilimleri koy. Çam fıstığı serpip 190°C fırında 25 dakika pişir. Tahini az suyla çırpıp köfte üzerine gezdirip 5 dakika daha ısıt.",
+   "tips": "Köfteyi tepsiye sıkı bastır; pişince dağılmaz. Tahin eklendikten sonra uzun pişirilmez.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Sert kabuklu yemişler"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-109",
+   "name": "Közlenmiş Biber Salatası",
+   "aliases": [
+    "Köz biber salatası"
+   ],
+   "cat": "Salatalar",
+   "sub": "Anadolu / sarımsaklı közlenmiş biber salatası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Közlenmiş kırmızı biber",
+     80,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     5,
+     "ml"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.6,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Biberleri fırında veya ızgarada kabukları kararıncaya kadar közle, kapalı kapta buharla 10 dakika beklet. Kabuklarını soyup çekirdeklerini ayır, şeritlere böl. Sarımsağı ezip zeytinyağı, limon, tuz ve pul biberle çırp. Biberleri sosla harmanla, maydanozla servis et.",
+   "tips": "Biberleri kabuklarını soymadan önce buharda bekletmek soyulmayı kolaylaştırır.",
+   "equip": "salad",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-110",
+   "name": "Sumaklı Soğan Salatası",
+   "aliases": [
+    "Kebap soğanı"
+   ],
+   "cat": "Salatalar",
+   "sub": "Güneydoğu / sumaklı soğan",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kuru soğan",
+     50,
+     "g"
+    ],
+    [
+     "Sumak",
+     2,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     5,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     5,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     3,
+     "ml"
+    ],
+    [
+     "Tuz",
+     0.5,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Soğanları yarım ay veya ince dilimle; tuzla yoğurup 5 dakika bekletip suyunu çekerek acılığını al, durulayıp sık. Sumak, pul biber, zeytinyağı ve limon suyu ile harmanla. Maydanozu ekle. Kebap yanında soğuk servis et. Soğanı servisten kısa süre önce hazırla; uzun beklerse sulanır. Sumak ve maydanozu en son ekle. Kebap ve ızgara yanında sunulur; soğuk zincirde 12 saat saklanabilir.",
+   "tips": "Soğan acılığı kalıyorsa soğuk suda 2 dakika beklet. Sumak, servisten hemen önce karıştırılmalı.",
+   "equip": "salad",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-111",
+   "name": "Yoğurtlu Kabak Kızartması",
+   "aliases": [
+    "Kabak mezesi"
+   ],
+   "cat": "Mezeler",
+   "sub": "Anadolu / yoğurtlu kızarmış kabak",
+   "base": 1,
+   "ingredients": [
+    [
+     "Kabak",
+     100,
+     "g"
+    ],
+    [
+     "Un",
+     10,
+     "g"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     30,
+     "ml"
+    ],
+    [
+     "Yoğurt",
+     70,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Nane",
+     0.2,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Kabakları yarım cm dilimleyip tuzlayarak 10 dakika beklet, suyunu sıkıp kurula. Una bulayıp orta ısılı yağda altın rengi olana kadar kızart, kâğıtta süz. Yoğurdu ezilmiş sarımsak, tuz ve nane ile karıştır. Kabakları tabağa dizip üzerine yoğurt dök, pul biberli yağ gezdir.",
+   "tips": "Kızartılmış kabak yoğurda atılırsa bekletilmemeli; hemen servis edilmeli ki gevrekliği korunsun.",
+   "equip": "cold",
+   "allergens": [
+    "Süt",
+    "Gluten"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-112",
+   "name": "Yoğurtlu Patlıcan Kızartması",
+   "aliases": [
+    "Patlıcan mezesi yoğurtlu"
+   ],
+   "cat": "Mezeler",
+   "sub": "Anadolu / yoğurtlu kızarmış patlıcan",
+   "base": 1,
+   "ingredients": [
+    [
+     "Patlıcan",
+     110,
+     "g"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     35,
+     "ml"
+    ],
+    [
+     "Yoğurt",
+     70,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ],
+    [
+     "Domates salçası",
+     4,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Patlıcanları alacalı soyup 1 cm dilimle, tuzlu suda 15 dakika bekletip kurula. Orta ısılı yağda her yüzü altın rengi olana kadar kızart; kâğıtta süz. Yoğurdu sarımsak ve tuzla karıştır. Patlıcanları tabağa dizip yoğurt ekle; salçayı yağda kısa kavurup üzerine gezdir.",
+   "tips": "Tuzlu suda beklemek acılığı ve yağ çekimini azaltır. Fırında 200°C'de kızartma da yapılabilir.",
+   "equip": "cold",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-113",
+   "name": "Pişi",
+   "aliases": [
+    "Mayalı pişi"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Anadolu / mayalı kızarmış hamur",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     90,
+     "g"
+    ],
+    [
+     "Su",
+     50,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     2,
+     "g"
+    ],
+    [
+     "Şeker",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Sıvı yağ (kızartma)",
+     40,
+     "ml"
+    ]
+   ],
+   "method": "Un, su, maya, şeker ve tuzu yumuşak bir hamur olacak şekilde yoğur; 45 dakika mayalandır. Hamuru parçalara böl, ince açıp dikdörtgen veya yuvarlak kes. Orta ısılı yağda, şişip altın rengi olana kadar her yüzü 1-2 dakika kızart. Süzdürüp sıcak servis et. Kızaran pişileri süzdürüp sıcak servis et; bekletilirse yağ çekip sertleşir. İsteğe bağlı olarak pudra şekeri, peynir veya reçelle sunulur. Yağ ısısını her partide kontrol et.",
+   "tips": "Yağın ısısı sabit olmalı: çok sıcaksa dışı yanar, düşükse yağ çeker.",
+   "equip": "fry",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-TR-114",
+   "name": "Sucuklu Yumurta",
+   "aliases": [
+    "Tavada sucuklu yumurta"
+   ],
+   "cat": "Türk mutfağı",
+   "sub": "Anadolu / sucuklu yumurta",
+   "base": 1,
+   "ingredients": [
+    [
+     "Sucuk",
+     50,
+     "g"
+    ],
+    [
+     "Yumurta",
+     2,
+     "adet"
+    ],
+    [
+     "Tereyağı",
+     5,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.1,
+     "g"
+    ],
+    [
+     "Domates",
+     30,
+     "g"
+    ]
+   ],
+   "method": "Sucuğu 0,5 cm halka doğra. Yapışmaz tavada sucuk dilimlerini kendi yağında kısa süre çevir. Yumurtaları üzerine kır; tuz ekleme, sucuk yeterince tuzlu. Kısık ateşte kapağı kapalı 3-4 dakika pişir. Tereyağı ve domates dilimleriyle servis et. Yumurtanın beyazı tamamen tutmalı. Sucuk yağını yeterince bırakmış olmalı; fazla yağlıysa kâğıt havluyla alınır. Sıcak servis edip yanına ekmek ve domates ekle.",
+   "tips": "Sucuk kendi yağını bıraktığı için ek yağ az kullanılır.",
+   "equip": "stove",
+   "allergens": [
+    "Yumurta"
+   ],
+   "binder": "protein",
+   "binderNote": "Et/yumurta proteini bağlayıcı görevi görür."
+  },
+  {
+   "id": "P01-TR-115",
+   "name": "Pırasalı Börek",
+   "aliases": [
+    "Pırasalı yufka börek"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Anadolu / pırasalı tepsi böreği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yufka",
+     80,
+     "g"
+    ],
+    [
+     "Pırasa",
+     90,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Beyaz peynir",
+     20,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.4,
+     "adet"
+    ],
+    [
+     "Süt",
+     30,
+     "ml"
+    ],
+    [
+     "Sıvı yağ",
+     12,
+     "ml"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Pırasayı ince halkalar doğrayıp soğanla yağda suyunu çekene kadar 10 dakika soteleyip soğut. Peyniri ezip ekle. Yufkaları yumurta, süt ve yağ karışımıyla her kat aralarında nemlendirerek tepsiye diz. Harçı ortaya yay, üstüne kalan yufkaları kapatıp 180°C fırında 35 dakika altın rengi olana kadar pişir.",
+   "tips": "Harç soğuk olmalı; sıcak harç yufkayı yırtar. Pırasa suyunu iyice salmalı.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-116",
+   "name": "Patatesli Börek",
+   "aliases": [
+    "Yufkalı patatesli börek"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Anadolu / patatesli rulo börek",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yufka",
+     70,
+     "g"
+    ],
+    [
+     "Haşlanmış patates",
+     100,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     12,
+     "ml"
+    ],
+    [
+     "Yumurta",
+     0.4,
+     "adet"
+    ],
+    [
+     "Süt",
+     30,
+     "ml"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Patatesi haşlayıp ezerek soğan, baharat ve yağla harçlandır; soğut. Yufkaları üçgen kesip dar uca harçtan koy, sararak rulo yap. Tepsiye diz. Yumurta-süt karışımını yüzeyine sür. 180°C fırında 30 dakika altın rengi olana kadar pişir. Pişen böreği 5 dakika dinlendirip kes; patates harcı iç sıcaklığı yüksek olabilir. Üzeri altın rengi, tabanı gevrek olmalı. Aynı gün servis edilip yanına ayran sunulabilir.",
+   "tips": "Patates ezmesi çok sulu olmamalı; kurutma için tencerede çevir.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Yumurta"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-117",
+   "name": "Patatesli Gül Böreği",
+   "aliases": [
+    "Gül böreği"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Anadolu / gül şeklinde patatesli börek",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yufka",
+     70,
+     "g"
+    ],
+    [
+     "Haşlanmış patates",
+     90,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     12,
+     "ml"
+    ],
+    [
+     "Yumurta",
+     0.4,
+     "adet"
+    ],
+    [
+     "Süt",
+     30,
+     "ml"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Patates, soğan ve baharatla harç hazırla. Yufkayı şeritlere kesip her şerit üzerine harç sür; sarmal rulo yaparak yağlı tepside güle benzeyen bir yuvarlak şekil ver. Üzerine yumurta-süt-yağ karışımı sür. 180°C fırında 35 dakika altın rengi olana kadar pişir. Pişen böreği fırından çıkarınca 10 dakika dinlendir; gül şekli bozulmadan dilimlenmeli. Alt kısmı gevrek, üstü altın rengi olmalı. Yanında ayran veya yoğurtla sun.",
+   "tips": "Sarma sırasında yufkaya zarar vermemek için harç ince yayılmalı. Gül şekli kesilmeden bütün pişirilir.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Yumurta"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-118",
+   "name": "Kıymalı Tepsi Böreği",
+   "aliases": [
+    "Kıymalı börek"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "Anadolu / kıymalı yufka tepsi böreği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Yufka",
+     80,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     50,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.4,
+     "adet"
+    ],
+    [
+     "Süt",
+     30,
+     "ml"
+    ],
+    [
+     "Sıvı yağ",
+     12,
+     "ml"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Kıymayı soğanla kavurup baharat ve maydanozla harcı soğut. Yufkaların yarısını yumurta, süt ve yağ karışımıyla katlayarak tepsiye diz. Harcı yay, kalan yufkalarla kapat. Üzerini aynı karışımla yağla, dilimle. 180°C fırında 40 dakika pişir. Böreğin içinde kıymanın tamamen piştiğini ve iç sıcaklığın en az 74°C olduğunu ölçerek kontrol et. Fırından çıkınca 10 dakika dinlendirip porsiyonla. Sıcak servis et.",
+   "tips": "Harç tamamen soğutulmalı. Önceden dilimlemek pişince düzgün porsiyon almayı kolaylaştırır.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-TR-119",
+   "name": "Kıymalı Pırasa Yemeği",
+   "aliases": [
+    "Pırasa kıymalı"
+   ],
+   "cat": "Sebze yemekleri",
+   "sub": "Anadolu / kıymalı pirinçli pırasa",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pırasa",
+     140,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     35,
+     "g"
+    ],
+    [
+     "Pirinç",
+     12,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Havuç",
+     20,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     8,
+     "ml"
+    ],
+    [
+     "Su",
+     90,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Limon suyu",
+     3,
+     "ml"
+    ]
+   ],
+   "method": "Pırasayı yıkayıp 2 cm doğra. Soğan ve kıymayı yağda kavur, havuç ve pirinci ekle. Pırasayı yerleştirip su ve baharat ilave et. Kapalı kapta 25-30 dakika pişir; limon suyuyla tamamla. Pişme sonunda pırasalar yumuşak ama dağılmamış olmalı; pirinç şişmiş ve suyu çekilmiş olmalı. Yemeği ılık servis et; yanına yoğurt eşlik eder. Çok bekletilirse pırasa rengi solar.",
+   "tips": "Pırasa çok su salar; su azdır. Çok pişirme, renk ve dokusu bozulur.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-TR-120",
+   "name": "İzmir Boyozu",
+   "aliases": [
+    "Boyoz"
+   ],
+   "cat": "Börek ve hamur işleri",
+   "sub": "İzmir / Sefarad kökenli tahinli katlı hamur",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     100,
+     "g"
+    ],
+    [
+     "Su",
+     50,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.5,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     20,
+     "ml"
+    ],
+    [
+     "Tahin",
+     4,
+     "g"
+    ]
+   ],
+   "method": "Un, su, maya ve tuzla yumuşak hamur yoğurup 30 dakika dinlendir. Hamuru parçalara bölüp bol yağ ve az tahinle yağlayarak çok ince aç. Yağ sürülen ince hamuru rulo yapıp salyangoz biçiminde sar; 1 saat dinlendir. Yağlı tepsiye dizip 230°C fırında 15-18 dakika, dışı çıtır ve altın rengi olana kadar pişir. Haşlanmış yumurtayla sıcak servis et.",
+   "tips": "Hamurun çok ince açılması katlı yapıyı verir; dinlendirme süresi kısaltılmamalı.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Susam"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-DN-001",
+   "name": "İtalyan Spagetti Aglio e Olio",
+   "aliases": [
+    "Spaghetti aglio e olio"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "İtalya / sarımsaklı zeytinyağlı makarna",
+   "base": 1,
+   "ingredients": [
+    [
+     "Spagetti (kuru)",
+     90,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     18,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     6,
+     "g"
+    ],
+    [
+     "Pul biber",
+     0.4,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     5,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Makarna haşlama suyu",
+     40,
+     "ml"
+    ]
+   ],
+   "method": "Spagettiyi bol tuzlu suda al dente olacak şekilde, paket süresinden 1 dakika kısa haşla; 40 ml haşlama suyunu ayır. Zeytinyağını soğuk tavada ince dilimlenmiş sarımsakla kısık ateşte sarımsak hafif altın olana kadar ısıt; pul biberi ekle. Makarnayı süzüp tavaya al, haşlama suyunu ekleyerek tavayı sallayıp yağ ile suyu bağla. Maydanozu ekleyip hemen servis et.",
+   "tips": "Sarımsak yanarsa acılaşır; kısık ateş ve soğuk başlangıç yağı bunu önler. Makarna suyu sosu emülsiyona çevirir.",
+   "equip": "pasta",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "emulsion",
+   "binderNote": "Emülsiyon; yağ ve su kontrollü birleştirilerek sos kıvamı oluşur."
+  },
+  {
+   "id": "P01-DN-002",
+   "name": "İtalyan Penne all'Arrabbiata",
+   "aliases": [
+    "Arrabbiata soslu makarna"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "İtalya / acılı domates soslu makarna",
+   "base": 1,
+   "ingredients": [
+    [
+     "Penne (kuru)",
+     90,
+     "g"
+    ],
+    [
+     "Konserve domates",
+     120,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     4,
+     "g"
+    ],
+    [
+     "Kurutulmuş acı biber",
+     0.5,
+     "g"
+    ],
+    [
+     "Fesleğen",
+     3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Şeker",
+     0.5,
+     "g"
+    ]
+   ],
+   "method": "Zeytinyağında sarımsağı ve acı biberi kısık ateşte 1-2 dakika aromalandır. Ezilmiş domatesi ekleyip tuz ve şekerle 15 dakika kaynat; sos kıvamlanmalı. Penneyi bol tuzlu suda al dente haşlayıp süz. Sosu makarnayla tavada 1 dakika birleştirip fesleğenle tamamla.",
+   "tips": "Acı miktarı müşteri tercihine göre ayarlanabilir. Domates ekşisini şekerle dengele.",
+   "equip": "pasta",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-003",
+   "name": "İtalyan Cacio e Pepe",
+   "aliases": [
+    "Peynirli karabiberli makarna"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "İtalya / Roma usulü pecorino ve karabiberli makarna",
+   "base": 1,
+   "ingredients": [
+    [
+     "Spagetti (kuru)",
+     90,
+     "g"
+    ],
+    [
+     "Pecorino romano",
+     35,
+     "g"
+    ],
+    [
+     "Karabiber (iri çekilmiş)",
+     1.5,
+     "g"
+    ],
+    [
+     "Makarna haşlama suyu",
+     60,
+     "ml"
+    ],
+    [
+     "Tereyağı",
+     5,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ]
+   ],
+   "method": "Spagettiyi çok az tuzlu bol suda al dente haşla; 100 ml nişastalı suyu ayır. Karabiberi kuru tavada kokusu çıkana kadar kavur, bir miktar haşlama suyunu ekle. Makarnayı tavaya al. Peyniri ince rendele ve ocaktan alınmış makarnaya azar azar ekleyerek karıştır; gerekirse suyla kıvamı ayarla. Hemen servis et.",
+   "tips": "Peynir doğrudan ısıda topaklanır; ocağı kapatarak karıştır. Tuzu az kullan, peynir tuzludur.",
+   "equip": "pasta",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "emulsion",
+   "binderNote": "Emülsiyon; yağ ve su kontrollü birleştirilerek sos kıvamı oluşur."
+  },
+  {
+   "id": "P01-DN-004",
+   "name": "İtalyan Pizza Margherita",
+   "aliases": [
+    "Margherita pizza"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "İtalya / Napoli usulü domates mozzarella pizza",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     130,
+     "g"
+    ],
+    [
+     "Su",
+     80,
+     "ml"
+    ],
+    [
+     "Yaş maya",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     2,
+     "g"
+    ],
+    [
+     "Domates sosu",
+     50,
+     "g"
+    ],
+    [
+     "Mozzarella",
+     60,
+     "g"
+    ],
+    [
+     "Fesleğen",
+     2,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     5,
+     "ml"
+    ]
+   ],
+   "method": "Un, su, maya ve tuzla yumuşak hamur yoğurup 2 saat mayalandır. Hamuru bölüp 25 cm daire aç. Domates sosunu ince yay, mozzarellayı parçalayarak ekle. En yüksek ısıdaki fırında (250-280°C) 8-10 dakika kenarları kabarıp peynir kabarcıklanana kadar pişir. Fesleğen ve zeytinyağıyla servis et.",
+   "tips": "Hamur uzun süre soğukta dinlendirilirse aroması artar. Pizza taşı kullanımı tabanı gevrek yapar.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "yeast",
+   "binderNote": "Maya ve dinlendirme yapıyı oluşturur."
+  },
+  {
+   "id": "P01-DN-005",
+   "name": "Toskana Ribollita Çorbası",
+   "aliases": [
+    "Ribollita"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "İtalya / Toskana ekmekli sebze çorbası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Haşlanmış barbunya (cannellini)",
+     50,
+     "g"
+    ],
+    [
+     "Karalahana",
+     40,
+     "g"
+    ],
+    [
+     "Havuç",
+     25,
+     "g"
+    ],
+    [
+     "Kereviz sapı",
+     20,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Bayat ekmek",
+     35,
+     "g"
+    ],
+    [
+     "Domates",
+     50,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Su",
+     300,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Soğan, havuç ve kerevizi zeytinyağında yumuşayana kadar kavur. Domates ve karalahanayı ekle, 5 dakika çevir. Fasulye ve suyu ilave edip 35 dakika pişir; fasulyenin bir kısmını ezerek çorbayı koyulaştır. Bayat ekmek parçalarını ekleyip 10 dakika demlendir. Çorba kıvamı kalın olmalı; zeytinyağı gezdirerek servis et.",
+   "tips": "İtalya'da çorba ertesi gün tekrar ısıtılarak yenir (ribollita = yeniden kaynatılmış). Ekmek çorbayı koyulaştırır.",
+   "equip": "soup",
+   "allergens": [
+    "Gluten"
+   ],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-006",
+   "name": "Roma Usulü Saltimbocca",
+   "aliases": [
+    "Saltimbocca alla Romana"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "İtalya / Roma usulü kuzu ve dana rulo",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana bonfile dilimi",
+     110,
+     "g"
+    ],
+    [
+     "Jambon (dana)",
+     25,
+     "g"
+    ],
+    [
+     "Adaçayı",
+     2,
+     "g"
+    ],
+    [
+     "Un",
+     8,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Beyaz şarap veya et suyu",
+     40,
+     "ml"
+    ],
+    [
+     "Tuz",
+     0.6,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Dana dilimlerini ince döverek yassılat. Her dilimin üzerine jambon ve adaçayı koyup kürdanla tutturarak ince una bula. Tereyağında her yüzünü 2 dakika çevirerek pişir. Eti çıkarıp tavaya şarap veya et suyunu ekle, deglaze edip sos kıvamına gelene kadar azalt. Eti sosla servis et.",
+   "tips": "Dana eti çok ince döv; hızlı piştiği için kuruma riski var. Alkolsüz uygulamada et suyu kullan.",
+   "equip": "stove",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-007",
+   "name": "Fransız Bouillabaisse",
+   "aliases": [
+    "Marsilya balık çorbası"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Fransa / Marsilya safranlı balık çorbası",
+   "base": 1,
+   "ingredients": [
+    [
+     "Beyaz balık fileto (levrek/mezgit)",
+     80,
+     "g"
+    ],
+    [
+     "Karides",
+     30,
+     "g"
+    ],
+    [
+     "Midye",
+     3,
+     "adet"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Domates",
+     60,
+     "g"
+    ],
+    [
+     "Rezene",
+     20,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Safran",
+     0.05,
+     "g"
+    ],
+    [
+     "Balık suyu",
+     250,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Soğan ve rezeneyi zeytinyağında yumuşat, sarımsak ve domatesi ekle. Safranlı balık suyunu ilave edip 20 dakika kaynat. Balıkları büyük parçalar halinde ekleyip 6 dakika, karides ve midyeyi ekleyip 4 dakika daha pişir; midyeler açılmalı, açılmayanlar atılmalı. Tuz ve karabiberle ayarlayıp sıcak servis et.",
+   "tips": "Deniz ürünleri son anda eklenip kısa pişirilmeli. Gıda güvenliği açısından taze ürün ve soğuk zincir kritik.",
+   "equip": "soup",
+   "allergens": [
+    "Balık",
+    "Kabuklu deniz ürünleri"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-008",
+   "name": "Fransız Croque Monsieur",
+   "aliases": [
+    "Croque monsieur"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Fransa / jambonlu peynirli beşamelli tost",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dilimli ekmek",
+     70,
+     "g"
+    ],
+    [
+     "Jambon (dana)",
+     30,
+     "g"
+    ],
+    [
+     "Gruyère veya kaşar",
+     35,
+     "g"
+    ],
+    [
+     "Beşamel sos",
+     40,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     8,
+     "g"
+    ],
+    [
+     "Hardal",
+     3,
+     "g"
+    ]
+   ],
+   "method": "Ekmek dilimlerinin bir yüzüne hardal sür; jambon ve yarım peyniri arasına yerleştir, kapat. Tereyağıyla her iki yüzünü tavada altın rengine kızart. Üzerine beşamel sos sürüp kalan peyniri serp. 220°C fırında peynir kabarcıklanıp kızarana kadar 5-6 dakika pişir.",
+   "tips": "Beşamel sosu önceden hazırlanıp ılık tutulmalı. Sandviçi fazla yağlama.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "roux",
+   "binderNote": "Yağda kavrulan un (meyane) kıvam verir."
+  },
+  {
+   "id": "P01-DN-009",
+   "name": "Fransız Crème Caramel",
+   "aliases": [
+    "Karamelli krem"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Fransa / karamelli fırın sütlü tatlı",
+   "base": 1,
+   "ingredients": [
+    [
+     "Süt",
+     150,
+     "ml"
+    ],
+    [
+     "Yumurta",
+     1,
+     "adet"
+    ],
+    [
+     "Şeker",
+     25,
+     "g"
+    ],
+    [
+     "Karamel için şeker",
+     15,
+     "g"
+    ],
+    [
+     "Vanilya",
+     0.1,
+     "g"
+    ]
+   ],
+   "method": "Karamel şekerini kuru tencerede altın rengi olana kadar eritip kalıpların tabanına dök. Sütü vanilyayla ısıt, yumurta ve şekeri çırp; sütü ılık olarak ekleyip süz. Karışımı kalıplara dök. Benmari usulü, 150°C fırında 30-35 dakika, ortası hafif titreyene kadar pişir. Soğutup ters çevirerek servis et.",
+   "tips": "Fırın sıcaklığı yüksek olursa krem delikli ve su toplamış olur. Kalıplar sıcak suyun içinde pişirilmeli.",
+   "equip": "oven",
+   "allergens": [
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "protein",
+   "binderNote": "Et/yumurta proteini bağlayıcı görevi görür."
+  },
+  {
+   "id": "P01-DN-010",
+   "name": "Fransız Pot-au-Feu",
+   "aliases": [
+    "Sebzeli et haşlama"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Fransa / haşlanmış dana ve sebze yemeği",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana but veya kaburga",
+     150,
+     "g"
+    ],
+    [
+     "Havuç",
+     40,
+     "g"
+    ],
+    [
+     "Pırasa",
+     40,
+     "g"
+    ],
+    [
+     "Şalgam",
+     30,
+     "g"
+    ],
+    [
+     "Patates",
+     60,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Su",
+     350,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.3,
+     "g"
+    ],
+    [
+     "Karabiber tane",
+     0.2,
+     "g"
+    ],
+    [
+     "Defne yaprağı",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Dana etini soğuk sudan başlayıp köpüğünü alarak kaynat; soğan, defne ve karabiberi ekleyip kısık ateşte 2 saat pişir. Sebzeleri iri doğrayıp ekle; patatesi son 25 dakika, pırasayı son 15 dakikada ilave et. Eti dilimleyip sebzelerle, et suyuyla servis et. Hardal ve kornişon ayrı sunulur.",
+   "tips": "Et suyunu sürekli köpüğünü alarak berrak tut. Sebzeler pişme sırasına göre eklenmeli.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-011",
+   "name": "İspanyol Albondigas",
+   "aliases": [
+    "İspanyol köfte domates soslu"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "İspanya / domates soslu köfte",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana kıyma",
+     100,
+     "g"
+    ],
+    [
+     "Ekmek içi",
+     10,
+     "g"
+    ],
+    [
+     "Yumurta",
+     0.2,
+     "adet"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Domates ezmesi",
+     100,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     8,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Maydanoz",
+     3,
+     "g"
+    ],
+    [
+     "Su",
+     50,
+     "ml"
+    ]
+   ],
+   "method": "Kıymayı ekmek içi, yumurta, rendelenmiş soğan, sarımsak, tuz, karabiber ve maydanozla yoğurup ceviz büyüklüğünde köfteler yap. Zeytinyağında dışını mühürle. Domates ezmesi ve suyla sos hazırla, köfteleri ekleyip kapalı kapta 20 dakika pişir. Sıcak servis et. Köftelerin sosta tamamen piştiğini, ortada pembelik kalmadığını (iç sıcaklık 71°C) kontrol et. Sos yoğun ve parlak olmalı. Sıcak servis edip yanına ekmek veya pilav koy.",
+   "tips": "Köfteleri sosa atmadan önce mühürlemek şeklini korur. İsteğe bağlı olarak füme paprika eklenebilir.",
+   "equip": "stew",
+   "allergens": [
+    "Gluten",
+    "Yumurta"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-012",
+   "name": "İspanyol Pisto Manchego",
+   "aliases": [
+    "Pisto sebze yemeği"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "İspanya / La Mancha sebze güveci",
+   "base": 1,
+   "ingredients": [
+    [
+     "Domates",
+     100,
+     "g"
+    ],
+    [
+     "Kabak",
+     70,
+     "g"
+    ],
+    [
+     "Patlıcan",
+     60,
+     "g"
+    ],
+    [
+     "Kırmızı biber",
+     40,
+     "g"
+    ],
+    [
+     "Yeşil biber",
+     30,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     30,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     12,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ]
+   ],
+   "method": "Soğanı zeytinyağında yumuşat, biberleri ve sarımsağı ekle. Patlıcan ve kabağı ayrı ayrı küçük küp doğrayıp önceden hafif soteleyerek ekle. Domatesi ilave edip kısık ateşte 30 dakika, sebzeler yumuşayıp suyunu çekene kadar pişir. Sıcak veya soğuk servis edilebilir; yanına yumurta eşlik eder.",
+   "tips": "Sebzeleri ayrı soteleyerek eklemek lapalaşmayı önler. Soğuk servis edilirse aroması artar.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-013",
+   "name": "Yunan Tavuk Souvlaki",
+   "aliases": [
+    "Souvlaki"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Yunanistan / şişte marine tavuk",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tavuk göğüs/but",
+     130,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     10,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     8,
+     "ml"
+    ],
+    [
+     "Kekik",
+     0.4,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.3,
+     "g"
+    ],
+    [
+     "Tzatziki",
+     30,
+     "g"
+    ],
+    [
+     "Pide",
+     45,
+     "g"
+    ]
+   ],
+   "method": "Tavuğu 3 cm küp doğra; zeytinyağı, limon, kekik, ezilmiş sarımsak, tuz ve karabiberle 3-4 saat marine et. Şişlere dizip ızgarada her yüzünü 3-4 dakika pişir; iç sıcaklık 74°C olmalı. Isıtılmış pide, tzatziki, domates ve soğanla servis et. Pişen şişleri 2 dakika dinlendirip pide içine yerleştir. Tzatziki, domates ve soğanı servisten hemen önce ekle. Tavukta pembelik olmamalı; iç sıcaklık 74°C'ye ulaşmalı.",
+   "tips": "Marine süresi 12 saati geçmemeli; limon asidi eti yumuşatır ama ayrıştırır.",
+   "equip": "grill",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-DN-014",
+   "name": "Macar Gulaş",
+   "aliases": [
+    "Goulash"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Macaristan / paprikalı dana güveci",
+   "base": 1,
+   "ingredients": [
+    [
+     "Dana kuşbaşı",
+     110,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     40,
+     "g"
+    ],
+    [
+     "Tatlı kırmızı biber (paprika)",
+     3,
+     "g"
+    ],
+    [
+     "Domates ezmesi",
+     30,
+     "g"
+    ],
+    [
+     "Havuç",
+     25,
+     "g"
+    ],
+    [
+     "Patates",
+     60,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     10,
+     "ml"
+    ],
+    [
+     "Su",
+     220,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     2,
+     "g"
+    ]
+   ],
+   "method": "Soğanı yağda yumuşayana kadar kavur, paprikayı ekleyip yanmadan 30 saniye çevir. Dana eti ekleyip mühürle, domates ezmesi ve suyu ilave et. Kısık ateşte 60 dakika pişir; havuç ve patatesi son 25 dakikada ekle. Tuz ve karabiberle ayarlayıp sıcak servis et. Pişme sonunda et kolayca ezilebilecek kadar yumuşak olmalı. Sos koyu kırmızı ve yoğun olmalı; gerekiyorsa kapağı açarak azaltılmalı. Ekmek veya erişteyle sıcak servis et.",
+   "tips": "Paprika yüksek ateşte acılaşır; yağa kısa süre ekle. Sos koyu ve parlak olmalı.",
+   "equip": "stew",
+   "allergens": [],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-015",
+   "name": "Rus Borş Çorbası",
+   "aliases": [
+    "Borscht"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Rusya / Ukrayna / pancarlı çorba",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pancar",
+     80,
+     "g"
+    ],
+    [
+     "Beyaz lahana",
+     50,
+     "g"
+    ],
+    [
+     "Havuç",
+     25,
+     "g"
+    ],
+    [
+     "Patates",
+     50,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Domates ezmesi",
+     20,
+     "g"
+    ],
+    [
+     "Et suyu",
+     250,
+     "ml"
+    ],
+    [
+     "Sıvı yağ",
+     8,
+     "ml"
+    ],
+    [
+     "Sirke",
+     3,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.1,
+     "g"
+    ],
+    [
+     "Yoğurt veya ekşi krema",
+     20,
+     "g"
+    ]
+   ],
+   "method": "Soğan, havuç ve rendelenmiş pancarı yağda soteleyip domates ezmesini ekle; sirkeyi ilave et. Et suyunu kaynatıp patatesi 10 dakika pişir, lahanayı ve soteyi ekle, 20 dakika kısık ateşte kaynat. Tuzla ayarla. Üzerine yoğurt veya ekşi kremayla servis et. Pancarın canlı rengi korunmalı; çorbayı aşırı kaynatma. Üzerine yoğurt veya ekşi krema ve taze dereotuyla servis et. Çorba ertesi gün ısıtılınca aroması derinleşir.",
+   "tips": "Sirke pancarın rengini canlı tutar. Pancarı çok pişirme, rengi solar.",
+   "equip": "soup",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-016",
+   "name": "Polonya Pierogi",
+   "aliases": [
+    "Pierogi"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Polonya / patatesli peynirli hamur",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     80,
+     "g"
+    ],
+    [
+     "Su",
+     40,
+     "ml"
+    ],
+    [
+     "Yumurta",
+     0.3,
+     "adet"
+    ],
+    [
+     "Haşlanmış patates",
+     70,
+     "g"
+    ],
+    [
+     "Lor peyniri",
+     25,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Karabiber",
+     0.2,
+     "g"
+    ],
+    [
+     "Ekşi krema",
+     20,
+     "g"
+    ]
+   ],
+   "method": "Un, yumurta, su ve tuzla hamuru yoğurup 30 dakika dinlendir. Patatesi ezip kavrulmuş soğan, lor ve baharatla harç yap. Hamuru ince açıp yuvarlak keserek harçla doldur, yarım ay şeklinde kapat. Kaynar tuzlu suda yüzene kadar 4-5 dakika haşla. Tereyağında hafifçe kızartıp ekşi kremayla servis et.",
+   "tips": "Kenarları sıkıca kapat; açılırsa haşlama sırasında harç dağılır.",
+   "equip": "pasta",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-DN-017",
+   "name": "Hint Palak Paneer",
+   "aliases": [
+    "Ispanaklı peynir yemeği"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Hindistan / ıspanaklı peynir köri",
+   "base": 1,
+   "ingredients": [
+    [
+     "Ispanak",
+     150,
+     "g"
+    ],
+    [
+     "Paneer veya beyaz peynir",
+     60,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     35,
+     "g"
+    ],
+    [
+     "Domates",
+     50,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     4,
+     "g"
+    ],
+    [
+     "Zencefil",
+     3,
+     "g"
+    ],
+    [
+     "Garam masala",
+     1,
+     "g"
+    ],
+    [
+     "Zerdeçal",
+     0.3,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     10,
+     "ml"
+    ],
+    [
+     "Krema",
+     20,
+     "g"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Ispanağı kaynar suda 1 dakika haşlayıp soğuk suya al; sıkıp püre et. Soğanı yağda kavur, sarımsak, zencefil ve baharatları ekle. Domatesi ilave edip suyunu çekene kadar pişir. Ispanak püresini ekleyip 8 dakika pişir. Peynir küplerini ekleyip kremayla birleştir; 3 dakika daha ısıt.",
+   "tips": "Ispanağı kısa haşlayıp soğuk suya almak rengini korur. Peynir fazla pişince lastikleşir.",
+   "equip": "stove",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "natural",
+   "binderNote": "Malzemenin kendi nişastası ve yapısı kıvam verir; ayrıca un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-018",
+   "name": "Hint Tavuklu Biryani",
+   "aliases": [
+    "Biryani"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Hindistan / baharatlı tavuklu pilav",
+   "base": 1,
+   "ingredients": [
+    [
+     "Basmati pirinç",
+     60,
+     "g"
+    ],
+    [
+     "Tavuk but",
+     100,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     25,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     35,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Zencefil",
+     3,
+     "g"
+    ],
+    [
+     "Garam masala",
+     1.2,
+     "g"
+    ],
+    [
+     "Zerdeçal",
+     0.3,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     10,
+     "g"
+    ],
+    [
+     "Nane",
+     2,
+     "g"
+    ],
+    [
+     "Su",
+     100,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ]
+   ],
+   "method": "Tavuğu yoğurt, sarımsak, zencefil ve baharatlarla 2 saat marine et. Soğanı yağda koyu kahverengi olana kadar kızart, yarısını ayır. Tavuğu soğanla 10 dakika pişir. Pirinci ayrı olarak yarım pişirip süz; tavuğun üzerine katman katman diz, kızarmış soğan, nane ve safranlı su ile kapat. Kapağı hamurla veya folyoyla kapatıp kısık ateşte 25 dakika demle.",
+   "tips": "Pirinci tam pişirme; demleme sırasında pişmeyi tamamlar. Kapağın buharı kaçırmaması gerekir.",
+   "equip": "rice",
+   "allergens": [
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-DN-019",
+   "name": "Çin Kung Pao Tavuk",
+   "aliases": [
+    "Gong bao tavuk"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Çin / Sichuan fıstıklı acılı tavuk",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tavuk göğüs",
+     120,
+     "g"
+    ],
+    [
+     "Yer fıstığı",
+     15,
+     "g"
+    ],
+    [
+     "Kırmızı biber (kurutulmuş)",
+     2,
+     "g"
+    ],
+    [
+     "Soya sosu",
+     10,
+     "ml"
+    ],
+    [
+     "Sirke",
+     5,
+     "ml"
+    ],
+    [
+     "Şeker",
+     4,
+     "g"
+    ],
+    [
+     "Mısır nişastası",
+     5,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Zencefil",
+     3,
+     "g"
+    ],
+    [
+     "Taze soğan",
+     15,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     12,
+     "ml"
+    ],
+    [
+     "Su",
+     30,
+     "ml"
+    ]
+   ],
+   "method": "Tavuğu küp doğrayıp soya sosu ve nişastayla 15 dakika marine et. Sosu soya, sirke, şeker, nişasta ve suyla karıştır. Wok'ta yağı çok yüksek ısıda kızdırıp acı biberleri kısaca kavur, tavuğu ekleyip 3-4 dakika çevir. Sarımsak, zencefili ekle; sosu dök ve koyulaşana kadar 1 dakika karıştır. Fıstık ve taze soğanla tamamla.",
+   "tips": "Acı biberleri yakma; acı yağı tatlandırır. Yer fıstığı alerjeni etiketlenmeli.",
+   "equip": "wok",
+   "allergens": [
+    "Soya",
+    "Yer fıstığı"
+   ],
+   "binder": "starch",
+   "binderNote": "Nişasta kontrollü eklenir."
+  },
+  {
+   "id": "P01-DN-020",
+   "name": "Çin Mapo Tofu",
+   "aliases": [
+    "Mapo tofu"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Çin / Sichuan baharatlı tofu",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tofu",
+     120,
+     "g"
+    ],
+    [
+     "Dana kıyma",
+     35,
+     "g"
+    ],
+    [
+     "Soya sosu",
+     10,
+     "ml"
+    ],
+    [
+     "Acı biber salçası",
+     8,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Zencefil",
+     3,
+     "g"
+    ],
+    [
+     "Mısır nişastası",
+     4,
+     "g"
+    ],
+    [
+     "Taze soğan",
+     10,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     10,
+     "ml"
+    ],
+    [
+     "Su",
+     70,
+     "ml"
+    ]
+   ],
+   "method": "Tofuyu 2 cm küp doğrayıp sıcak tuzlu suda 3 dakika bekletip süz. Wok'ta yağda sarımsak, zencefil ve kıymayı kavur. Biber salçasını ekleyip yağ kırmızıya dönene kadar pişir; su ve soya sosunu ilave et. Tofuyu ekleyip 5 dakika kısık ateşte pişir. Nişastayı soğuk suyla açıp ince akışla ekle; taze soğanla servis et.",
+   "tips": "Tofuyu karıştırırken kırma; wok'u sallayarak birleştir.",
+   "equip": "wok",
+   "allergens": [
+    "Soya"
+   ],
+   "binder": "starch",
+   "binderNote": "Nişasta kontrollü eklenir."
+  },
+  {
+   "id": "P01-DN-021",
+   "name": "Japon Yakitori",
+   "aliases": [
+    "Yakitori tavuk şiş"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Japonya / soya soslu tavuk şiş",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tavuk but fileto",
+     120,
+     "g"
+    ],
+    [
+     "Soya sosu",
+     15,
+     "ml"
+    ],
+    [
+     "Mirin veya şekerli su",
+     10,
+     "ml"
+    ],
+    [
+     "Şeker",
+     5,
+     "g"
+    ],
+    [
+     "Zencefil",
+     2,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     1,
+     "g"
+    ],
+    [
+     "Taze soğan",
+     15,
+     "g"
+    ],
+    [
+     "Susam",
+     1,
+     "g"
+    ]
+   ],
+   "method": "Soya sosu, mirin, şeker, zencefil ve sarımsağı tencerede 5 dakika kaynatıp glaze yap. Tavuğu 3 cm küp doğrayıp taze soğan parçalarıyla şişe diz. Izgarada çevirerek 4 dakika pişir, glaze sürerek 2-3 kez tekrarla; iç sıcaklık 74°C olmalı. Susamla servis et. Pişirme bitiminde tavuğun iç sıcaklığı 74°C olmalı. Glaze'ı son kez sürüp 30 saniye daha ızgarada tut. Susamla ve yanında pilavla sıcak servis et.",
+   "tips": "Glaze'ı şeker yandığı için pişirmenin son dakikalarında sür.",
+   "equip": "grill",
+   "allergens": [
+    "Soya"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-022",
+   "name": "Tay Massaman Köri",
+   "aliases": [
+    "Massaman curry"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Tayland / patatesli fıstıklı köri",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tavuk but",
+     100,
+     "g"
+    ],
+    [
+     "Hindistan cevizi sütü",
+     90,
+     "ml"
+    ],
+    [
+     "Massaman köri ezmesi",
+     15,
+     "g"
+    ],
+    [
+     "Patates",
+     60,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Yer fıstığı",
+     10,
+     "g"
+    ],
+    [
+     "Balık sosu",
+     5,
+     "ml"
+    ],
+    [
+     "Şeker",
+     3,
+     "g"
+    ],
+    [
+     "Su",
+     60,
+     "ml"
+    ],
+    [
+     "Sıvı yağ",
+     5,
+     "ml"
+    ]
+   ],
+   "method": "Köri ezmesini yağda kısık ateşte kokusu çıkana kadar kavur. Hindistan cevizi sütünün yarısını ekleyip yağı ayrılana kadar pişir. Tavuk, soğan ve patatesi ekleyip kalan süt ve suyla 25 dakika kısık ateşte pişir. Balık sosu ve şekerle dengele; kavrulmuş fıstıkla servis et.",
+   "tips": "Hindistan cevizi sütü kaynarken karıştırılmalı, kesilme riskine karşı.",
+   "equip": "stove",
+   "allergens": [
+    "Yer fıstığı",
+    "Balık"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-023",
+   "name": "Vietnam Taze Rulo",
+   "aliases": [
+    "Gỏi cuốn"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Vietnam / pirinç kâğıdında taze sebze ve karides",
+   "base": 1,
+   "ingredients": [
+    [
+     "Pirinç kâğıdı",
+     3,
+     "adet"
+    ],
+    [
+     "Haşlanmış karides",
+     50,
+     "g"
+    ],
+    [
+     "Pirinç eriştesi (haşlanmış)",
+     40,
+     "g"
+    ],
+    [
+     "Havuç",
+     25,
+     "g"
+    ],
+    [
+     "Salatalık",
+     30,
+     "g"
+    ],
+    [
+     "Marul",
+     20,
+     "g"
+    ],
+    [
+     "Nane",
+     3,
+     "g"
+    ],
+    [
+     "Fıstık ezmesi",
+     15,
+     "g"
+    ],
+    [
+     "Soya sosu",
+     5,
+     "ml"
+    ],
+    [
+     "Su",
+     10,
+     "ml"
+    ]
+   ],
+   "method": "Pirinç kâğıdını ılık suda 10 saniye yumuşat. Kâğıdın alt kısmına marul, erişte, havuç, salatalık ve nane yerleştir; karidesleri üst tarafa koy. Alt kenarı kapatıp yanlarını katlayarak sıkıca sar. Fıstık ezmesi, soya sosu ve suyu karıştırıp sos hazırla. Soğuk servis et.",
+   "tips": "Rulolar kurumaması için nemli bezle kapatılmalı. Hazırlandıktan sonra 2 saat içinde servis edilmeli.",
+   "equip": "cold",
+   "allergens": [
+    "Kabuklu deniz ürünleri",
+    "Yer fıstığı",
+    "Soya"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-DN-024",
+   "name": "Kore Kimchi Jjigae",
+   "aliases": [
+    "Kimçi güveci"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Kore / kimçili acı güveç",
+   "base": 1,
+   "ingredients": [
+    [
+     "Fermente kimçi",
+     80,
+     "g"
+    ],
+    [
+     "Dana kuşbaşı",
+     50,
+     "g"
+    ],
+    [
+     "Tofu",
+     60,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     20,
+     "g"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Acı biber pulu",
+     1,
+     "g"
+    ],
+    [
+     "Susam yağı",
+     3,
+     "ml"
+    ],
+    [
+     "Soya sosu",
+     5,
+     "ml"
+    ],
+    [
+     "Su",
+     250,
+     "ml"
+    ],
+    [
+     "Taze soğan",
+     10,
+     "g"
+    ]
+   ],
+   "method": "Susam yağında eti ve kimçiyi 5 dakika kavur. Soğan, sarımsak ve acı biber pulunu ekle. Su ve soya sosunu ilave edip kapalı kapta 25 dakika pişir. Tofu dilimlerini ekleyip 5 dakika daha ısıt. Taze soğanla servis et. Pişme sonunda et yumuşak, tofu sıcak ve bütün olmalı. Güveçte sıcak servis et; yanında beyaz pilav sunulur. Kimçi ekşiliği çok yüksekse bir tutam şekerle dengelenebilir.",
+   "tips": "Kimçi ne kadar olgun ve ekşiyse güveç o kadar aromatik olur.",
+   "equip": "stew",
+   "allergens": [
+    "Soya",
+    "Balık"
+   ],
+   "binder": "reduction",
+   "binderNote": "Kıvam, sıvının kontrollü indirgenmesiyle sağlanır; un veya nişasta eklenmez."
+  },
+  {
+   "id": "P01-DN-025",
+   "name": "Meksika Guacamole",
+   "aliases": [
+    "Guacamole"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Meksika / avokado dip",
+   "base": 1,
+   "ingredients": [
+    [
+     "Avokado",
+     100,
+     "g"
+    ],
+    [
+     "Domates",
+     25,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     10,
+     "g"
+    ],
+    [
+     "Limon suyu",
+     8,
+     "ml"
+    ],
+    [
+     "Kişniş",
+     3,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ],
+    [
+     "Acı biber",
+     0.3,
+     "g"
+    ]
+   ],
+   "method": "Avokadoları yarıp çekirdeğini çıkarıp çatalla pütürlü ezme kıvamında ez. Limon suyunu hemen ekle ki kararmasın. İnce doğranmış soğan, domates, kişniş ve acı biberi karıştır. Tuzla ayarla. Mısır cipsi veya tortilla ile servis et; hazırlandıktan sonra 2 saat içinde tüket.",
+   "tips": "Limon suyu avokadonun kararmasını geciktirir. Çekirdeği ezmede bırakmak oksidasyonu azaltmaz, doğru sakla.",
+   "equip": "cold",
+   "allergens": [],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-DN-026",
+   "name": "Meksika Quesadilla",
+   "aliases": [
+    "Peynirli tavuklu quesadilla"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Meksika / peynirli tortilla",
+   "base": 1,
+   "ingredients": [
+    [
+     "Buğday tortilla",
+     60,
+     "g"
+    ],
+    [
+     "Kaşar peyniri",
+     40,
+     "g"
+    ],
+    [
+     "Haşlanmış tavuk",
+     40,
+     "g"
+    ],
+    [
+     "Kırmızı biber",
+     20,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     15,
+     "g"
+    ],
+    [
+     "Sıvı yağ",
+     4,
+     "ml"
+    ],
+    [
+     "Kimyon",
+     0.2,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.5,
+     "g"
+    ]
+   ],
+   "method": "Tavuğu didikle; biber ve soğanı yağda 3 dakika soteleyip kimyon ve tuzla tavukla karıştır. Tortillanın yarısına peynir ve harcı yerleştir, katla. Yapışmaz tavada her yüzünü 2-3 dakika, peynir erimiş ve tortilla çıtır olana kadar pişir. Dilimleyip servis et. Pişen quesadillayı 1 dakika dinlendirip 4 dilime böl. Peynir tamamen erimiş olmalı. Yanında guacamole, salsa veya ekşi kremayla sıcak servis et.",
+   "tips": "Harcı fazla koyma; tortilla kapanmalı. Orta ısı peynirin erimesi için idealdir.",
+   "equip": "stove",
+   "allergens": [
+    "Gluten",
+    "Süt"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-DN-027",
+   "name": "Amerikan Cobb Salatası",
+   "aliases": [
+    "Cobb salad"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "ABD / tavuk, yumurta ve avokadolu salata",
+   "base": 1,
+   "ingredients": [
+    [
+     "Marul",
+     60,
+     "g"
+    ],
+    [
+     "Haşlanmış tavuk",
+     50,
+     "g"
+    ],
+    [
+     "Haşlanmış yumurta",
+     0.5,
+     "adet"
+    ],
+    [
+     "Avokado",
+     30,
+     "g"
+    ],
+    [
+     "Domates",
+     40,
+     "g"
+    ],
+    [
+     "Mavi peynir veya beyaz peynir",
+     15,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     8,
+     "ml"
+    ],
+    [
+     "Limon suyu",
+     6,
+     "ml"
+    ],
+    [
+     "Hardal",
+     2,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.5,
+     "g"
+    ]
+   ],
+   "method": "Marulu yırtıp tabağa serip üzerine tavuk, yumurta, avokado, domates ve peyniri şeritler halinde sıra sıra diz. Zeytinyağı, limon, hardal ve tuzla sosu hazırla. Servis sırasında sosla harmanla. Tüm malzemeleri tabakta ayrı ayrı sıra halinde diz. Sosu ayrı kapta sun. Marul taze ve çıtır olmalı; avokado servise yakın doğranmalı. Soğuk servis et.",
+   "tips": "Avokadoyu en son doğra. Yumurta, tavuk ve sebze sıralaması görsel sunumun parçasıdır.",
+   "equip": "salad",
+   "allergens": [
+    "Yumurta",
+    "Süt",
+    "Hardal"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-DN-028",
+   "name": "Lübnan Tavuk Şavurma",
+   "aliases": [
+    "Chicken shawarma"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Lübnan / baharatlı tavuk dürüm",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tavuk but fileto",
+     120,
+     "g"
+    ],
+    [
+     "Yoğurt",
+     20,
+     "g"
+    ],
+    [
+     "Limon suyu",
+     6,
+     "ml"
+    ],
+    [
+     "Sarımsak",
+     3,
+     "g"
+    ],
+    [
+     "Yedi baharat",
+     1,
+     "g"
+    ],
+    [
+     "Kimyon",
+     0.3,
+     "g"
+    ],
+    [
+     "Zeytinyağı",
+     6,
+     "ml"
+    ],
+    [
+     "Tuz",
+     1,
+     "g"
+    ],
+    [
+     "Lavaş",
+     50,
+     "g"
+    ],
+    [
+     "Tahin sos",
+     15,
+     "g"
+    ],
+    [
+     "Turşu",
+     20,
+     "g"
+    ]
+   ],
+   "method": "Tavuğu yoğurt, limon, sarımsak, baharat ve zeytinyağıyla 6 saat marine et. Sıcak tavada veya ızgarada her yüzünü 4-5 dakika pişir; iç sıcaklık 74°C olmalı. İnce dilimle. Lavaşı ısıt, içine tavuk, tahin sos ve turşu koyup sararak servis et. Tavuğun iç sıcaklığının 74°C olduğundan emin ol. Dilimlenmiş tavuğu sıcak lavaşa sarıp 1 dakika preste ısıt. Turşu ve tahin sosla hemen servis et.",
+   "tips": "Marine tavuk gece boyunca bekletilebilir. İnce dilimlemek şavurma dokusunu verir.",
+   "equip": "grill",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Susam"
+   ],
+   "binder": "none",
+   "binderNote": "Ayrı bağlayıcı kullanılmaz."
+  },
+  {
+   "id": "P01-DN-029",
+   "name": "Arjantin Empanada",
+   "aliases": [
+    "Etli empanada"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Arjantin / kıymalı hamur çörek",
+   "base": 1,
+   "ingredients": [
+    [
+     "Un",
+     90,
+     "g"
+    ],
+    [
+     "Tereyağı",
+     25,
+     "g"
+    ],
+    [
+     "Su",
+     30,
+     "ml"
+    ],
+    [
+     "Dana kıyma",
+     50,
+     "g"
+    ],
+    [
+     "Kuru soğan",
+     25,
+     "g"
+    ],
+    [
+     "Haşlanmış yumurta",
+     0.3,
+     "adet"
+    ],
+    [
+     "Zeytin",
+     5,
+     "g"
+    ],
+    [
+     "Kimyon",
+     0.3,
+     "g"
+    ],
+    [
+     "Paprika",
+     0.5,
+     "g"
+    ],
+    [
+     "Tuz",
+     1.2,
+     "g"
+    ],
+    [
+     "Yumurta (sürmek için)",
+     0.2,
+     "adet"
+    ]
+   ],
+   "method": "Un, tereyağı, su ve tuzla hamuru yoğurup 30 dakika dinlendir. Soğan ve kıymayı kimyon, paprika ve tuzla kavur; soğutup doğranmış yumurta ve zeytin ekle. Hamuru ince açıp yuvarlak kes, harcı yerleştirip yarım ay şeklinde kapat ve kenarlarını kıvır. Yumurta sürüp 200°C fırında 20-22 dakika altın rengi olana kadar pişir.",
+   "tips": "Harç tamamen soğumalı; sıcak harç hamuru yumuşatıp açılmasına neden olur.",
+   "equip": "oven",
+   "allergens": [
+    "Gluten",
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "dough",
+   "binderNote": "Hamurun kendi yapısı bağlayıcıdır."
+  },
+  {
+   "id": "P01-DN-030",
+   "name": "Brezilya Pão de Queijo",
+   "aliases": [
+    "Peynirli ekmek"
+   ],
+   "cat": "Dünya mutfağı",
+   "sub": "Brezilya / tapyoka unlu peynirli top",
+   "base": 1,
+   "ingredients": [
+    [
+     "Tapyoka nişastası",
+     70,
+     "g"
+    ],
+    [
+     "Süt",
+     40,
+     "ml"
+    ],
+    [
+     "Sıvı yağ",
+     15,
+     "ml"
+    ],
+    [
+     "Yumurta",
+     0.5,
+     "adet"
+    ],
+    [
+     "Rendelenmiş peynir",
+     40,
+     "g"
+    ],
+    [
+     "Tuz",
+     0.8,
+     "g"
+    ]
+   ],
+   "method": "Süt, yağ ve tuzu kaynatıp tapyoka nişastasının üzerine dök; karıştırıp ılıt. Yumurtayı ve peyniri ekleyip yoğur; hamur yapışkan ama şekil alacak kıvamda olmalı. Ceviz büyüklüğünde toplar yap. 200°C fırında 15-18 dakika, altın rengi ve kabarana kadar pişir. Sıcak servis et.",
+   "tips": "Tapyoka nişastası glütensiz alternatif sunar; ancak içeriğin glütensiz kalması için çapraz bulaş önlenmeli. Soğuyunca sertleşir, sıcak yenmeli.",
+   "equip": "oven",
+   "allergens": [
+    "Süt",
+    "Yumurta"
+   ],
+   "binder": "starch",
+   "binderNote": "Nişasta kontrollü eklenir."
+  }
+ ]
+}
