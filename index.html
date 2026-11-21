@@ -2,7 +2,8 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0f3d33"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><title>Profesyonel Şef Asistanı · V90</title>
+<meta name="theme-color" content="#0f3d33"><link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><link rel="apple-touch-icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><title>Profesyonel Şef Asistanı · V91</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -204,14 +205,14 @@ header .founder{font-size:11.5px;line-height:1.3;margin-top:2px;opacity:.9}
 <body>
 <header><div class="logo">♨</div><div><h1>PROFESYONEL ŞEF ASİSTANI</h1><div class="founder">Mehmet Ali Özkan tarafından kurulmuştur.</div></div><div class="subhead">GASTRONOMİ · REÇETE · ÜRETİM<br>Şef odaklı dijital mutfak platformu</div><button id="kBtn" aria-label="Büyük yazı">Aa</button><button id="sBtn" aria-label="Ara">🔍</button></header>
 <nav id="nav">
-<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="ytRecipe">Video Tarif Ara</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="specialCreator">Özel Yemek Tasarla</button><button data-tab="freeform">Doğaçlama Reçete</button><button data-tab="standart">Standart Tablo</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="fire">Fire & Verim</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Küvet & Ekipman</button><button data-tab="menu">Menü Planlama</button><button data-tab="prep">Mise en Place</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
+<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="ytRecipe">Video Tarif Ara</button><button data-tab="installApp">Ana Ekrana Ekle</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="specialCreator">Özel Yemek Tasarla</button><button data-tab="freeform">Doğaçlama Reçete</button><button data-tab="standart">Standart Tablo</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="fire">Fire & Verim</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Küvet & Ekipman</button><button data-tab="menu">Menü Planlama</button><button data-tab="prep">Mise en Place</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
 </nav>
 <main>
 <section id="dashboard" class="tab active">
 <button id="sBtn2" class="sbar">🔍 <span>Reçete, tablo, formül ara…</span></button>
 <div class="hero"><span class="pill">Şefin dijital çalışma alanı</span><h2>Üretimini planla. Reçeteni standardize et. Lezzetini koru.</h2><div class="muted">Reçete kütüphanesi, toplu üretim hesapları, GN küvet seçimi, hazırlık planı ve mutfak kalite takibi.</div></div>
 <div class="grid">
-<div class="card s3"><div class="small">Kayıtlı reçete</div><div class="stat" id="dashRecipes">—</div><div class="small">Örnek + senin eklediklerin</div></div>
+<div class="card s3 adminOnly"><div class="small">Kayıtlı reçete</div><div class="stat" id="dashRecipes">—</div><div class="small">Örnek + senin eklediklerin</div></div>
 <div class="card s3"><div class="small">Kategori</div><div class="stat">18</div><div class="small">Ana yemek, çorba, tatlı vb.</div></div>
 <div class="card s3"><div class="small">Üretim hesapları</div><div class="stat">Hazır</div><div class="small">Gramaj, tuz, baharat, fire</div></div>
 <div class="card s3"><div class="small">Ekipman asistanı</div><div class="stat">Hazır</div><div class="small">GN derinliği ve ekipman</div></div>
@@ -432,6 +433,13 @@ Et suyu (hazır): Süt, Kereviz"></textarea><div class="small">Bu alan, malzeme 
 <label for="ytMet">Yapılışı</label><textarea id="ytMet" rows="5" placeholder="Adım adım yazın"></textarea>
 <div class="note">Girdiğin miktarlar <b>1 porsiyon</b> olarak kaydedilir. Videodaki miktar kaç kişilikse porsiyon başına çevirip yaz.</div>
 <div class="actions"><button class="btn gold" id="ytSave">Tarifi Kaydet</button></div><div id="ytMsg" class="small" style="margin-top:8px"></div></div></div></section>
+<section id="installApp" class="tab"><div class="hero"><h2>📲 Ana Ekrana Ekle</h2><p class="muted">Uygulamayı telefonuna veya bilgisayarına yükle: ekranda kendi ikonu olsun, tarayıcı çubuğu olmadan tam ekran açılsın.</p></div>
+<div class="grid"><div class="card s12" id="insState"><div id="insDone" class="note" style="display:none">✅ Uygulama zaten ana ekrandan açılmış, yüklemen gerekmiyor.</div>
+<div class="actions"><button class="btn gold" id="insBtn" style="display:none">📲 Şimdi Yükle</button></div><div class="small" id="insDetect"></div></div>
+<div class="card s12 insP" data-p="android"><h3>🤖 Android (Chrome)</h3><ol class="small" style="line-height:1.8;padding-left:20px"><li>Bu siteyi <b>Chrome</b> ile aç.</li><li>Sağ üstteki <b>üç nokta ⋮</b> menüsüne bas.</li><li><b>“Uygulamayı yükle”</b> (veya “Ana ekrana ekle”) seçeneğine bas.</li><li><b>Yükle</b> de. İkon ana ekrana gelir.</li><li>İkona basınca uygulama <b>tam ekran</b> açılır.</li></ol><p class="small muted">Yukarıdaki “Şimdi Yükle” düğmesi görünüyorsa tek dokunuşla da yükleyebilirsin.</p></div>
+<div class="card s12 insP" data-p="ios"><h3>🍎 iPhone / iPad (Safari)</h3><ol class="small" style="line-height:1.8;padding-left:20px"><li>Siteyi <b>Safari</b> ile aç (Chrome'da bu özellik yok).</li><li>Alttaki <b>Paylaş</b> simgesine bas (kare ve yukarı ok).</li><li>Aşağı kaydırıp <b>“Ana Ekrana Ekle”</b> seçeneğine bas.</li><li>Sağ üstte <b>Ekle</b> de.</li><li>İkona basınca uygulama <b>tam ekran</b> açılır.</li></ol></div>
+<div class="card s12 insP" data-p="windows"><h3>🖥️ Windows / Mac (Chrome veya Edge)</h3><ol class="small" style="line-height:1.8;padding-left:20px"><li>Siteyi <b>Chrome</b> veya <b>Edge</b> ile aç.</li><li>Adres çubuğunun sağındaki <b>Yükle</b> simgesine bas (ekran ve ok).</li><li>Simge yoksa üç nokta menüsünde <b>“Uygulamayı yükle”</b> veya <b>“Şef Asistanı'nı yükle”</b> seçeneğini kullan.</li><li><b>Yükle</b> de. Uygulama kendi penceresinde, adres çubuğu olmadan açılır; masaüstü ve görev çubuğuna kısayol eklenir.</li></ol></div>
+</div></section>
 <section id="fire" class="tab">
 <div class="sthero"><div class="stk">Doğru alım · Doğru verim</div><h2>Fire &amp; Verim Hesabı</h2><div class="sts">Temiz miktar için ne kadar ham malzeme almalısın?</div></div>
 <div class="card"><div class="stseg" id="fiMode" style="margin-bottom:6px"><button class="on" data-m="buy">Temiz hedef</button><button data-m="cook">Pişmiş hedef</button><button data-m="have">Elimdeki ham</button></div>
@@ -1445,7 +1453,7 @@ init();
 <div id="bar"></div>
 <script>
 (function(){
-var IC={dashboard:"🏠",library:"📖",specialCreator:"✨",freeform:"🍳",standart:"📊",shop:"🛒",fire:"📉",ytRecipe:"▶️",spiceGuide:"🌿",recipeManage:"✏️",production:"⚖️",equipment:"🍲",menu:"🗓️",prep:"🔪",sauce:"🥣",safety:"🛡️",quality:"👅",notebook:"📓",backup:"💾"};
+var IC={dashboard:"🏠",library:"📖",specialCreator:"✨",freeform:"🍳",standart:"📊",shop:"🛒",fire:"📉",ytRecipe:"▶️",installApp:"📲",spiceGuide:"🌿",recipeManage:"✏️",production:"⚖️",equipment:"🍲",menu:"🗓️",prep:"🔪",sauce:"🥣",safety:"🛡️",quality:"👅",notebook:"📓",backup:"💾"};
 var NM={dashboard:"Ana Sayfa",library:"Reçeteler",production:"Üretim",menu:"Menü"};
 var btns=[].slice.call(document.querySelectorAll("nav button"));
 function tile(b){var t=document.createElement("button");t.className="tile";t.dataset.tab=b.dataset.tab;t.innerHTML="<i>"+(IC[b.dataset.tab]||"•")+"</i>"+b.textContent;t.onclick=function(){document.getElementById("sheet").classList.remove("open");go(b.dataset.tab)};return t}
@@ -2839,4 +2847,21 @@ var tries=0;(function wait(){var v=window.__v79;if(v&&v.sb&&v.sb()){var sb=v.sb(
 <!-- V89 YENİ TARİFLER KISAYOLU -->
 
 <!-- V89 YENİ TARİFLER KISAYOLU BİTİŞ -->
+<!-- V91 EKLENTİ -->
+<script>(function(){
+var ua=navigator.userAgent||"",P=/iPhone|iPad|iPod/.test(ua)||(/Mac/.test(ua)&&navigator.maxTouchPoints>1)?"ios":(/Android/.test(ua)?"android":"windows");
+var names={android:"Android",ios:"iPhone / iPad",windows:"bilgisayar"};
+function $(i){return document.getElementById(i)}
+var dp=null,sa=(window.matchMedia&&matchMedia("(display-mode: standalone)").matches)||(window.matchMedia&&matchMedia("(display-mode: fullscreen)").matches)||navigator.standalone===true;
+function init(){var ps=document.querySelectorAll("#installApp .insP");if(!ps.length)return false;
+ var box=ps[0].parentNode;ps.forEach(function(c){if(c.getAttribute("data-p")===P){box.insertBefore(c,box.children[1]);}});
+ var d=$("insDetect");if(d)d.textContent="Cihazın: "+names[P]+" — senin için gerekli adımlar en üstte.";
+ if(sa&&$("insDone"))$("insDone").style.display="block";return true}
+init();
+window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();dp=e;var b=$("insBtn");if(b&&!sa)b.style.display="inline-block"});
+window.addEventListener("appinstalled",function(){var b=$("insBtn");if(b)b.style.display="none";var d=$("insDone");if(d){d.textContent="✅ Yüklendi! Ana ekrandaki ikondan aç.";d.style.display="block"}});
+var b=$("insBtn");if(b)b.onclick=function(){if(!dp)return;dp.prompt();dp.userChoice.finally(function(){dp=null;b.style.display="none"})};
+})()</script>
+<!-- V91 EKLENTİ BİTİŞ -->
+<style>.adminOnly{display:none!important}body[data-role="super_admin"] .adminOnly{display:block!important}</style>
 </body></html>
