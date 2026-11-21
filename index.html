@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0f3d33"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><title>Profesyonel Şef Asistanı · V88</title>
+<meta name="theme-color" content="#0f3d33"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><title>Profesyonel Şef Asistanı · V89</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -2836,4 +2836,14 @@ var tries=0;(function wait(){var v=window.__v79;if(v&&v.sb&&v.sb()){var sb=v.sb(
  if(++tries<40)setTimeout(wait,500)})()
 })()</script>
 <!-- V88 MİSAFİR GENEL KÜTÜPHANE BİTİŞ -->
+<!-- V89 YENİ TARİFLER KISAYOLU -->
+<script>(function(){
+function ready(){var tl=document.querySelector("#dashboard .tiles");if(!tl||document.getElementById("cloudTile"))return !!document.getElementById("cloudTile");
+ var t=document.createElement("button");t.className="tile";t.id="cloudTile";t.style.display="none";t.innerHTML="<i>☁️</i><span id=\"cloudTileTxt\">Yeni Tarifler</span>";
+ t.onclick=function(){try{go("library");var q=document.getElementById("recipeSearch");if(q){q.value="Genel kütüphane";}var c=document.getElementById("categoryFilter");if(c)c.value="";renderLibrary()}catch(e){}};
+ tl.insertBefore(t,tl.firstChild);return true}
+function upd(){if(!ready())return;var n=0;try{n=recipes.filter(function(r){return r&&r._cloud}).length}catch(e){}
+ var t=document.getElementById("cloudTile");if(!t)return;t.style.display=n>0?"":"none";var x=document.getElementById("cloudTileTxt");if(x)x.textContent="Yeni Tarifler ("+n+")"}
+setInterval(upd,1500);setTimeout(upd,600)})()</script>
+<!-- V89 YENİ TARİFLER KISAYOLU BİTİŞ -->
 </body></html>
