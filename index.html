@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0f3d33"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><title>Profesyonel Şef Asistanı · V89</title>
+<meta name="theme-color" content="#0f3d33"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><title>Profesyonel Şef Asistanı · V90</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -2462,7 +2462,7 @@ async function syncRecipes(manual){if(!sb||!S.user||!S.profile||S.busy)return;S.
   var rows=q.data||[];S.rows=rows;
   /* başkalarının / genel / şirket tarifleri (salt okunur) */
   var seen={};recipes.forEach(function(r){if(!r._cloud)seen[String(r.name).trim().toLocaleLowerCase("tr")]=1});
-  S.cloud=rows.filter(function(r){return r.owner_id!==uid||r.is_global}).map(function(r){var o=Object.assign({},r.data||{});o.id="C-"+r.id;o._cloud=true;o.name=r.name;var lab=r.is_global?"Genel kütüphane":(r.company_id?"Şirket havuzu":"Topluluk");o.sub=((o.sub||"")+" · ☁ "+lab).replace(/^ · /,"");o.aliases=o.aliases||[];o.ingredients=o.ingredients||[];o.base=o.base||1;return o}).filter(function(o){var k=String(o.name).trim().toLocaleLowerCase("tr");return !seen[k]});
+  S.cloud=rows.filter(function(r){return r.owner_id!==uid||r.is_global}).map(function(r){var o=Object.assign({},r.data||{});o.id="C-"+r.id;o._cloud=true;o.name=r.name;var lab=r.is_global?"Genel kütüphane":(r.company_id?"Şirket havuzu":"Topluluk");o.sub=r.is_global?(o.sub||""):((o.sub||"")+" · ☁ "+lab).replace(/^ · /,"");o.aliases=o.aliases||[];o.ingredients=o.ingredients||[];o.base=o.base||1;return o}).filter(function(o){var k=String(o.name).trim().toLocaleLowerCase("tr");return !seen[k]});
   /* kendi özel reçetelerim: çift yönlü eşitleme */
   if(role!=="personel"){
    var SK="sefSync_"+uid,synced={};try{synced=JSON.parse(ls(SK)||"{}")}catch(e){}
@@ -2828,7 +2828,7 @@ function glob(){var v=window.__v79;if(!v||!v.sb||!v.S)return;var sb=v.sb(),S=v.S
  sb.from("recipes").select("id,name,data,author_name").eq("is_global",true).then(function(q){
   if(!q||q.error||!q.data||!q.data.length||S.user)return;
   var seen={};recipes.forEach(function(r){if(!r._cloud)seen[String(r.name).trim().toLocaleLowerCase("tr")]=1});
-  var list=q.data.map(function(r){var o=Object.assign({},r.data||{});o.id="C-"+r.id;o._cloud=true;o.name=r.name;o.sub=((o.sub||"")+" · ☁ Genel kütüphane").replace(/^ · /,"");o.aliases=o.aliases||[];o.ingredients=o.ingredients||[];o.base=o.base||1;return o}).filter(function(o){var k=String(o.name).trim().toLocaleLowerCase("tr");if(seen[k])return false;seen[k]=1;return true});
+  var list=q.data.map(function(r){var o=Object.assign({},r.data||{});o.id="C-"+r.id;o._cloud=true;o.name=r.name;o.sub=(o.sub||"");o.aliases=o.aliases||[];o.ingredients=o.ingredients||[];o.base=o.base||1;return o}).filter(function(o){var k=String(o.name).trim().toLocaleLowerCase("tr");if(seen[k])return false;seen[k]=1;return true});
   if(!list.length)return;S.cloud=list;var have={};recipes.forEach(function(r){have[r.id]=1});list.forEach(function(o){if(!have[o.id])recipes.push(o)});
   try{renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();var d=document.getElementById("dashRecipes");if(d)d.textContent=recipes.length}catch(e){}
  }).catch(function(){})}
@@ -2837,13 +2837,6 @@ var tries=0;(function wait(){var v=window.__v79;if(v&&v.sb&&v.sb()){var sb=v.sb(
 })()</script>
 <!-- V88 MİSAFİR GENEL KÜTÜPHANE BİTİŞ -->
 <!-- V89 YENİ TARİFLER KISAYOLU -->
-<script>(function(){
-function ready(){var tl=document.querySelector("#dashboard .tiles");if(!tl||document.getElementById("cloudTile"))return !!document.getElementById("cloudTile");
- var t=document.createElement("button");t.className="tile";t.id="cloudTile";t.style.display="none";t.innerHTML="<i>☁️</i><span id=\"cloudTileTxt\">Yeni Tarifler</span>";
- t.onclick=function(){try{go("library");var q=document.getElementById("recipeSearch");if(q){q.value="Genel kütüphane";}var c=document.getElementById("categoryFilter");if(c)c.value="";renderLibrary()}catch(e){}};
- tl.insertBefore(t,tl.firstChild);return true}
-function upd(){if(!ready())return;var n=0;try{n=recipes.filter(function(r){return r&&r._cloud}).length}catch(e){}
- var t=document.getElementById("cloudTile");if(!t)return;t.style.display=n>0?"":"none";var x=document.getElementById("cloudTileTxt");if(x)x.textContent="Yeni Tarifler ("+n+")"}
-setInterval(upd,1500);setTimeout(upd,600)})()</script>
+
 <!-- V89 YENİ TARİFLER KISAYOLU BİTİŞ -->
 </body></html>
