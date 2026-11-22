@@ -2695,6 +2695,30 @@ function renderShare(){
   var a=$("shAdd");if(a)a.onclick=function(){window.go("recipeManage")};
 }
 
+/* ---------- Tarif sayfasında paylaş düğmesi ---------- */
+var oShowRecipe=window.showRecipe;
+if(typeof oShowRecipe==="function")window.showRecipe=function(id){
+  var res=oShowRecipe.apply(this,arguments);
+  try{
+    if(!ME||!(ME.role==="ev_kullanicisi"||ME.role==="super_admin"))return res;
+    var d=$("recipeDetail");if(!d)return res;
+    var admin=ME.role==="super_admin",flag=admin?"_global":"_public";
+    var r=custom.find(function(x){return x.id===id}),html;
+    if(r&&!/Topluluk tarifi ·/.test(r.tips||"")){
+      var st=!!r[flag];
+      html='<div class="note" style="display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap"><span>'+(st?"✅ Bu tarif "+(admin?"Genel Kütüphane'de":"toplulukla paylaşılıyor"):"🔒 Bu tarifi sadece sen görüyorsun")+'</span><button class="btn '+(st?"light":"gold")+'" id="recShare">📤 '+(st?(admin?"Genel'den çıkar":"Paylaşımı kaldır"):(admin?"Genel Kütüphane'ye ekle":"Toplulukla paylaş"))+'</button></div>';
+    }else if(!r&&!/^(G-|C-|P-)/.test(String(id))&&builtInRecipes.some(function(x){return x.id===id})){
+      html='<div class="note small">📚 Bu, Genel Reçeteler\'de yer alan hazır bir tarif; herkes görebilir. Kendi tarifini paylaşmak için "Tarif Ekle"den ekle ya da bu tarife dayalı yeni bir tarif oluştur.</div>';
+    }else return res;
+    d.insertAdjacentHTML("afterbegin",html);
+    var b=$("recShare");if(b)b.onclick=function(){
+      if(r[flag])delete r[flag];else r[flag]=true;
+      LS.setItem(K.rec,JSON.stringify(custom));toast(r[flag]?(admin?"Genel Kütüphane'ye eklendi":"Toplulukla paylaşıldı"):"Paylaşım kaldırıldı");
+      window.showRecipe(id)};
+  }catch(e){console.warn("share btn",e)}
+  return res;
+};
+
 /* ---------- Admin paneli ---------- */
 var ADM=null;
 async function loadAdmin(){
