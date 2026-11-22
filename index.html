@@ -2391,9 +2391,15 @@ function init(){
   document.getElementById("vidQ").addEventListener("input",function(){ctx=null});
   document.querySelector('nav [data-tab="video"]').addEventListener("click",function(){renderSaved()});
 }
+function mainActions(d){return Array.prototype.slice.call(d.querySelectorAll(".actions")).filter(function(a){return /Üretim hesabında aç/.test(a.textContent)})[0]||null}
+window.mainActions=mainActions;
+function recipeText(r){return r.name+" ("+(r.base||1)+" porsiyon)\n\nMalzemeler:\n"+(r.ingredients||[]).map(function(x){return"- "+x[0]+": "+x[1]+" "+x[2]}).join("\n")+"\n\nYapılış:\n"+(r.method||"")+"\n\n— Profesyonel Şef Asistanı"}
 var _sr=window.showRecipe;
-window.showRecipe=function(id){_sr.apply(this,arguments);var d=document.getElementById("recipeDetail");if(!d)return;var has=!!load()[id];
-  d.insertAdjacentHTML("afterbegin",'<div class="actions" style="margin-bottom:10px"><button class="btn light" onclick="videoFor(\''+String(id).replace(/'/g,"")+'\')">▶ '+(has?"Kayıtlı videoyu izle":"YouTube'da videosunu aç")+'</button></div>')};
+window.showRecipe=function(id){_sr.apply(this,arguments);var d=document.getElementById("recipeDetail");if(!d)return;var g=mainActions(d);if(!g)return;
+  var r=recipes.find(function(x){return x.id===id});if(!r)return;var has=!!load()[id];
+  g.insertAdjacentHTML("beforeend",'<button class="btn light" id="recVid">▶ '+(has?"Kayıtlı videoyu izle":"YouTube'da videosunu aç")+'</button><button class="btn light" id="recShareTxt">📤 Reçeteyi paylaş</button>');
+  document.getElementById("recVid").onclick=function(){window.videoFor(id)};
+  document.getElementById("recShareTxt").onclick=function(){var tx=recipeText(r);if(navigator.share){navigator.share({title:r.name,text:tx}).catch(function(){})}else{window.open("https://wa.me/?text="+encodeURIComponent(tx),"_blank")}}};
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
 </script>
@@ -2695,26 +2701,28 @@ function renderShare(){
   var a=$("shAdd");if(a)a.onclick=function(){window.go("recipeManage")};
 }
 
-/* ---------- Tarif sayfasında paylaş düğmesi ---------- */
+/* ---------- Tarif sayfasında toplulukla paylaş düğmesi ---------- */
 var oShowRecipe=window.showRecipe;
 if(typeof oShowRecipe==="function")window.showRecipe=function(id){
   var res=oShowRecipe.apply(this,arguments);
   try{
     if(!ME||!(ME.role==="ev_kullanicisi"||ME.role==="super_admin"))return res;
-    var d=$("recipeDetail");if(!d)return res;
+    var d=$("recipeDetail"),g=d&&window.mainActions&&window.mainActions(d);if(!g)return res;
     var admin=ME.role==="super_admin",flag=admin?"_global":"_public";
-    var r=custom.find(function(x){return x.id===id}),html;
-    if(r&&!/Topluluk tarifi ·/.test(r.tips||"")){
-      var st=!!r[flag];
-      html='<div class="note" style="display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap"><span>'+(st?"✅ Bu tarif "+(admin?"Genel Kütüphane'de":"toplulukla paylaşılıyor"):"🔒 Bu tarifi sadece sen görüyorsun")+'</span><button class="btn '+(st?"light":"gold")+'" id="recShare">📤 '+(st?(admin?"Genel'den çıkar":"Paylaşımı kaldır"):(admin?"Genel Kütüphane'ye ekle":"Toplulukla paylaş"))+'</button></div>';
-    }else if(!r&&!/^(G-|C-|P-)/.test(String(id))&&builtInRecipes.some(function(x){return x.id===id})){
-      html='<div class="note small">📚 Bu, Genel Reçeteler\'de yer alan hazır bir tarif; herkes görebilir. Kendi tarifini paylaşmak için "Tarif Ekle"den ekle ya da bu tarife dayalı yeni bir tarif oluştur.</div>';
-    }else return res;
-    d.insertAdjacentHTML("afterbegin",html);
-    var b=$("recShare");if(b)b.onclick=function(){
-      if(r[flag])delete r[flag];else r[flag]=true;
-      LS.setItem(K.rec,JSON.stringify(custom));toast(r[flag]?(admin?"Genel Kütüphane'ye eklendi":"Toplulukla paylaşıldı"):"Paylaşım kaldırıldı");
-      window.showRecipe(id)};
+    var r=custom.find(function(x){return x.id===id}),src=!r&&builtInRecipes.find(function(x){return x.id===id});
+    if(r&&/Topluluk tarifi ·/.test(r.tips||""))return res;
+    if(!r&&!src)return res;
+    var st=!!(r&&r[flag]);
+    var label=st?(admin?"Genel'den çıkar":"Paylaşımı kaldır"):(admin?"Genel Kütüphane'ye ekle":"Toplulukla paylaş");
+    g.insertAdjacentHTML("beforeend",'<button class="btn '+(st?"light":"gold")+'" id="recShare">🌍 '+label+'</button>');
+    $("recShare").onclick=function(){
+      if(r){
+        if(r[flag])delete r[flag];else r[flag]=true;
+        LS.setItem(K.rec,JSON.stringify(custom));toast(r[flag]?(admin?"Genel Kütüphane'ye eklendi":"Toplulukla paylaşıldı"):"Paylaşım kaldırıldı");
+        window.showRecipe(id);return}
+      if(!confirm("Bu hazır tarifin bir kopyası kütüphanene eklenecek ve "+(admin?"Genel Kütüphane'ye konacak":"toplulukla paylaşılacak")+". Devam edilsin mi?"))return;
+      var c=JSON.parse(JSON.stringify(src));c.id="USR-"+Date.now()+"-"+Math.random().toString(36).slice(2,6);c[flag]=true;
+      custom.push(c);LS.setItem(K.rec,JSON.stringify(custom));rebuild();toast(admin?"Genel Kütüphane'ye eklendi":"Toplulukla paylaşıldı");window.showRecipe(c.id)};
   }catch(e){console.warn("share btn",e)}
   return res;
 };
