@@ -2543,6 +2543,7 @@ async function pullRemote(){
   var gc=[],pub=[];
   (r.data||[]).forEach(function(x){
     if(!x.data||!Array.isArray(x.data.ingredients))return;
+    if(x.owner_id===ME.uid&&String(x.local_id).indexOf("G-")!==0)return;
     var kind=x.is_global?"G":(x.company_id&&x.company_id===ME.company_id&&x.owner_id!==ME.uid)?"C":(x.is_public&&!x.company_id&&x.owner_id!==ME.uid)?"P":null;
     if(!kind)return;
     var d=Object.assign({},x.data);d.id=kind+"-"+x.id;d.name=x.name;d._remote=kind;d._author=x.author_name||"";
