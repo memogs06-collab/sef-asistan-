@@ -258,7 +258,9 @@ body.locked #authOv{display:flex}
 #authBar .mini{border:1px solid var(--line);background:#f6f8f7;border-radius:10px;padding:5px 10px;font-size:12px;color:var(--ink)}
 #authBar .sync{margin-left:auto;font-size:12px;color:var(--muted)}#authBar .sync.err{color:var(--red)}
 .ctoast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#182638;color:#fff;padding:10px 16px;border-radius:12px;z-index:100000;font-size:14px}
-#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}</style><script src="config.js" onerror="void 0"></script>
+#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}body:not([data-role="super_admin"]) #catalogCount{display:none}
+.tgrp{grid-column:1/-1;font-weight:800;color:var(--navy);font-size:14px;margin:10px 2px 0;padding-top:6px;border-top:1px solid var(--line)}.tgrp:first-child{border-top:0;margin-top:0}
+</style><script src="config.js" onerror="void 0"></script>
 </head>
 <body>
 <header><div class="logo">♨</div><div><h1>PROFESYONEL ŞEF ASİSTANI</h1><div class="founder">Mehmet Ali Özkan tarafından kurulmuştur.</div></div><div class="subhead">Toplu yemek üretimi için<br>GASTRONOMİ · REÇETE · ÜRETİM</div><button id="kBtn" aria-label="Büyük yazı">Aa</button><button id="sBtn" aria-label="Ara">🔍</button></header>
@@ -2557,9 +2559,14 @@ async function pullOwn(){
   return changed;
 }
 async function pullRemote(){
-  var q=sb.from("recipes").select("id,owner_id,local_id,company_id,name,author_name,data,is_public,is_global").limit(3000);
-  q=ME.role==="super_admin"?q.or("is_global.eq.true,is_public.eq.true"):q.or("is_global.eq.true,owner_id.neq."+ME.uid);
-  var r=await q;if(r.error)throw r.error;
+  var allRows=[];
+  for(var off=0;off<20000;off+=1000){
+    var q=sb.from("recipes").select("id,owner_id,local_id,company_id,name,author_name,data,is_public,is_global").order("id").range(off,off+999);
+    q=ME.role==="super_admin"?q.or("is_global.eq.true,is_public.eq.true"):q.or("is_global.eq.true,owner_id.neq."+ME.uid);
+    var rr=await q;if(rr.error)throw rr.error;
+    allRows=allRows.concat(rr.data||[]);if((rr.data||[]).length<1000)break;
+  }
+  var r={data:allRows};
   var gc=[],pub=[];
   (r.data||[]).forEach(function(x){
     if(!x.data||!Array.isArray(x.data.ingredients))return;
@@ -2582,8 +2589,22 @@ function loadLib(cb){
   s.onload=cb;s.onerror=function(){showAuth("Bağlantı kitaplığı yüklenemedi. İnternetini kontrol edip sayfayı yenile.")};
   document.head.appendChild(s);
 }
+async function guestPull(){
+  try{
+    var rows=[];
+    for(var off=0;off<20000;off+=1000){
+      var rr=await sb.from("recipes").select("id,name,author_name,data").eq("is_global",true).order("id").range(off,off+999);
+      if(rr.error)throw rr.error;rows=rows.concat(rr.data||[]);if((rr.data||[]).length<1000)break;
+    }
+    var gc=[];
+    rows.forEach(function(x){if(!x.data||!Array.isArray(x.data.ingredients))return;
+      var d=Object.assign({},x.data);d.id="G-"+x.id;d.name=x.name;d._remote="G";d._author=x.author_name||"";gc.push(d)});
+    raw(K.remote,JSON.stringify(gc));rebuild();
+  }catch(e){console.warn("guest",e)}
+}
 function enterGuest(){
   try{sessionStorage.setItem("sef_guest","1")}catch(e){}
+  guestPull();
   document.body.classList.remove("locked");document.body.dataset.guest="1";
   if(!$("guestBar")){var g=document.createElement("button");g.id="guestBar";g.type="button";g.textContent="👤 Misafir · Giriş yap";
     g.style.cssText="position:fixed;right:10px;bottom:10px;z-index:9000;padding:8px 12px;border-radius:20px;border:1px solid #c59655;background:#182638;color:#fff;font-size:12px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.3)";
@@ -2906,4 +2927,48 @@ b.onclick=function(){var n=document.getElementById("spName").value.trim(),c=docu
  fetch(C.SUPABASE_URL+"/rest/v1/recipe_requests",{method:"POST",headers:{"apikey":C.SUPABASE_ANON_KEY,"Authorization":"Bearer "+C.SUPABASE_ANON_KEY,"Content-Type":"application/json","Prefer":"return=minimal"},body:JSON.stringify({kind:"sponsor",request_text:(n?n+": ":"")+t,contact:c})})
  .then(function(r){if(!r.ok)throw 0;["spName","spContact","spText"].forEach(function(i){document.getElementById(i).value=""});m("Teşekkürler, mesajın ulaştı. En kısa sürede dönüş yapılacak.")})
  .catch(function(){m("Gönderilemedi. İnternetini kontrol edip tekrar dene.")}).then(function(){b.disabled=false})}})();</script>
+
+<script>(function(){
+var G=[["","",["video"]],["📖","Tarifler",["library","community","pantryFinder","specialCreator","recipeManage"]],["🗓️","Planlama",["menu","production","shop","prep"]],["📚","Rehber",["spiceGuide","sauce","safety","notebook"]],["🏭","Profesyonel",["standart","equipment","fire","quality"]],["⚙️","Hesap ve yedek",["backup","admin"]]];
+var IC2={community:"👥",admin:"🛡️",video:"▶️",pantryFinder:"🥕",shop:"🛒"};
+var nav=document.getElementById("nav");if(!nav)return;
+function sheetClose(){var sh=document.getElementById("sheet");if(sh)sh.classList.remove("open")}
+function mkTile(b,sheet){var t=document.createElement("button");t.className="tile";t.dataset.tab=b.dataset.tab;t.innerHTML="<i>"+(IC2[b.dataset.tab]||"•")+"</i>"+b.textContent.replace(/^▶\s*/,"");t.onclick=function(){if(sheet)sheetClose();go(b.dataset.tab)};return t}
+function containers(){var a=[],d=document.getElementById("dashboard"),t=d&&d.querySelector(".tiles"),all=document.getElementById("all");if(t)a.push([t,false]);if(all)a.push([all,true]);return a}
+function build(){
+ var navBtns=[].slice.call(nav.querySelectorAll("button"));
+ containers().forEach(function(c){var box=c[0],sheet=c[1];
+  navBtns.forEach(function(b){if(b.dataset.tab==="dashboard")return;if(!box.querySelector('.tile[data-tab="'+b.dataset.tab+'"]'))box.appendChild(mkTile(b,sheet))});
+  var tiles={};[].forEach.call(box.querySelectorAll(".tile"),function(t){tiles[t.dataset.tab]=t;var ii=t.querySelector("i");if(ii&&ii.textContent==="•"&&IC2[t.dataset.tab])ii.textContent=IC2[t.dataset.tab]});
+  [].forEach.call(box.querySelectorAll(".tgrp"),function(h){h.remove()});
+  var used={};
+  G.forEach(function(g,gi){var list=g[2].filter(function(id){return tiles[id]});
+   if(gi===G.length-1){Object.keys(tiles).forEach(function(id){if(!used[id]&&list.indexOf(id)<0&&!G.some(function(x){return x[2].indexOf(id)>=0}))list.push(id)})}
+   if(!list.length)return;
+   if(g[1]){var h=document.createElement("div");h.className="tgrp";h.textContent=g[0]+" "+g[1];box.appendChild(h)}
+   list.forEach(function(id){used[id]=1;box.appendChild(tiles[id])})});
+ });
+ refresh();
+ // masaüstü menüsünü de aynı sıraya diz
+ var order=[];G.forEach(function(g){g[2].forEach(function(id){order.push(id)})});
+ var first=nav.querySelector('[data-tab="dashboard"]');var prev=first;
+ order.forEach(function(id){var b=nav.querySelector('[data-tab="'+id+'"]');if(b&&prev&&b.previousElementSibling!==prev){prev.after(b)}if(b)prev=b});
+}
+function refresh(){
+ containers().forEach(function(c){var box=c[0],vis=false,pend=null;
+  var kids=[].slice.call(box.children);
+  function flush(){if(pend){var d=vis?"":"none";if(pend.style.display!==d)pend.style.display=d}}
+  kids.forEach(function(k){
+   if(k.classList.contains("tgrp")){flush();pend=k;vis=false;return}
+   var b=nav.querySelector('[data-tab="'+k.dataset.tab+'"]');var hide=b&&b.style.display==="none";
+   var d=hide?"none":"";if(k.style.display!==d)k.style.display=d;if(!hide)vis=true});
+  flush()});
+}
+var busy=false;
+function safe(f){if(busy)return;busy=true;try{f()}catch(e){console.warn(e)}busy=false}
+safe(build);
+new MutationObserver(function(m){
+ var added=m.some(function(x){return x.type==="childList"});
+ safe(added?build:refresh)}).observe(nav,{childList:true,attributes:true,attributeFilter:["style"],subtree:true});
+})();</script>
 </body></html>
