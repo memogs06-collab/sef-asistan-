@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V94</title>
+<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V99</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -258,7 +258,7 @@ body.locked #authOv{display:flex}
 #authBar .mini{border:1px solid var(--line);background:#f6f8f7;border-radius:10px;padding:5px 10px;font-size:12px;color:var(--ink)}
 #authBar .sync{margin-left:auto;font-size:12px;color:var(--muted)}#authBar .sync.err{color:var(--red)}
 .ctoast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#182638;color:#fff;padding:10px 16px;border-radius:12px;z-index:100000;font-size:14px}
-#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}body:not([data-role="super_admin"]) #catalogCount{display:none}
+#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}body:not([data-role="super_admin"]) #catalogCount{display:none}body[data-guest="1"] [data-tab="depo"],body[data-guest="1"] [data-tab="maliyet"],body[data-guest="1"] [data-tab="gunluk"],body[data-guest="1"] [data-tab="skt"],body[data-guest="1"] [data-tab="uretKayit"],body[data-guest="1"] [data-tab="tedarik"]{display:none!important}
 .tgrp{grid-column:1/-1;font-weight:800;color:var(--navy);font-size:14px;margin:10px 2px 0;padding-top:6px;border-top:1px solid var(--line)}.tgrp:first-child{border-top:0;margin-top:0}
 </style><script src="config.js" onerror="void 0"></script>
 </head>
@@ -280,7 +280,7 @@ body.locked #authOv{display:flex}
 <div class="small" style="margin-top:6px;text-align:center">Misafir modunda hazır reçetelerin hepsini kullanırsın; bulut kaydı ve topluluk özellikleri için giriş gerekir.</div></div></div></div>
 <div id="authBar" class="cloud-only"></div>
 <nav id="nav">
-<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="video">▶ Video Tarif</button><button data-tab="specialCreator">Özel / Doğaçlama Yemek</button><button data-tab="standart">Standart Tablo</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="fire">Fire & Verim</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Derin Küvet</button><button data-tab="menu">Menü Planlama</button><button data-tab="prep">Mise en Place</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
+<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="video">▶ Video Tarif</button><button data-tab="specialCreator">Özel / Doğaçlama Yemek</button><button data-tab="standart">Standart Tablo</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="depo">Depo / Stok</button><button data-tab="maliyet">Maliyet</button><button data-tab="gunluk">Günlük İş Listesi</button><button data-tab="skt">Çözdürme &amp; SKT</button><button data-tab="uretKayit">Üretim Kaydı</button><button data-tab="tedarik">Tedarikçiler</button><button data-tab="fire">Fire & Verim</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Derin Küvet</button><button data-tab="menu">Menü Planlama</button><button data-tab="prep">Mise en Place</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
 </nav>
 <main>
 <section id="dashboard" class="tab active">
@@ -506,6 +506,114 @@ Et suyu (hazır): Süt, Kereviz"></textarea><div class="small">Bu alan, malzeme 
 <h3 style="margin:20px 4px 10px">5 Temel Sos ve Türevleri <small class="muted">(1 kg ana sos için)</small></h3><div id="stSauce" class="stsauce"></div>
 <div class="card stnotes"><h3>📌 Önemli notlar</h3><ul><li>Bu reçeteler 1 kişilik standart porsiyon içindir. Toplu üretimde verim kaybı (temizleme, pişirme kaybı vb.) dikkate alınarak planlama yapılmalıdır.</li><li>Et ve tavuk gramajları kemiksiz, çiğ net ağırlıktır.</li><li>Bakliyat gramajları kuru ağırlıktır.</li><li>Tuz miktarı başlangıç standardıdır, ürünün tuzluluğuna göre ayarlanmalıdır.</li><li>Garnitür miktarları ana yemeğe göre değişiklik gösterebilir.</li><li>Pişmiş, porsiyon gramajları ortalama servis ağırlığını ifade eder.</li><li>Lezzet, baharat ve sunum yemeklerin tadını ve kalitesini belirler.</li><li>✱ işaretli gruplar sonradan eklenen <b>tahmini</b> standartlardır; kendi şartnamene ve mutfak uygulamana göre kontrol edip düzelt.</li></ul></div>
 </section>
+<section id="depo" class="tab">
+<div class="sthero"><div class="stk">Mutfak · Depo</div><h2>Depo / Stok Takibi</h2><div class="sts">Malzeme giriş-çıkışı, kalan stok ve minimum stok uyarısı</div></div>
+<div class="card"><div id="dpSum" class="small"></div><div class="actions"><button class="btn gold" id="dpShopLow">Azalanları alışveriş listesine ekle</button><button class="btn light" id="dpPrint">Stok listesini yazdır</button><button class="btn light" id="dpOrder">Tedarikçi siparişi (WhatsApp)</button></div><div id="dpOrderOut" style="margin-top:10px"></div><div class="actions" style="display:none"></div></div>
+<div class="card" style="margin-top:14px"><h3>➕ Yeni malzeme</h3>
+<label>Malzeme adı</label><input id="dpName" type="text" maxlength="80" list="dpNames">
+<label>Kategori</label><input id="dpCat" type="text" maxlength="40" list="dpCats" placeholder="Bakliyat, Yağ, Et...">
+<label>Birim</label><select id="dpUnit"><option>kg</option><option>lt</option><option>adet</option><option>paket</option><option>kutu</option></select>
+<label>Tedarikçi (isteğe bağlı)</label><select id="dpSup"><option value="">-</option></select>
+<label>Başlangıç miktarı</label><input id="dpQty0" type="number" min="0" step="any" value="0" inputmode="decimal">
+<label>Minimum stok (altına düşünce uyarı)</label><input id="dpMin" type="number" min="0" step="any" value="0" inputmode="decimal">
+<div class="actions"><button class="btn gold" id="dpAdd">Malzemeyi ekle</button></div><datalist id="dpCats"></datalist><datalist id="dpNames"></datalist></div>
+<div class="card" style="margin-top:14px"><h3>🔁 Giriş / Çıkış</h3>
+<label>Malzeme</label><select id="dpSel"></select>
+<label>Hareket</label><select id="dpType"><option value="in">Giriş (depoya gelen)</option><option value="out">Çıkış (mutfağa giden)</option></select>
+<label>Miktar</label><input id="dpQ" type="number" min="0" step="any" inputmode="decimal">
+<label>Tarih</label><input id="dpDate" type="date">
+<label>Son kullanma tarihi (girişte, isteğe bağlı)</label><input id="dpSkt" type="date">
+<label>Not (isteğe bağlı)</label><input id="dpNote" type="text" maxlength="80">
+<div class="actions"><button class="btn gold" id="dpMove">Kaydet</button></div></div>
+<div class="card" style="margin-top:14px"><h3>📦 Kalan stok</h3>
+<input id="dpQ2" type="text" placeholder="Ara..." style="margin-bottom:8px"><select id="dpF" style="margin-bottom:8px"><option value="">Tüm kategoriler</option></select>
+<div id="dpList"></div></div>
+<div class="card" style="margin-top:14px"><h3>🧾 Hareket geçmişi</h3><div class="small">Son 60 hareket</div><div id="dpLog"></div></div>
+</section>
+<section id="maliyet" class="tab">
+<div class="sthero"><div class="stk">Mutfak · Maliyet</div><h2>Maliyet Hesabı</h2><div class="sts">Malzeme fiyatlarını gir; porsiyon ve toplu üretim maliyeti otomatik hesaplansın</div></div>
+<div class="card"><h3>🍽️ Reçete maliyeti</h3>
+<label>Reçete (yazmaya başla)</label><input id="mlR" type="text" list="mlRL" autocomplete="off" placeholder="Örn: Mercimek Çorbası"><datalist id="mlRL"></datalist>
+<label>Porsiyon sayısı</label><input id="mlN" type="number" min="1" value="100" inputmode="numeric">
+<label class="shi" style="border:0;padding-left:0"><input type="checkbox" id="mlFire" checked><span>Fire payını ekle<small style="display:block;color:#667381">Sebze gibi malzemelerde temizlemede kaybolan kısmı maliyete katar</small></span></label>
+<div class="actions"><button class="btn gold" id="mlCalc">Hesapla</button></div><div id="mlOut" style="margin-top:12px"></div></div>
+<div class="card" style="margin-top:14px"><h3>🗓️ Menü maliyeti</h3><div class="small">Kayıtlı bir menünün toplam ve kişi başı maliyetini hesaplar.</div>
+<label>Kayıtlı menü</label><select id="mmSel"></select>
+<label>Kişi sayısı (haftalık menüler için)</label><input id="mmP" type="number" min="1" value="100" inputmode="numeric">
+<label class="shi" style="border:0;padding-left:0"><input type="checkbox" id="mmFire" checked><span>Fire payını ekle</span></label>
+<label>Hedef kişi başı maliyet (₺, isteğe bağlı)</label><input id="mmT" type="number" min="0" step="any" inputmode="decimal">
+<div class="actions"><button class="btn gold" id="mmCalc">Menü maliyetini hesapla</button></div><div id="mmOut" style="margin-top:10px"></div></div>
+<div class="card" style="margin-top:14px"><h3>💰 Fiyatı girilmemiş sık malzemeler</h3><div class="small">Reçetelerde en çok geçen malzemeler. Fiyatı yazınca kayıt otomatik olur.</div><div id="mlMiss"></div></div>
+<div class="card" style="margin-top:14px"><h3>📋 Fiyat listesi</h3>
+<div class="small">Birim fiyatı kg, lt veya adet başına gir (KDV dahil güncel alış fiyatı).</div>
+<label>Malzeme</label><input id="mlPN" type="text" maxlength="80" list="mlPNL"><datalist id="mlPNL"></datalist>
+<label>Fiyat (₺)</label><input id="mlPP" type="number" min="0" step="any" inputmode="decimal">
+<label>Birim</label><select id="mlPU"><option value="kg">₺ / kg</option><option value="lt">₺ / lt</option><option value="adet">₺ / adet</option></select>
+<div class="actions"><button class="btn gold" id="mlPAdd">Kaydet</button></div>
+<input id="mlPQ" type="text" placeholder="Listede ara..." style="margin:10px 0"><div id="mlPL"></div></div>
+</section>
+<section id="gunluk" class="tab">
+<div class="sthero"><div class="stk">Mutfak · Günlük</div><h2>Günlük İş Listesi</h2><div class="sts">Hazırlık görevleri ile açılış ve kapanış kontrol listeleri</div></div>
+<div class="card"><h3>🔪 Hazırlık görevleri</h3>
+<label>Reçete (yazmaya başla)</label><input id="gvR" type="text" list="gvRL" autocomplete="off"><datalist id="gvRL"></datalist>
+<label>Porsiyon sayısı</label><input id="gvN" type="number" min="1" value="100" inputmode="numeric">
+<div class="actions"><button class="btn gold" id="gvGen">Reçeteden görev üret</button><button class="btn light" id="gvMenu">Kayıtlı menüden üret</button></div>
+<div class="small" style="margin-top:6px">Kayıtlı menüden: en son kaydedilen menüdeki yemekler ve kişi sayısı kullanılır.</div>
+<datalist id="gvWho"></datalist><label class="shi" style="border:0;padding-left:0"><input type="checkbox" id="gvMine"><span>Yalnızca bana atanan görevleri göster</span></label>
+<label>Elle görev ekle</label><input id="gvT" type="text" maxlength="120" placeholder="Örn: Nohutları ıslat"><div class="actions"><button class="btn light" id="gvAdd">Ekle</button><button class="btn light" id="gvClr">Tamamlananları temizle</button><button class="btn light" id="gvPr">Yazdır</button></div>
+<div id="gvL" style="margin-top:10px"></div></div>
+<div class="card" style="margin-top:14px"><h3>⏱️ Üretim zamanlaması</h3><div class="small">Servis saatine göre hangi saatte başlanması gerektiğini hesaplar. Girdiğin süreler reçete için hatırlanır.</div>
+<label>Reçete</label><input id="zmR" type="text" list="zmRL" autocomplete="off"><datalist id="zmRL"></datalist>
+<label>Servis saati</label><input id="zmT" type="time" value="12:00">
+<label>Hazırlık süresi (dk)</label><input id="zmH" type="number" min="0" inputmode="numeric">
+<label>Pişirme süresi (dk)</label><input id="zmP" type="number" min="0" inputmode="numeric">
+<div class="actions"><button class="btn gold" id="zmCalc">Başlama saatini hesapla</button></div><div id="zmOut" style="margin-top:10px"></div></div>
+<div class="card" style="margin-top:14px"><h3>🥗 Besin değeri (tahmini)</h3><div class="small">Bir reçetenin porsiyon başı değerini veya kayıtlı bir menünün kişi başı günlük değerini gösterir.</div>
+<label>Reçete</label><input id="bsR" type="text" list="bsRL" autocomplete="off" placeholder="Boş bırakıp menü seçebilirsin"><datalist id="bsRL"></datalist>
+<label>veya kayıtlı menü</label><select id="bsSel"></select>
+<div class="actions"><button class="btn gold" id="bsCalc">Hesapla</button></div><div id="bsOut" style="margin-top:10px"></div></div>
+<div class="card" style="margin-top:14px"><h3>⚠️ Menü alerjen çizelgesi</h3>
+<label>Kayıtlı menü</label><select id="alSel"></select><div class="actions"><button class="btn gold" id="alCalc">Çizelgeyi göster</button><button class="btn light" id="alPr">Yazdır</button></div><div id="alOut" style="margin-top:10px"></div></div>
+<div class="card" style="margin-top:14px"><h3>📑 Kayıt raporu (HACCP)</h3><div class="small">Sıcaklık, kalite/tadım, açılış-kapanış ve SKT kayıtlarını tarih aralığıyla yazdırır.</div>
+<label>Başlangıç</label><input id="rpA" type="date"><label>Bitiş</label><input id="rpB" type="date"><div class="actions"><button class="btn gold" id="rpPrint">Raporu yazdır</button></div></div>
+<div class="card" style="margin-top:14px"><h3>🌅 Açılış kontrol listesi</h3><div id="gvO"></div><div class="actions"><button class="btn light" data-ckadd="o">Madde ekle</button></div></div>
+<div class="card" style="margin-top:14px"><h3>🌙 Kapanış kontrol listesi</h3><div id="gvC"></div><div class="actions"><button class="btn light" data-ckadd="c">Madde ekle</button></div></div>
+</section>
+<section id="skt" class="tab">
+<div class="sthero"><div class="stk">Mutfak · Güvenlik</div><h2>Çözdürme & Son Kullanma</h2><div class="sts">Çözdürülen, açılan ve hazırlanan ürünlerin kullanım süresini takip et</div></div>
+<div class="card"><h3>➕ Ürün kaydı</h3>
+<label>Ürün</label><input id="skN" type="text" maxlength="80">
+<label>Tür</label><select id="skT"><option value="2">Çözdürme (buzdolabı, 2 gün)</option><option value="3">Hazırlanmış yemek (3 gün)</option><option value="3x">Açılmış ürün (3 gün)</option><option value="2x">Marine / yarı hazır (2 gün)</option><option value="1">Diğer (1 gün)</option></select>
+<label>Başlangıç tarihi</label><input id="skD" type="date">
+<label>Son kullanım tarihi</label><input id="skE" type="date">
+<label>Not</label><input id="skNote" type="text" maxlength="80">
+<div class="actions"><button class="btn gold" id="skAdd">Kaydet</button></div></div>
+<div class="card" style="margin-top:14px"><h3>⏳ Takip listesi</h3><div class="actions"><button class="btn light" id="skLblAll">Tüm etiketleri yazdır</button></div><div id="skL"></div></div>
+</section>
+<section id="uretKayit" class="tab">
+<div class="sthero"><div class="stk">Mutfak · Kayıt</div><h2>Üretim Kaydı</h2><div class="sts">Ne kadar üretildi, ne kadar artık kaldı; gelecek porsiyon tahminini iyileştir</div></div>
+<div class="card"><h3>➕ Günlük kayıt</h3>
+<label>Tarih</label><input id="ukD" type="date">
+<label>Yemek</label><input id="ukR" type="text" list="ukRL" autocomplete="off"><datalist id="ukRL"></datalist>
+<label>Planlanan porsiyon</label><input id="ukP" type="number" min="0" inputmode="numeric">
+<label>Üretilen porsiyon</label><input id="ukU" type="number" min="0" inputmode="numeric">
+<label>Artık (kalan) porsiyon</label><input id="ukA" type="number" min="0" inputmode="numeric">
+<label>Not</label><input id="ukN" type="text" maxlength="80">
+<div class="actions"><button class="btn gold" id="ukAdd">Kaydet</button></div></div>
+<div class="card" style="margin-top:14px"><h3>📊 Özet</h3><div id="ukS"></div></div>
+<div class="card" style="margin-top:14px"><h3>🗓️ Aylık özet</h3><label>Ay</label><input id="amM" type="month"><div id="amOut" style="margin-top:10px"></div></div>
+<div class="card" style="margin-top:14px"><h3>🧾 Son kayıtlar</h3><div id="ukL"></div></div>
+</section>
+<section id="tedarik" class="tab">
+<div class="sthero"><div class="stk">Mutfak · Satın alma</div><h2>Tedarikçiler</h2><div class="sts">Hangi malzeme kimden alınıyor, telefon ve notlar</div></div>
+<div class="card"><h3>➕ Tedarikçi ekle</h3>
+<label>Firma / kişi</label><input id="tdN" type="text" maxlength="80">
+<label>Telefon</label><input id="tdP" type="tel" maxlength="30">
+<label>Tedarik ettiği ürünler</label><input id="tdU" type="text" maxlength="160" placeholder="Et, tavuk, sebze...">
+<label>Not (teslimat günü, ödeme vb.)</label><input id="tdNt" type="text" maxlength="160">
+<div class="actions"><button class="btn gold" id="tdAdd">Kaydet</button></div></div>
+<div class="card" style="margin-top:14px"><h3>📇 Liste</h3><input id="tdQ" type="text" placeholder="Ara..." style="margin-bottom:8px"><div id="tdL"></div></div>
+</section>
 <section id="shop" class="tab">
 <div class="sthero"><div class="stk">Sipariş · Satın alma</div><h2>Alışveriş Listesi</h2><div class="sts">Yemek gruplarını, reçeteleri ve formülleri ekle; toplam malzeme otomatik hesaplansın</div></div>
 <datalist id="shDl"></datalist><div class="card"><h3>➕ Yemek grubu ekle</h3><label>Yemek grubu</label><select id="shSel"></select><label>Porsiyon sayısı</label><input id="shN" type="number" min="1" value="100" inputmode="numeric"><div class="actions"><button class="btn gold" id="shAdd">Listeye ekle</button></div><div class="small" style="margin-top:8px">Gruplar Standart Tablo'dan gelir. Reçete kütüphanesi ve Doğaçlama Reçete'den de ekleyebilirsin.</div></div>
@@ -555,7 +663,7 @@ Et suyu (hazır): Süt, Kereviz"></textarea><div class="small">Bu alan, malzeme 
 </main>
 <div id="sOv"><div class="top"><input id="sIn" placeholder="Reçete, tablo, formül ara…" autocomplete="off"><button class="x" id="sX">Kapat</button></div><div id="sRes"></div></div>
 <script>
-const CATS=["Çorbalar","Et yemekleri","Tavuk yemekleri","Balık ve deniz ürünleri","Sebze yemekleri","Bakliyat yemekleri","Pilav ve bulgur","Makarna ve erişte","Dolma ve sarma","Köfteler","Zeytinyağlılar","Salatalar","Mezeler","Börek ve hamur işleri","Tatlılar","Soslar","Garnitürler","Dünya mutfağı"];
+const CATS=["Çorbalar","Et yemekleri","Tavuk yemekleri","Balık ve deniz ürünleri","Sebze yemekleri","Bakliyat yemekleri","Pilav ve bulgur","Makarna ve erişte","Dolma ve sarma","Köfteler","Zeytinyağlılar","Salatalar","Mezeler","Börek ve hamur işleri","Tatlılar","Soslar","Garnitürler","Kebaplar","Kahvaltı ve yumurta","Hamur ve ekmekler","Kek ve kurabiye","Sandviç ve dürüm","İçecekler","Turşu ve konserve","Reçeller","Dünya mutfağı"];
 const seed=[
 {id:"TR-COR-0001",name:"Mercimek Çorbası",aliases:["Süzme mercimek"],cat:"Çorbalar",sub:"Bakliyat / süzme",base:1,ingredients:[["Kırmızı mercimek",25,"g"],["Soğan",15,"g"],["Havuç",15,"g"],["Patates",15,"g"],["Sıvı yağ",5,"ml"],["Un",4,"g"],["Meyane için sıvı yağ",4,"ml"],["Su",250,"ml"],["Tuz",1,"g"]],method:"Soğan, havuç ve patatesi sıvı yağda kısa süre terlet. Yıkanmış mercimeği ve suyu ekleyip tamamen yumuşayana kadar pişir. Ayrı küçük tavada meyane için belirtilen yağı ısıt; unu ekleyip açık renkli, kokusu çıkmış bir meyane hazırla. Meyaneyi önce soğuk suyla azar azar açıp pürüzsüz ve akışkan hale getir; ardından sürekli karıştırarak çorbaya ince akışla ekle. 5-8 dakika kontrollü kaynat, blenderdan geçir ve kıvamını kontrol et.",tips:"Bu reçetede meyane çorbanın gövdesini artırmak için özellikle kullanılır. Kıvam bekledikçe koyulaşabileceğinden önce hedef kıvamdan biraz daha akışkan bırak; gerekirse sıcak suyu azar azar ekle. Un kokusu kalmamalı, meyane koyu kahverengiye dönmemeli.",equip:"soup",allergens:["Gluten"]},
 {id:"TR-COR-0002",name:"Yayla Çorbası",aliases:["Yoğurt çorbası"],cat:"Çorbalar",sub:"Yoğurtlu / terbiyeli",base:1,ingredients:[["Yoğurt",100,"g"],["Pirinç",15,"g"],["Un",3,"g"],["Yumurta sarısı",0.25,"adet"],["Su",230,"ml"],["Tuz",1,"g"],["Kuru nane",0.4,"g"],["Tereyağı",3,"g"]],method:"Pirinci suda yumuşat. Yoğurt, un ve yumurta sarısını pürüzsüz çırp. Sıcak suyla ılıştırıp tencereye al; kesilmeden pişir. Naneli yağı ekle.",tips:"1 porsiyon için 100 g yoğurt kullanılır; daha hafif kıvam istenirse 80 g seviyesine indirilebilir. Terbiyeyi sıcak sıvıyla ılıştır.",equip:"soup",allergens:["Süt","Gluten","Yumurta"]},
@@ -936,7 +1044,7 @@ function filterCat(r){
       res=/tavuk|pilic/.test(ing)?"Tavuk yemekleri":/kuzu|dana|kiyma|\bet\b|kusbasi|\bbut\b|kaburga|incik/.test(ing)?"Et yemekleri":"Sebze yemekleri"}
   }
   _fcCache.set(r,res);return res}
-function catMatch(r,cat){return cat==="__tr"?r.cat==="Türk mutfağı":filterCat(r)===cat}
+function catMatch(r,cat){return cat==="__tr"?(r._tr||r.cat==="Türk mutfağı"):cat==="Dünya mutfağı"?(r._dunya||/^Dünya [Mm]utfağı$/.test(r.cat)):filterCat(r)===cat}
 function initCats(){let opts=CATS.map(c=>`<option>${c}</option>`).join("");$("categoryFilter").innerHTML='<option value="">Tüm kategoriler</option>'+opts+'<option value="__tr">Türk mutfağı (yöresel)</option>';$("newCat").innerHTML=opts}
 function renderLibrary(){let q=$("recipeSearch").value.toLocaleLowerCase("tr"),cat=$("categoryFilter").value;let list=recipes.filter(r=>(!cat||catMatch(r,cat))&&(`${r.name} ${r.aliases.join(" ")} ${r.sub} ${r.ingredients.map(x=>x[0]).join(" ")}`).toLocaleLowerCase("tr").includes(q)&&(!window.libMode||window.libMode(r.id)));if(window.libSort)list=window.libSort(list);if($("catalogCount"))$("catalogCount").textContent=`Toplam ${recipes.length.toLocaleString("tr-TR")} reçete · ${list.length.toLocaleString("tr-TR")} sonuç`;$("recipeCards").innerHTML=list.map(r=>`<div class="recipe" onclick="showRecipe('${esc(r.id)}')"><div class="ri">${catIcon(r.cat)}</div><div class="rb"><b>${esc(r.name)}</b><span class="small">${esc(r.cat)} · ${esc(r.sub)}</span><div class="tagrow"><span class="chip">👥 ${r.base} porsiyon</span><span class="chip id">${esc(r.id)}</span></div></div><button class="fv" data-fv="${esc(r.id)}" onclick="event.stopPropagation();toggleFav('${esc(r.id)}')" aria-label="Favori">${(window.isFav&&isFav(r.id))?"★":"☆"}</button><span class="go">›</span></div>`).join("")||'<div class="muted">Sonuç bulunamadı.</div>'}
 function catIcon(c){c=String(c||"").toLocaleLowerCase("tr");const m=[["çorba","🍲"],["tatlı","🍰"],["salata","🥗"],["meze","🥙"],["tavuk","🍗"],["balık","🐟"],["deniz","🦐"],["et ","🥩"],["kebap","🍢"],["köfte","🧆"],["pilav","🍚"],["makarna","🍝"],["hamur","🥟"],["börek","🥐"],["zeytinyağ","🫒"],["sebze","🥦"],["baklagil","🫘"],["kahvaltı","🍳"],["içecek","🥤"],["sos","🥣"],["ekmek","🍞"],["et","🥩"]];for(const [k,v] of m)if(c.includes(k))return v;return"🍽️"}
@@ -1217,7 +1325,7 @@ function scaleRecipe(id){
  updateNutritionTotals(r,people);
 }
 function equipLabel(x){return ({formed:"Şekilli / tek sıra ürün; GN 60–90 mm başlangıç önerisi",saucy:"Soslu ürün; GN 90–100 mm başlangıç önerisi",stew:"Sulu yemek; GN 100–150 mm başlangıç önerisi",rice:"Pilav; GN 100–150 mm başlangıç önerisi",pastry:"Börek; GN 30–60 mm başlangıç önerisi",salad:"Salata; GN 60–100 mm başlangıç önerisi",soup:"Çorba kazanı veya sıcak servis ünitesi",grill:"Izgara/fırın ürünü; GN 60–100 mm veya tepsi",pasta:"Makarna; GN 100–150 mm servis kabı"})[x]||"Reçeteye göre belirlenmeli"}
-function fillProd(){ $("prodRecipe").innerHTML=recipes.map(r=>`<option value="${esc(r.id)}">${esc(r.name)}</option>`).join("");syncProductionBase()}
+function fillProd(){ if(!window.__seenProd){window.__pendProd=1;return} $("prodRecipe").innerHTML=recipes.map(r=>`<option value="${esc(r.id)}">${esc(r.name)}</option>`).join("");syncProductionBase()}
 function syncProductionBase(){const r=recipes.find(x=>x.id===$("prodRecipe").value);if(r)$("prodBase").value=r.base||1;calcProduction()}
 function useRecipe(id){go("production");const selector=$("workRecipe");if(selector){selector.value=id;buildWorkSheet()} }
 function calcProduction(){if(!$("prodRecipe").value)return;let r=recipes.find(x=>x.id===$("prodRecipe").value)||recipes[0],p=Math.max(1,Number($("prodPeople").value)||1),base=Math.max(1,Number($("prodBase").value)||r.base),extra=Math.max(0,Math.min(50,Number($("prodExtra").value)||0)),factor=p/base*(1+extra/100),saltMode=$("saltMode").value,saltManual=Math.max(0,Number($("saltManual").value)||0);
@@ -1279,7 +1387,7 @@ function addRecipe(){
  if(bad.length){alert("Reçete kaydedilmedi. Şu satırları düzelt:\n"+bad.join("\n"));return}
  if(!ing.length){alert("En az bir malzeme gir. Her satır: ad;miktar;birim");return}
  let id="USR-"+Date.now(),r={id,name,aliases:$("newAliases").value.split(",").map(x=>x.trim()).filter(Boolean),cat,sub:$("newSub").value||"Genel",base,ingredients:ing,method:$("newMethod").value,tips:$("newTips").value,binder:$("newBinder").value,binderNote:$("newBinderNote").value,equip:"saucy",allergens:[...$("newAllergenChecks").querySelectorAll("input:checked")].map(x=>x.value),ingredientAllergens:$ ("newIngredientAllergens").value.split(/\n/).map(line=>{let i=line.indexOf(":");return i>0?{ingredient:line.slice(0,i).trim(),allergens:line.slice(i+1).split(/[,;]/).map(x=>x.trim()).filter(Boolean)}:null}).filter(Boolean),mayContain:[...$("newMayContainChecks").querySelectorAll("input:checked")].map(x=>x.value),allergenChecks:[...$("newAllergenChecksVerified").querySelectorAll("input:checked")].map(x=>x.value)};
-{const keyOf=s=>String(s||"").trim().toLocaleLowerCase("tr");const mine=new Set([r.name,...r.aliases].map(keyOf));
+{const STOP=new Set(["usulu","usul","yemegi","yemek","klasik","ev","yapimi","ozel","geleneksel","tarifi","la","de","ve"]);const keyOf=s=>foldTR(String(s||"")).replace(/[^a-z0-9 ]+/g," ").split(/\s+/).filter(w=>w&&!STOP.has(w)).sort().join(" ");const mine=new Set([r.name,...r.aliases].map(keyOf));
  const hit=recipes.find(x=>x.id!==editingRecipeId&&[x.name,...(x.aliases||[])].some(n=>mine.has(keyOf(n))));
  if(hit&&!confirm("Bu ad veya alternatif adla kayıtlı bir reçete zaten var: "+hit.name+".\nYine de kaydedilsin mi?"))return}
  if(editingRecipeId){const index=custom.findIndex(x=>x.id===editingRecipeId);if(index<0){alert("Düzenlenecek reçete bulunamadı; kayıt değiştirilmedi.");return;}r.id=editingRecipeId;r.equip=custom[index].equip||r.equip;custom[index]=r;}else{custom.push(r);}
@@ -1468,6 +1576,7 @@ function generateMenu(){
 }
 function clearMenu(){window._editingMenuIndex=null;["menuSoup","menuMain","menuSide","menuSalad","menuDessert"].forEach(id=>$(id).value="");$("menuNote").value="";checkMenuCompatibility()}
 function initMenuSelectors(){
+ if(!window.__seenMenu){window.__pendMenu=1;return}
  let slots=["menuSoup","menuMain","menuSide","menuSalad","menuDessert"];
  slots.forEach(id=>{let el=$(id);el.innerHTML='<option value="">— Seçiniz —</option>'+recipes.map(r=>`<option value="${esc(r.id)}">${esc(r.name)}</option>`).join("");el.addEventListener("change",checkMenuCompatibility)});
 }
@@ -1492,9 +1601,9 @@ function saveQuality(){let x={dish:$("qualityDish").value,portions:$("qualityPor
 function renderQuality(){let a=JSON.parse(localStorage.getItem(STORAGE+"_quality")||"[]");$("qualityHistory").innerHTML=a.map(x=>`<div class="result"><b>${esc(x.dish)}</b> · ${esc(x.portions)} porsiyon<div class="small">${esc(x.date)}</div><div class="small">Tuz ${esc(x.salt)}/5 · Kıvam ${esc(x.texture)}/5 · Lezzet ${esc(x.taste)}/5 · Görünüş ${esc(x.look)}/5</div><p>${esc(x.note)}</p></div>`).join("")||"Henüz değerlendirme yok."}
 function saveNote(){let title=$("noteTitle").value.trim(),body=$("noteBody").value.trim();if(!title||!body){alert("Başlık ve not gerekli.");return}let a=JSON.parse(localStorage.getItem(STORAGE+"_notes")||"[]");a.unshift({title,body,date:new Date().toLocaleString("tr-TR")});localStorage.setItem(STORAGE+"_notes",JSON.stringify(a));$("noteTitle").value="";$("noteBody").value="";renderNotes()}
 function renderNotes(){let a=JSON.parse(localStorage.getItem(STORAGE+"_notes")||"[]");$("notes").innerHTML=a.map(x=>`<div class="result"><b>${esc(x.title)}</b><div class="small">${esc(x.date)}</div><p>${esc(x.body)}</p></div>`).join("")||"Henüz not yok."}
-function exportData(){let data={app:"Profesyonel Şef Asistanı",version:1,exportedAt:new Date().toISOString(),recipes:localStorage.getItem(STORAGE+"_recipes"),menus:localStorage.getItem(STORAGE+"_menus"),weekMenus:localStorage.getItem(STORAGE+"_weekMenus"),notes:localStorage.getItem(STORAGE+"_notes"),quality:localStorage.getItem(STORAGE+"_quality"),sef:{std:localStorage.getItem("sefStdRows"),shop:localStorage.getItem("sefShop"),fav:localStorage.getItem("sefFav"),fire:localStorage.getItem("sefFire"),yld:localStorage.getItem("sefYield"),rf:localStorage.getItem("sefRecFav"),rc:localStorage.getItem("sefRecent")}};download("profesyonel-sef-asistani-yedek.json",JSON.stringify(data,null,2),"application/json");$("backupMsg").textContent="Yedek dosyası indirildi."}
+function exportData(){let data={app:"Profesyonel Şef Asistanı",version:1,exportedAt:new Date().toISOString(),recipes:localStorage.getItem(STORAGE+"_recipes"),menus:localStorage.getItem(STORAGE+"_menus"),weekMenus:localStorage.getItem(STORAGE+"_weekMenus"),notes:localStorage.getItem(STORAGE+"_notes"),quality:localStorage.getItem(STORAGE+"_quality"),sef:{std:localStorage.getItem("sefStdRows"),shop:localStorage.getItem("sefShop"),fav:localStorage.getItem("sefFav"),fire:localStorage.getItem("sefFire"),yld:localStorage.getItem("sefYield"),rf:localStorage.getItem("sefRecFav"),rc:localStorage.getItem("sefRecent"),depo:localStorage.getItem("sefDepo"),fiyat:localStorage.getItem("sefFiyat"),gorev:localStorage.getItem("sefGorev"),skt:localStorage.getItem("sefSkt"),uret:localStorage.getItem("sefUretim"),ted:localStorage.getItem("sefTed")}};download("profesyonel-sef-asistani-yedek.json",JSON.stringify(data,null,2),"application/json");$("backupMsg").textContent="Yedek dosyası indirildi."}
 function download(name,content,type){let blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
-function importData(e){let f=e.target.files[0];if(!f)return;let rd=new FileReader();rd.onload=()=>{try{let d=JSON.parse(rd.result);if(d.app!=="Profesyonel Şef Asistanı")throw Error("Dosya uygulama yedeği değil.");for(let k of ["recipes","menus","weekMenus","notes","quality"])if(d[k]!==null&&d[k]!==undefined)localStorage.setItem(STORAGE+"_"+k,d[k]);let rl=false;if(d.sef){const M={std:"sefStdRows",shop:"sefShop",fav:"sefFav",fire:"sefFire",yld:"sefYield",rf:"sefRecFav",rc:"sefRecent"};for(const k in M)if(d.sef[k]!==null&&d.sef[k]!==undefined){localStorage.setItem(M[k],d.sef[k]);rl=true}}custom=JSON.parse(localStorage.getItem(STORAGE+"_recipes")||"[]");recipes=[...builtInRecipes,...custom,...remoteList()];initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();showMenus();showWeekMenus();renderNotes();renderQuality();$("backupMsg").textContent=rl?"Yedek geri yüklendi. Sayfa yenileniyor…":"Yedek başarıyla geri yüklendi.";if(rl)setTimeout(function(){location.reload()},900)}catch(err){$("backupMsg").textContent="Yükleme başarısız: "+err.message}};rd.readAsText(f)}
+function importData(e){let f=e.target.files[0];if(!f)return;let rd=new FileReader();rd.onload=()=>{try{let d=JSON.parse(rd.result);if(d.app!=="Profesyonel Şef Asistanı")throw Error("Dosya uygulama yedeği değil.");for(let k of ["recipes","menus","weekMenus","notes","quality"])if(d[k]!==null&&d[k]!==undefined)localStorage.setItem(STORAGE+"_"+k,d[k]);let rl=false;if(d.sef){const M={std:"sefStdRows",shop:"sefShop",fav:"sefFav",fire:"sefFire",yld:"sefYield",rf:"sefRecFav",rc:"sefRecent",depo:"sefDepo",fiyat:"sefFiyat",gorev:"sefGorev",skt:"sefSkt",uret:"sefUretim",ted:"sefTed"};for(const k in M)if(d.sef[k]!==null&&d.sef[k]!==undefined){localStorage.setItem(M[k],d.sef[k]);rl=true}}custom=JSON.parse(localStorage.getItem(STORAGE+"_recipes")||"[]");recipes=[...builtInRecipes,...custom,...remoteList()];initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();showMenus();showWeekMenus();renderNotes();renderQuality();$("backupMsg").textContent=rl?"Yedek geri yüklendi. Sayfa yenileniyor…":"Yedek başarıyla geri yüklendi.";if(rl)setTimeout(function(){location.reload()},900)}catch(err){$("backupMsg").textContent="Yükleme başarısız: "+err.message}};rd.readAsText(f)}
 function recipeKey(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("tr-TR").replace(/ı/g,"i").replace(/[^a-z0-9]+/g," ").trim()}
 function exportRecipePackage(){const data={app:"Profesyonel Şef Asistanı",type:"recipe-package",schemaVersion:1,createdAt:new Date().toISOString(),recipes:custom};download("sef-asistani-recete-paketi.json",JSON.stringify(data,null,2),"application/json");$("recipePackageMsg").textContent=custom.length+" özel reçete pakete aktarıldı."}
 function importRecipePackage(e){const f=e.target.files&&e.target.files[0];if(!f)return;const rd=new FileReader();rd.onload=()=>{try{const d=JSON.parse(rd.result);const incoming=Array.isArray(d)?d:(d.recipes||d.items);if(!Array.isArray(incoming))throw Error("JSON içinde recipes dizisi bulunamadı.");const existingIds=new Set(custom.map(x=>String(x.id||"")));const existingNames=new Set(recipes.flatMap(x=>[x.name,...(x.aliases||[])]).map(recipeKey));let added=0,skipped=0;const clean=[];for(const raw of incoming){if(!raw||typeof raw.name!=="string"||!raw.name.trim()||!Array.isArray(raw.ingredients)||!raw.ingredients.length){skipped++;continue;}const nameKey=recipeKey(raw.name),aliasKeys=(raw.aliases||[]).map(recipeKey);if(existingIds.has(String(raw.id||""))||existingNames.has(nameKey)||aliasKeys.some(k=>existingNames.has(k))){skipped++;continue;}const r={...raw,id:String(raw.id||("IMP-"+Date.now()+"-"+(added+1))),aliases:Array.isArray(raw.aliases)?raw.aliases:[],base:Number(raw.base)||1,method:String(raw.method||""),tips:String(raw.tips||""),allergens:Array.isArray(raw.allergens)?raw.allergens:[]};if(!r.method.trim()){skipped++;continue;}clean.push(r);existingIds.add(r.id);[r.name,...r.aliases].forEach(n=>existingNames.add(recipeKey(n)));added++;}custom.push(...clean);localStorage.setItem(STORAGE+"_recipes",JSON.stringify(custom));recipes=[...builtInRecipes,...custom,...remoteList()];initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();if($("dashRecipes"))$("dashRecipes").textContent=recipes.length;$("recipePackageMsg").textContent="Aktarım tamamlandı: "+added+" yeni reçete eklendi, "+skipped+" kayıt eksik veya mükerrer olduğu için atlandı. Toplam kütüphane: "+recipes.length+".";}catch(err){$("recipePackageMsg").textContent="Paket okunamadı: "+err.message;}e.target.value="";};rd.readAsText(f,"UTF-8")}
@@ -1668,13 +1777,439 @@ function clearSpecialDish(){["specialName","specialIngredients","specialAvoid"].
 function printSpecialDish(){if(!latestSpecialRecipe){alert("Önce tarif oluştur.");return;}const r=latestSpecialRecipe;let rows=r.ingredients.map(x=>`<tr><td>${esc(x[0])}</td><td>${esc(x[1])} ${esc(x[2])}</td></tr>`).join("");let w=window.open("","_blank");if(!w){alert("Yazdırma penceresi açılamadı. Tarayıcı açılır pencereye izin vermeli.");return;}w.document.write(`<html><meta charset="utf-8"><title>${esc(r.name)}</title><body style="font:15px Arial;padding:24px"><h1>${esc(r.name)}</h1><p>${r.base} kişilik · ${esc(r.cat)}</p><table border="1" cellpadding="7" cellspacing="0">${rows}</table><h2>Yapılış</h2><p>${esc(r.method)}</p><h2>Şef notu</h2><p>${esc(r.tips)}</p><p>Mehmet Ali Özkan tarafından kurulmuştur.</p></body></html>`);w.document.close();w.print();}
 
 function init(){initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();initWorkSelectors();equipmentCalc();renderReference();showMenus();showWeekMenus();renderNotes();renderQuality();renderTempLogs();$("dashRecipes").textContent=recipes.length}
+/* kategori düzeni: yemek türüne göre */
+(function(){var CF={"ADD-DUN-0050":"Et yemekleri","ADD-DUN-0051":"Bakliyat yemekleri","ADD-DUN-0052":"Makarna ve erişte","ADD-DUN-0053":"Tavuk yemekleri","ADD-DUN-0054":"Pilav ve bulgur","ADD-DUN-0055":"Kahvaltı ve yumurta","ADD-DUN-0056":"Makarna ve erişte","ADD2-0029":"Makarna ve erişte","ADD2-0030":"Kebaplar","ADD2-0032":"Çorbalar","ADD2-0033":"Salatalar","ADD5-0005":"Et yemekleri","ADD5-0006":"Et yemekleri","ADD5-0008":"Sebze yemekleri","ADD5-0009":"Pilav ve bulgur","ADD5-0010":"Pilav ve bulgur","ADD5-0013":"Makarna ve erişte","ADD5-0014":"Köfteler","ADD5-0016":"Mezeler","ADD5-0022":"Sebze yemekleri","ADD5-0023":"Tavuk yemekleri","ADD5-0024":"Tavuk yemekleri","ADD5-0025":"Tavuk yemekleri","ADD8-BOL-007":"Börek ve hamur işleri","ADD9-009":"Makarna ve erişte","ADD9-012":"Pilav ve bulgur","ADD9-013":"Pilav ve bulgur","ADD9-015":"Makarna ve erişte","ADD9-016":"Et yemekleri","ADD10-TAV-006":"Tavuk yemekleri","ADD10-TAT-014":"Tatlılar","ADD10-TAT-015":"Tatlılar","ADD11-COR-002":"Çorbalar","ADD11-COR-003":"Çorbalar","ADD11-ET-007":"Börek ve hamur işleri","ADD11-ET-008":"Börek ve hamur işleri","ADD11-TAV-010":"Kebaplar","ADD11-BAL-012":"Börek ve hamur işleri","ADD12-ET-003":"Et yemekleri","ADD12-HAM-007":"Börek ve hamur işleri","ADD12-HAM-008":"Börek ve hamur işleri","ADD13-TAV-002":"Tavuk yemekleri","ADD13-HAM-004":"Börek ve hamur işleri","ADD15-ANA-001":"Pilav ve bulgur","ADD15-ANA-003":"Pilav ve bulgur","ADD16-DUN-003":"Sebze yemekleri","ADD16-DUN-004":"Bakliyat yemekleri","ADD16-DUN-005":"Et yemekleri","ADD16-DUN-006":"Tavuk yemekleri","ADD16-DUN-007":"Salatalar","ADD17-DUN-001":"Pilav ve bulgur","ADD17-DUN-004":"Et yemekleri","ADD17-DUN-005":"Sebze yemekleri","ADD17-DUN-007":"Çorbalar","ADD17-DUN-008":"Pilav ve bulgur","ADD18-002":"Çorbalar","ADD18-003":"Tavuk yemekleri","ADD18-004":"Börek ve hamur işleri","ADD18-005":"Börek ve hamur işleri","ADD18-006":"Tavuk yemekleri","ADD18-007":"Pilav ve bulgur","ADD19-DUN-014":"Pilav ve bulgur","ADD19-DUN-015":"Kahvaltı ve yumurta","ADD20-WOR-016":"Et yemekleri","ADD21-004":"Pilav ve bulgur","ADD21-007":"Balık ve deniz ürünleri","ADD21-008":"Makarna ve erişte","ADD21-009":"Pilav ve bulgur","TR-MAK-9001":"Pilav ve bulgur","TR-MAK-9101":"Pilav ve bulgur","ADD27-ANA-002":"Pilav ve bulgur","ADD28-TR-002":"Et yemekleri","ADD28-TR-003":"Çorbalar","ADD28-TR-004":"Pilav ve bulgur","ADD28-TR-005":"Sebze yemekleri","ADD28-WORLD-001":"Pilav ve bulgur","ADD28-WORLD-002":"Makarna ve erişte","ADD28-WORLD-003":"Bakliyat yemekleri","ADD28-WORLD-004":"Sebze yemekleri","ADD28-WORLD-006":"Bakliyat yemekleri","ADD29-TR-001":"Çorbalar","ADD29-TR-002":"Börek ve hamur işleri","ADD29-TR-003":"Köfteler","ADD29-TR-004":"Pilav ve bulgur","ADD29-TR-005":"Börek ve hamur işleri","ADD29-TR-006":"Sebze yemekleri","ADD29-TR-007":"Sebze yemekleri","ADD29-TR-008":"Sebze yemekleri","ADD29-WORLD-001":"Makarna ve erişte","ADD29-WORLD-002":"Tavuk yemekleri","ADD30-TR-001":"Et yemekleri","ADD30-TR-002":"Pilav ve bulgur","ADD30-TR-003":"Köfteler","ADD30-TR-004":"Dolma ve sarma","ADD30-TR-005":"Çorbalar","ADD30-TR-006":"Dolma ve sarma","ADD30-TR-007":"Kebaplar","ADD30-TR-008":"Makarna ve erişte","ADD30-WORLD-001":"Börek ve hamur işleri","ADD30-WORLD-002":"Çorbalar","ADD31-TR-001":"Tavuk yemekleri","ADD31-TR-002":"Köfteler","ADD31-TR-003":"Köfteler","ADD31-TR-004":"Sebze yemekleri","ADD31-TR-005":"Tatlılar","ADD31-TR-006":"Börek ve hamur işleri","ADD31-TR-007":"Kebaplar","ADD31-TR-008":"Et yemekleri","ADD31-WORLD-001":"Bakliyat yemekleri","ADD31-WORLD-002":"Garnitürler","ADD32-TR-001":"Çorbalar","ADD32-TR-002":"Kebaplar","ADD32-TR-003":"Tatlılar","ADD32-TR-004":"Kebaplar","ADD32-TR-005":"Börek ve hamur işleri","ADD32-TR-006":"Börek ve hamur işleri","ADD32-TR-007":"Çorbalar","ADD32-TR-008":"Tatlılar","ADD32-WORLD-001":"Et yemekleri","ADD32-WORLD-002":"Börek ve hamur işleri","ADD33-TR-001":"Dolma ve sarma","ADD33-TR-002":"Tatlılar","ADD33-TR-003":"Hamur ve ekmekler","ADD33-TR-004":"Mezeler","ADD33-TR-005":"Börek ve hamur işleri","ADD33-TR-006":"Tatlılar","ADD33-TR-007":"Börek ve hamur işleri","ADD33-TR-008":"Tatlılar","ADD33-WORLD-001":"Salatalar","ADD33-WORLD-002":"Tavuk yemekleri","ADD34-TR-001":"Bakliyat yemekleri","ADD34-TR-002":"Bakliyat yemekleri","ADD34-TR-003":"Kebaplar","ADD34-TR-004":"Pilav ve bulgur","ADD34-TR-005":"Köfteler","ADD34-TR-006":"Bakliyat yemekleri","ADD34-TR-007":"Köfteler","ADD34-TR-008":"Köfteler","ADD34-TR-009":"Kebaplar","ADD34-TR-010":"Mezeler","ADD34-TR-011":"Sandviç ve dürüm","ADD34-TR-012":"Balık ve deniz ürünleri","ADD34-TR-013":"Börek ve hamur işleri","ADD34-TR-014":"Kebaplar","ADD34-TR-015":"Tatlılar","ADD34-TR-016":"Kebaplar","ADD34-TR-017":"Et yemekleri","ADD34-TR-018":"Börek ve hamur işleri","ADD34-TR-019":"Tatlılar","ADD34-TR-020":"Çorbalar","ADD34-TR-021":"Tatlılar","ADD34-TR-022":"Pilav ve bulgur","ADD34-TR-023":"Et yemekleri","ADD34-TR-024":"Çorbalar","ADD34-TR-025":"Et yemekleri","ADD34-TR-026":"Çorbalar","ADD34-TR-027":"Et yemekleri","ADD34-TR-028":"Kahvaltı ve yumurta","ADD34-TR-029":"Börek ve hamur işleri","ADD34-TR-030":"Tatlılar","ADD34-TR-031":"Börek ve hamur işleri","ADD34-TR-032":"Köfteler","ADD34-TR-033":"Kebaplar","ADD34-TR-034":"Köfteler","ADD34-TR-035":"Tatlılar","ADD34-TR-036":"Et yemekleri","ADD34-TR-037":"Çorbalar","ADD34-TR-038":"Hamur ve ekmekler","ADD34-TR-039":"Köfteler","ADD34-TR-040":"Et yemekleri","ADD34-WORLD-001":"Sebze yemekleri","ADD34-WORLD-002":"Tavuk yemekleri","ADD34-WORLD-003":"Et yemekleri","ADD34-WORLD-004":"Et yemekleri","ADD34-WORLD-005":"Çorbalar","ADD34-WORLD-006":"Tavuk yemekleri","ADD34-WORLD-007":"Bakliyat yemekleri","ADD34-WORLD-008":"Pilav ve bulgur","ADD34-WORLD-009":"Börek ve hamur işleri","ADD34-WORLD-010":"Tavuk yemekleri","ADD35-TR-001":"Dolma ve sarma","ADD35-TR-002":"Tatlılar","ADD35-TR-003":"Pilav ve bulgur","ADD35-TR-004":"Çorbalar","ADD35-TR-005":"Köfteler","ADD35-TR-006":"Pilav ve bulgur","ADD35-TR-007":"Çorbalar","ADD35-TR-008":"Kahvaltı ve yumurta","ADD35-TR-009":"Balık ve deniz ürünleri","ADD35-TR-010":"Balık ve deniz ürünleri","ADD35-TR-011":"Çorbalar","ADD35-TR-012":"Kahvaltı ve yumurta","ADD35-TR-013":"Tavuk yemekleri","ADD35-TR-014":"Börek ve hamur işleri","ADD35-TR-015":"Bakliyat yemekleri","ADD35-TR-016":"Pilav ve bulgur","ADD35-TR-017":"Köfteler","ADD35-TR-018":"Dolma ve sarma","ADD35-TR-019":"Köfteler","ADD35-TR-021":"Et yemekleri","ADD35-TR-022":"Kebaplar","ADD35-TR-023":"Dolma ve sarma","ADD35-TR-024":"Pilav ve bulgur","ADD35-TR-025":"Börek ve hamur işleri","ADD35-TR-026":"Pilav ve bulgur","ADD35-TR-027":"Kek ve kurabiye","ADD35-TR-028":"Hamur ve ekmekler","ADD35-TR-029":"Pilav ve bulgur","ADD35-TR-030":"Tatlılar","ADD35-TR-031":"Çorbalar","ADD35-TR-032":"Kebaplar","ADD35-TR-034":"Pilav ve bulgur","ADD35-TR-035":"Makarna ve erişte","ADD35-TR-036":"Et yemekleri","ADD35-TR-037":"Tatlılar","ADD35-TR-038":"Sebze yemekleri","ADD35-TR-039":"Köfteler","ADD35-TR-040":"Çorbalar","ADD35-WORLD-001":"Pilav ve bulgur","ADD35-WORLD-002":"Kahvaltı ve yumurta","ADD35-WORLD-003":"Sebze yemekleri","ADD35-WORLD-004":"Makarna ve erişte","ADD35-WORLD-006":"Bakliyat yemekleri","ADD35-WORLD-007":"Börek ve hamur işleri","ADD35-WORLD-008":"Sebze yemekleri","ADD35-WORLD-009":"Mezeler","ADD35-WORLD-010":"Çorbalar","ADD36-TR-001":"Börek ve hamur işleri","ADD36-TR-002":"Balık ve deniz ürünleri","ADD36-TR-003":"Sebze yemekleri","ADD36-TR-004":"Kahvaltı ve yumurta","ADD36-TR-005":"Börek ve hamur işleri","ADD36-TR-006":"Et yemekleri","ADD36-TR-007":"Dolma ve sarma","ADD36-TR-008":"Et yemekleri","ADD36-TR-009":"Çorbalar","ADD36-TR-010":"Dolma ve sarma","ADD36-TR-011":"Kebaplar","ADD36-TR-012":"Çorbalar","ADD36-TR-013":"Kebaplar","ADD36-TR-014":"Sebze yemekleri","ADD36-TR-015":"Pilav ve bulgur","ADD36-TR-016":"Kebaplar","ADD36-TR-017":"Tatlılar","ADD36-TR-018":"Köfteler","ADD36-TR-019":"Çorbalar","ADD36-TR-020":"Kebaplar","ADD36-TR-021":"Et yemekleri","ADD36-TR-022":"Börek ve hamur işleri","ADD36-TR-023":"Köfteler","ADD36-TR-024":"Et yemekleri","ADD36-TR-025":"Çorbalar","ADD36-TR-026":"Köfteler","ADD36-TR-027":"Köfteler","ADD36-TR-028":"Pilav ve bulgur","ADD36-TR-029":"Tatlılar","ADD36-TR-030":"Köfteler","ADD36-TR-031":"Börek ve hamur işleri","ADD36-TR-032":"Dolma ve sarma","ADD36-TR-033":"Börek ve hamur işleri","ADD36-TR-034":"Börek ve hamur işleri","ADD36-TR-035":"Çorbalar","ADD36-TR-036":"Tatlılar","ADD36-TR-037":"Reçeller","ADD36-TR-038":"Börek ve hamur işleri","ADD36-TR-039":"Köfteler","ADD36-TR-040":"Çorbalar","ADD36-WORLD-001":"Et yemekleri","ADD36-WORLD-002":"Makarna ve erişte","ADD36-WORLD-003":"Çorbalar","ADD36-WORLD-004":"Çorbalar","ADD36-WORLD-005":"Pilav ve bulgur","ADD36-WORLD-006":"Salatalar","ADD36-WORLD-007":"Pilav ve bulgur","ADD36-WORLD-008":"Kahvaltı ve yumurta","ADD36-WORLD-009":"Bakliyat yemekleri","ADD36-WORLD-010":"Et yemekleri","P01-TR-104":"Kahvaltı ve yumurta","P01-TR-105":"Kahvaltı ve yumurta","P01-TR-114":"Kahvaltı ve yumurta","P01-DN-001":"Makarna ve erişte","P01-DN-002":"Makarna ve erişte","P01-DN-003":"Makarna ve erişte","P01-DN-004":"Börek ve hamur işleri","P01-DN-005":"Çorbalar","P01-DN-006":"Et yemekleri","P01-DN-007":"Çorbalar","P01-DN-008":"Sandviç ve dürüm","P01-DN-009":"Tatlılar","P01-DN-010":"Et yemekleri","P01-DN-011":"Köfteler","P01-DN-012":"Sebze yemekleri","P01-DN-013":"Kebaplar","P01-DN-014":"Et yemekleri","P01-DN-015":"Çorbalar","P01-DN-016":"Börek ve hamur işleri","P01-DN-017":"Sebze yemekleri","P01-DN-018":"Pilav ve bulgur","P01-DN-019":"Tavuk yemekleri","P01-DN-020":"Sebze yemekleri","P01-DN-021":"Kebaplar","P01-DN-022":"Sebze yemekleri","P01-DN-023":"Sebze yemekleri","P01-DN-024":"Çorbalar","P01-DN-025":"Soslar","P01-DN-026":"Börek ve hamur işleri","P01-DN-027":"Salatalar","P01-DN-028":"Tavuk yemekleri","P01-DN-029":"Börek ve hamur işleri","P01-DN-030":"Börek ve hamur işleri","P02-TR-015":"Pilav ve bulgur","P02-TR-016":"Et yemekleri","P02-TR-017":"Et yemekleri","P02-TR-018":"Dolma ve sarma","P02-TR-019":"Köfteler","P02-TR-020":"Et yemekleri","P02-TR-021":"Et yemekleri","P02-TR-023":"Et yemekleri","P02-TR-024":"Et yemekleri","P02-TR-025":"Tavuk yemekleri","P02-TR-026":"Tavuk yemekleri","P02-TR-027":"Tavuk yemekleri","P02-TR-028":"Tavuk yemekleri","P02-TR-029":"Tavuk yemekleri","P02-TR-030":"Kebaplar","P02-TR-031":"Balık ve deniz ürünleri","P02-TR-033":"Balık ve deniz ürünleri","P02-TR-034":"Köfteler","P02-TR-035":"Balık ve deniz ürünleri","P02-TR-036":"Balık ve deniz ürünleri","P02-TR-037":"Sebze yemekleri","P02-TR-040":"Sebze yemekleri","P02-TR-042":"Sebze yemekleri","P02-TR-043":"Sebze yemekleri","P02-TR-044":"Sebze yemekleri","P02-TR-047":"Sebze yemekleri","P02-TR-048":"Sebze yemekleri","P02-TR-049":"Sebze yemekleri","P02-TR-050":"Sebze yemekleri","P02-TR-051":"Sebze yemekleri","P02-TR-052":"Pilav ve bulgur","P02-TR-053":"Pilav ve bulgur","P02-TR-054":"Pilav ve bulgur","P02-TR-055":"Pilav ve bulgur","P02-TR-056":"Pilav ve bulgur","P02-TR-058":"Makarna ve erişte","P02-TR-059":"Börek ve hamur işleri","P02-TR-060":"Börek ve hamur işleri","P02-TR-061":"Börek ve hamur işleri","P02-TR-062":"Börek ve hamur işleri","P02-TR-068":"Börek ve hamur işleri","P02-TR-069":"Börek ve hamur işleri","P02-TR-071":"Börek ve hamur işleri","P02-TR-072":"Börek ve hamur işleri","P02-TR-073":"Sebze yemekleri","P02-TR-074":"Bakliyat yemekleri","P02-TR-075":"Sebze yemekleri","P02-TR-076":"Sebze yemekleri","P02-TR-081":"Et yemekleri","P02-TR-082":"Köfteler","P02-TR-083":"Kebaplar","P02-TR-084":"Et yemekleri","P02-TR-085":"Et yemekleri","P02-TR-086":"Et yemekleri","P02-TR-087":"Bakliyat yemekleri","P02-TR-088":"Dolma ve sarma","P02-TR-089":"Tavuk yemekleri","P02-TR-090":"Tavuk yemekleri","P02-TR-091":"Tavuk yemekleri","P02-TR-092":"Balık ve deniz ürünleri","P02-TR-093":"Sebze yemekleri","P02-TR-094":"Sebze yemekleri","P02-TR-095":"Sebze yemekleri","P02-TR-096":"Sebze yemekleri","P02-TR-100":"Pilav ve bulgur","P02-TR-101":"Pilav ve bulgur","P02-TR-102":"Pilav ve bulgur","P02-TR-103":"Makarna ve erişte","P02-TR-104":"Pilav ve bulgur","P02-TR-105":"Börek ve hamur işleri","P02-TR-106":"Börek ve hamur işleri","P02-TR-110":"Et yemekleri","P02-TR-112":"Börek ve hamur işleri","P02-TR-113":"Sebze yemekleri","P02-TR-114":"Bakliyat yemekleri","P02-TR-115":"Et yemekleri","P02-TR-116":"Sebze yemekleri","P02-TR-117":"Makarna ve erişte","P02-TR-118":"Börek ve hamur işleri","P02-TR-120":"Sebze yemekleri","P02-W-001":"Çorbalar","P02-W-002":"Çorbalar","P02-W-004":"Makarna ve erişte","P02-W-005":"Tavuk yemekleri","P02-W-007":"Börek ve hamur işleri","P02-W-008":"Pilav ve bulgur","P02-W-010":"Pilav ve bulgur","P02-W-011":"Sebze yemekleri","P02-W-012":"Makarna ve erişte","P02-W-013":"Börek ve hamur işleri","P02-W-014":"Bakliyat yemekleri","P02-W-015":"Mezeler","P02-W-016":"Salatalar","P02-W-019":"Et yemekleri","P02-W-020":"Et yemekleri","P02-W-021":"Et yemekleri","P02-W-022":"Tavuk yemekleri","P02-W-023":"Balık ve deniz ürünleri","P02-W-025":"Tavuk yemekleri","P02-W-026":"Tavuk yemekleri","P02-W-027":"Pilav ve bulgur","P02-W-028":"Kebaplar","P02-W-029":"Bakliyat yemekleri","P02-W-030":"Börek ve hamur işleri","P03-TR-004":"Dolma ve sarma","P03-W-002":"Makarna ve erişte","P03-W-003":"Bakliyat yemekleri","P03-W-005":"Çorbalar","P03-TR-016":"Börek ve hamur işleri","P03-TR-017":"Dolma ve sarma","P03-TR-018":"Sebze yemekleri","P03-TR-019":"Kahvaltı ve yumurta","P03-TR-021":"Tatlılar","P03-W-006":"Garnitürler","P03-TR-022":"Et yemekleri","P04-TR-001":"Çorbalar","P04-TR-002":"Çorbalar","P04-TR-003":"Çorbalar","P04-TR-004":"Çorbalar","P04-TR-005":"Çorbalar","P04-TR-006":"Çorbalar","P04-TR-007":"Çorbalar","P04-TR-008":"Çorbalar","P04-TR-009":"Çorbalar","P04-TR-010":"Dolma ve sarma","P04-TR-011":"Dolma ve sarma","P04-TR-012":"Dolma ve sarma","P04-TR-013":"Dolma ve sarma","P04-TR-014":"Dolma ve sarma","P04-TR-015":"Dolma ve sarma","P04-TR-016":"Dolma ve sarma","P04-TR-017":"Dolma ve sarma","P04-TR-018":"Pilav ve bulgur","P04-TR-019":"Pilav ve bulgur","P04-TR-020":"Pilav ve bulgur","P04-TR-021":"Pilav ve bulgur","P04-TR-022":"Pilav ve bulgur","P04-TR-023":"Pilav ve bulgur","P04-TR-024":"Pilav ve bulgur","P04-TR-025":"Börek ve hamur işleri","P04-TR-026":"Börek ve hamur işleri","P04-TR-027":"Börek ve hamur işleri","P04-TR-028":"Börek ve hamur işleri","P04-TR-029":"Börek ve hamur işleri","P04-TR-030":"Börek ve hamur işleri","P04-TR-031":"Börek ve hamur işleri","P04-TR-032":"Börek ve hamur işleri","P04-TR-033":"Börek ve hamur işleri","P04-TR-034":"Börek ve hamur işleri","P04-TR-035":"Börek ve hamur işleri","P04-TR-036":"Börek ve hamur işleri","P04-TR-037":"Börek ve hamur işleri","P04-TR-038":"Börek ve hamur işleri","P04-TR-039":"Börek ve hamur işleri","P04-TR-040":"Börek ve hamur işleri","P04-TR-041":"Salatalar","P04-TR-042":"Salatalar","P04-TR-043":"Salatalar","P04-TR-044":"Salatalar","P04-TR-045":"Salatalar","P04-TR-046":"Mezeler","P04-TR-047":"Turşu ve konserve","P04-TR-048":"Turşu ve konserve","P04-TR-049":"Turşu ve konserve","P04-TR-050":"Turşu ve konserve","P04-TR-051":"Turşu ve konserve","P04-TR-052":"Salatalar","P04-TR-053":"Zeytinyağlılar","P04-TR-054":"Zeytinyağlılar","P04-TR-055":"Sebze yemekleri","P04-TR-056":"Et yemekleri","P04-TR-057":"Sebze yemekleri","P04-TR-058":"Et yemekleri","P04-TR-059":"Dolma ve sarma","P04-TR-060":"Sebze yemekleri","P04-TR-061":"Kebaplar","P04-TR-062":"Kebaplar","P04-TR-063":"Kebaplar","P04-TR-064":"Kebaplar","P04-TR-065":"Kebaplar","P04-TR-066":"Kebaplar","P04-TR-067":"Kebaplar","P04-TR-068":"Et yemekleri","P04-TR-069":"Et yemekleri","P04-TR-070":"Et yemekleri","P04-TR-071":"Tavuk yemekleri","P04-TR-072":"Kebaplar","P04-TR-073":"Tavuk yemekleri","P04-TR-074":"Tavuk yemekleri","P04-TR-075":"Kahvaltı ve yumurta","P04-TR-076":"Bakliyat yemekleri","P04-TR-077":"Et yemekleri","P04-TR-078":"Tavuk yemekleri","P04-TR-079":"Tavuk yemekleri","P04-TR-080":"Balık ve deniz ürünleri","P04-TR-081":"Dolma ve sarma","P04-TR-082":"Balık ve deniz ürünleri","P04-TR-083":"Balık ve deniz ürünleri","P04-TR-084":"Balık ve deniz ürünleri","P04-TR-085":"Balık ve deniz ürünleri","P04-TR-086":"Balık ve deniz ürünleri","P04-TR-087":"Dolma ve sarma","P04-TR-088":"Tavuk yemekleri","P04-TR-089":"Tatlılar","P04-TR-090":"Tatlılar","P04-TR-091":"Tatlılar","P04-TR-092":"Tatlılar","P04-TR-093":"Börek ve hamur işleri","P04-TR-094":"Kek ve kurabiye","P04-TR-095":"Kek ve kurabiye","P04-TR-096":"Kek ve kurabiye","P04-TR-097":"Kek ve kurabiye","P04-TR-098":"Kek ve kurabiye","P04-TR-099":"Kek ve kurabiye","P04-TR-100":"Kek ve kurabiye","P04-TR-101":"Tatlılar","P04-TR-102":"İçecekler","P04-TR-103":"Tatlılar","P04-TR-104":"Reçeller","P04-TR-105":"Reçeller","P04-TR-106":"Reçeller","P04-TR-107":"Reçeller","P04-TR-108":"Reçeller","P04-TR-109":"Kahvaltı ve yumurta","P04-TR-110":"Kahvaltı ve yumurta","P04-TR-111":"Kahvaltı ve yumurta","P04-TR-112":"Kahvaltı ve yumurta","P04-TR-113":"Börek ve hamur işleri","P04-TR-114":"Kebaplar","P04-TR-115":"Sandviç ve dürüm","P04-TR-116":"Tatlılar","P04-TR-117":"Börek ve hamur işleri","P04-TR-118":"Tatlılar","P04-TR-119":"Mezeler","P04-TR-120":"Tavuk yemekleri","P04-W-001":"Sebze yemekleri","P04-W-002":"Makarna ve erişte","P04-W-003":"Makarna ve erişte","P04-W-004":"Sebze yemekleri","P04-W-005":"Et yemekleri","P04-W-006":"Bakliyat yemekleri","P04-W-007":"Et yemekleri","P04-W-008":"Tatlılar","P04-W-009":"Kek ve kurabiye","P04-W-010":"Çorbalar","P04-W-011":"Balık ve deniz ürünleri","P04-W-012":"Tavuk yemekleri","P04-W-013":"Makarna ve erişte","P04-W-014":"Pilav ve bulgur","P04-W-015":"Et yemekleri","P04-W-016":"Salatalar","P04-W-017":"Sandviç ve dürüm","P04-W-018":"Çorbalar","P04-W-019":"Makarna ve erişte","P04-W-020":"Makarna ve erişte","P04-W-021":"Makarna ve erişte","P04-W-022":"Tavuk yemekleri","P04-W-023":"Makarna ve erişte","P04-W-024":"Makarna ve erişte","P04-W-025":"Çorbalar","P04-W-026":"Et yemekleri","P04-W-027":"Börek ve hamur işleri","P04-W-028":"Pilav ve bulgur","P04-W-029":"Makarna ve erişte","P04-W-030":"Zeytinyağlılar"};
+try{builtInRecipes.forEach(function(r){var n=CF[r.id];if(!n)return;if(r.cat==="Türk mutfağı")r._tr=1;else if(/^Dünya [Mm]utfağı$/.test(r.cat))r._dunya=1;r.cat=n})}catch(e){console.warn(e)}})();
 init();
 </script>
+<script>
+window.ofToast=function(m,ms){try{var d=document.createElement("div");d.textContent=String(m);d.style.cssText="position:fixed;left:50%;bottom:84px;transform:translateX(-50%);max-width:90vw;background:#182638;color:#fff;border:1px solid #c59655;padding:10px 16px;border-radius:12px;font-size:14px;z-index:99999;box-shadow:0 6px 20px rgba(0,0,0,.35);white-space:pre-line";document.body.appendChild(d);setTimeout(function(){d.remove()},ms||3500)}catch(e){}};
+(function(){var _al=window.alert;window.alert=function(m){try{ofToast(m,5000)}catch(e){_al.call(window,m)}}})();
+</script>
+<script>(function(){
+var KEY="sefDepo",D={items:[],log:[]};
+try{var t=JSON.parse(localStorage.getItem(KEY)||"null");if(t&&Array.isArray(t.items)){D=t;D.log=Array.isArray(D.log)?D.log:[]}}catch(e){}
+function $(i){return document.getElementById(i)}
+function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function sv(){try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){}try{if(window.SEF_depoChanged)window.SEF_depoChanged()}catch(e){}}
+function toast(m){ofToast(m)}
+function num(v){var n=parseFloat(String(v).replace(",","."));return isFinite(n)?n:NaN}
+function fmt(n){return (Math.round(n*100)/100).toLocaleString("tr-TR")}
+function addD(s,n){var d=new Date(s+"T12:00:00");d.setDate(d.getDate()+n);return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2)}
+function uid(){return "d"+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function today(){var d=new Date();return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2)}
+function st(it){return it.qty<=0?"out":(it.min>0&&it.qty<=it.min?"low":"ok")}
+var LBL={ok:"Yeterli",low:"Azalıyor",out:"Bitti"};
+function norm(it){it.b=Array.isArray(it.b)?it.b:[];var s=0;it.b.forEach(function(x){s+=x.q});
+ if(s<it.qty-1e-9)it.b.push({q:it.qty-s,skt:""});
+ else if(s>it.qty+1e-9){var ex=s-it.qty;sortB(it);while(ex>1e-9&&it.b.length){var x=it.b[0];if(x.q<=ex+1e-9){ex-=x.q;it.b.shift()}else{x.q-=ex;ex=0}}}
+ it.b=it.b.filter(function(x){return x.q>1e-9})}
+function sortB(it){it.b.sort(function(a,b){if(!a.skt&&!b.skt)return 0;if(!a.skt)return 1;if(!b.skt)return -1;return a.skt<b.skt?-1:a.skt>b.skt?1:0})}
+function nearest(it){norm(it);sortB(it);for(var i=0;i<it.b.length;i++)if(it.b[i].skt)return it.b[i].skt;return""}
+function tedList(){try{var t=JSON.parse(localStorage.getItem("sefTed")||"[]");return Array.isArray(t)?t:[]}catch(e){return[]}}
+function findItem(id){return D.items.filter(function(x){return x.id===id})[0]}
+function draw(){
+  if(!$("depo"))return;
+  D.items.sort(function(a,b){return (a.cat||"").localeCompare(b.cat||"","tr")||a.name.localeCompare(b.name,"tr")});
+  var cats={};D.items.forEach(function(i){if(i.cat)cats[i.cat]=1});
+  var cs=Object.keys(cats).sort(function(a,b){return a.localeCompare(b,"tr")});
+  $("dpCats").innerHTML=cs.map(function(c){return '<option value="'+esc(c)+'">'}).join("");
+  $("dpNames").innerHTML=D.items.map(function(i){return '<option value="'+esc(i.name)+'">'}).join("");
+  var f=$("dpF"),cur=f.value;f.innerHTML='<option value="">Tüm kategoriler</option>'+cs.map(function(c){return '<option'+(c===cur?' selected':'')+'>'+esc(c)+'</option>'}).join("");
+  var sp=$("dpSup"),spv=sp.value;sp.innerHTML='<option value="">-</option>'+tedList().map(function(t){return '<option'+(t.n===spv?" selected":"")+'>'+esc(t.n)+'</option>'}).join("");
+  var sel=$("dpSel"),sc=sel.value;sel.innerHTML=D.items.length?D.items.map(function(i){return '<option value="'+esc(i.id)+'"'+(i.id===sc?' selected':'')+'>'+esc(i.name)+' ('+esc(i.unit)+')</option>'}).join(""):'<option value="">Önce malzeme ekle</option>';
+  var low=D.items.filter(function(i){return st(i)==="low"}).length,out=D.items.filter(function(i){return st(i)==="out"}).length;
+  var exp=D.items.filter(function(i){var k=nearest(i);return k&&k<=addD(today(),3)}).length;
+  $("dpSum").innerHTML='<b>'+D.items.length+'</b> kalem · <b style="color:#a86b00">'+low+'</b> azalan · <b style="color:#b3261e">'+out+'</b> biten · <b style="color:#a86b00">'+exp+'</b> SKT yaklaşan/geçen';
+  var q=($("dpQ2").value||"").toLocaleLowerCase("tr"),fc=f.value;
+  var L=D.items.filter(function(i){return (!fc||i.cat===fc)&&(!q||(i.name+" "+(i.cat||"")).toLocaleLowerCase("tr").indexOf(q)>=0)});
+  $("dpList").innerHTML=L.length?'<div style="overflow-x:auto"><table><thead><tr><th>Malzeme</th><th>Kategori</th><th>Kalan</th><th>Min.</th><th>En yakın SKT</th><th>Durum</th><th></th></tr></thead><tbody>'+L.map(function(i){var s=st(i),col=s==="out"?"#b3261e":s==="low"?"#a86b00":"#1b7f3b";
+    var sk=nearest(i),tdy=today(),skc=!sk?"":sk<tdy?"#b3261e":sk<=addD(tdy,3)?"#a86b00":"inherit";
+    return '<tr><td>'+esc(i.name)+(i.sup?'<br><small style="color:#667381">'+esc(i.sup)+'</small>':'')+'</td><td>'+esc(i.cat||"-")+'</td><td><b>'+fmt(i.qty)+'</b> '+esc(i.unit)+'</td><td>'+fmt(i.min||0)+'</td><td style="color:'+skc+'">'+(sk?esc(sk)+(sk<tdy?' ⚠':''):'-')+'</td><td style="color:'+col+';font-weight:700">'+LBL[s]+'</td><td style="white-space:nowrap"><button class="btn light" data-dpm="'+esc(i.id)+'">Hareket</button> <button class="btn light" data-dpe="'+esc(i.id)+'">Min.</button> <button class="btn red" data-dpd="'+esc(i.id)+'">Sil</button></td></tr>'}).join("")+'</tbody></table></div>':'<div class="small">Henüz malzeme yok. Yukarıdan ekleyebilirsin.</div>';
+  var lg=D.log.slice().reverse().slice(0,60);
+  $("dpLog").innerHTML=lg.length?'<div style="overflow-x:auto"><table><thead><tr><th>Tarih</th><th>Malzeme</th><th>Hareket</th><th>Miktar</th><th>Not</th></tr></thead><tbody>'+lg.map(function(l){return '<tr><td>'+esc(l.date)+'</td><td>'+esc(l.name)+'</td><td>'+(l.type==="in"?"Giriş":l.type==="out"?"Çıkış":"Düzeltme")+'</td><td>'+fmt(l.q)+' '+esc(l.unit)+'</td><td>'+esc(l.note||"")+'</td></tr>'}).join("")+'</tbody></table></div>':'<div class="small">Hareket yok.</div>';
+}
+function logMove(it,type,q,note,date){D.log.push({id:uid(),item:it.id,name:it.name,unit:it.unit,type:type,q:q,note:note||"",date:date||today()});if(D.log.length>2000)D.log=D.log.slice(-2000)}
+function addToShop(){
+  var low=D.items.filter(function(i){return st(i)!=="ok"});
+  if(!low.length){toast("Azalan malzeme yok");return}
+  if(!(window.SEF&&SEF.addExtras)){toast("Alışveriş listesi hazır değil");return}
+  var items=low.map(function(i){var need=Math.max((i.min||0)*2-i.qty,i.min||1),u=i.unit;
+    if(u==="kg"){need*=1000;u="g"}else if(u==="lt"){need*=1000;u="ml"}
+    return{name:i.name,q:need,u:u,sup:i.sup||""}});
+  var gr={};items.forEach(function(x){(gr[x.sup]=gr[x.sup]||[]).push(x)});
+  Object.keys(gr).forEach(function(k){SEF.addExtras(gr[k],"Depo (azalanlar)"+(k?" · "+k:""),true)});
+  toast("Alışveriş listesine eklendi ("+items.length+" kalem)");
+}
+function printList(){
+  var rows=D.items.map(function(i){return '<tr><td>'+esc(i.name)+'</td><td>'+esc(i.cat||"")+'</td><td style="text-align:right">'+fmt(i.qty)+' '+esc(i.unit)+'</td><td style="text-align:right">'+fmt(i.min||0)+'</td><td>'+LBL[st(i)]+'</td></tr>'}).join("");
+  var w=window.open("","_blank");if(!w){toast("Açılır pencere engellendi");return}
+  w.document.write('<!doctype html><meta charset="utf-8"><title>Stok Listesi</title><style>body{font:14px sans-serif;padding:20px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #999;padding:6px;text-align:left}</style><h2>Stok Listesi — '+esc(today())+'</h2><table><thead><tr><th>Malzeme</th><th>Kategori</th><th>Kalan</th><th>Min.</th><th>Durum</th></tr></thead><tbody>'+rows+'</tbody></table>');
+  w.document.close();w.focus();setTimeout(function(){w.print()},300);
+}
+var dep=$("depo");if(!dep)return;
+$("dpDate").value=today();
+dep.addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
+  if(b.id==="dpAdd"){
+    var n=$("dpName").value.trim(),u=$("dpUnit").value,q0=num($("dpQty0").value),mn=num($("dpMin").value);
+    if(!n){toast("Malzeme adı yaz");return}
+    if(D.items.some(function(i){return i.name.toLocaleLowerCase("tr")===n.toLocaleLowerCase("tr")&&i.unit===u})){toast("Bu malzeme zaten var");return}
+    if(!(q0>=0))q0=0;if(!(mn>=0))mn=0;
+    var it={id:uid(),name:n,cat:$("dpCat").value.trim(),unit:u,qty:q0,min:mn,sup:$("dpSup").value,b:[]};D.items.push(it);
+    if(q0>0)logMove(it,"in",q0,"Açılış stoğu");
+    sv();$("dpName").value="";$("dpQty0").value="0";$("dpMin").value="0";draw();toast("Eklendi: "+n);return}
+  if(b.id==="dpMove"){
+    var it2=findItem($("dpSel").value),q=num($("dpQ").value),ty=$("dpType").value;
+    if(!it2){toast("Malzeme seç");return}
+    if(!(q>0)){toast("Geçerli bir miktar yaz");return}
+    if(ty==="out"&&q>it2.qty+1e-9&&!confirm("Çıkış miktarı kalan stoktan fazla ("+fmt(it2.qty)+" "+it2.unit+"). Stok 0 yapılsın mı?"))return;
+    norm(it2);it2.qty=ty==="in"?it2.qty+q:Math.max(0,it2.qty-q);if(ty==="in")it2.b.push({q:q,skt:$("dpSkt").value||""});norm(it2);
+    logMove(it2,ty,q,$("dpNote").value.trim(),$("dpDate").value);
+    sv();$("dpQ").value="";$("dpNote").value="";$("dpSkt").value="";draw();
+    toast((ty==="in"?"Giriş: ":"Çıkış: ")+it2.name+" "+fmt(q)+" "+it2.unit+(st(it2)!=="ok"&&ty==="out"?" ⚠ "+LBL[st(it2)]:""));return}
+  if(b.id==="dpShopLow"){addToShop();return}
+  if(b.id==="dpPrint"){printList();return}
+  if(b.id==="dpOrder"){var low=D.items.filter(function(i){return st(i)!=="ok"});if(!low.length){toast("Azalan malzeme yok");return}
+    var gr={};low.forEach(function(i){var need=Math.max((i.min||0)*2-i.qty,i.min||1);(gr[i.sup||""]=gr[i.sup||""]||[]).push("- "+i.name+": "+fmt(need)+" "+i.unit)});
+    var T=tedList(),h="";Object.keys(gr).forEach(function(k){var t=T.filter(function(x){return x.n===k})[0],ph=t?String(t.p||"").replace(/\D/g,""):"";if(ph){if(ph.charAt(0)==="0")ph=ph.slice(1);if(ph.length===10)ph="90"+ph}
+      var msg="Merhaba, sipariş listemiz:\n"+gr[k].join("\n")+"\nTeslimat için teşekkürler.";
+      h+='<div class="card" style="margin:0 0 8px"><b>'+esc(k||"Tedarikçi seçilmemiş")+'</b><div class="small" style="white-space:pre-line">'+esc(gr[k].join("\n"))+'</div><a class="btn gold" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;text-decoration:none" href="https://wa.me/'+(ph||"")+'?text='+encodeURIComponent(msg)+'">WhatsApp\'ta aç'+(ph?"":" (numara yok, kişi seç)")+'</a></div>'});
+    $("dpOrderOut").innerHTML=h;return}
+  if(b.dataset.dpm){$("dpSel").value=b.dataset.dpm;$("dpQ").focus();$("dpSel").scrollIntoView({behavior:"smooth",block:"center"});return}
+  if(b.dataset.dpe){var i3=findItem(b.dataset.dpe);if(!i3)return;var v=prompt("Minimum stok ("+i3.unit+"):",i3.min||0);if(v===null)return;var m=num(v);if(!(m>=0)){toast("Geçersiz değer");return}i3.min=m;sv();draw();return}
+  if(b.dataset.dpd){var i4=findItem(b.dataset.dpd);if(!i4)return;if(!confirm(i4.name+" stok listesinden silinsin mi? Hareket geçmişi kalır."))return;D.items=D.items.filter(function(x){return x.id!==i4.id});sv();draw();return}
+});
+$("dpQ2").addEventListener("input",draw);$("dpF").addEventListener("change",draw);
+window.SEF=window.SEF||{};SEF.depoReload=function(){try{var t=JSON.parse(localStorage.getItem(KEY)||"null");if(t&&Array.isArray(t.items)){D=t;D.log=Array.isArray(D.log)?D.log:[]}}catch(e){}draw()};
+draw();
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest('[data-tab="depo"]');if(b)setTimeout(draw,0)});
+})()</script>
+<script>(function(){
+if(!document.getElementById("maliyet"))return;
+function $(i){return document.getElementById(i)}
+function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function fold(s){return String(s||"").toLocaleLowerCase("tr").replace(/ı/g,"i").normalize("NFD").replace(/[̀-ͯ]/g,"")}
+function nk(n){return fold(String(n).replace(/\(.*?\)/g," ")).replace(/[^a-z0-9 ]/g," ").replace(/\b(kuru|taze|soyulmus|dogranmis|rendelenmis|kiyilmis|cig|temizlenmis|istege|gore|bagli)\b/g," ").replace(/\s+/g," ").trim()}
+function num(v){var n=parseFloat(String(v).replace(",","."));return isFinite(n)?n:NaN}
+function fmt(n,d){var k=Math.pow(10,d==null?2:d);return (Math.round(n*k)/k).toLocaleString("tr-TR")}
+function tl(n){return fmt(n,2)+" ₺"}
+function uid(){return "o"+Date.now().toString(36)+Math.random().toString(36).slice(2,5)}
+function pad(n){return("0"+n).slice(-2)}
+function iso(d){return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())}
+function today(){return iso(new Date())}
+function addDays(s,n){var d=s?new Date(s+"T12:00:00"):new Date();d.setDate(d.getDate()+n);return iso(d)}
+function toast(m){ofToast(m)}
+function ld(k,d){try{var v=JSON.parse(localStorage.getItem(k)||"null");return v==null?d:v}catch(e){return d}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function allRecipes(){try{return recipes||[]}catch(e){return[]}}
+function findRecipe(name){var f=fold(name).trim();if(!f)return null;var L=allRecipes();for(var i=0;i<L.length;i++)if(fold(L[i].name)===f)return L[i];return null}
+function fillRecipeList(id){var el=$(id);if(!el||el.dataset.f)return;var L=allRecipes();if(!L.length)return;el.dataset.f=1;var seen={},h="";L.forEach(function(r){if(r&&r.name&&!seen[r.name]){seen[r.name]=1;h+='<option value="'+esc(r.name)+'">'}});el.innerHTML=h}
+function fireOf(n){try{var v=SEF.fire&&SEF.fire.find(n);return(v===null||v===undefined)?0:Math.min(90,Math.max(0,+v||0))}catch(e){return 0}}
+
+/* ===== MALİYET ===== */
+var PK="sefFiyat",P=ld(PK,[]);if(!Array.isArray(P))P=[];
+function saveP(){sv(PK,P)}
+function matchPrice(name){var k=nk(name);if(!k)return null;var best=null,bl=0;
+  for(var i=0;i<P.length;i++){var pk=nk(P[i].name);if(!pk)continue;
+    if(pk===k)return P[i];
+    if(pk.length>=4&&k.length>=4&&(k.indexOf(pk)>=0||pk.indexOf(k)>=0)&&pk.length>bl){best=P[i];bl=pk.length}}
+  return best}
+function isWater(n){var k=nk(n);return /^su( |$)/.test(k)||k.indexOf("suyu")>=0}
+function costOf(ing,mult,fire){
+  var name=ing[0],q=(+ing[1]||0)*mult,u=String(ing[2]||"").toLowerCase().trim(),f=0;
+  if(fire){f=fireOf(name);if(f>0)q=q/(1-f/100)}
+  var o={name:name,q:q,u:u,fire:f,price:null,cost:null};
+  if(isWater(name)){o.cost=0;o.free=true;return o}
+  var p=matchPrice(name);if(!p)return o;o.price=p;
+  if(p.unit==="adet"){if(u==="adet")o.cost=q*p.price}
+  else if(u==="g"||u==="ml")o.cost=q/1000*p.price;
+  return o}
+var LAST=null;
+function calc(){
+  var r=findRecipe($("mlR").value),n=num($("mlN").value);
+  if(!r){$("mlOut").innerHTML='<div class="small">Listeden bir reçete seç.</div>';LAST=null;return}
+  if(!(n>0)){toast("Porsiyon sayısı gir");return}
+  var base=+r.base||1,mult=n/base,fire=$("mlFire").checked;
+  var rows=(r.ingredients||[]).map(function(i){return costOf(i,mult,fire)});
+  var tot=0,miss=[];rows.forEach(function(x){if(x.cost===null)miss.push(x);else tot+=x.cost});
+  LAST={r:r,n:n,rows:rows,total:tot,miss:miss.length};
+  var h='<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"><div class="card" style="flex:1;min-width:140px;margin:0"><div class="small">Toplam maliyet ('+n+' porsiyon)</div><div style="font-size:22px;font-weight:800">'+tl(tot)+'</div></div><div class="card" style="flex:1;min-width:140px;margin:0"><div class="small">Porsiyon maliyeti</div><div style="font-size:22px;font-weight:800">'+tl(tot/n)+'</div></div></div>';
+  if(miss.length)h+='<div class="small" style="color:#b3261e;margin-bottom:8px">⚠ '+miss.length+' malzemenin fiyatı yok, toplam eksik olabilir: '+miss.map(function(x){return esc(x.name)}).join(", ")+'</div>';
+  h+='<div style="overflow-x:auto"><table><thead><tr><th>Malzeme</th><th>Miktar</th><th>Birim fiyat</th><th>Tutar</th></tr></thead><tbody>'+rows.map(function(x){
+    var q=x.u==="g"&&x.q>=1000?fmt(x.q/1000)+" kg":x.u==="ml"&&x.q>=1000?fmt(x.q/1000)+" lt":fmt(x.q,1)+" "+x.u;
+    return '<tr><td>'+esc(x.name)+(x.fire?' <small>(+%'+fmt(x.fire,0)+' fire)</small>':'')+'</td><td>'+q+'</td><td>'+(x.price?fmt(x.price.price)+' ₺/'+x.price.unit:(x.free?'-':'<i style="color:#b3261e">yok</i>'))+'</td><td>'+(x.cost===null?'-':tl(x.cost))+'</td></tr>'}).join("")+'</tbody></table></div>';
+  h+='<div class="actions" style="margin-top:10px"><button class="btn gold" id="mlDeduct">Depodan düş</button><button class="btn light" id="mlShort">Eksikleri alışverişe ekle</button><button class="btn light" id="mlToLog">Üretim kaydına aktar</button></div>';
+  $("mlOut").innerHTML=h}
+function depoRead(){var d=ld("sefDepo",{items:[],log:[]});if(!d||!Array.isArray(d.items))d={items:[],log:[]};if(!Array.isArray(d.log))d.log=[];return d}
+function depoFind(d,name){var k=nk(name),best=null,bl=0;for(var i=0;i<d.items.length;i++){var ik=nk(d.items[i].name);if(!ik)continue;if(ik===k)return d.items[i];if(ik.length>=4&&k.length>=4&&(k.indexOf(ik)>=0||ik.indexOf(k)>=0)&&ik.length>bl){best=d.items[i];bl=ik.length}}return best}
+function toDepoQty(it,x){if(it.unit==="kg"||it.unit==="lt")return(x.u==="g"||x.u==="ml")?x.q/1000:null;if(it.unit==="adet")return x.u==="adet"?x.q:null;return null}
+function deduct(){
+  if(!LAST)return;var d=depoRead(),plan=[],nf=[],lowL=[];
+  LAST.rows.forEach(function(x){if(x.free)return;var it=depoFind(d,x.name);if(!it){nf.push(x.name);return}var q=toDepoQty(it,x);if(q===null){nf.push(x.name+" (birim uyumsuz)");return}plan.push({it:it,q:q,x:x});if(q>it.qty+1e-9)lowL.push(x.name)});
+  if(!plan.length){toast("Depoda eşleşen malzeme yok");return}
+  var msg=plan.length+" malzeme depodan düşülecek."+(lowL.length?"\nYetersiz stok (0'a iner): "+lowL.join(", "):"")+(nf.length?"\nDepoda bulunamayan: "+nf.join(", "):"")+"\nDevam edilsin mi?";
+  if(!confirm(msg))return;
+  var dt=today();plan.forEach(function(p){p.it.qty=Math.max(0,p.it.qty-p.q);d.log.push({id:uid(),item:p.it.id,name:p.it.name,unit:p.it.unit,type:"out",q:Math.round(p.q*1000)/1000,note:"Üretim: "+LAST.r.name+" × "+LAST.n,date:dt})});
+  if(d.log.length>2000)d.log=d.log.slice(-2000);
+  sv("sefDepo",d);try{SEF.depoReload&&SEF.depoReload()}catch(e){}
+  toast("Depodan düşüldü ("+plan.length+" kalem)")}
+function shortage(){
+  if(!LAST)return;var d=depoRead(),items=[];
+  LAST.rows.forEach(function(x){if(x.free)return;var need=x.q,it=depoFind(d,x.name);
+    if(it){var q=toDepoQty(it,x);if(q!==null){var have=it.qty,miss=q-have;if(miss<=1e-9)return;need=x.q*(miss/q)}}
+    if(need>0)items.push({name:x.name,q:need,u:x.u||"g"})});
+  if(!items.length){toast("Eksik malzeme yok, depo yeterli");return}
+  if(!(window.SEF&&SEF.addExtras)){toast("Alışveriş listesi hazır değil");return}
+  SEF.addExtras(items,"Maliyet: "+LAST.r.name+" × "+LAST.n)}
+function missingCommon(){
+  var cnt={},uu={};allRecipes().forEach(function(r){(r.ingredients||[]).forEach(function(i){var k=nk(i[0]);if(!k||isWater(i[0])||k==="tuz")return;var o=cnt[k]||(cnt[k]={n:0,name:i[0],u:{}});o.n++;var u=String(i[2]||"").toLowerCase();o.u[u]=(o.u[u]||0)+1})});
+  return Object.keys(cnt).map(function(k){return cnt[k]}).filter(function(o){return !matchPrice(o.name)}).sort(function(a,b){return b.n-a.n}).slice(0,30)}
+function drawP(){
+  fillRecipeList("mlRL");
+  var names=$("mlPNL");if(names&&!names.dataset.f&&allRecipes().length){names.dataset.f=1;var seen={},h="";allRecipes().forEach(function(r){(r.ingredients||[]).forEach(function(i){var k=nk(i[0]);if(k&&!seen[k]){seen[k]=1;h+='<option value="'+esc(i[0])+'">'}})});names.innerHTML=h}
+  var mc=missingCommon();
+  $("mlMiss").innerHTML=mc.length?'<div style="overflow-x:auto"><table><thead><tr><th>Malzeme</th><th>Reçete</th><th>Fiyat (₺)</th></tr></thead><tbody>'+mc.map(function(o,i){var u=Object.keys(o.u).sort(function(a,b){return o.u[b]-o.u[a]})[0],pu=u==="adet"?"adet":u==="ml"?"lt":"kg";
+    return '<tr><td>'+esc(o.name)+'</td><td>'+o.n+'</td><td style="white-space:nowrap"><input type="number" min="0" step="any" inputmode="decimal" style="width:90px" data-mpn="'+esc(o.name)+'" data-mpu="'+pu+'"> ₺/'+pu+'</td></tr>'}).join("")+'</tbody></table></div>':'<div class="small">Sık kullanılan tüm malzemelerin fiyatı girilmiş. 👍</div>';
+  var q=fold($("mlPQ").value||"");
+  var L=P.map(function(p,i){return{p:p,i:i}}).filter(function(x){return !q||fold(x.p.name).indexOf(q)>=0}).sort(function(a,b){return a.p.name.localeCompare(b.p.name,"tr")});
+  $("mlPL").innerHTML=L.length?'<div style="overflow-x:auto"><table><thead><tr><th>Malzeme</th><th>Fiyat</th><th></th></tr></thead><tbody>'+L.map(function(x){return '<tr><td>'+esc(x.p.name)+badge(x.p)+'</td><td style="white-space:nowrap"><input type="number" min="0" step="any" inputmode="decimal" style="width:90px" value="'+x.p.price+'" data-pe="'+x.i+'"> ₺/'+esc(x.p.unit)+'</td><td><button class="btn red" data-pd="'+x.i+'">Sil</button></td></tr>'}).join("")+'</tbody></table></div>':'<div class="small">Fiyat listesi boş.</div>'}
+function setPrice(name,price,unit){var k=nk(name);for(var i=0;i<P.length;i++)if(nk(P[i].name)===k&&P[i].unit===unit){if(P[i].price!==price){P[i].h=(P[i].h||[]).concat([{d:P[i].d||today(),p:P[i].price}]).slice(-20);P[i].price=price;P[i].d=today()}saveP();return}P.push({name:name,price:price,unit:unit,d:today(),h:[]});saveP()}
+function badge(p){var h=p.h&&p.h.length?p.h[p.h.length-1]:null;if(!h||!(h.p>0))return"";var pc=(p.price-h.p)/h.p*100;if(Math.abs(pc)<.5)return"";return ' <small style="color:'+(pc>0?"#b3261e":"#1b7f3b")+'">'+(pc>0?"▲":"▼")+" %"+fmt(Math.abs(pc),0)+" ("+esc(p.d||"")+")</small>"}
+var mal=$("maliyet");
+mal.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="mlCalc"){calc();return}
+  if(b.id==="mlDeduct"){deduct();return}
+  if(b.id==="mlShort"){shortage();return}
+  if(b.id==="mlToLog"){if(!LAST)return;sv("sefUkPre",{r:LAST.r.name,p:LAST.n,cost:LAST.total});toast("Üretim Kaydı sekmesine aktarıldı");try{window.go("uretKayit")}catch(e){}return}
+  if(b.id==="mlPAdd"){var n=$("mlPN").value.trim(),pr=num($("mlPP").value);if(!n||!(pr>=0)){toast("Malzeme ve fiyat gir");return}setPrice(n,pr,$("mlPU").value);$("mlPN").value="";$("mlPP").value="";drawP();toast("Kaydedildi: "+n);return}
+  if(b.dataset.pd!==undefined){var p=P[+b.dataset.pd];if(!p||!confirm(p.name+" fiyatı silinsin mi?"))return;P.splice(+b.dataset.pd,1);saveP();drawP();return}});
+mal.addEventListener("change",function(e){var t=e.target;
+  if(t.dataset.mpn!==undefined){var v=num(t.value);if(!(v>=0))return;setPrice(t.dataset.mpn,v,t.dataset.mpu);drawP();toast("Fiyat kaydedildi");return}
+  if(t.dataset.pe!==undefined){var v2=num(t.value);if(!(v2>=0))return;var pp=P[+t.dataset.pe];setPrice(pp.name,v2,pp.unit);drawP();toast("Güncellendi")}});
+$("mlPQ").addEventListener("input",drawP);
+
+/* ===== GÜNLÜK İŞ ===== */
+var GK="sefGorev",G=ld(GK,{tasks:[],o:null,c:null,ck:{}});
+if(!G||typeof G!=="object")G={tasks:[],o:null,c:null,ck:{}};
+G.tasks=Array.isArray(G.tasks)?G.tasks:[];G.ck=G.ck||{};
+G.o=Array.isArray(G.o)?G.o:["Gaz ve elektrik kontrolü","Ocak, fırın ve ekipmanların çalıştırılması","Buzdolabı ve dondurucu sıcaklık kaydı","El yıkama ve kıyafet kontrolü","Çalışma yüzeylerinin dezenfeksiyonu","Günün menüsü ve üretim planının kontrolü","Teslim alınan malzemelerin kontrolü","Çözdürmedeki ürünlerin kontrolü"];
+G.c=Array.isArray(G.c)?G.c:["Artık yemeklerin etiketlenip soğutulması","Ürünlerin kapaklı ve etiketli saklanması","Ocak, fırın ve gazın kapatılması","Ekipman ve yüzeylerin temizliği","Çöplerin çıkarılması","Zeminin temizliği","Buzdolabı sıcaklık kaydı","Yarının çözdürme ve hazırlık işlerinin ayrılması"];
+function saveG(){var ks=Object.keys(G.ck).sort();while(ks.length>60){delete G.ck[ks.shift()]}sv(GK,G)}
+var RULES=[["Islat",["nohut","kuru fasulye","barbunya","borulce","bakla"],"önceki gün ıslat"],["Et / tavuk",["kiyma","kusbasi","tavuk","et ","dana","kuzu","bonfile","but","balik","hindi"],"çözdür / porsiyonla"],["Sebze",["sogan","sarimsak","havuc","patates","biber","domates","patlican","kabak","ispanak","maydanoz","salatalik","marul","lahana","mantar","kereviz","pirasa","karnabahar","brokoli","dereotu","nane"],"yıka, temizle, doğra"],["Hamur",["un","maya","hamur","yufka"],"tart / hazırla"],["Bakliyat",["mercimek","pirinc","bulgur","makarna","sehriye","arpa"],"ayıkla / yıka"]];
+function genTasks(list){
+  var agg={};
+  list.forEach(function(e){var r=e.r,m=e.n/(+r.base||1);(r.ingredients||[]).forEach(function(i){if(isWater(i[0]))return;var tk=nk(i[0]).split(" ");for(var k=0;k<RULES.length;k++){var hit=RULES[k][1].some(function(w){w=w.trim();return tk.some(function(t){return t===w||(w.length>=4&&t.indexOf(w)===0)})});if(!hit)continue;
+    var key=RULES[k][0]+"|"+nk(i[0]),u=String(i[2]||"").toLowerCase(),q=(+i[1]||0)*m;if(RULES[k][0]==="Sebze"){var ff=fireOf(i[0]);if(ff>0)q=q/(1-ff/100)}var o=agg[key]||(agg[key]={name:i[0],act:RULES[k][2],u:u,q:0,src:{}});o.q+=q;o.src[r.name]=1;break}})});
+  return Object.keys(agg).map(function(k){var o=agg[k],q=o.u==="g"&&o.q>=1000?fmt(o.q/1000)+" kg":o.u==="ml"&&o.q>=1000?fmt(o.q/1000)+" lt":fmt(o.q,1)+" "+o.u;return{id:uid(),t:o.name+" – "+q+" "+o.act,done:false,who:"",time:"",src:Object.keys(o.src).slice(0,2).join(", ")}})}
+function lastMenu(){var m=ld("chef_assistant_complete_v1_menus",[]);return Array.isArray(m)&&m.length?m[m.length-1]:null}
+function drawG(){
+  fillRecipeList("gvRL");
+  var meN=(function(){try{var m=window.SEF_me&&SEF_me();return fold((m&&(m.full_name||m.name))||"")}catch(e){return""}})();
+  var mine=$("gvMine").checked&&meN,vis=G.tasks.map(function(t,i){return{t:t,i:i}}).filter(function(o){return !mine||(o.t.who&&(fold(o.t.who).indexOf(meN)>=0||meN.indexOf(fold(o.t.who))>=0))});
+  var staff=(window.SEF_staff||[]).slice();G.tasks.forEach(function(t){if(t.who&&staff.indexOf(t.who)<0)staff.push(t.who)});$("gvWho").innerHTML=staff.map(function(n){return '<option value="'+esc(n)+'">'}).join("");
+  $("gvL").innerHTML=vis.length?'<div style="overflow-x:auto"><table><thead><tr><th></th><th>Görev</th><th>Kim</th><th>Saat</th><th></th></tr></thead><tbody>'+vis.map(function(o){var t=o.t,i=o.i;return '<tr><td><input type="checkbox" data-gt="'+i+'"'+(t.done?' checked':'')+'></td><td style="'+(t.done?'text-decoration:line-through;opacity:.6':'')+'">'+esc(t.t)+(t.src?'<br><small style="color:#667381">'+esc(t.src)+'</small>':'')+'</td><td><input type="text" list="gvWho" style="width:110px" maxlength="30" value="'+esc(t.who)+'" data-gw="'+i+'"></td><td><input type="time" value="'+esc(t.time)+'" data-gm="'+i+'"></td><td><button class="btn red" data-gd="'+i+'">Sil</button></td></tr>'}).join("")+'</tbody></table></div>':'<div class="small">'+(mine?'Sana atanmış görev yok.':'Görev yok. Yukarıdan reçeteden üretebilir veya elle ekleyebilirsin.')+'</div>';
+  var d=G.ck[today()]||{o:[],c:[]};
+  ["o","c"].forEach(function(w){$(w==="o"?"gvO":"gvC").innerHTML=G[w].map(function(t,i){var on=(d[w]||[]).indexOf(i)>=0;return '<label class="shi" style="display:flex;gap:8px;align-items:center;padding:6px 0"><input type="checkbox" data-ck="'+w+i+'"'+(on?' checked':'')+'><span style="flex:1;'+(on?'text-decoration:line-through;opacity:.6':'')+'">'+esc(t)+'</span><button class="btn red" data-ckd="'+w+i+'" style="padding:2px 8px">×</button></label>'}).join("")+'<div class="small">'+((d[w]||[]).length)+' / '+G[w].length+' tamamlandı · '+today()+'</div>'})}
+var gun=$("gunluk");
+gun.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="gvGen"){var r=findRecipe($("gvR").value),n=num($("gvN").value);if(!r||!(n>0)){toast("Reçete ve porsiyon seç");return}var t=genTasks([{r:r,n:n}]);if(!t.length){toast("Bu reçete için hazırlık görevi çıkmadı");return}G.tasks=G.tasks.concat(t);saveG();drawG();toast(t.length+" görev eklendi");return}
+  if(b.id==="gvMenu"){var m=lastMenu();if(!m){toast("Kayıtlı menü yok");return}var ppl=+m.people||100,L=(m.recipeIds||[]).map(function(id){return allRecipes().filter(function(r){return String(r.id)===String(id)})[0]}).filter(Boolean).map(function(r){return{r:r,n:ppl}});if(!L.length){toast("Menüdeki yemekler bulunamadı");return}var t2=genTasks(L);G.tasks=G.tasks.concat(t2);saveG();drawG();toast(L.length+" yemekten "+t2.length+" görev eklendi");return}
+  if(b.id==="gvAdd"){var v=$("gvT").value.trim();if(!v)return;G.tasks.push({id:uid(),t:v,done:false,who:"",time:"",src:""});$("gvT").value="";saveG();drawG();return}
+  if(b.id==="gvClr"){G.tasks=G.tasks.filter(function(t){return !t.done});saveG();drawG();return}
+  if(b.id==="gvPr"){var w=window.open("","_blank");if(!w){toast("Açılır pencere engellendi");return}w.document.write('<!doctype html><meta charset="utf-8"><title>Görevler</title><style>body{font:14px sans-serif;padding:20px}td,th{border:1px solid #999;padding:6px;text-align:left}table{border-collapse:collapse;width:100%}</style><h2>Hazırlık Görevleri — '+today()+'</h2><table><tr><th>✓</th><th>Görev</th><th>Kim</th><th>Saat</th></tr>'+G.tasks.map(function(t){return '<tr><td>'+(t.done?'☑':'☐')+'</td><td>'+esc(t.t)+'</td><td>'+esc(t.who)+'</td><td>'+esc(t.time)+'</td></tr>'}).join("")+'</table>');w.document.close();w.focus();setTimeout(function(){w.print()},300);return}
+  if(b.dataset.gd!==undefined){G.tasks.splice(+b.dataset.gd,1);saveG();drawG();return}
+  if(b.dataset.ckadd){var s=prompt("Yeni madde:");if(!s||!s.trim())return;G[b.dataset.ckadd].push(s.trim());saveG();drawG();return}
+  if(b.dataset.ckd){var w2=b.dataset.ckd.charAt(0),ix=+b.dataset.ckd.slice(1);if(!confirm("Bu madde listeden silinsin mi?"))return;G[w2].splice(ix,1);Object.keys(G.ck).forEach(function(dd){G.ck[dd][w2]=[]});saveG();drawG();return}});
+gun.addEventListener("change",function(e){var t=e.target;
+  if(t.dataset.gt!==undefined){G.tasks[+t.dataset.gt].done=t.checked;saveG();drawG();return}
+  if(t.dataset.gw!==undefined){G.tasks[+t.dataset.gw].who=t.value.trim();saveG();return}
+  if(t.dataset.gm!==undefined){G.tasks[+t.dataset.gm].time=t.value;saveG();return}
+  if(t.dataset.ck){var w=t.dataset.ck.charAt(0),ix=+t.dataset.ck.slice(1),dd=G.ck[today()]||(G.ck[today()]={o:[],c:[]});dd[w]=dd[w]||[];var p=dd[w].indexOf(ix);if(t.checked&&p<0)dd[w].push(ix);if(!t.checked&&p>=0)dd[w].splice(p,1);saveG();drawG()}});
+
+/* ===== SKT ===== */
+var SK="sefSkt",S=ld(SK,[]);if(!Array.isArray(S))S=[];
+function saveS(){sv(SK,S)}
+function skDays(v){return parseInt(v,10)||1}
+function drawS(){
+  if(!$("skD").value){$("skD").value=today();$("skE").value=addDays(today(),skDays($("skT").value))}
+  var L=S.map(function(x,i){return{x:x,i:i}}).sort(function(a,b){return a.x.e.localeCompare(b.x.e)});var t=today(),tm=addDays(t,1);
+  $("skL").innerHTML=L.length?'<div style="overflow-x:auto"><table><thead><tr><th>Ürün</th><th>Tür</th><th>Başlangıç</th><th>Son kullanım</th><th>Durum</th><th></th></tr></thead><tbody>'+L.map(function(o){var x=o.x,st=x.e<t?["Süresi geçti","#b3261e"]:x.e===t?["Bugün son","#b3261e"]:x.e===tm?["Yarın son","#a86b00"]:["Uygun","#1b7f3b"];
+    return '<tr><td>'+esc(x.n)+(x.note?'<br><small>'+esc(x.note)+'</small>':'')+'</td><td>'+esc(x.k)+'</td><td>'+esc(x.d)+'</td><td>'+esc(x.e)+'</td><td style="color:'+st[1]+';font-weight:700">'+st[0]+'</td><td><button class="btn light" data-sl="'+o.i+'">Etiket</button> <button class="btn light" data-sk="'+o.i+'">Kullanıldı / At</button></td></tr>'}).join("")+'</tbody></table></div>':'<div class="small">Kayıt yok.</div>'}
+var skt=$("skt");
+skt.addEventListener("change",function(e){if(e.target.id==="skT"||e.target.id==="skD")$("skE").value=addDays($("skD").value||today(),skDays($("skT").value))});
+skt.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="skAdd"){var n=$("skN").value.trim();if(!n){toast("Ürün adı yaz");return}if(!$("skE").value){toast("Son kullanım tarihi seç");return}var sel=$("skT");S.push({id:uid(),n:n,k:sel.options[sel.selectedIndex].text.replace(/ \(.*\)/,""),d:$("skD").value||today(),e:$("skE").value,note:$("skNote").value.trim()});saveS();$("skN").value="";$("skNote").value="";drawS();toast("Kaydedildi");return}
+  if(b.dataset.sk!==undefined){var x=S[+b.dataset.sk];if(!x||!confirm(x.n+" listeden kaldırılsın mı?"))return;S.splice(+b.dataset.sk,1);saveS();drawS()}});
+
+/* ===== ÜRETİM KAYDI ===== */
+var UK="sefUretim",U=ld(UK,[]);if(!Array.isArray(U))U=[];
+function saveU(){sv(UK,U)}
+function drawU(){drawU0();try{monthSummary()}catch(e){}}
+function drawU0(){
+  fillRecipeList("ukRL");if(!$("ukD").value)$("ukD").value=today();
+  var pre=ld("sefUkPre",null);if(pre){$("ukR").value=pre.r;$("ukP").value=Math.round(pre.p);$("ukU").value=Math.round(pre.p);window._ukCost=pre.cost;try{localStorage.removeItem("sefUkPre")}catch(e){}}
+  var tp=0,ta=0,tu=0,by={};U.forEach(function(x){tp+=x.p||0;tu+=x.u||0;ta+=x.a||0;var k=fold(x.r);var o=by[k]||(by[k]={r:x.r,n:0,u:0,a:0,p:0});o.n++;o.u+=x.u||0;o.a+=x.a||0;o.p+=x.p||0});
+  var pct=tu>0?ta/tu*100:0;
+  var h='<div class="small"><b>'+U.length+'</b> kayıt · toplam üretilen <b>'+fmt(tu,0)+'</b> porsiyon · artık <b>'+fmt(ta,0)+'</b> (%'+fmt(pct,1)+')</div>';
+  var adv=Object.keys(by).map(function(k){return by[k]}).filter(function(o){return o.n>=2&&o.u>0}).map(function(o){return{r:o.r,n:o.n,pct:o.a/o.u*100,avgU:o.u/o.n}}).sort(function(a,b){return b.pct-a.pct}).slice(0,8);
+  if(adv.length)h+='<div style="overflow-x:auto;margin-top:8px"><table><thead><tr><th>Yemek</th><th>Kayıt</th><th>Ort. artık</th><th>Öneri</th></tr></thead><tbody>'+adv.map(function(o){var sug=o.pct>=15?"Porsiyonu ~%"+fmt(Math.min(o.pct,30),0)+" azalt":o.pct<=3?"Stok yetmeyebilir, hafif artır":"Uygun";return '<tr><td>'+esc(o.r)+'</td><td>'+o.n+'</td><td>%'+fmt(o.pct,1)+'</td><td>'+sug+'</td></tr>'}).join("")+'</tbody></table></div><div class="small" style="margin-top:6px">Öneri en az 2 kayıtlı yemekler için, artık oranına göre hesaplanır.</div>';
+  $("ukS").innerHTML=h;
+  var L=U.map(function(x,i){return{x:x,i:i}}).reverse().slice(0,50);
+  $("ukL").innerHTML=L.length?'<div style="overflow-x:auto"><table><thead><tr><th>Tarih</th><th>Yemek</th><th>Plan</th><th>Üretilen</th><th>Artık</th><th>Maliyet</th><th></th></tr></thead><tbody>'+L.map(function(o){var x=o.x;return '<tr><td>'+esc(x.d)+'</td><td>'+esc(x.r)+(x.note?'<br><small>'+esc(x.note)+'</small>':'')+'</td><td>'+fmt(x.p||0,0)+'</td><td>'+fmt(x.u||0,0)+'</td><td>'+fmt(x.a||0,0)+'</td><td>'+(x.cost?tl(x.cost):'-')+'</td><td><button class="btn red" data-ud="'+o.i+'">Sil</button></td></tr>'}).join("")+'</tbody></table></div>':'<div class="small">Kayıt yok.</div>'}
+$("uretKayit").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="ukAdd"){var r=$("ukR").value.trim();if(!r){toast("Yemek adı yaz");return}var p=num($("ukP").value),u=num($("ukU").value),a=num($("ukA").value);if(!(u>=0)){toast("Üretilen porsiyonu gir");return}
+    U.push({id:uid(),d:$("ukD").value||today(),r:r,p:p>=0?p:u,u:u,a:a>=0?a:0,note:$("ukN").value.trim(),cost:window._ukCost||0});window._ukCost=0;saveU();["ukR","ukP","ukU","ukA","ukN"].forEach(function(i){$(i).value=""});drawU();toast("Kaydedildi");return}
+  if(b.dataset.ud!==undefined){if(!confirm("Kayıt silinsin mi?"))return;U.splice(+b.dataset.ud,1);saveU();drawU()}});
+
+/* ===== TEDARİKÇİ ===== */
+var TK="sefTed",T=ld(TK,[]);if(!Array.isArray(T))T=[];
+function saveT(){sv(TK,T)}
+function drawT(){
+  var q=fold($("tdQ").value||"");
+  var L=T.map(function(x,i){return{x:x,i:i}}).filter(function(o){return !q||fold(o.x.n+" "+o.x.u).indexOf(q)>=0}).sort(function(a,b){return a.x.n.localeCompare(b.x.n,"tr")});
+  $("tdL").innerHTML=L.length?L.map(function(o){var x=o.x,tel=String(x.p||"").replace(/[^0-9+]/g,"");return '<div class="card" style="margin:0 0 8px"><b>'+esc(x.n)+'</b>'+(tel?' · <a href="tel:'+esc(tel)+'">'+esc(x.p)+'</a>':'')+(x.u?'<div class="small">Ürünler: '+esc(x.u)+'</div>':'')+(x.note?'<div class="small">'+esc(x.note)+'</div>':'')+'<div class="actions"><button class="btn light" data-te="'+o.i+'">Düzenle</button><button class="btn red" data-td="'+o.i+'">Sil</button></div></div>'}).join(""):'<div class="small">Tedarikçi yok.</div>'}
+$("tedarik").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="tdAdd"){var n=$("tdN").value.trim();if(!n){toast("Firma adı yaz");return}T.push({id:uid(),n:n,p:$("tdP").value.trim(),u:$("tdU").value.trim(),note:$("tdNt").value.trim()});saveT();["tdN","tdP","tdU","tdNt"].forEach(function(i){$(i).value=""});drawT();toast("Kaydedildi");return}
+  if(b.dataset.td!==undefined){var x=T[+b.dataset.td];if(!x||!confirm(x.n+" silinsin mi?"))return;T.splice(+b.dataset.td,1);saveT();drawT();return}
+  if(b.dataset.te!==undefined){var y=T[+b.dataset.te];if(!y)return;var p=prompt("Telefon:",y.p||"");if(p===null)return;var u=prompt("Tedarik ettiği ürünler:",y.u||"");if(u===null)return;var nt=prompt("Not:",y.note||"");if(nt===null)return;y.p=p.trim();y.u=u.trim();y.note=nt.trim();saveT();drawT()}});
+$("tdQ").addEventListener("input",drawT);
+
+/* ===== besin / zamanlama / aylık özet ===== */
+var NT=[["tereyagi",717,.9,81,.1],["margarin",717,.2,80,.7],["zeytinyagi",884,0,100,0],["sivi yag",884,0,100,0],["aycicek",884,0,100,0],["misir yagi",884,0,100,0],["yag",884,0,100,0],["kirmizi mercimek",352,24,1,60],["yesil mercimek",352,25,1,60],["mercimek",352,25,1,60],["nohut",364,19,6,61],["kuru fasulye",337,23,1.5,61],["barbunya",337,23,1.5,61],["fasulye",31,1.8,.2,7],["bulgur",342,12,1.3,76],["pirinc",360,7,.6,80],["makarna",371,13,1.5,75],["sehriye",371,13,1.5,75],["eriste",371,13,1.5,75],["irmik",360,13,1,73],["un",364,10,1,76],["nisasta",381,.3,0,91],["galeta",395,13,5,72],["ekmek",265,9,3.2,49],["yufka",290,9,1,60],["patates",77,2,.1,17],["sogan",40,1.1,.1,9],["sarimsak",149,6.4,.5,33],["havuc",41,.9,.2,10],["domates",18,.9,.2,3.9],["salca",82,4.3,.5,19],["pul biber",282,13,14,50],["biber",27,1,.3,6],["patlican",25,1,.2,6],["kabak",17,1.2,.3,3.1],["ispanak",23,2.9,.4,3.6],["maydanoz",36,3,.8,6],["dereotu",43,3.5,1.1,7],["nane",70,3.8,.9,15],["salatalik",15,.7,.1,3.6],["marul",15,1.4,.2,2.9],["lahana",25,1.3,.1,5.8],["karnabahar",25,1.9,.3,5],["brokoli",34,2.8,.4,7],["mantar",22,3.1,.3,3.3],["kereviz",42,1.5,.3,9],["pirasa",61,1.5,.3,14],["bezelye",81,5,.4,14],["misir",86,3.3,1.4,19],["bamya",33,1.9,.2,7],["enginar",47,3.3,.2,11],["yogurt",61,3.5,3.3,4.7],["ayran",40,2,1.5,3],["sut",61,3.2,3.3,4.8],["krema",340,2,36,3],["lor",98,11,4,3.4],["kasar",350,25,27,1.3],["peynir",264,14,21,4],["yumurta",143,12.6,9.5,.7],["kiyma",250,17,20,0],["tavuk",170,25,7,0],["hindi",135,29,1,0],["balik",140,20,6,0],["kuzu",250,17,20,0],["dana",200,20,13,0],["kusbasi",200,20,13,0],["et",200,20,13,0],["seker",387,0,0,100],["bal",304,.3,0,82],["pekmez",290,1,0,72],["limon suyu",22,.4,.2,6.9],["sirke",18,0,0,0],["ceviz",654,15,65,14],["findik",628,15,61,17],["badem",579,21,50,22],["uzum",299,3,.5,79],["tahin",595,17,54,21],["zeytin",145,1,15,4],["kakao",228,20,14,58],["karabiber",251,10,3,64],["kimyon",375,18,22,44],["kekik",276,9,7,64],["tarcin",247,4,1.2,81],["baharat",280,10,8,55],["tuz",0,0,0,0]];
+var ADET={yumurta:55,sogan:100,patates:150,domates:120,havuc:80,limon:60,kabak:200,patlican:250,biber:40};
+function ntMatch(name){var k=" "+nk(name)+" ",tk=k.trim().split(" ");
+  for(var i=0;i<NT.length;i++){var w=NT[i][0];if(w.indexOf(" ")>0){if(k.indexOf(" "+w+" ")>=0)return NT[i];continue}
+    if(tk.some(function(t){return t===w||(w.length>=5&&t.indexOf(w)===0)}))return NT[i]}
+  return null}
+function nutr(r,mult){var t={k:0,p:0,f:0,c:0},mass=0,hit=0;
+  (r.ingredients||[]).forEach(function(i){var q=(+i[1]||0)*mult,u=String(i[2]||"").toLowerCase().trim(),g=q;
+    if(u==="adet"){var kk=nk(i[0]).split(" ")[0];g=ADET[kk]?q*ADET[kk]:0;if(!g){return}}
+    else if(u!=="g"&&u!=="ml")return;
+    mass+=g;if(isWater(i[0])){hit+=g;return}
+    var m=ntMatch(i[0]);if(!m)return;hit+=g;t.k+=g*m[1]/100;t.p+=g*m[2]/100;t.f+=g*m[3]/100;t.c+=g*m[4]/100});
+  t.cov=mass>0?hit/mass:0;return t}
+function nutrHtml(t,n,label){var pp=function(v){return fmt(v/n,0)};
+  return '<div style="display:flex;gap:8px;flex-wrap:wrap"><div class="card" style="margin:0;flex:1;min-width:110px"><div class="small">'+label+' enerji</div><div style="font-size:20px;font-weight:800">'+pp(t.k)+' kcal</div></div><div class="card" style="margin:0;flex:1;min-width:90px"><div class="small">Protein</div><b>'+fmt(t.p/n,1)+' g</b></div><div class="card" style="margin:0;flex:1;min-width:90px"><div class="small">Yağ</div><b>'+fmt(t.f/n,1)+' g</b></div><div class="card" style="margin:0;flex:1;min-width:90px"><div class="small">Karbonhidrat</div><b>'+fmt(t.c/n,1)+' g</b></div></div><div class="small" style="margin-top:6px;'+(t.cov<.7?'color:#b3261e':'')+'">Malzemelerin %'+fmt(t.cov*100,0)+'’i değer tablosuyla eşleşti'+(t.cov<.7?' — düşük güvenilirlik':'')+'. Değerler tahminidir (çiğ malzeme, genel ortalamalar).</div>'}
+function bsCalc(){
+  var r=findRecipe($("bsR").value);
+  if(r){var t=nutr(r,1/(+r.base||1));$("bsOut").innerHTML='<div class="small" style="margin-bottom:6px"><b>'+esc(r.name)+'</b> · 1 porsiyon</div>'+nutrHtml(t,1,"Porsiyon başı");return}
+  var o=menuOpts()[+$("bsSel").value];if(!o){toast("Reçete yaz veya kayıtlı menü seç");return}
+  var tot={k:0,p:0,f:0,c:0},cs=[],days=Math.max(1,o.days.length);
+  o.days.forEach(function(d){d.ids.forEach(function(id){var rr=recById(id);if(!rr)return;var t=nutr(rr,1/(+rr.base||1));tot.k+=t.k;tot.p+=t.p;tot.f+=t.f;tot.c+=t.c;cs.push(t.cov)})});
+  if(!cs.length){$("bsOut").innerHTML='<div class="small">Menüdeki yemekler bulunamadı.</div>';return}
+  tot.cov=cs.reduce(function(a,b){return a+b},0)/cs.length;
+  $("bsOut").innerHTML='<div class="small" style="margin-bottom:6px">'+esc(o.label)+' · kişi başı'+(days>1?' (günlük ortalama)':'')+'</div>'+nutrHtml(tot,days,"Günlük")}
+var SK2="sefSure",SU=ld(SK2,{});if(!SU||typeof SU!=="object"||Array.isArray(SU))SU={};
+function zmFill(){var r=findRecipe($("zmR").value);if(!r)return;var s=SU[fold(r.name)];if(s){$("zmH").value=s.h||"";$("zmP").value=s.p||""}}
+function zmCalc(){
+  var r=findRecipe($("zmR").value),h=num($("zmH").value),p=num($("zmP").value),t=$("zmT").value;
+  if(!r){toast("Listeden reçete seç");return}if(!t){toast("Servis saati seç");return}
+  h=h>=0?h:0;p=p>=0?p:0;if(h+p<=0){toast("Hazırlık veya pişirme süresi gir");return}
+  SU[fold(r.name)]={h:h,p:p};sv(SK2,SU);
+  var tm=t.split(":"),mins=(+tm[0])*60+(+tm[1])-(h+p),day=0;while(mins<0){mins+=1440;day++}
+  var st=pad(Math.floor(mins/60)%24)+":"+pad(mins%60);
+  $("zmOut").innerHTML='<div class="card" style="margin:0"><b style="font-size:20px">Başlama saati: '+st+'</b><div class="small">'+esc(r.name)+' · hazırlık '+h+' dk + pişirme '+p+' dk · servis '+esc(t)+(day?' (bir önceki gün)':'')+'</div><div class="actions"><button class="btn gold" id="zmAdd">Görev listesine ekle</button></div></div>';
+  $("zmAdd").onclick=function(){G.tasks.push({id:uid(),t:"BAŞLA: "+r.name+" (hazırlık "+h+" dk + pişirme "+p+" dk → servis "+t+")",done:false,who:"",time:st,src:""});saveG();drawG();toast("Göreve eklendi")}}
+function monthSummary(){
+  var m=$("amM").value||today().slice(0,7),isP=document.body.dataset.role==="personel";
+  var L=U.filter(function(x){return String(x.d).slice(0,7)===m}),tu=0,ta=0,tc=0,cp=0,by={};
+  L.forEach(function(x){tu+=x.u||0;ta+=x.a||0;if(x.cost>0){tc+=x.cost;cp+=x.u||0}var o=by[fold(x.r)]||(by[fold(x.r)]={r:x.r,u:0,a:0});o.u+=x.u||0;o.a+=x.a||0});
+  var top=Object.keys(by).map(function(k){return by[k]}).sort(function(a,b){return b.u-a.u}).slice(0,5);
+  var d=depoRead(),out={};d.log.forEach(function(l){if(l.type==="out"&&String(l.date).slice(0,7)===m){var o=out[l.name+"|"+l.unit]||(out[l.name+"|"+l.unit]={n:l.name,u:l.unit,q:0});o.q+=l.q}});
+  var tout=Object.keys(out).map(function(k){return out[k]}).sort(function(a,b){return b.q-a.q}).slice(0,8);
+  var rises=P.filter(function(p){return p.d&&String(p.d).slice(0,7)===m&&p.h&&p.h.length}).map(function(p){var o=p.h[p.h.length-1];return{n:p.name,pct:o.p>0?(p.price-o.p)/o.p*100:0}}).filter(function(x){return Math.abs(x.pct)>=5}).sort(function(a,b){return b.pct-a.pct}).slice(0,6);
+  var sk=S.filter(function(x){return String(x.d).slice(0,7)===m}).length;
+  var h='<div class="small"><b>'+L.length+'</b> üretim kaydı · <b>'+fmt(tu,0)+'</b> porsiyon üretildi · artık <b>'+fmt(ta,0)+'</b> (%'+fmt(tu>0?ta/tu*100:0,1)+') · <b>'+sk+'</b> SKT kaydı</div>';
+  if(!isP&&tc>0)h+='<div class="small" style="margin-top:4px">Maliyet kayıtlı üretimlerde ortalama porsiyon maliyeti: <b>'+tl(tc/cp)+'</b> · toplam <b>'+tl(tc)+'</b></div>';
+  if(top.length)h+='<div style="overflow-x:auto;margin-top:8px"><table><thead><tr><th>En çok üretilen</th><th>Porsiyon</th><th>Artık</th></tr></thead><tbody>'+top.map(function(o){return '<tr><td>'+esc(o.r)+'</td><td>'+fmt(o.u,0)+'</td><td>%'+fmt(o.u>0?o.a/o.u*100:0,1)+'</td></tr>'}).join("")+'</tbody></table></div>';
+  if(tout.length)h+='<div style="overflow-x:auto;margin-top:8px"><table><thead><tr><th>Depodan en çok çıkan</th><th>Miktar</th></tr></thead><tbody>'+tout.map(function(o){return '<tr><td>'+esc(o.n)+'</td><td>'+fmt(o.q)+' '+esc(o.u)+'</td></tr>'}).join("")+'</tbody></table></div>';
+  if(!isP&&rises.length)h+='<div class="small" style="margin-top:8px">Fiyat değişimleri: '+rises.map(function(x){return esc(x.n)+' '+(x.pct>0?'▲':'▼')+' %'+fmt(Math.abs(x.pct),0)}).join(' · ')+'</div>';
+  if(!L.length&&!tout.length)h='<div class="small">Bu ay için kayıt yok.</div>';
+  $("amOut").innerHTML=h}
+function waPhone(p){var d=String(p||"").replace(/\D/g,"");if(!d)return"";if(d.indexOf("90")===0&&d.length>=12)return d;if(d.charAt(0)==="0")d=d.slice(1);if(d.length===10)return"90"+d;return d}
+
+gun.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;if(b.id==="bsCalc")bsCalc();if(b.id==="zmCalc")zmCalc()});
+gun.addEventListener("change",function(e){if(e.target.id==="zmR")zmFill();if(e.target.id==="gvMine"){drawG()}});
+$("uretKayit").addEventListener("change",function(e){if(e.target.id==="amM")monthSummary()});
+
+/* ===== menü listesi / maliyet / alerjen / rapor / etiket ===== */
+var MK="chef_assistant_complete_v1";
+function recById(id){var L=allRecipes();for(var i=0;i<L.length;i++)if(String(L[i].id)===String(id))return L[i];return null}
+function menuOpts(){var o=[];
+  (ld(MK+"_menus",[])||[]).forEach(function(m){o.push({k:"d",label:"Günlük · "+(m.date||"tarihsiz")+" · "+(m.people||"?")+" kişi",days:[{ids:m.recipeIds||[],people:+m.people||0}]})});
+  (ld(MK+"_weekMenus",[])||[]).forEach(function(w){o.push({k:"w",label:"Haftalık · "+(w.start||"tarihsiz"),days:(w.days||[]).map(function(d){return{date:d.date,ids:[d.soupId,d.mainId,d.sideId,d.saladId,d.dessertId].filter(Boolean),people:0}})})});
+  return o}
+function fillMenuSel(id){var el=$(id);if(!el)return;var v=el.value,o=menuOpts();el.innerHTML=o.length?o.map(function(m,i){return '<option value="'+i+'">'+esc(m.label)+'</option>'}).join(""):'<option value="">Kayıtlı menü yok</option>';if(v&&el.options[+v])el.value=v}
+function menuCalc(){
+  var o=menuOpts()[+$("mmSel").value];if(!o){toast("Kayıtlı menü seç");return}
+  var wp=num($("mmP").value),tg=num($("mmT").value),tot=0,miss=0,rows=[],pp=0,nd=0,ups={};
+  o.days.forEach(function(d,di){var n=d.people>0?d.people:(wp>0?wp:100);pp=n;nd++;d.ids.forEach(function(id){var r=recById(id);if(!r)return;var mult=n/(+r.base||1),c=0,ms=0;(r.ingredients||[]).forEach(function(ing){var x=costOf(ing,mult,$("mmFire").checked);if(x.cost===null)ms++;else c+=x.cost;if(x.price&&x.price.h&&x.price.h.length){var hh=x.price.h[x.price.h.length-1],pc=hh.p>0?(x.price.price-hh.p)/hh.p*100:0;if(pc>=10&&x.price.d&&x.price.d>=addDays(today(),-45))ups[x.price.name]=pc}});tot+=c;miss+=ms;rows.push({day:o.k==="w"?(d.date||("Gün "+(di+1))):"",name:r.name,n:n,cost:c,ms:ms})})});
+  if(!rows.length){$("mmOut").innerHTML='<div class="small">Menüdeki yemekler bulunamadı.</div>';return}
+  var perDay=tot/Math.max(1,nd),per=perDay/Math.max(1,pp);
+  var h='<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px"><div class="card" style="flex:1;min-width:140px;margin:0"><div class="small">Toplam maliyet</div><div style="font-size:22px;font-weight:800">'+tl(tot)+'</div></div><div class="card" style="flex:1;min-width:140px;margin:0"><div class="small">Kişi başı'+(o.k==="w"?' (günlük ort.)':'')+'</div><div style="font-size:22px;font-weight:800">'+tl(per)+'</div></div></div>';
+  if(tg>0&&miss){h+='<div class="small" style="margin-bottom:8px">Hedef karşılaştırması için önce eksik fiyatları gir.</div>'}
+  if(tg>0&&!miss){var ok=per<=tg;h+='<div style="padding:8px 12px;border-radius:10px;margin-bottom:8px;font-weight:700;background:'+(ok?'#e3f4e8':'#fde7e5')+';color:'+(ok?'#1b7f3b':'#b3261e')+'">'+(ok?'✔ Hedefin altında: ':'⚠ Hedefi aşıyor: ')+tl(per)+' / hedef '+tl(tg)+(ok?'':' (fark '+tl(per-tg)+')')+'</div>'}
+  if(miss)h+='<div class="small" style="color:#b3261e;margin-bottom:6px">⚠ '+miss+' malzemenin fiyatı yok, gerçek maliyet daha yüksek olabilir.</div>';
+  var upk=Object.keys(ups);if(upk.length)h+='<div class="small" style="color:#a86b00;margin-bottom:6px">📈 Son 45 günde zamlanan malzemeler: '+upk.map(function(k){return esc(k)+" +%"+fmt(ups[k],0)}).join(", ")+'</div>';
+  h+='<div style="overflow-x:auto"><table><thead><tr>'+(o.k==="w"?'<th>Gün</th>':'')+'<th>Yemek</th><th>Porsiyon</th><th>Maliyet</th><th>Porsiyon maliyeti</th></tr></thead><tbody>'+rows.map(function(r){return '<tr>'+(o.k==="w"?'<td>'+esc(r.day)+'</td>':'')+'<td>'+esc(r.name)+(r.ms?' <small style="color:#b3261e">(eksik fiyat)</small>':'')+'</td><td>'+r.n+'</td><td>'+tl(r.cost)+'</td><td>'+tl(r.cost/r.n)+'</td></tr>'}).join("")+'</tbody></table></div>';
+  $("mmOut").innerHTML=h;try{localStorage.setItem("sefHedef",String(tg>0?tg:""))}catch(e){}}
+function alerjen(){
+  var o=menuOpts()[+$("alSel").value];if(!o){toast("Kayıtlı menü seç");return null}
+  var seen={},dishes=[],all={};
+  o.days.forEach(function(d){d.ids.forEach(function(id){var r=recById(id);if(!r||seen[r.id])return;seen[r.id]=1;var a=Array.isArray(r.allergens)?r.allergens:[];a.forEach(function(x){all[x]=1});dishes.push({name:r.name,a:a})})});
+  return{o:o,dishes:dishes,list:Object.keys(all).sort(function(a,b){return a.localeCompare(b,"tr")})}}
+function alerjenHtml(x){
+  if(!x.dishes.length)return '<div class="small">Menüdeki yemekler bulunamadı.</div>';
+  if(!x.list.length)return '<div class="small">Bu menüdeki yemeklerde kayıtlı alerjen bilgisi yok. (Alerjen alanı boş olan reçeteler kontrol edilmemiş sayılır.)</div>';
+  return '<div style="overflow-x:auto"><table><thead><tr><th>Yemek</th>'+x.list.map(function(a){return '<th>'+esc(a)+'</th>'}).join("")+'</tr></thead><tbody>'+x.dishes.map(function(d){return '<tr><td>'+esc(d.name)+'</td>'+x.list.map(function(a){return '<td style="text-align:center">'+(d.a.indexOf(a)>=0?'●':'')+'</td>'}).join("")+'</tr>'}).join("")+'</tbody></table></div><div class="small" style="margin-top:6px">Alerjen bilgisi reçetelerdeki kayıtlara dayanır; boş bırakılmış reçeteler alerjensiz anlamına gelmez.</div>'}
+function printHtml(title,body){var w=window.open("","_blank");if(!w){toast("Açılır pencere engellendi");return}w.document.write('<!doctype html><meta charset="utf-8"><title>'+esc(title)+'</title><style>body{font:13px sans-serif;padding:18px}table{border-collapse:collapse;width:100%;margin-bottom:14px}td,th{border:1px solid #999;padding:5px;text-align:left}h2,h3{margin:10px 0 6px}.lb{display:inline-block;width:46%;border:2px solid #000;margin:6px;padding:8px;vertical-align:top;page-break-inside:avoid}</style>'+body);w.document.close();w.focus();setTimeout(function(){w.print()},300)}
+function trToIso(s){var m=/(\d{1,2})\.(\d{1,2})\.(\d{4})/.exec(String(s||""));return m?m[3]+"-"+pad(+m[2])+"-"+pad(+m[1]):""}
+function report(){
+  var a=$("rpA").value||"0000-00-00",b=$("rpB").value||"9999-99-99";function inr(d){return d&&d>=a&&d<=b}
+  var tp=ld(MK+"_temps",[]).filter(function(x){return inr(trToIso(x.date))}),ql=ld(MK+"_quality",[]).filter(function(x){return inr(trToIso(x.date))});
+  var h='<h2>Kayıt Raporu — '+esc($("rpA").value||"başlangıç")+' / '+esc($("rpB").value||"bugün")+'</h2>';
+  h+='<h3>Sıcaklık kayıtları ('+tp.length+')</h3>'+(tp.length?'<table><tr><th>Tarih</th><th>Yemek</th><th>Tür</th><th>°C</th><th>Not</th></tr>'+tp.map(function(x){return '<tr><td>'+esc(x.date)+'</td><td>'+esc(x.dish)+'</td><td>'+esc(x.type)+'</td><td>'+esc(x.value)+'</td><td>'+esc(x.note||"")+'</td></tr>'}).join("")+'</table>':'<p>Kayıt yok.</p>');
+  h+='<h3>Kalite / tadım kayıtları ('+ql.length+')</h3>'+(ql.length?'<table><tr><th>Tarih</th><th>Yemek</th><th>Porsiyon</th><th>Tuz</th><th>Kıvam</th><th>Lezzet</th><th>Görünüm</th><th>Not</th></tr>'+ql.map(function(x){return '<tr><td>'+esc(x.date)+'</td><td>'+esc(x.dish)+'</td><td>'+esc(x.portions)+'</td><td>'+esc(x.salt)+'</td><td>'+esc(x.texture)+'</td><td>'+esc(x.taste)+'</td><td>'+esc(x.look)+'</td><td>'+esc(x.note||"")+'</td></tr>'}).join("")+'</table>':'<p>Kayıt yok.</p>');
+  var days=Object.keys(G.ck).filter(inr).sort();
+  h+='<h3>Açılış / kapanış kontrolleri</h3>'+(days.length?'<table><tr><th>Tarih</th><th>Açılış</th><th>Kapanış</th></tr>'+days.map(function(d){var c=G.ck[d];return '<tr><td>'+esc(d)+'</td><td>'+((c.o||[]).length)+' / '+G.o.length+'</td><td>'+((c.c||[]).length)+' / '+G.c.length+'</td></tr>'}).join("")+'</table>':'<p>Kayıt yok.</p>');
+  var sk=S.filter(function(x){return inr(x.d)});
+  h+='<h3>Çözdürme / SKT kayıtları ('+sk.length+')</h3>'+(sk.length?'<table><tr><th>Ürün</th><th>Tür</th><th>Başlangıç</th><th>Son kullanım</th></tr>'+sk.map(function(x){return '<tr><td>'+esc(x.n)+'</td><td>'+esc(x.k)+'</td><td>'+esc(x.d)+'</td><td>'+esc(x.e)+'</td></tr>'}).join("")+'</table>':'<p>Kayıt yok.</p>');
+  h+='<p style="margin-top:30px">Hazırlayan: ____________ &nbsp;&nbsp; İmza: ____________</p>';
+  printHtml("Kayıt Raporu",h)}
+function labelBox(x){return '<div class="lb"><b style="font-size:16px">'+esc(x.n)+'</b><br>'+esc(x.k)+'<br>Hazırlanma: '+esc(x.d)+'<br><b>Son kullanım: '+esc(x.e)+'</b>'+(x.note?'<br>'+esc(x.note):'')+'<br>Hazırlayan: ________</div>'}
+mal.addEventListener("click",function(e){if(e.target.id==="mmCalc")menuCalc()});
+gun.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="alCalc"){var x=alerjen();if(x)$("alOut").innerHTML=alerjenHtml(x);return}
+  if(b.id==="alPr"){var y=alerjen();if(y)printHtml("Alerjen Çizelgesi",'<h2>Menü alerjen çizelgesi — '+esc(y.o.label)+'</h2>'+alerjenHtml(y));return}
+  if(b.id==="rpPrint"){report();return}});
+skt.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.dataset.sl!==undefined){var x=S[+b.dataset.sl];if(x)printHtml("Etiket",labelBox(x));return}
+  if(b.id==="skLblAll"){if(!S.length){toast("Kayıt yok");return}printHtml("Etiketler",S.map(labelBox).join(""))}});
+
+/* ===== ortak ===== */
+var _sP=0,_sM=0;function ensureFill(id){try{if(id==="production"&&!window.__seenProd){window.__seenProd=1;if(window.__pendProd){window.__pendProd=0;fillProd()}}if(id==="menu"&&!window.__seenMenu){window.__seenMenu=1;if(window.__pendMenu){window.__pendMenu=0;initMenuSelectors()}}}catch(e){console.warn(e)}}
+var DR={maliyet:function(){drawP();fillMenuSel("mmSel");try{var h=localStorage.getItem("sefHedef");if(h&&!$("mmT").value)$("mmT").value=h}catch(e){}},gunluk:function(){drawG();fillMenuSel("alSel");fillMenuSel("bsSel");fillRecipeList("zmRL");fillRecipeList("bsRL");if(document.body.dataset.role==="personel"&&!window._mineSet){window._mineSet=1;$("gvMine").checked=true;drawG()}if(!$("rpA").value){$("rpA").value=addDays(today(),-7);$("rpB").value=today()}},skt:drawS,uretKayit:function(){drawU();if(!$("amM").value)$("amM").value=today().slice(0,7);monthSummary()},tedarik:drawT};
+function reload(){P=ld(PK,[]);if(!Array.isArray(P))P=[];var g=ld(GK,null);if(g&&typeof g==="object"){G.tasks=Array.isArray(g.tasks)?g.tasks:G.tasks;G.ck=g.ck||G.ck;if(Array.isArray(g.o))G.o=g.o;if(Array.isArray(g.c))G.c=g.c}S=ld(SK,[]);U=ld(UK,[]);T=ld(TK,[]);[S,U,T,P].forEach(function(a){if(!Array.isArray(a))a.length=0});Object.keys(DR).forEach(function(k){if($(k).classList.contains("active"))DR[k]()})}
+window.SEF=window.SEF||{};SEF.opsReload=reload;
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-tab]");if(b&&DR[b.dataset.tab])setTimeout(DR[b.dataset.tab],0)});
+var og=window.go;window.go=function(id){ensureFill(id);var r=og.apply(this,arguments);if(DR[id])setTimeout(DR[id],0);if(id==="depo")setTimeout(function(){try{SEF.depoReload()}catch(e){}},0);return r};
+})()</script>
+<script>(function(){
+function dl(name,obj){var b=new Blob([JSON.stringify(obj)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500)}
+async function backup(btn){var sb=window.SEF_sb;if(!sb){ofToast("Bulut bağlantısı yok");return}btn.disabled=true;var out={at:new Date().toISOString()},T=["recipes","profiles","companies","menus","checklists","user_kv","recipe_requests"];
+ try{for(var i=0;i<T.length;i++){var rows=[];for(var o=0;o<200000;o+=1000){var r=await sb.from(T[i]).select("*").range(o,o+999);if(r.error)throw r.error;rows=rows.concat(r.data||[]);if(!r.data||r.data.length<1000)break}out[T[i]]=rows;btn.textContent="Yedekleniyor... "+(i+1)+"/"+T.length}
+  dl("sef-asistan-veritabani-yedek-"+new Date().toISOString().slice(0,10)+".json",out);ofToast("Yedek indirildi ("+(out.recipes||[]).length+" reçete)")}
+ catch(e){ofToast("Yedek alınamadı: "+(e.message||e))}btn.disabled=false;btn.textContent="Yedeği indir (JSON)"}
+function add(){var h=document.getElementById("adminBody");if(!h||document.getElementById("admBak")||!h.firstChild)return;var c=document.createElement("div");c.className="card";c.id="admBak";c.style.marginBottom="14px";c.innerHTML='<h3>💾 Veritabanı yedeği</h3><div class="small">Tüm reçeteleri, kullanıcıları ve kullanıcı verilerini tek JSON dosyası olarak indirir. Haftada bir almanı öneririm.</div><div class="actions"><button class="btn gold" id="admBakBtn">Yedeği indir (JSON)</button></div>';h.insertBefore(c,h.firstChild);document.getElementById("admBakBtn").onclick=function(){backup(this)}}
+new MutationObserver(add).observe(document.body,{childList:true,subtree:true});
+})()</script>
+
 <div id="sheet"><div class="in"><h3>Tüm bölümler</h3><div class="tiles" id="all"></div></div></div>
 <div id="bar"></div>
 <script>
 (function(){
-var IC={dashboard:"🏠",library:"📖",specialCreator:"✨",freeform:"🍳",standart:"📊",shop:"🛒",fire:"📉",spiceGuide:"🌿",recipeManage:"✏️",production:"⚖️",equipment:"🍲",menu:"🗓️",prep:"🔪",sauce:"🥣",safety:"🛡️",quality:"👅",notebook:"📓",backup:"💾"};
+var IC={dashboard:"🏠",library:"📖",specialCreator:"✨",freeform:"🍳",standart:"📊",shop:"🛒",depo:"📦",maliyet:"💰",gunluk:"✅",skt:"⏳",uretKayit:"🧾",tedarik:"📇",fire:"📉",spiceGuide:"🌿",recipeManage:"✏️",production:"⚖️",equipment:"🍲",menu:"🗓️",prep:"🔪",sauce:"🥣",safety:"🛡️",quality:"👅",notebook:"📓",backup:"💾"};
 var NM={dashboard:"Ana Sayfa",library:"Reçeteler",production:"Üretim",menu:"Menü"};
 var btns=[].slice.call(document.querySelectorAll("nav button"));
 function tile(b){var t=document.createElement("button");t.className="tile";t.dataset.tab=b.dataset.tab;t.innerHTML="<i>"+(IC[b.dataset.tab]||"•")+"</i>"+b.textContent;t.onclick=function(){document.getElementById("sheet").classList.remove("open");go(b.dataset.tab)};return t}
@@ -2444,11 +2979,11 @@ function jset(k,v){raw(k,JSON.stringify(v))}
 
 var P=STORAGE;
 var K={rec:P+"_recipes",menu:P+"_menus",week:P+"_weekMenus",temp:P+"_temps",qual:P+"_quality",notes:P+"_notes",remote:P+"_remote",comm:P+"_community"};
-var KV=["sefFav","sefRecFav","sefRecent","sefShop","sefFire","sefYield","sefStdRows",K.notes];
+var KV=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure","sefFav","sefRecFav","sefRecent","sefShop","sefFire","sefYield","sefStdRows",K.notes];
 var WATCH={};[K.rec,K.menu,K.week,K.temp,K.qual].concat(KV).forEach(function(k){WATCH[k]=1});
 var UID_KEY="sef_cloud_uid",DIRTY="sef_dirty",KNOWN="sef_known";
 var ROLE_LABEL={super_admin:"Süper Admin",ev_kullanicisi:"Ev Kullanıcısı",ustabasi:"Usta Başı / Şef",personel:"Personel"};
-var TABS={ev_kullanicisi:["library","video","community","pantryFinder","specialCreator","shop","notebook","recipeManage"],personel:["library","safety","prep","quality"]};
+var TABS={ev_kullanicisi:["library","video","community","pantryFinder","specialCreator","shop","notebook","recipeManage"],personel:["library","safety","prep","quality","depo","gunluk","skt","uretKayit","tedarik"]};
 
 var sb=null,ME=null,SESSION=null,hydrating=false,mode="login",lastCommPull=0;
 
@@ -2475,7 +3010,7 @@ function hasLocalData(){var r=jget(K.rec,[]),m=jget(K.menu,[]),w=jget(K.week,[])
 function clearUserData(){var had=hasLocalData();Object.keys(WATCH).forEach(rawDel);[K.remote,K.comm,UID_KEY,DIRTY,KNOWN].forEach(rawDel);return had}
 function remoteLocal(){return jget(K.remote,[])}
 function rebuild(){try{recipes=[].concat(builtInRecipes,custom,remoteList())}catch(e){console.warn(e);return}
-  ["renderLibrary","fillProd","initMenuSelectors","renderCustomRecipeManager"].forEach(function(n){try{if(typeof window[n]==="function")window[n]()}catch(e){}})}
+  ["renderLibrary","fillProd","initMenuSelectors","renderCustomRecipeManager"].forEach(function(n){try{if(typeof window[n]==="function")window[n]()}catch(e){}});try{if(window.SEF&&SEF.depoReload)SEF.depoReload();if(window.SEF&&SEF.opsReload)SEF.opsReload()}catch(e){}}
 
 /* ---------- kayıt kancası ---------- */
 var timer=null,flushing=false,again=false;
@@ -2806,13 +3341,25 @@ function renderAdmin(){
    +'<div class="card s12"><div class="tagrow"><span class="chip">Ev: '+(by.ev_kullanicisi||0)+'</span><span class="chip">Usta başı: '+(by.ustabasi||0)+'</span><span class="chip">Personel: '+(by.personel||0)+'</span><span class="chip">Şirket: '+d.co.length+'</span><span class="chip">Genel tarif: '+cnt.global+'</span><span class="chip">Onay bekleyen: '+cnt.public+'</span><span class="chip">Şirket tarifi: '+cnt.company+'</span><span class="chip">Ev tarifi: '+cnt.private+'</span></div></div>'
    +'<div class="card s12"><h3>Reçeteler</h3><div class="two"><div><label>Süz</label><select id="admFilter"><option value="all">Hepsi</option><option value="public">Onay bekleyen (topluluk)</option><option value="company">Şirket tarifleri</option><option value="private">Ev / özel</option><option value="global">Genel kütüphane</option></select></div><div><label>Ara</label><input id="admQ" placeholder="Tarif veya yazar"></div></div><div id="admRecipes" class="stack" style="margin-top:10px"></div></div>'
    +'<div class="card s6"><h3>Şirketler</h3><div class="small">'+(d.co.length?d.co.map(function(c){return'<div style="padding:6px 0;border-bottom:1px solid var(--line)"><b>'+E(c.name)+'</b> · kod <b>'+E(c.invite_code)+'</b> · '+(staff[c.id]||0)+' kişi</div>'}).join(""):"Henüz şirket yok.")+'</div></div>'
-   +'<div class="card s6"><h3>Kullanıcılar</h3><div class="small">'+d.pf.slice(0,200).map(function(p){return'<div style="padding:6px 0;border-bottom:1px solid var(--line)">'+E(p.email||"")+' · '+E(ROLE_LABEL[p.role]||p.role)+(p.company_id?' · '+E(coName[p.company_id]||""):"")+'</div>'}).join("")+'</div></div></div>';
+   +'<div class="card s6"><h3>Kullanıcılar</h3><div class="small">'+d.pf.slice(0,200).map(function(p){return'<div style="padding:6px 0;border-bottom:1px solid var(--line)">'+E(p.email||"")+' · '+E(ROLE_LABEL[p.role]||p.role)+(p.company_id?' · '+E(coName[p.company_id]||""):"")+(p.id!==ME.uid&&p.role==="super_admin"?' <button class="btn light" data-setrole="'+E(p.id)+'" data-to="ev_kullanicisi">Adminliği al</button>':(p.id!==ME.uid&&p.role==="ev_kullanicisi"?' <button class="btn light" data-setrole="'+E(p.id)+'" data-to="super_admin">Admin yap</button>':""))+'</div>'}).join("")+'</div></div>'
+   +'<div class="card s12"><h3>📩 Gelen mesajlar</h3><div id="admMsgs" class="small">Yükleniyor…</div></div></div>';
   $("admFilter").value=f;$("admQ").value=$("admQ").value||"";if(q)$("admQ").value=q;
   $("admFilter").onchange=renderAdmin;$("admQ").oninput=function(){clearTimeout(renderAdmin._t);renderAdmin._t=setTimeout(function(){var pos=$("admQ").value;renderAdmin();$("admQ").value=pos;$("admQ").focus()},300)};
   $("admRecipes").innerHTML=rl.length?rl.map(function(r){
     var act=r.is_global?(r.owner_id===ME.uid&&String(r.local_id).indexOf("G-")!==0?'<button class="btn light" data-un="'+E(r.local_id)+'">Genel\'den çıkar</button>':'<button class="btn red" data-del="'+E(r.id)+'">Genel\'den kaldır</button>')
       :'<button class="btn gold" data-pro="'+E(r.id)+'">Genel Kütüphaneye Al</button>';
     return'<div class="note" style="display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap"><div><b>'+E(r.name)+'</b><div class="small">'+E(SCOPE_LABEL[scopeOf(r)])+' · '+E(r.author_name||"—")+(r.company_id?' · '+E(coName[r.company_id]||""):"")+'</div></div><div>'+act+'</div></div>'}).join(""):'<div class="small">Kayıt yok.</div>';
+  document.querySelectorAll("[data-setrole]").forEach(function(b){b.onclick=async function(){var to=b.dataset.to;
+    if(!confirm(to==="super_admin"?"Bu kullanıcıya SÜPER ADMİN yetkisi verilsin mi? Tüm kullanıcı ve reçeteleri görür, silebilir.":"Bu kullanıcının admin yetkisi alınsın mı?"))return;
+    b.disabled=true;var r=await sb.from("profiles").update({role:to}).eq("id",b.dataset.setrole);
+    if(r.error){toast("Hata: "+trErr(r.error));b.disabled=false;return}toast("Rol güncellendi");loadAdmin()}});
+  (async function(){var host=$("admMsgs");if(!host)return;
+    var r=await sb.from("recipe_requests").select("id,created_at,kind,request_text,contact,handled").order("created_at",{ascending:false}).limit(200);
+    if(r.error){host.textContent="Mesajlar alınamadı: "+trErr(r.error);return}
+    var rows=r.data||[];
+    host.innerHTML=rows.length?rows.map(function(m){return'<div class="note" style="'+(m.handled?"opacity:.55;":"")+'display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap"><div><b>'+(m.kind==="sponsor"?"🤝 Sponsor/iş ortaklığı":"🍽️ Reçete isteği")+'</b> · '+new Date(m.created_at).toLocaleString("tr-TR")+'<div>'+E(m.request_text)+'</div>'+(m.contact?'<div class="small">İletişim: '+E(m.contact)+'</div>':"")+'</div><div><button class="btn light" data-mh="'+m.id+'" data-v="'+(m.handled?0:1)+'">'+(m.handled?"Geri al":"Tamam")+'</button> <button class="btn red" data-md="'+m.id+'">Sil</button></div></div>'}).join(""):"Henüz mesaj yok.";
+    host.querySelectorAll("[data-mh]").forEach(function(b){b.onclick=async function(){var u=await sb.from("recipe_requests").update({handled:b.dataset.v==="1"}).eq("id",b.dataset.mh);if(u.error){toast("Hata: "+trErr(u.error));return}renderAdmin()}});
+    host.querySelectorAll("[data-md]").forEach(function(b){b.onclick=async function(){if(!confirm("Bu mesaj silinsin mi?"))return;var u=await sb.from("recipe_requests").delete().eq("id",b.dataset.md);if(u.error){toast("Hata: "+trErr(u.error));return}renderAdmin()}})})();
   $("admRecipes").querySelectorAll("[data-pro]").forEach(function(b){b.onclick=async function(){b.disabled=true;var r=await sb.rpc("promote_recipe",{rid:b.dataset.pro});if(r.error){toast("Hata: "+trErr(r.error));b.disabled=false;return}toast("Genel Kütüphaneye eklendi");await pullRemote();loadAdmin()}});
   $("admRecipes").querySelectorAll("[data-del]").forEach(function(b){b.onclick=async function(){if(!confirm("Bu genel tarif herkesten kaldırılsın mı?"))return;var r=await sb.from("recipes").delete().eq("id",b.dataset.del);if(r.error){toast("Hata: "+trErr(r.error));return}toast("Kaldırıldı");await pullRemote();loadAdmin()}});
   $("admRecipes").querySelectorAll("[data-un]").forEach(function(b){b.onclick=function(){var c=custom.find(function(x){return String(x.id)===b.dataset.un});if(c){delete c._global;LS.setItem(K.rec,JSON.stringify(custom))}toast("Genel listeden çıkarılıyor…");setTimeout(function(){pullRemote().then(loadAdmin)},3500)}});
@@ -2879,7 +3426,7 @@ function wire(){
 }
 wire();
 loadLib(function(){
-  sb=window.supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON_KEY,{auth:{persistSession:true,autoRefreshToken:true}});
+  sb=window.supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON_KEY,{auth:{persistSession:true,autoRefreshToken:true}});window.SEF_sb=sb;window.SEF_me=function(){return ME};
   sb.auth.onAuthStateChange(function(ev){if(ev==="SIGNED_OUT"&&ME&&!window.__sefOut){window.__sefOut=1;clearUserData();location.reload()}});
   sb.auth.getSession().then(function(r){
     if(r&&r.data&&r.data.session)start(r.data.session).catch(function(e){console.warn(e);showAuth(trErr(e))});
@@ -2971,4 +3518,134 @@ new MutationObserver(function(m){
  var added=m.some(function(x){return x.type==="childList"});
  safe(added?build:refresh)}).observe(nav,{childList:true,attributes:true,attributeFilter:["style"],subtree:true});
 })();</script>
+<script>(function(){
+var g=window.generateWeekMenu;if(typeof g!=="function")return;
+function T(r){return foldTR([r.name,r.sub,(r.ingredients||[]).map(function(x){return x[0]}).join(" ")].join(" "))}
+function kind(r){if(!r)return"";var t=T(r);
+ if(/balik|somon|levrek|hamsi|karides|midye|alabalik|palamut|sardalya|ton baligi|lufer|cipura/.test(t))return"Balık";
+ if(/tavuk|piliç|pilic|hindi/.test(t))return"Tavuk";
+ if(/kuzu|dana|kiyma|biftek|kaburga|kebap|kofte|et\b|etli|sucuk|pastirma/.test(t))return"Kırmızı et";
+ if(/nohut|mercimek|fasulye|barbunya|bakla|borulce|humus|falafel|dal\b/.test(t))return"Bakliyat";
+ return"Sebze/diğer"}
+function balance(days){var c={"Balık":0,"Tavuk":0,"Kırmızı et":0,"Bakliyat":0,"Sebze/diğer":0},st=0,dg=0;
+ days.forEach(function(d){c[kind(d.main)]++;if(d.side&&/pirinc|bulgur|makarna|eriste|noodle|kuskus/.test(T(d.side)))st++;if(d.dessert&&/sutlu|sutlac|muhallebi|kremali|puding/.test(T(d.dessert)))dg++});
+ var w=[];
+ if(!c["Balık"])w.push("Haftada hiç balık yok; bir günü balık yemeğiyle değiştirmeyi düşün.");
+ if(c["Kırmızı et"]>3)w.push("Kırmızı et "+c["Kırmızı et"]+" gün; 2-3 gün ile sınırlamak dengeyi artırır.");
+ if(!c["Bakliyat"])w.push("Bakliyat yok; haftada en az 1 gün bakliyatlı ana yemek iyi olur.");
+ if(c["Tavuk"]>3)w.push("Tavuk "+c["Tavuk"]+" gün; çeşitlendirmek iyi olur.");
+ if(st>4)w.push("Pilav/makarna/bulgur "+st+" günde yardımcı yemek; haftayı biraz hafifletebilirsin.");
+ return{c:c,w:w}}
+window.generateWeekMenu=function(){g.apply(this,arguments);
+ var days=window._weekMenu,host=document.getElementById("weekMenuResult");if(!days||!days.length||!host)return;
+ var b=balance(days);var old=document.getElementById("weekBalance");if(old)old.remove();
+ var d=document.createElement("div");d.id="weekBalance";d.className="note"+(b.w.length?" warn":"");
+ d.innerHTML="<b>Haftalık denge</b><br>"+Object.keys(b.c).map(function(k){return k+": "+b.c[k]+" gün"}).join(" · ")+(b.w.length?"<ul style='margin:6px 0 0 18px'>"+b.w.map(function(x){return"<li>"+x+"</li>"}).join("")+"</ul>":"<br>Hafta dengeli görünüyor.");
+ host.after(d)}
+})();</script>
+<script>(function(){
+var HK=STORAGE+"_recipeHistory";
+function rd(){try{var o=JSON.parse(localStorage.getItem(HK)||"{}");return o&&typeof o==="object"?o:{}}catch(e){return{}}}
+function wr(o){try{localStorage.setItem(HK,JSON.stringify(o))}catch(e){}}
+function push(id,rec){var o=rd();(o[id]=o[id]||[]).unshift({t:Date.now(),r:rec});o[id]=o[id].slice(0,10);wr(o)}
+var add=window.addRecipe;
+if(typeof add==="function")window.addRecipe=function(){
+ var id=editingRecipeId,before=null;
+ if(id){var c=custom.find(function(x){return x.id===id});if(c)before=JSON.stringify(c)}
+ add.apply(this,arguments);
+ if(before){var a=custom.find(function(x){return x.id===id});if(a&&JSON.stringify(a)!==before)push(id,JSON.parse(before))}
+};
+var sr=window.showRecipe;
+if(typeof sr==="function")window.showRecipe=function(id){
+ sr.apply(this,arguments);
+ try{var h=(rd()[id]||[]);var box=document.getElementById("recipeDetail");
+  if(!h.length||!box||box.querySelector(".rhist"))return;
+  var d=document.createElement("details");d.className="acc rhist";
+  d.innerHTML="<summary>🕘 Sürüm geçmişi ("+h.length+")</summary>"+h.map(function(v,i){return'<div style="padding:6px 0;border-bottom:1px solid var(--line)">'+new Date(v.t).toLocaleString("tr-TR")+' · '+(v.r.ingredients||[]).length+' malzeme <button type="button" class="btn light" data-hv="'+i+'" style="margin-left:6px">Bu sürüme dön</button></div>'}).join("");
+  d.addEventListener("click",function(e){var b=e.target.closest("[data-hv]");if(!b)return;
+   var v=h[Number(b.dataset.hv)];if(!v||!confirm("Reçete bu eski sürüme döndürülsün mü? Şimdiki hâli de geçmişe kaydedilir."))return;
+   var idx=custom.findIndex(function(x){return x.id===id});if(idx<0)return;
+   push(id,JSON.parse(JSON.stringify(custom[idx])));custom[idx]=v.r;
+   localStorage.setItem(STORAGE+"_recipes",JSON.stringify(custom));
+   recipes=[].concat(builtInRecipes,custom,remoteList());renderLibrary();window.showRecipe(id)});
+  box.appendChild(d)}catch(e){console.warn(e)}
+};
+})();</script>
+<script>(function(){
+if(!document.getElementById("maliyet"))return;
+var KEYS=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure"],TSK="sefCoTs";
+var dirty={},timers={},quiet=false,ready=false,cid=null,pulling=false;
+function me(){try{return window.SEF_me&&window.SEF_me()}catch(e){return null}}
+function sb(){return window.SEF_sb}
+function mykeys(m){return KEYS.filter(function(k){return !(m.role==="personel"&&k==="sefFiyat")})}
+function tsGet(){try{return JSON.parse(localStorage.getItem(TSK)||"{}")||{}}catch(e){return{}}}
+function tsSet(o){try{_set.call(localStorage,TSK,JSON.stringify(o))}catch(e){}}
+function jp(s,d){try{var v=JSON.parse(s);return v==null?d:v}catch(e){return d}}
+function unionBy(a,b,keyFn){var seen={},out=[];(a||[]).forEach(function(x){var k=keyFn(x);if(!seen[k]){seen[k]=1;out.push(x)}});(b||[]).forEach(function(x){var k=keyFn(x);if(!seen[k]){seen[k]=1;out.push(x)}});return out}
+function idk(x){return x&&x.id!=null?String(x.id):JSON.stringify(x)}
+function merge(key,l,r){/* l = yerel, r = uzak; çakışmada yerel kazanır, ikisinde de olanlar korunur */
+  if(key==="sefDepo"){var o={items:unionBy(l.items,r.items,idk),log:unionBy(r.log,l.log,idk)};if(o.log.length>2000)o.log=o.log.slice(-2000);return o}
+  if(key==="sefGorev"){var ck={};[r.ck||{},l.ck||{}].forEach(function(c){Object.keys(c).forEach(function(d){var cur=ck[d]||(ck[d]={o:[],c:[]});["o","c"].forEach(function(w){(c[d][w]||[]).forEach(function(i){if(cur[w].indexOf(i)<0)cur[w].push(i)})})})});
+    return{tasks:unionBy(l.tasks,r.tasks,idk),o:l.o||r.o,c:l.c||r.c,ck:ck}}
+  if(key==="sefFiyat")return unionBy(l,r,function(x){return String(x.name).toLowerCase()+"|"+x.unit});
+  if(key==="sefSure")return Object.assign({},r,l);
+  return unionBy(l,r,idk)}
+var _set=Storage.prototype.setItem;
+Storage.prototype.setItem=function(k,v){_set.apply(this,arguments);try{if(!quiet&&this===window.localStorage&&KEYS.indexOf(k)>=0&&ready){dirty[k]=1;sched(k)}}catch(e){}};
+function setQuiet(k,v){quiet=true;try{_set.call(localStorage,k,v)}finally{quiet=false}}
+function sched(k){clearTimeout(timers[k]);timers[k]=setTimeout(function(){push(k)},1500)}
+async function push(k){
+  var m=me();if(!m||!cid||!sb())return;
+  try{
+    var rr=await sb().from("company_kv").select("v,updated_at").eq("company_id",cid).eq("k",k).maybeSingle();
+    if(rr.error)throw rr.error;
+    var ts=tsGet(),local=jp(localStorage.getItem(k),null),val=local;
+    if(rr.data){var rt=new Date(rr.data.updated_at).getTime();if(!ts[k]||rt>ts[k]){if(local!=null)val=merge(k,local,rr.data.v);setQuiet(k,JSON.stringify(val));afterApply()}}
+    if(val==null)return;
+    var now=new Date().toISOString();
+    var up=await sb().from("company_kv").upsert({company_id:cid,k:k,v:val,updated_at:now,updated_by:m.uid||m.id||null},{onConflict:"company_id,k"});
+    if(up.error)throw up.error;
+    ts[k]=new Date(now).getTime();tsSet(ts);delete dirty[k]}
+  catch(e){console.warn("company sync",e);timers[k]=setTimeout(function(){push(k)},30000)}}
+function afterApply(){try{window.SEF&&SEF.depoReload&&SEF.depoReload()}catch(e){}try{window.SEF&&SEF.opsReload&&SEF.opsReload()}catch(e){}}
+async function pull(){
+  if(pulling)return;var m=me();if(!m||!cid||!sb())return;pulling=true;
+  try{
+    var r=await sb().from("company_kv").select("k,v,updated_at").eq("company_id",cid);if(r.error)throw r.error;
+    var ts=tsGet(),changed=false,have={};
+    (r.data||[]).forEach(function(row){have[row.k]=1;if(mykeys(m).indexOf(row.k)<0)return;var rt=new Date(row.updated_at).getTime();
+      if(ts[row.k]&&rt<=ts[row.k])return;
+      var remote=row.v,local=jp(localStorage.getItem(row.k),null),val=remote;
+      if(dirty[row.k]&&local!=null)val=merge(row.k,local,remote);
+      setQuiet(row.k,JSON.stringify(val));ts[row.k]=rt;changed=true});
+    tsSet(ts);
+    mykeys(m).forEach(function(k){if(!have[k]&&localStorage.getItem(k)){dirty[k]=1;sched(k)}});
+    if(changed)afterApply();
+    if(m.role==="ustabasi"){var pr=await sb().from("profiles").select("full_name,role").eq("company_id",cid);if(!pr.error)window.SEF_staff=(pr.data||[]).map(function(p){return p.full_name}).filter(Boolean)}
+  }catch(e){console.warn("company pull",e)}finally{pulling=false}}
+function boot(){var m=me();if(m&&m.company_id&&(m.role==="ustabasi"||m.role==="personel")&&sb()){if(cid!==m.company_id){cid=m.company_id;ready=true;pull()}}else{ready=false;cid=null}}
+setInterval(boot,2000);
+setInterval(function(){if(ready&&!document.hidden)pull()},45000);
+document.addEventListener("visibilitychange",function(){if(!document.hidden&&ready)pull()});
+document.addEventListener("click",function(e){if(ready&&e.target.closest&&e.target.closest("[data-tab]"))setTimeout(pull,50)});
+window.SEF=window.SEF||{};SEF.coPull=pull;SEF._coMerge=merge;
+})()</script>
+<script>(function(){
+var sent=0,seen={};
+function send(msg,stack,kind){
+  try{msg=String(msg||"").slice(0,480);if(!msg||sent>=6||seen[msg])return;if(/ResizeObserver|Script error|Failed to fetch|NetworkError|Load failed/i.test(msg))return;seen[msg]=1;sent++;
+    var C=window.SEF_CONFIG||{};if(!C.SUPABASE_URL||!C.SUPABASE_ANON_KEY)return;
+    var m=null;try{m=window.SEF_me&&window.SEF_me()}catch(e){}
+    fetch(C.SUPABASE_URL+"/rest/v1/client_errors",{method:"POST",headers:{apikey:C.SUPABASE_ANON_KEY,Authorization:"Bearer "+C.SUPABASE_ANON_KEY,"Content-Type":"application/json",Prefer:"return=minimal"},
+      body:JSON.stringify({message:msg,stack:String(stack||"").slice(0,1400),url:String(location.pathname+location.hash).slice(0,280),ua:navigator.userAgent.slice(0,190),role:m&&m.role?String(m.role):"",kind:kind})}).catch(function(){})}catch(e){}}
+window.addEventListener("error",function(e){send(e.message,e.error&&e.error.stack,"error")});
+window.addEventListener("unhandledrejection",function(e){var r=e.reason;send(r&&r.message?r.message:r,r&&r.stack,"promise")});
+})()</script>
+<script>(function(){
+function add(){var h=document.getElementById("adminBody");if(!h||document.getElementById("admErr")||!h.firstChild)return;var c=document.createElement("div");c.className="card";c.id="admErr";c.style.marginBottom="14px";c.innerHTML='<h3>🐞 Kullanıcı hataları</h3><div class="small">Kullanıcıların tarayıcısında oluşan son hatalar.</div><div class="actions"><button class="btn light" id="admErrBtn">Son hataları göster</button></div><div id="admErrOut"></div>';var ref=document.getElementById("admBak");if(ref&&ref.nextSibling)h.insertBefore(c,ref.nextSibling);else h.insertBefore(c,h.firstChild);
+ document.getElementById("admErrBtn").onclick=async function(){var sb=window.SEF_sb;if(!sb)return;var r=await sb.from("client_errors").select("*").order("created_at",{ascending:false}).limit(30);var o=document.getElementById("admErrOut");if(r.error){o.textContent="Okunamadı: "+r.error.message;return}
+  var esc=function(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")};o.innerHTML=(r.data||[]).length?'<div style="overflow-x:auto"><table><thead><tr><th>Zaman</th><th>Hata</th><th>Rol</th></tr></thead><tbody>'+r.data.map(function(x){return '<tr><td>'+esc(new Date(x.created_at).toLocaleString("tr-TR"))+'</td><td>'+esc(x.message)+'<br><small>'+esc(x.ua||"")+'</small></td><td>'+esc(x.role||"-")+'</td></tr>'}).join("")+'</tbody></table></div><div class="actions"><button class="btn red" id="admErrClr">Hepsini temizle</button></div>':'<div class="small">Hata kaydı yok. 👍</div>';
+  var cl=document.getElementById("admErrClr");if(cl)cl.onclick=async function(){if(!confirm("Tüm hata kayıtları silinsin mi?"))return;await sb.from("client_errors").delete().gt("id",0);o.innerHTML="Temizlendi."}}}
+new MutationObserver(add).observe(document.body,{childList:true,subtree:true});
+})()</script>
 </body></html>
