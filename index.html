@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V110</title>
+<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V111</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -2748,6 +2748,42 @@ function calc(){var p=+$("kpP").value||0,g=+$("kpG").value||0,t=T[$("kpT").value
   var L=p*g/1000/t[1],dp=t[2],use=VOL[dp]*0.75,n1=Math.ceil(L/use),n2=Math.ceil(L/(use/2));
   $("kpO").innerHTML='<b>'+n1+' adet GN 1/1</b> ('+dp+' mm derinlik) <span class="small">veya '+n2+' adet GN 1/2</span><div class="small">Toplam hacim yaklaşık '+fm(L)+' L, kapların %75 dolu olduğu varsayıldı. Gerçek adet yemeğin dizilişine göre değişir.</div>'+(dp>=150?'<div class="small">Sulu ürünlerde derin kap kullanılır.</div>':'')}
 c.addEventListener("input",calc);c.addEventListener("change",calc);calc();
+})();</script>
+<script>(function(){
+var sel=document.getElementById("dpSel"),ty=document.getElementById("dpType"),mv=document.getElementById("dpMove");if(!sel||!ty||!mv)return;
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function fold(s){return String(s||"").toLocaleLowerCase("tr").replace(/ı/g,"i").normalize("NFD").replace(/[̀-ͯ]/g,"")}
+function items(){try{var d=JSON.parse(localStorage.getItem("sefDepo")||"null");return d&&Array.isArray(d.items)?d.items:[]}catch(e){return[]}}
+function fq(n){return(Math.round((+n||0)*100)/100).toLocaleString("tr-TR")}
+var chosen="";
+/* arama kutusu */
+sel.style.display="none";var lab=sel.previousElementSibling;if(lab&&lab.tagName==="LABEL")lab.textContent="Malzeme ara";
+var inp=document.createElement("input");inp.type="text";inp.id="dpFind";inp.placeholder="Yazmaya başla: tavuk, pirinç, süt...";inp.autocomplete="off";
+var res=document.createElement("div");res.id="dpFindRes";res.style.cssText="display:flex;flex-direction:column;gap:6px;margin-top:6px";
+var cur=document.createElement("div");cur.id="dpCur";cur.style.cssText="margin-top:8px;font-weight:700;color:#237b58";
+sel.parentNode.insertBefore(inp,sel);sel.parentNode.insertBefore(res,sel);sel.parentNode.insertBefore(cur,sel);
+function show(){var q=fold(inp.value.trim());if(!q){res.innerHTML="";return}
+  var L=items().filter(function(i){return fold(i.name).indexOf(q)>=0||fold(i.cat).indexOf(q)>=0}).sort(function(a,b){var s1=fold(a.name).indexOf(q)===0?0:1,s2=fold(b.name).indexOf(q)===0?0:1;return s1-s2||a.name.localeCompare(b.name,"tr")}).slice(0,8);
+  res.innerHTML=L.map(function(i){return '<button type="button" class="btn light" style="text-align:left;display:flex;justify-content:space-between;gap:8px" data-pick="'+esc(i.id)+'"><span>'+esc(i.name)+'</span><span class="small">'+fq(i.qty)+' '+esc(i.unit)+'</span></button>'}).join("")
+   +(L.length?'':'<div class="small">Bulunamadı.</div>')+'<button type="button" class="btn light" data-new="1">➕ "'+esc(inp.value.trim())+'" yeni malzeme olarak ekle</button>'}
+function pick(id){var it=items().filter(function(i){return i.id===id})[0];if(!it)return;chosen=id;inp.value="";res.innerHTML="";cur.textContent="✔ "+it.name+" · stokta "+fq(it.qty)+" "+it.unit;sel.value=id;var q=$("dpQ");if(q)q.focus()}
+function clear(){chosen="";cur.textContent="";inp.value="";res.innerHTML="";sel.selectedIndex=-1}
+inp.addEventListener("input",show);
+inp.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();var b=res.querySelector("[data-pick]");if(b)pick(b.dataset.pick)}});
+res.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;if(b.dataset.pick){pick(b.dataset.pick);return}
+  if(b.dataset.new){var n=$("dpName");if(n){n.value=inp.value.trim();n.scrollIntoView({behavior:"smooth",block:"center"});n.focus()}}});
+/* giriş / çıkış düğmeleri */
+ty.style.display="none";var tl=ty.previousElementSibling;if(tl&&tl.tagName==="LABEL")tl.textContent="Hareket";
+var seg=document.createElement("div");seg.className="stseg";seg.id="dpSeg";seg.innerHTML='<button type="button" data-t="in" class="on">⬇ Giriş</button><button type="button" data-t="out">⬆ Çıkış</button>';ty.parentNode.insertBefore(seg,ty);
+function setT(t){ty.value=t;[].forEach.call(seg.children,function(b){b.classList.toggle("on",b.dataset.t===t)})}setT("in");
+seg.addEventListener("click",function(e){var b=e.target.closest("button");if(b)setT(b.dataset.t)});
+/* kaydet: seçili malzemeyi garanti et */
+mv.addEventListener("click",function(){if(chosen)sel.value=chosen;else sel.selectedIndex=-1},true);
+mv.addEventListener("click",function(){setTimeout(function(){var q=$("dpQ");if(q&&q.value===""&&chosen){clear()}},50)});
+/* satırdaki giriş/çıkış kısayolu */
+document.getElementById("depo").addEventListener("click",function(e){var b=e.target.closest("[data-dpm]");if(b){var it=items().filter(function(i){return i.id===b.dataset.dpm})[0];if(it){chosen=it.id;cur.textContent="✔ "+it.name+" · stokta "+fq(it.qty)+" "+it.unit}}});
+sel.selectedIndex=-1;
 })();</script>
 <div id="sheet"><div class="in"><h3>Tüm bölümler</h3><div class="tiles" id="all"></div></div></div>
 <div id="bar"></div>
