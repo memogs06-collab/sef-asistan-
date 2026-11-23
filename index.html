@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V111</title>
+<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V114</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -258,7 +258,7 @@ body.locked #authOv{display:flex}
 #authBar .mini{border:1px solid var(--line);background:#f6f8f7;border-radius:10px;padding:5px 10px;font-size:12px;color:var(--ink)}
 #authBar .sync{margin-left:auto;font-size:12px;color:var(--muted)}#authBar .sync.err{color:var(--red)}
 .ctoast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#182638;color:#fff;padding:10px 16px;border-radius:12px;z-index:100000;font-size:14px}
-#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}body:not([data-role="super_admin"]) #catalogCount{display:none}body[data-guest="1"] [data-tab="numune"],body[data-guest="1"] [data-tab="bakim"],body[data-guest="1"] [data-tab="belge"],body[data-guest="1"] [data-tab="gider"],body[data-guest="1"] [data-tab="haftalik"],body[data-guest="1"] [data-tab="rezerv"],body[data-guest="1"] [data-tab="mise"],body[data-guest="1"] [data-tab="israf"],body[data-guest="1"] [data-tab="vardiya"],body[data-guest="1"] [data-tab="menumuh"],body[data-guest="1"] [data-tab="musteri"],body[data-guest="1"] [data-tab="sevkiyat"],body[data-guest="1"] [data-tab="takvim"],body[data-guest="1"] [data-tab="depo"],body[data-guest="1"] [data-tab="maliyet"],body[data-guest="1"] [data-tab="gunluk"],body[data-guest="1"] [data-tab="skt"],body[data-guest="1"] [data-tab="uretKayit"],body[data-guest="1"] [data-tab="tedarik"]{display:none!important}
+#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}body:not([data-role="super_admin"]) #catalogCount{display:none}body[data-guest="1"] [data-tab="qrmenu"],body[data-guest="1"] [data-tab="numune"],body[data-guest="1"] [data-tab="bakim"],body[data-guest="1"] [data-tab="belge"],body[data-guest="1"] [data-tab="gider"],body[data-guest="1"] [data-tab="haftalik"],body[data-guest="1"] [data-tab="rezerv"],body[data-guest="1"] [data-tab="mise"],body[data-guest="1"] [data-tab="israf"],body[data-guest="1"] [data-tab="vardiya"],body[data-guest="1"] [data-tab="menumuh"],body[data-guest="1"] [data-tab="musteri"],body[data-guest="1"] [data-tab="sevkiyat"],body[data-guest="1"] [data-tab="takvim"],body[data-guest="1"] [data-tab="depo"],body[data-guest="1"] [data-tab="maliyet"],body[data-guest="1"] [data-tab="gunluk"],body[data-guest="1"] [data-tab="skt"],body[data-guest="1"] [data-tab="uretKayit"],body[data-guest="1"] [data-tab="tedarik"]{display:none!important}
 .tgrp{grid-column:1/-1;font-weight:800;color:var(--navy);font-size:14px;margin:10px 2px 0;padding-top:6px;border-top:1px solid var(--line)}.tgrp:first-child{border-top:0;margin-top:0}
 </style><script src="config.js" onerror="void 0"></script>
 </head>
@@ -280,7 +280,7 @@ body.locked #authOv{display:flex}
 <div class="small" style="margin-top:6px;text-align:center">Misafir modunda hazır reçetelerin hepsini kullanırsın; bulut kaydı ve topluluk özellikleri için giriş gerekir.</div></div></div></div>
 <div id="authBar" class="cloud-only"></div>
 <nav id="nav">
-<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="specialCreator">Özel / Doğaçlama Yemek</button><button data-tab="video">▶ Video Tarif</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="menu">Menü Planlama</button><button data-tab="standart">Standart Tablo</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="fire">Fire & Verim</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="depo">Depo / Stok</button><button data-tab="tedarik">Tedarikçiler</button><button data-tab="musteri">Müşteriler</button><button data-tab="sevkiyat">Sipariş ve Sevkiyat</button><button data-tab="takvim">Etkinlik Takvimi</button><button data-tab="rezerv">Rezervasyon ve Servis</button><button data-tab="mise">Mise en Place</button><button data-tab="israf">Fire ve İsraf</button><button data-tab="vardiya">Vardiya Planı</button><button data-tab="menumuh">Menü Mühendisliği</button><button data-tab="numune">Numune Kaydı</button><button data-tab="bakim">Bakım ve Temizlik</button><button data-tab="belge">Personel Belgeleri</button><button data-tab="gider">Gider ve Borç</button><button data-tab="haftalik">Haftalık Özet</button><button data-tab="maliyet">Maliyet</button><button data-tab="prep">Mise en Place</button><button data-tab="gunluk">Günlük İş Listesi</button><button data-tab="uretKayit">Üretim Kaydı</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="skt">Çözdürme &amp; SKT</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
+<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="specialCreator">Özel / Doğaçlama Yemek</button><button data-tab="video">▶ Video Tarif</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="menu">Menü Planlama</button><button data-tab="standart">Standart Tablo</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="fire">Fire & Verim</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="depo">Depo / Stok</button><button data-tab="tedarik">Tedarikçiler</button><button data-tab="musteri">Müşteriler</button><button data-tab="sevkiyat">Sipariş ve Sevkiyat</button><button data-tab="takvim">Etkinlik Takvimi</button><button data-tab="rezerv">Rezervasyon ve Servis</button><button data-tab="mise">Mise en Place</button><button data-tab="israf">Fire ve İsraf</button><button data-tab="vardiya">Vardiya Planı</button><button data-tab="menumuh">Menü Mühendisliği</button><button data-tab="qrmenu">QR Menü ve Alerjen</button><button data-tab="numune">Numune Kaydı</button><button data-tab="bakim">Bakım ve Temizlik</button><button data-tab="belge">Personel Belgeleri</button><button data-tab="gider">Gider ve Borç</button><button data-tab="haftalik">Haftalık Özet</button><button data-tab="maliyet">Maliyet</button><button data-tab="prep">Mise en Place</button><button data-tab="gunluk">Günlük İş Listesi</button><button data-tab="uretKayit">Üretim Kaydı</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="skt">Çözdürme &amp; SKT</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
 </nav>
 <main>
 <section id="dashboard" class="tab active">
@@ -739,6 +739,19 @@ Et suyu (hazır): Süt, Kereviz"></textarea><div class="small">Bu alan, malzeme 
 <section id="haftalik" class="tab">
 <div class="sthero"><div class="stk">Rapor</div><h2>Haftalık Özet</h2><div class="sts">Son 7 günün siparişi, israfı, gideri ve uyarıları tek sayfada</div></div>
 <div class="card"><div id="hfL"></div><div class="actions"><button class="btn light" id="hfPrint">Yazdır</button></div></div>
+</section>
+<section id="qrmenu" class="tab">
+<div class="sthero"><div class="stk">Restoran · Müşteri</div><h2>QR Menü ve Alerjen Kartı</h2><div class="sts">Müşteri QR kodu okutur, menüyü ve alerjen bilgisini telefonunda görür</div></div>
+<div class="card"><h3>🏷️ İşletme</h3><label>İşletme adı</label><input id="qmAd" type="text" maxlength="60"><div class="small">Menü bu adla yayınlanır.</div></div>
+<div class="card" style="margin-top:14px"><h3>➕ Menü kalemi</h3>
+<label>Yemek adı</label><input id="qmN" type="text" maxlength="60">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Fiyat (₺)</label><input id="qmP" type="number" min="0" step="any" inputmode="decimal"></div><div><label>Bölüm</label><select id="qmC"><option>Başlangıçlar</option><option>Çorbalar</option><option>Ana yemekler</option><option>Izgaralar</option><option>Tatlılar</option><option>İçecekler</option><option>Diğer</option></select></div></div>
+<label>Açıklama (kısa)</label><input id="qmD" type="text" maxlength="90">
+<label>İçerdiği alerjenler</label><div id="qmA" style="display:grid;grid-template-columns:1fr 1fr;gap:4px"></div>
+<div class="actions"><button class="btn gold" id="qmAdd">Menüye ekle</button></div></div>
+<div class="card" style="margin-top:14px"><h3>📋 Menü</h3><div id="qmL"></div></div>
+<div class="card" style="margin-top:14px"><h3>📱 QR kod</h3><div class="small">Menüdeki her değişiklikten sonra QR kodu yenile ve yeniden bas. Menü verisi QR kodun içindedir; internet sitesi olarak sefasistan.com.tr açılır.</div>
+<div class="actions"><button class="btn gold" id="qmGen">QR kodu oluştur</button></div><div id="qmOut" style="margin-top:10px;text-align:center"></div></div>
 </section>
 <section id="shop" class="tab">
 <div class="sthero"><div class="stk">Sipariş · Satın alma</div><h2>Alışveriş Listesi</h2><div class="sts">Yemek gruplarını, reçeteleri ve formülleri ekle; toplam malzeme otomatik hesaplansın</div></div>
@@ -1727,9 +1740,9 @@ function saveQuality(){let x={dish:$("qualityDish").value,portions:$("qualityPor
 function renderQuality(){let a=JSON.parse(localStorage.getItem(STORAGE+"_quality")||"[]");$("qualityHistory").innerHTML=a.map(x=>`<div class="result"><b>${esc(x.dish)}</b> · ${esc(x.portions)} porsiyon<div class="small">${esc(x.date)}</div><div class="small">Tuz ${esc(x.salt)}/5 · Kıvam ${esc(x.texture)}/5 · Lezzet ${esc(x.taste)}/5 · Görünüş ${esc(x.look)}/5</div><p>${esc(x.note)}</p></div>`).join("")||"Henüz değerlendirme yok."}
 function saveNote(){let title=$("noteTitle").value.trim(),body=$("noteBody").value.trim();if(!title||!body){alert("Başlık ve not gerekli.");return}let a=JSON.parse(localStorage.getItem(STORAGE+"_notes")||"[]");a.unshift({title,body,date:new Date().toLocaleString("tr-TR")});localStorage.setItem(STORAGE+"_notes",JSON.stringify(a));$("noteTitle").value="";$("noteBody").value="";renderNotes()}
 function renderNotes(){let a=JSON.parse(localStorage.getItem(STORAGE+"_notes")||"[]");$("notes").innerHTML=a.map(x=>`<div class="result"><b>${esc(x.title)}</b><div class="small">${esc(x.date)}</div><p>${esc(x.body)}</p></div>`).join("")||"Henüz not yok."}
-function exportData(){let data={app:"Profesyonel Şef Asistanı",version:1,exportedAt:new Date().toISOString(),recipes:localStorage.getItem(STORAGE+"_recipes"),menus:localStorage.getItem(STORAGE+"_menus"),weekMenus:localStorage.getItem(STORAGE+"_weekMenus"),notes:localStorage.getItem(STORAGE+"_notes"),quality:localStorage.getItem(STORAGE+"_quality"),sef:{std:localStorage.getItem("sefStdRows"),shop:localStorage.getItem("sefShop"),fav:localStorage.getItem("sefFav"),fire:localStorage.getItem("sefFire"),yld:localStorage.getItem("sefYield"),rf:localStorage.getItem("sefRecFav"),rc:localStorage.getItem("sefRecent"),depo:localStorage.getItem("sefDepo"),fiyat:localStorage.getItem("sefFiyat"),gorev:localStorage.getItem("sefGorev"),skt:localStorage.getItem("sefSkt"),uret:localStorage.getItem("sefUretim"),ted:localStorage.getItem("sefTed"),mus:localStorage.getItem("sefMus"),sip:localStorage.getItem("sefSip"),etk:localStorage.getItem("sefEtk"),rez:localStorage.getItem("sefRez"),tuk:localStorage.getItem("sefTuk"),mise:localStorage.getItem("sefMise"),dev:localStorage.getItem("sefDevir"),isr:localStorage.getItem("sefIsraf"),mm:localStorage.getItem("sefMenuMuh"),vard:localStorage.getItem("sefVard"),num:localStorage.getItem("sefNum"),bak:localStorage.getItem("sefBakim"),bel:localStorage.getItem("sefBelge"),gid:localStorage.getItem("sefGider"),bor:localStorage.getItem("sefBorc")}};download("profesyonel-sef-asistani-yedek.json",JSON.stringify(data,null,2),"application/json");$("backupMsg").textContent="Yedek dosyası indirildi."}
+function exportData(){let data={app:"Profesyonel Şef Asistanı",version:1,exportedAt:new Date().toISOString(),recipes:localStorage.getItem(STORAGE+"_recipes"),menus:localStorage.getItem(STORAGE+"_menus"),weekMenus:localStorage.getItem(STORAGE+"_weekMenus"),notes:localStorage.getItem(STORAGE+"_notes"),quality:localStorage.getItem(STORAGE+"_quality"),sef:{std:localStorage.getItem("sefStdRows"),shop:localStorage.getItem("sefShop"),fav:localStorage.getItem("sefFav"),fire:localStorage.getItem("sefFire"),yld:localStorage.getItem("sefYield"),rf:localStorage.getItem("sefRecFav"),rc:localStorage.getItem("sefRecent"),depo:localStorage.getItem("sefDepo"),fiyat:localStorage.getItem("sefFiyat"),gorev:localStorage.getItem("sefGorev"),skt:localStorage.getItem("sefSkt"),uret:localStorage.getItem("sefUretim"),ted:localStorage.getItem("sefTed"),mus:localStorage.getItem("sefMus"),sip:localStorage.getItem("sefSip"),etk:localStorage.getItem("sefEtk"),rez:localStorage.getItem("sefRez"),tuk:localStorage.getItem("sefTuk"),mise:localStorage.getItem("sefMise"),dev:localStorage.getItem("sefDevir"),isr:localStorage.getItem("sefIsraf"),mm:localStorage.getItem("sefMenuMuh"),qrm:localStorage.getItem("sefQrm"),doc:localStorage.getItem("sefDoc"),vard:localStorage.getItem("sefVard"),num:localStorage.getItem("sefNum"),bak:localStorage.getItem("sefBakim"),bel:localStorage.getItem("sefBelge"),gid:localStorage.getItem("sefGider"),bor:localStorage.getItem("sefBorc")}};download("profesyonel-sef-asistani-yedek.json",JSON.stringify(data,null,2),"application/json");$("backupMsg").textContent="Yedek dosyası indirildi."}
 function download(name,content,type){let blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
-function importData(e){let f=e.target.files[0];if(!f)return;let rd=new FileReader();rd.onload=()=>{try{let d=JSON.parse(rd.result);if(d.app!=="Profesyonel Şef Asistanı")throw Error("Dosya uygulama yedeği değil.");for(let k of ["recipes","menus","weekMenus","notes","quality"])if(d[k]!==null&&d[k]!==undefined)localStorage.setItem(STORAGE+"_"+k,d[k]);let rl=false;if(d.sef){const M={std:"sefStdRows",shop:"sefShop",fav:"sefFav",fire:"sefFire",yld:"sefYield",rf:"sefRecFav",rc:"sefRecent",depo:"sefDepo",fiyat:"sefFiyat",gorev:"sefGorev",skt:"sefSkt",uret:"sefUretim",ted:"sefTed",mus:"sefMus",sip:"sefSip",etk:"sefEtk",rez:"sefRez",tuk:"sefTuk",mise:"sefMise",dev:"sefDevir",isr:"sefIsraf",mm:"sefMenuMuh",vard:"sefVard",num:"sefNum",bak:"sefBakim",bel:"sefBelge",gid:"sefGider",bor:"sefBorc"};for(const k in M)if(d.sef[k]!==null&&d.sef[k]!==undefined){localStorage.setItem(M[k],d.sef[k]);rl=true}}custom=JSON.parse(localStorage.getItem(STORAGE+"_recipes")||"[]");recipes=[...builtInRecipes,...custom,...remoteList()];initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();showMenus();showWeekMenus();renderNotes();renderQuality();$("backupMsg").textContent=rl?"Yedek geri yüklendi. Sayfa yenileniyor…":"Yedek başarıyla geri yüklendi.";if(rl)setTimeout(function(){location.reload()},900)}catch(err){$("backupMsg").textContent="Yükleme başarısız: "+err.message}};rd.readAsText(f)}
+function importData(e){let f=e.target.files[0];if(!f)return;let rd=new FileReader();rd.onload=()=>{try{let d=JSON.parse(rd.result);if(d.app!=="Profesyonel Şef Asistanı")throw Error("Dosya uygulama yedeği değil.");for(let k of ["recipes","menus","weekMenus","notes","quality"])if(d[k]!==null&&d[k]!==undefined)localStorage.setItem(STORAGE+"_"+k,d[k]);let rl=false;if(d.sef){const M={std:"sefStdRows",shop:"sefShop",fav:"sefFav",fire:"sefFire",yld:"sefYield",rf:"sefRecFav",rc:"sefRecent",depo:"sefDepo",fiyat:"sefFiyat",gorev:"sefGorev",skt:"sefSkt",uret:"sefUretim",ted:"sefTed",mus:"sefMus",sip:"sefSip",etk:"sefEtk",rez:"sefRez",tuk:"sefTuk",mise:"sefMise",dev:"sefDevir",isr:"sefIsraf",mm:"sefMenuMuh",qrm:"sefQrm",doc:"sefDoc",vard:"sefVard",num:"sefNum",bak:"sefBakim",bel:"sefBelge",gid:"sefGider",bor:"sefBorc"};for(const k in M)if(d.sef[k]!==null&&d.sef[k]!==undefined){localStorage.setItem(M[k],d.sef[k]);rl=true}}custom=JSON.parse(localStorage.getItem(STORAGE+"_recipes")||"[]");recipes=[...builtInRecipes,...custom,...remoteList()];initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();showMenus();showWeekMenus();renderNotes();renderQuality();$("backupMsg").textContent=rl?"Yedek geri yüklendi. Sayfa yenileniyor…":"Yedek başarıyla geri yüklendi.";if(rl)setTimeout(function(){location.reload()},900)}catch(err){$("backupMsg").textContent="Yükleme başarısız: "+err.message}};rd.readAsText(f)}
 function recipeKey(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("tr-TR").replace(/ı/g,"i").replace(/[^a-z0-9]+/g," ").trim()}
 function exportRecipePackage(){const data={app:"Profesyonel Şef Asistanı",type:"recipe-package",schemaVersion:1,createdAt:new Date().toISOString(),recipes:custom};download("sef-asistani-recete-paketi.json",JSON.stringify(data,null,2),"application/json");$("recipePackageMsg").textContent=custom.length+" özel reçete pakete aktarıldı."}
 function importRecipePackage(e){const f=e.target.files&&e.target.files[0];if(!f)return;const rd=new FileReader();rd.onload=()=>{try{const d=JSON.parse(rd.result);const incoming=Array.isArray(d)?d:(d.recipes||d.items);if(!Array.isArray(incoming))throw Error("JSON içinde recipes dizisi bulunamadı.");const existingIds=new Set(custom.map(x=>String(x.id||"")));const existingNames=new Set(recipes.flatMap(x=>[x.name,...(x.aliases||[])]).map(recipeKey));let added=0,skipped=0;const clean=[];for(const raw of incoming){if(!raw||typeof raw.name!=="string"||!raw.name.trim()||!Array.isArray(raw.ingredients)||!raw.ingredients.length){skipped++;continue;}const nameKey=recipeKey(raw.name),aliasKeys=(raw.aliases||[]).map(recipeKey);if(existingIds.has(String(raw.id||""))||existingNames.has(nameKey)||aliasKeys.some(k=>existingNames.has(k))){skipped++;continue;}const r={...raw,id:String(raw.id||("IMP-"+Date.now()+"-"+(added+1))),aliases:Array.isArray(raw.aliases)?raw.aliases:[],base:Number(raw.base)||1,method:String(raw.method||""),tips:String(raw.tips||""),allergens:Array.isArray(raw.allergens)?raw.allergens:[]};if(!r.method.trim()){skipped++;continue;}clean.push(r);existingIds.add(r.id);[r.name,...r.aliases].forEach(n=>existingNames.add(recipeKey(n)));added++;}custom.push(...clean);localStorage.setItem(STORAGE+"_recipes",JSON.stringify(custom));recipes=[...builtInRecipes,...custom,...remoteList()];initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();if($("dashRecipes"))$("dashRecipes").textContent=recipes.length;$("recipePackageMsg").textContent="Aktarım tamamlandı: "+added+" yeni reçete eklendi, "+skipped+" kayıt eksik veya mükerrer olduğu için atlandı. Toplam kütüphane: "+recipes.length+".";}catch(err){$("recipePackageMsg").textContent="Paket okunamadı: "+err.message;}e.target.value="";};rd.readAsText(f,"UTF-8")}
@@ -2102,6 +2115,20 @@ function drawP(){
   $("mlPL").innerHTML=L.length?'<div style="overflow-x:auto"><table><thead><tr><th>Malzeme</th><th>Fiyat</th><th></th></tr></thead><tbody>'+L.map(function(x){return '<tr><td>'+esc(x.p.name)+badge(x.p)+'</td><td style="white-space:nowrap"><input type="number" min="0" step="any" inputmode="decimal" style="width:90px" value="'+x.p.price+'" data-pe="'+x.i+'"> ₺/'+esc(x.p.unit)+'</td><td><button class="btn red" data-pd="'+x.i+'">Sil</button></td></tr>'}).join("")+'</tbody></table></div>':'<div class="small">Fiyat listesi boş.</div>'}
 function setPrice(name,price,unit){var k=nk(name);for(var i=0;i<P.length;i++)if(nk(P[i].name)===k&&P[i].unit===unit){if(P[i].price!==price){P[i].h=(P[i].h||[]).concat([{d:P[i].d||today(),p:P[i].price}]).slice(-20);P[i].price=price;P[i].d=today()}saveP();return}P.push({name:name,price:price,unit:unit,d:today(),h:[]});saveP()}
 function badge(p){var h=p.h&&p.h.length?p.h[p.h.length-1]:null;if(!h||!(h.p>0))return"";var pc=(p.price-h.p)/h.p*100;if(Math.abs(pc)<.5)return"";return ' <small style="color:'+(pc>0?"#b3261e":"#1b7f3b")+'">'+(pc>0?"▲":"▼")+" %"+fmt(Math.abs(pc),0)+" ("+esc(p.d||"")+")</small>"}
+window.SEF=window.SEF||{};SEF.ord={all:function(){return allRecipes()},
+ rows:function(r,n,fire){var m=n/(+r.base||1);return(r.ingredients||[]).map(function(i){return costOf(i,m,fire)})},
+ plan:function(rows){var d=depoRead();return rows.map(function(x){if(x.free)return{x:x,free:1};var it=depoFind(d,x.name),q=it?toDepoQty(it,x):null;return{x:x,it:it,q:q}})},
+ deduct:function(rows,note){var d=depoRead(),plan=[],nf=[],lowL=[];
+  rows.forEach(function(x){if(x.free)return;var it=depoFind(d,x.name);if(!it){nf.push(x.name);return}var q=toDepoQty(it,x);if(q===null){nf.push(x.name+" (birim uyumsuz)");return}plan.push({it:it,q:q});if(q>it.qty+1e-9)lowL.push(x.name)});
+  if(!plan.length){toast("Depoda eşleşen malzeme yok");return -1}
+  if(!confirm(plan.length+" malzeme depodan düşülecek."+(lowL.length?"\nYetersiz stok (0'a iner): "+lowL.join(", "):"")+(nf.length?"\nDepoda bulunamayan: "+nf.join(", "):"")+"\nDevam edilsin mi?"))return -1;
+  var dt=today();plan.forEach(function(p){p.it.qty=Math.max(0,p.it.qty-p.q);d.log.push({id:uid(),item:p.it.id,name:p.it.name,unit:p.it.unit,type:"out",q:Math.round(p.q*1000)/1000,note:note,date:dt})});
+  if(d.log.length>2000)d.log=d.log.slice(-2000);sv("sefDepo",d);try{SEF.depoReload&&SEF.depoReload()}catch(e){}return plan.length},
+ short:function(rows,label){var d=depoRead(),items=[];
+  rows.forEach(function(x){if(x.free)return;var need=x.q,it=depoFind(d,x.name);if(it){var q=toDepoQty(it,x);if(q!==null){var miss=q-it.qty;if(miss<=1e-9)return;need=x.q*(miss/q)}}if(need>0)items.push({name:x.name,q:need,u:x.u||"g"})});
+  if(!items.length){toast("Eksik malzeme yok, depo yeterli");return 0}
+  if(!(window.SEF&&SEF.addExtras)){toast("Alışveriş listesi hazır değil");return 0}
+  SEF.addExtras(items,label);return items.length}};
 var mal=$("maliyet");
 mal.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
   if(b.id==="mlCalc"){calc();return}
@@ -2408,13 +2435,13 @@ function card(x,i){var cu=M.filter(function(m){return m.id===x.cid})[0],tel=cu&&
    +'<div><span class="small">Varış sıcak</span><input type="number" step="any" inputmode="decimal" data-tc="'+i+'|ah" value="'+esc((x.arr||{}).h==null?"":x.arr.h)+'"></div>'
    +'<div><span class="small">Varış soğuk</span><input type="number" step="any" inputmode="decimal" data-tc="'+i+'|ac" value="'+esc((x.arr||{}).c==null?"":x.arr.c)+'"></div></div>'
    +'<div class="small">'+warnT((x.out||{}).h,"h")+warnT((x.out||{}).c,"c")+warnT((x.arr||{}).h,"h")+warnT((x.arr||{}).c,"c")+'</div></div>'
-   +(x.st===2?'<div class="small" style="margin-top:8px">✅ Teslim alan: <b>'+esc(x.recv||"-")+'</b>'+(x.rt?' · '+esc(x.rt):'')+(x.rn?'<br>Not: '+esc(x.rn):'')+'</div>':'')
+   +(window.SEF&&SEF.svExtra?SEF.svExtra(x,i):'')+(x.st===2?'<div class="small" style="margin-top:8px">✅ Teslim alan: <b>'+esc(x.recv||"-")+'</b>'+(x.rt?' · '+esc(x.rt):'')+(x.rn?'<br>Not: '+esc(x.rn):'')+'</div>':'')
    +'<div class="actions" style="margin-top:8px">'+(x.st===0?'<button class="btn gold" data-st="'+i+'|1">Yola çıktım</button>':'')+(x.st===1?'<button class="btn gold" data-st="'+i+'|2">Teslim ettim</button>':'')
    +'<span class="onlyUsta"><button class="btn light" data-qt="'+i+'">Teklif çıktısı</button> <button class="btn light" data-sd="'+i+'">Şoför ata</button> <button class="btn light" data-sx="'+i+'">Sil</button></span></div></div>';
   return h}
 $("sevkiyat").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
   if(b.id==="svAdd"){var cid=$("svC").value,cu=M.filter(function(m){return m.id===cid})[0],nm=cu?cu.n:$("svCN").value.trim(),d=$("svD").value;if(!nm){toast("Müşteri seç veya yaz");return}if(!d){toast("Tarih seç");return}
-    S.push({id:uid(),cid:cu?cu.id:"",c:nm,d:d,t:$("svT").value,addr:$("svA").value.trim()||(cu&&cu.a)||"",k:+$("svK").value||0,menu:$("svM").value.trim(),pp:+$("svPP").value||0,co:+$("svCo").value||0,who:$("svW").value.trim(),note:$("svN").value.trim(),st:0,load:[],out:{},arr:{}});
+    S.push({id:uid(),cid:cu?cu.id:"",c:nm,d:d,t:$("svT").value,addr:$("svA").value.trim()||(cu&&cu.a)||"",k:+$("svK").value||0,menu:$("svM").value.trim(),pp:+$("svPP").value||0,co:+$("svCo").value||0,who:$("svW").value.trim(),note:$("svN").value.trim(),rec:(window.SEF&&SEF.svRec&&SEF.svRec.take())||[],st:0,load:[],out:{},arr:{}});
     sv("sefSip",S);["svCN","svT","svA","svK","svM","svPP","svCo","svW","svN"].forEach(function(i){$(i).value=""});$("svC").value="";drawS();drawK();drawM();toast("Sipariş kaydedildi");return}
   if(b.dataset.la!==undefined){var i=+b.dataset.la,t=$("la"+i).value.trim();if(!t||!S[i])return;(S[i].load=S[i].load||[]).push({t:t,k:$("lk"+i).value,ok:false});sv("sefSip",S);drawS();return}
   if(b.dataset.ld!==undefined){var p=b.dataset.ld.split("|");S[+p[0]].load.splice(+p[1],1);sv("sefSip",S);drawS();return}
@@ -2450,7 +2477,7 @@ $("takvim").addEventListener("click",function(e){var b=e.target.closest("button"
   if(b.id==="tkPrev"){mon.setMonth(mon.getMonth()-1);drawK();return}if(b.id==="tkNext"){mon.setMonth(mon.getMonth()+1);drawK();return}
   if(b.id==="tkAdd"){var d=$("tkD").value,t=$("tkB").value.trim();if(!d||!t){toast("Tarih ve başlık gerekli");return}E.push({id:uid(),d:d,t:$("tkT").value,b:t});sv("sefEtk",E);$("tkB").value="";$("tkT").value="";drawK();toast("Eklendi");return}
   if(b.dataset.ke!==undefined){if(!confirm("Etkinlik silinsin mi?"))return;E.splice(+b.dataset.ke,1);sv("sefEtk",E);drawK()}});
-$("svD").value=today();$("tkD").value=today();
+window.SEF=window.SEF||{};SEF.svData={get:function(){return S},save:function(){sv("sefSip",S)},draw:function(){drawS()}};$("svD").value=today();$("tkD").value=today();
 if(role()==="personel")$("svMine").checked=true;
 reload();
 document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-tab]");if(t&&/^(musteri|sevkiyat|takvim)$/.test(t.dataset.tab))setTimeout(function(){if(role()==="personel")$("svMine").checked=true;reload()},50)});
@@ -2785,11 +2812,1450 @@ mv.addEventListener("click",function(){setTimeout(function(){var q=$("dpQ");if(q
 document.getElementById("depo").addEventListener("click",function(e){var b=e.target.closest("[data-dpm]");if(b){var it=items().filter(function(i){return i.id===b.dataset.dpm})[0];if(it){chosen=it.id;cur.textContent="✔ "+it.name+" · stokta "+fq(it.qty)+" "+it.unit}}});
 sel.selectedIndex=-1;
 })();</script>
+<script>(function(){
+if(!document.getElementById("sevkiyat")||!window.SEF||!SEF.ord||!SEF.svData)return;
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function fold(s){return String(s||"").toLocaleLowerCase("tr").replace(/ı/g,"i").normalize("NFD").replace(/[̀-ͯ]/g,"")}
+function ld(k,d){try{var v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}}
+function toast(m){try{window.ofToast(m)}catch(e){}}
+function tl(n){return(Math.round((+n||0)*100)/100).toLocaleString("tr-TR")+" ₺"}
+function fq(n){return(Math.round((+n||0)*100)/100).toLocaleString("tr-TR")}
+function fmtD(d){if(!d)return"";var a=String(d).split("-");return a[2]+"."+a[1]+"."+a[0]}
+/* ---- reçete seçici ---- */
+var sel=[];var m=$("svM");
+var box=document.createElement("div");box.id="svRecBox";box.innerHTML='<label>Reçeteden ekle (isteğe bağlı, malzeme ve maliyet hesabı için)</label><input id="svRq" type="text" autocomplete="off" placeholder="Reçete adı yaz..."><div id="svRr" style="display:flex;flex-direction:column;gap:6px;margin-top:6px"></div><div id="svRc" style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px"></div>';
+m.parentNode.insertBefore(box,m.nextSibling);
+function chips(){$("svRc").innerHTML=sel.map(function(r,i){return '<span class="pill" style="display:inline-flex;gap:6px;align-items:center">'+esc(r.n)+' <button type="button" data-rx="'+i+'" style="border:0;background:none;font-weight:800">×</button></span>'}).join("")}
+$("svRq").addEventListener("input",function(){var q=fold(this.value.trim());if(!q){$("svRr").innerHTML="";return}
+  var L=SEF.ord.all().filter(function(r){return fold(r.name).indexOf(q)>=0}).slice(0,8);
+  $("svRr").innerHTML=L.map(function(r){return '<button type="button" class="btn light" style="text-align:left" data-rp="'+esc(r.id)+'">'+esc(r.name)+'</button>'}).join("")||'<div class="small">Bulunamadı.</div>'});
+box.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.dataset.rp){var r=SEF.ord.all().filter(function(x){return x.id===b.dataset.rp})[0];if(r&&!sel.some(function(x){return x.id===r.id}))sel.push({id:r.id,n:r.name});$("svRq").value="";$("svRr").innerHTML="";chips();return}
+  if(b.dataset.rx!==undefined){sel.splice(+b.dataset.rx,1);chips()}});
+SEF.svRec={take:function(){var o=sel.slice();sel=[];chips();return o}};
+$("svAdd").addEventListener("click",function(){if(!$("svM").value.trim()&&sel.length)$("svM").value=sel.map(function(r){return r.n}).join("\n")},true);
+/* ---- kart ekleri ---- */
+SEF.svExtra=function(x,i){var h='<div class="onlyUsta" style="margin-top:8px">';
+  if(x.rec&&x.rec.length)h+='<div class="small">Reçeteler: '+x.rec.map(function(r){return esc(r.n)}).join(", ")+(x.dus?' · <b style="color:#2e7d32">stoktan düşüldü</b>':'')+'</div><button class="btn light" data-ing="'+i+'">📋 Malzeme ihtiyacı ve maliyet</button> ';
+  h+='<div class="small" style="margin-top:6px"><b>WhatsApp</b></div><div class="actions"><button class="btn light" data-wa="'+i+'|onay">Onay</button><button class="btn light" data-wa="'+i+'|yolda">Yolda</button><button class="btn light" data-wa="'+i+'|teslim">Teslim</button><button class="btn light" data-wa="'+i+'|sofor">Şoföre</button></div></div>';return h};
+/* ---- whatsapp ---- */
+function phone(p){var d=String(p||"").replace(/\D/g,"");if(!d)return"";if(d.indexOf("00")===0)d=d.slice(2);if(d.charAt(0)==="0")d="9"+d;if(d.length===10)d="90"+d;return d}
+function wa(x,kind){var C=ld("sefMus",[]).filter(function(c){return c.id===x.cid})[0],ph=C?phone(C.p):"",t=fmtD(x.d)+(x.t?" "+x.t:""),msg,tel="";
+  if(kind==="onay")msg="Merhaba "+x.c+", "+t+" tarihli siparişiniz ("+(x.k||0)+" kişilik) onaylandı. Teşekkür ederiz.";
+  else if(kind==="yolda")msg="Merhaba "+x.c+", siparişiniz yola çıktı"+(x.who?" (şoförümüz: "+x.who+")":"")+". Kısa süre içinde teslim edilecek.";
+  else if(kind==="teslim")msg="Merhaba "+x.c+", siparişiniz teslim edildi. Afiyet olsun, bizi tercih ettiğiniz için teşekkür ederiz.";
+  else{ph="";msg="Teslimat görevi: "+t+"\nMüşteri: "+x.c+(x.addr?"\nAdres: "+x.addr:"")+(C&&C.p?"\nTel: "+C.p:"")+"\nKişi: "+(x.k||0)+(x.menu?"\nMenü: "+x.menu.replace(/\n/g,", "):"")+((x.load||[]).length?"\nYükleme: "+x.load.map(function(l){return l.t}).join("; "):"")+(x.note?"\nNot: "+x.note:"")}
+  if(kind!=="sofor"&&!ph)toast("Müşteri telefonu yok; mesajı kime göndereceğini WhatsApp'ta seçersin");
+  window.open("https://wa.me/"+ph+"?text="+encodeURIComponent(msg),"_blank")}
+/* ---- malzeme ihtiyacı ---- */
+function agg(x){var rows=[];(x.rec||[]).forEach(function(rc){var r=SEF.ord.all().filter(function(z){return z.id===rc.id})[0];if(r)rows=rows.concat(SEF.ord.rows(r,+x.k||+rc.por||1,true))});return rows}
+function modal(html){var o=document.createElement("div");o.style.cssText="position:fixed;inset:0;background:#0b1b3acc;z-index:99998;display:flex;align-items:flex-start;justify-content:center;padding:16px;overflow:auto";o.innerHTML='<div style="background:#fff;color:#202a34;border-radius:18px;max-width:560px;width:100%;padding:18px;border:2px solid #c59655;margin:auto">'+html+'<div class="actions"><button class="btn light" id="mdX">Kapat</button></div></div>';document.body.appendChild(o);o.querySelector("#mdX").onclick=function(){o.remove()};return o}
+function showIng(i){var S=SEF.svData.get(),x=S[i];if(!x)return;var rows=agg(x);if(!rows.length){toast("Reçete bulunamadı");return}
+  var plan=SEF.ord.plan(rows),tot=0,miss=0;
+  var tr=plan.map(function(p){var r=p.x,need=r.u==="g"?fq(r.q/1000)+" kg":r.u==="ml"?fq(r.q/1000)+" lt":fq(r.q)+" "+esc(r.u||""),st,c;
+    if(p.free){st="su / ücretsiz";c="#667381"}else if(!p.it){st="depoda yok";c="#b3261e"}else if(p.q===null){st="birim uyumsuz";c="#b26a00"}else if(p.q>p.it.qty+1e-9){st="eksik "+fq(p.q-p.it.qty)+" "+p.it.unit;c="#b3261e"}else{st="yeterli ("+fq(p.it.qty)+" "+p.it.unit+")";c="#2e7d32"}
+    if(r.cost!=null)tot+=r.cost;else if(!p.free)miss++;
+    return '<tr><td>'+esc(r.name)+'</td><td style="text-align:right">'+need+'</td><td style="color:'+c+'">'+st+'</td></tr>'}).join("");
+  var kp=(+x.k||0)>0?tot/(+x.k):0;
+  var o=modal('<h3>'+esc(x.c)+' · '+(x.k||0)+' kişi</h3><div class="small">Fire payı dahil hesaplanır.</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><tr><th align="left">Malzeme</th><th align="right">İhtiyaç</th><th align="left">Depo</th></tr>'+tr+'</table></div>'
+   +'<div style="margin-top:8px"><b>Tahmini maliyet: '+tl(tot)+'</b>'+(kp?' · kişi başı '+tl(kp):'')+(miss?'<div class="small">'+miss+' malzemenin fiyatı yok, toplam eksik olabilir.</div>':'')+'</div>'
+   +'<div class="actions"><button class="btn gold" id="mdShort">Eksikleri alışveriş listesine ekle</button><button class="btn light" id="mdDed">Stoktan düş (üretildi)</button>'+(kp?'<button class="btn light" id="mdCo">Kişi başı maliyeti yaz</button>':'')+'</div>');
+  o.querySelector("#mdShort").onclick=function(){SEF.ord.short(rows,"Sipariş: "+x.c+" · "+fmtD(x.d))};
+  o.querySelector("#mdDed").onclick=function(){if(x.dus&&!confirm("Bu sipariş için stok daha önce düşüldü. Tekrar düşülsün mü?"))return;var n=SEF.ord.deduct(rows,"Sipariş: "+x.c+" · "+fmtD(x.d));if(n>0){x.dus=true;SEF.svData.save();SEF.svData.draw();toast("Stoktan düşüldü ("+n+" kalem)");o.remove()}};
+  var cb=o.querySelector("#mdCo");if(cb)cb.onclick=function(){x.co=Math.round(kp*100)/100;SEF.svData.save();SEF.svData.draw();toast("Kişi başı maliyet yazıldı");o.remove()}}
+$("sevkiyat").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.dataset.ing!==undefined){showIng(+b.dataset.ing);return}
+  if(b.dataset.wa){var p=b.dataset.wa.split("|"),x=SEF.svData.get()[+p[0]];if(x)wa(x,p[1])}});
+/* ---- dışa aktarma ---- */
+function csv(name,head,rows){var q=function(v){v=String(v==null?"":v);return /[;"\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v};
+  var t="﻿"+[head].concat(rows).map(function(r){return r.map(q).join(";")}).join("\r\n");var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([t],{type:"text/csv;charset=utf-8"}));a.download=name+".csv";document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},1000)}
+var ST=["Hazırlanıyor","Yolda","Teslim edildi"];
+var EX={
+ "Siparişler":function(){csv("siparisler",["Tarih","Saat","Müşteri","Adres","Kişi","Menü","Kişi başı fiyat","Toplam","Kişi başı maliyet","Durum","Şoför","Teslim alan"],ld("sefSip",[]).map(function(s){return[fmtD(s.d),s.t,s.c,s.addr,s.k,(s.menu||"").replace(/\n/g,", "),s.pp,(+s.pp||0)*(+s.k||0),s.co,ST[s.st||0],s.who,s.recv]}))},
+ "Gelir-gider":function(){csv("gelir-gider",["Tarih","Tür","Kategori","Tutar","Not"],ld("sefGider",[]).map(function(g){return[fmtD(g.d),g.t==="i"?"Gelir":"Gider",g.k,g.a,g.n]}))},
+ "Depo stok":function(){var d=ld("sefDepo",{items:[]});csv("depo-stok",["Malzeme","Kategori","Birim","Stok","Minimum","Tedarikçi"],(d.items||[]).map(function(i){return[i.name,i.cat,i.unit,i.qty,i.min,i.sup]}))},
+ "Depo hareketleri":function(){var d=ld("sefDepo",{log:[]});csv("depo-hareket",["Tarih","Malzeme","Hareket","Miktar","Birim","Not"],(d.log||[]).map(function(l){return[fmtD(l.date),l.name,l.type==="in"?"Giriş":"Çıkış",l.q,l.unit,l.note]}))},
+ "İsraf":function(){csv("israf",["Tarih","Ürün","Miktar","Birim","Tutar","Neden","Kaydeden","Not"],ld("sefIsraf",[]).map(function(x){return[fmtD(x.d),x.n,x.q,x.u,x.v,x.r,x.w,x.nt]}))},
+ "Numune":function(){csv("numune",["Alınma","Yemek","Miktar (g)","Yer","Kaydeden","İmha edildi"],ld("sefNum",[]).map(function(x){return[new Date(x.ts).toLocaleString("tr-TR"),x.n,x.q,x.y,x.w,x.imha?"Evet":"Hayır"]}))},
+ "Müşteriler":function(){csv("musteriler",["Ad","Telefon","Adres","Not"],ld("sefMus",[]).map(function(c){return[c.n,c.p,c.a,c.note]}))},
+ "Borç defteri":function(){csv("borc",["Tedarikçi","Tutar","Vade","Ödendi"],ld("sefBorc",[]).map(function(b){return[b.t,b.a,fmtD(b.v),b.ok?"Evet":"Hayır"]}))}};
+var bk=$("backup");if(bk){var c=document.createElement("div");c.className="card";c.style.marginTop="14px";c.innerHTML='<h3>📤 Excel için dışa aktar (CSV)</h3><div class="small">Excel ve Google Sheets açar. Muhasebeci ve denetim için.</div><div class="actions" id="exBtns">'+Object.keys(EX).map(function(k){return '<button class="btn light" data-ex="'+esc(k)+'">'+esc(k)+'</button>'}).join("")+'</div>';bk.appendChild(c);
+  c.addEventListener("click",function(e){var b=e.target.closest("button");if(b&&EX[b.dataset.ex]){EX[b.dataset.ex]();toast("İndirildi: "+b.dataset.ex)}})}
+})();</script>
+<script>(function(){var __m={},__f={};function __r(n){n=n.replace(/^\.\//,"").replace(/\.js$/,"");if(__m[n])return __m[n].exports;var m=__m[n]={exports:{}};__f[n](m,m.exports,__r);return m.exports}
+__f["QR8bitByte"]=function(module,exports,require){
+var QRMode = __r("QRMode");
+
+function QR8bitByte(data) {
+	this.mode = QRMode.MODE_8BIT_BYTE;
+	this.data = data;
+}
+
+QR8bitByte.prototype = {
+
+	getLength : function() {
+		return this.data.length;
+	},
+	
+	write : function(buffer) {
+		for (var i = 0; i < this.data.length; i++) {
+			// not JIS ...
+			buffer.put(this.data.charCodeAt(i), 8);
+		}
+	}
+};
+
+module.exports = QR8bitByte;
+
+};
+__f["QRBitBuffer"]=function(module,exports,require){
+function QRBitBuffer() {
+	this.buffer = [];
+	this.length = 0;
+}
+
+QRBitBuffer.prototype = {
+
+	get : function(index) {
+		var bufIndex = Math.floor(index / 8);
+		return ( (this.buffer[bufIndex] >>> (7 - index % 8) ) & 1) == 1;
+	},
+	
+	put : function(num, length) {
+		for (var i = 0; i < length; i++) {
+			this.putBit( ( (num >>> (length - i - 1) ) & 1) == 1);
+		}
+	},
+	
+	getLengthInBits : function() {
+		return this.length;
+	},
+	
+	putBit : function(bit) {
+	
+		var bufIndex = Math.floor(this.length / 8);
+		if (this.buffer.length <= bufIndex) {
+			this.buffer.push(0);
+		}
+	
+		if (bit) {
+			this.buffer[bufIndex] |= (0x80 >>> (this.length % 8) );
+		}
+	
+		this.length++;
+	}
+};
+
+module.exports = QRBitBuffer;
+
+};
+__f["QRErrorCorrectLevel"]=function(module,exports,require){
+module.exports = {
+	L : 1,
+	M : 0,
+	Q : 3,
+	H : 2
+};
+
+
+};
+__f["QRMaskPattern"]=function(module,exports,require){
+module.exports = {
+	PATTERN000 : 0,
+	PATTERN001 : 1,
+	PATTERN010 : 2,
+	PATTERN011 : 3,
+	PATTERN100 : 4,
+	PATTERN101 : 5,
+	PATTERN110 : 6,
+	PATTERN111 : 7
+};
+
+};
+__f["QRMath"]=function(module,exports,require){
+var QRMath = {
+
+	glog : function(n) {
+	
+		if (n < 1) {
+			throw new Error("glog(" + n + ")");
+		}
+		
+		return QRMath.LOG_TABLE[n];
+	},
+	
+	gexp : function(n) {
+	
+		while (n < 0) {
+			n += 255;
+		}
+	
+		while (n >= 256) {
+			n -= 255;
+		}
+	
+		return QRMath.EXP_TABLE[n];
+	},
+	
+	EXP_TABLE : new Array(256),
+	
+	LOG_TABLE : new Array(256)
+
+};
+	
+for (var i = 0; i < 8; i++) {
+	QRMath.EXP_TABLE[i] = 1 << i;
+}
+for (var i = 8; i < 256; i++) {
+	QRMath.EXP_TABLE[i] = QRMath.EXP_TABLE[i - 4]
+		^ QRMath.EXP_TABLE[i - 5]
+		^ QRMath.EXP_TABLE[i - 6]
+		^ QRMath.EXP_TABLE[i - 8];
+}
+for (var i = 0; i < 255; i++) {
+	QRMath.LOG_TABLE[QRMath.EXP_TABLE[i] ] = i;
+}
+
+module.exports = QRMath;
+
+};
+__f["QRMode"]=function(module,exports,require){
+module.exports = {
+    MODE_NUMBER :       1 << 0,
+    MODE_ALPHA_NUM :    1 << 1,
+    MODE_8BIT_BYTE :    1 << 2,
+    MODE_KANJI :        1 << 3
+};
+
+};
+__f["QRPolynomial"]=function(module,exports,require){
+var QRMath = __r("QRMath");
+
+function QRPolynomial(num, shift) {
+	if (num.length === undefined) {
+		throw new Error(num.length + "/" + shift);
+	}
+
+	var offset = 0;
+
+	while (offset < num.length && num[offset] === 0) {
+		offset++;
+	}
+
+	this.num = new Array(num.length - offset + shift);
+	for (var i = 0; i < num.length - offset; i++) {
+		this.num[i] = num[i + offset];
+	}
+}
+
+QRPolynomial.prototype = {
+
+	get : function(index) {
+		return this.num[index];
+	},
+	
+	getLength : function() {
+		return this.num.length;
+	},
+	
+	multiply : function(e) {
+	
+		var num = new Array(this.getLength() + e.getLength() - 1);
+	
+		for (var i = 0; i < this.getLength(); i++) {
+			for (var j = 0; j < e.getLength(); j++) {
+				num[i + j] ^= QRMath.gexp(QRMath.glog(this.get(i) ) + QRMath.glog(e.get(j) ) );
+			}
+		}
+	
+		return new QRPolynomial(num, 0);
+	},
+	
+	mod : function(e) {
+	
+		if (this.getLength() - e.getLength() < 0) {
+			return this;
+		}
+	
+		var ratio = QRMath.glog(this.get(0) ) - QRMath.glog(e.get(0) );
+	
+		var num = new Array(this.getLength() );
+		
+		for (var i = 0; i < this.getLength(); i++) {
+			num[i] = this.get(i);
+		}
+		
+		for (var x = 0; x < e.getLength(); x++) {
+			num[x] ^= QRMath.gexp(QRMath.glog(e.get(x) ) + ratio);
+		}
+	
+		// recursive call
+		return new QRPolynomial(num, 0).mod(e);
+	}
+};
+
+module.exports = QRPolynomial;
+
+};
+__f["QRRSBlock"]=function(module,exports,require){
+var QRErrorCorrectLevel = __r("QRErrorCorrectLevel");
+
+function QRRSBlock(totalCount, dataCount) {
+	this.totalCount = totalCount;
+	this.dataCount  = dataCount;
+}
+
+QRRSBlock.RS_BLOCK_TABLE = [
+
+	// L
+	// M
+	// Q
+	// H
+
+	// 1
+	[1, 26, 19],
+	[1, 26, 16],
+	[1, 26, 13],
+	[1, 26, 9],
+	
+	// 2
+	[1, 44, 34],
+	[1, 44, 28],
+	[1, 44, 22],
+	[1, 44, 16],
+
+	// 3
+	[1, 70, 55],
+	[1, 70, 44],
+	[2, 35, 17],
+	[2, 35, 13],
+
+	// 4		
+	[1, 100, 80],
+	[2, 50, 32],
+	[2, 50, 24],
+	[4, 25, 9],
+	
+	// 5
+	[1, 134, 108],
+	[2, 67, 43],
+	[2, 33, 15, 2, 34, 16],
+	[2, 33, 11, 2, 34, 12],
+	
+	// 6
+	[2, 86, 68],
+	[4, 43, 27],
+	[4, 43, 19],
+	[4, 43, 15],
+	
+	// 7		
+	[2, 98, 78],
+	[4, 49, 31],
+	[2, 32, 14, 4, 33, 15],
+	[4, 39, 13, 1, 40, 14],
+	
+	// 8
+	[2, 121, 97],
+	[2, 60, 38, 2, 61, 39],
+	[4, 40, 18, 2, 41, 19],
+	[4, 40, 14, 2, 41, 15],
+	
+	// 9
+	[2, 146, 116],
+	[3, 58, 36, 2, 59, 37],
+	[4, 36, 16, 4, 37, 17],
+	[4, 36, 12, 4, 37, 13],
+	
+	// 10		
+	[2, 86, 68, 2, 87, 69],
+	[4, 69, 43, 1, 70, 44],
+	[6, 43, 19, 2, 44, 20],
+	[6, 43, 15, 2, 44, 16],
+
+	// 11
+	[4, 101, 81],
+	[1, 80, 50, 4, 81, 51],
+	[4, 50, 22, 4, 51, 23],
+	[3, 36, 12, 8, 37, 13],
+
+	// 12
+	[2, 116, 92, 2, 117, 93],
+	[6, 58, 36, 2, 59, 37],
+	[4, 46, 20, 6, 47, 21],
+	[7, 42, 14, 4, 43, 15],
+
+	// 13
+	[4, 133, 107],
+	[8, 59, 37, 1, 60, 38],
+	[8, 44, 20, 4, 45, 21],
+	[12, 33, 11, 4, 34, 12],
+
+	// 14
+	[3, 145, 115, 1, 146, 116],
+	[4, 64, 40, 5, 65, 41],
+	[11, 36, 16, 5, 37, 17],
+	[11, 36, 12, 5, 37, 13],
+
+	// 15
+	[5, 109, 87, 1, 110, 88],
+	[5, 65, 41, 5, 66, 42],
+	[5, 54, 24, 7, 55, 25],
+	[11, 36, 12],
+
+	// 16
+	[5, 122, 98, 1, 123, 99],
+	[7, 73, 45, 3, 74, 46],
+	[15, 43, 19, 2, 44, 20],
+	[3, 45, 15, 13, 46, 16],
+
+	// 17
+	[1, 135, 107, 5, 136, 108],
+	[10, 74, 46, 1, 75, 47],
+	[1, 50, 22, 15, 51, 23],
+	[2, 42, 14, 17, 43, 15],
+
+	// 18
+	[5, 150, 120, 1, 151, 121],
+	[9, 69, 43, 4, 70, 44],
+	[17, 50, 22, 1, 51, 23],
+	[2, 42, 14, 19, 43, 15],
+
+	// 19
+	[3, 141, 113, 4, 142, 114],
+	[3, 70, 44, 11, 71, 45],
+	[17, 47, 21, 4, 48, 22],
+	[9, 39, 13, 16, 40, 14],
+
+	// 20
+	[3, 135, 107, 5, 136, 108],
+	[3, 67, 41, 13, 68, 42],
+	[15, 54, 24, 5, 55, 25],
+	[15, 43, 15, 10, 44, 16],
+
+	// 21
+	[4, 144, 116, 4, 145, 117],
+	[17, 68, 42],
+	[17, 50, 22, 6, 51, 23],
+	[19, 46, 16, 6, 47, 17],
+
+	// 22
+	[2, 139, 111, 7, 140, 112],
+	[17, 74, 46],
+	[7, 54, 24, 16, 55, 25],
+	[34, 37, 13],
+
+	// 23
+	[4, 151, 121, 5, 152, 122],
+	[4, 75, 47, 14, 76, 48],
+	[11, 54, 24, 14, 55, 25],
+	[16, 45, 15, 14, 46, 16],
+
+	// 24
+	[6, 147, 117, 4, 148, 118],
+	[6, 73, 45, 14, 74, 46],
+	[11, 54, 24, 16, 55, 25],
+	[30, 46, 16, 2, 47, 17],
+
+	// 25
+	[8, 132, 106, 4, 133, 107],
+	[8, 75, 47, 13, 76, 48],
+	[7, 54, 24, 22, 55, 25],
+	[22, 45, 15, 13, 46, 16],
+
+	// 26
+	[10, 142, 114, 2, 143, 115],
+	[19, 74, 46, 4, 75, 47],
+	[28, 50, 22, 6, 51, 23],
+	[33, 46, 16, 4, 47, 17],
+
+	// 27
+	[8, 152, 122, 4, 153, 123],
+	[22, 73, 45, 3, 74, 46],
+	[8, 53, 23, 26, 54, 24],
+	[12, 45, 15, 28, 46, 16],
+
+	// 28
+	[3, 147, 117, 10, 148, 118],
+	[3, 73, 45, 23, 74, 46],
+	[4, 54, 24, 31, 55, 25],
+	[11, 45, 15, 31, 46, 16],
+
+	// 29
+	[7, 146, 116, 7, 147, 117],
+	[21, 73, 45, 7, 74, 46],
+	[1, 53, 23, 37, 54, 24],
+	[19, 45, 15, 26, 46, 16],
+
+	// 30
+	[5, 145, 115, 10, 146, 116],
+	[19, 75, 47, 10, 76, 48],
+	[15, 54, 24, 25, 55, 25],
+	[23, 45, 15, 25, 46, 16],
+
+	// 31
+	[13, 145, 115, 3, 146, 116],
+	[2, 74, 46, 29, 75, 47],
+	[42, 54, 24, 1, 55, 25],
+	[23, 45, 15, 28, 46, 16],
+
+	// 32
+	[17, 145, 115],
+	[10, 74, 46, 23, 75, 47],
+	[10, 54, 24, 35, 55, 25],
+	[19, 45, 15, 35, 46, 16],
+
+	// 33
+	[17, 145, 115, 1, 146, 116],
+	[14, 74, 46, 21, 75, 47],
+	[29, 54, 24, 19, 55, 25],
+	[11, 45, 15, 46, 46, 16],
+
+	// 34
+	[13, 145, 115, 6, 146, 116],
+	[14, 74, 46, 23, 75, 47],
+	[44, 54, 24, 7, 55, 25],
+	[59, 46, 16, 1, 47, 17],
+
+	// 35
+	[12, 151, 121, 7, 152, 122],
+	[12, 75, 47, 26, 76, 48],
+	[39, 54, 24, 14, 55, 25],
+	[22, 45, 15, 41, 46, 16],
+
+	// 36
+	[6, 151, 121, 14, 152, 122],
+	[6, 75, 47, 34, 76, 48],
+	[46, 54, 24, 10, 55, 25],
+	[2, 45, 15, 64, 46, 16],
+
+	// 37
+	[17, 152, 122, 4, 153, 123],
+	[29, 74, 46, 14, 75, 47],
+	[49, 54, 24, 10, 55, 25],
+	[24, 45, 15, 46, 46, 16],
+
+	// 38
+	[4, 152, 122, 18, 153, 123],
+	[13, 74, 46, 32, 75, 47],
+	[48, 54, 24, 14, 55, 25],
+	[42, 45, 15, 32, 46, 16],
+
+	// 39
+	[20, 147, 117, 4, 148, 118],
+	[40, 75, 47, 7, 76, 48],
+	[43, 54, 24, 22, 55, 25],
+	[10, 45, 15, 67, 46, 16],
+
+	// 40
+	[19, 148, 118, 6, 149, 119],
+	[18, 75, 47, 31, 76, 48],
+	[34, 54, 24, 34, 55, 25],
+	[20, 45, 15, 61, 46, 16]
+];
+
+QRRSBlock.getRSBlocks = function(typeNumber, errorCorrectLevel) {
+	
+	var rsBlock = QRRSBlock.getRsBlockTable(typeNumber, errorCorrectLevel);
+	
+	if (rsBlock === undefined) {
+		throw new Error("bad rs block @ typeNumber:" + typeNumber + "/errorCorrectLevel:" + errorCorrectLevel);
+	}
+
+	var length = rsBlock.length / 3;
+	
+	var list = [];
+	
+	for (var i = 0; i < length; i++) {
+
+		var count = rsBlock[i * 3 + 0];
+		var totalCount = rsBlock[i * 3 + 1];
+		var dataCount  = rsBlock[i * 3 + 2];
+
+		for (var j = 0; j < count; j++) {
+			list.push(new QRRSBlock(totalCount, dataCount) );	
+		}
+	}
+	
+	return list;
+};
+
+QRRSBlock.getRsBlockTable = function(typeNumber, errorCorrectLevel) {
+
+	switch(errorCorrectLevel) {
+	case QRErrorCorrectLevel.L :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 0];
+	case QRErrorCorrectLevel.M :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 1];
+	case QRErrorCorrectLevel.Q :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 2];
+	case QRErrorCorrectLevel.H :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 3];
+	default :
+		return undefined;
+	}
+};
+
+module.exports = QRRSBlock;
+
+};
+__f["QRUtil"]=function(module,exports,require){
+var QRMode = __r("QRMode");
+var QRPolynomial = __r("QRPolynomial");
+var QRMath = __r("QRMath");
+var QRMaskPattern = __r("QRMaskPattern");
+
+var QRUtil = {
+
+    PATTERN_POSITION_TABLE : [
+        [],
+        [6, 18],
+        [6, 22],
+        [6, 26],
+        [6, 30],
+        [6, 34],
+        [6, 22, 38],
+        [6, 24, 42],
+        [6, 26, 46],
+        [6, 28, 50],
+        [6, 30, 54],        
+        [6, 32, 58],
+        [6, 34, 62],
+        [6, 26, 46, 66],
+        [6, 26, 48, 70],
+        [6, 26, 50, 74],
+        [6, 30, 54, 78],
+        [6, 30, 56, 82],
+        [6, 30, 58, 86],
+        [6, 34, 62, 90],
+        [6, 28, 50, 72, 94],
+        [6, 26, 50, 74, 98],
+        [6, 30, 54, 78, 102],
+        [6, 28, 54, 80, 106],
+        [6, 32, 58, 84, 110],
+        [6, 30, 58, 86, 114],
+        [6, 34, 62, 90, 118],
+        [6, 26, 50, 74, 98, 122],
+        [6, 30, 54, 78, 102, 126],
+        [6, 26, 52, 78, 104, 130],
+        [6, 30, 56, 82, 108, 134],
+        [6, 34, 60, 86, 112, 138],
+        [6, 30, 58, 86, 114, 142],
+        [6, 34, 62, 90, 118, 146],
+        [6, 30, 54, 78, 102, 126, 150],
+        [6, 24, 50, 76, 102, 128, 154],
+        [6, 28, 54, 80, 106, 132, 158],
+        [6, 32, 58, 84, 110, 136, 162],
+        [6, 26, 54, 82, 110, 138, 166],
+        [6, 30, 58, 86, 114, 142, 170]
+    ],
+
+    G15 : (1 << 10) | (1 << 8) | (1 << 5) | (1 << 4) | (1 << 2) | (1 << 1) | (1 << 0),
+    G18 : (1 << 12) | (1 << 11) | (1 << 10) | (1 << 9) | (1 << 8) | (1 << 5) | (1 << 2) | (1 << 0),
+    G15_MASK : (1 << 14) | (1 << 12) | (1 << 10)    | (1 << 4) | (1 << 1),
+
+    getBCHTypeInfo : function(data) {
+        var d = data << 10;
+        while (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G15) >= 0) {
+            d ^= (QRUtil.G15 << (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G15) ) );    
+        }
+        return ( (data << 10) | d) ^ QRUtil.G15_MASK;
+    },
+
+    getBCHTypeNumber : function(data) {
+        var d = data << 12;
+        while (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G18) >= 0) {
+            d ^= (QRUtil.G18 << (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G18) ) );    
+        }
+        return (data << 12) | d;
+    },
+
+    getBCHDigit : function(data) {
+
+        var digit = 0;
+
+        while (data !== 0) {
+            digit++;
+            data >>>= 1;
+        }
+
+        return digit;
+    },
+
+    getPatternPosition : function(typeNumber) {
+        return QRUtil.PATTERN_POSITION_TABLE[typeNumber - 1];
+    },
+
+    getMask : function(maskPattern, i, j) {
+        
+        switch (maskPattern) {
+            
+        case QRMaskPattern.PATTERN000 : return (i + j) % 2 === 0;
+        case QRMaskPattern.PATTERN001 : return i % 2 === 0;
+        case QRMaskPattern.PATTERN010 : return j % 3 === 0;
+        case QRMaskPattern.PATTERN011 : return (i + j) % 3 === 0;
+        case QRMaskPattern.PATTERN100 : return (Math.floor(i / 2) + Math.floor(j / 3) ) % 2 === 0;
+        case QRMaskPattern.PATTERN101 : return (i * j) % 2 + (i * j) % 3 === 0;
+        case QRMaskPattern.PATTERN110 : return ( (i * j) % 2 + (i * j) % 3) % 2 === 0;
+        case QRMaskPattern.PATTERN111 : return ( (i * j) % 3 + (i + j) % 2) % 2 === 0;
+
+        default :
+            throw new Error("bad maskPattern:" + maskPattern);
+        }
+    },
+
+    getErrorCorrectPolynomial : function(errorCorrectLength) {
+
+        var a = new QRPolynomial([1], 0);
+
+        for (var i = 0; i < errorCorrectLength; i++) {
+            a = a.multiply(new QRPolynomial([1, QRMath.gexp(i)], 0) );
+        }
+
+        return a;
+    },
+
+    getLengthInBits : function(mode, type) {
+
+        if (1 <= type && type < 10) {
+
+            // 1 - 9
+
+            switch(mode) {
+            case QRMode.MODE_NUMBER     : return 10;
+            case QRMode.MODE_ALPHA_NUM  : return 9;
+            case QRMode.MODE_8BIT_BYTE  : return 8;
+            case QRMode.MODE_KANJI      : return 8;
+            default :
+                throw new Error("mode:" + mode);
+            }
+
+        } else if (type < 27) {
+
+            // 10 - 26
+
+            switch(mode) {
+            case QRMode.MODE_NUMBER     : return 12;
+            case QRMode.MODE_ALPHA_NUM  : return 11;
+            case QRMode.MODE_8BIT_BYTE  : return 16;
+            case QRMode.MODE_KANJI      : return 10;
+            default :
+                throw new Error("mode:" + mode);
+            }
+
+        } else if (type < 41) {
+
+            // 27 - 40
+
+            switch(mode) {
+            case QRMode.MODE_NUMBER     : return 14;
+            case QRMode.MODE_ALPHA_NUM  : return 13;
+            case QRMode.MODE_8BIT_BYTE  : return 16;
+            case QRMode.MODE_KANJI      : return 12;
+            default :
+                throw new Error("mode:" + mode);
+            }
+
+        } else {
+            throw new Error("type:" + type);
+        }
+    },
+
+    getLostPoint : function(qrCode) {
+        
+        var moduleCount = qrCode.getModuleCount();
+        var lostPoint = 0;
+        var row = 0; 
+        var col = 0;
+
+        
+        // LEVEL1
+        
+        for (row = 0; row < moduleCount; row++) {
+
+            for (col = 0; col < moduleCount; col++) {
+
+                var sameCount = 0;
+                var dark = qrCode.isDark(row, col);
+
+                for (var r = -1; r <= 1; r++) {
+
+                    if (row + r < 0 || moduleCount <= row + r) {
+                        continue;
+                    }
+
+                    for (var c = -1; c <= 1; c++) {
+
+                        if (col + c < 0 || moduleCount <= col + c) {
+                            continue;
+                        }
+
+                        if (r === 0 && c === 0) {
+                            continue;
+                        }
+
+                        if (dark === qrCode.isDark(row + r, col + c) ) {
+                            sameCount++;
+                        }
+                    }
+                }
+
+                if (sameCount > 5) {
+                    lostPoint += (3 + sameCount - 5);
+                }
+            }
+        }
+
+        // LEVEL2
+
+        for (row = 0; row < moduleCount - 1; row++) {
+            for (col = 0; col < moduleCount - 1; col++) {
+                var count = 0;
+                if (qrCode.isDark(row,     col    ) ) count++;
+                if (qrCode.isDark(row + 1, col    ) ) count++;
+                if (qrCode.isDark(row,     col + 1) ) count++;
+                if (qrCode.isDark(row + 1, col + 1) ) count++;
+                if (count === 0 || count === 4) {
+                    lostPoint += 3;
+                }
+            }
+        }
+
+        // LEVEL3
+
+        for (row = 0; row < moduleCount; row++) {
+            for (col = 0; col < moduleCount - 6; col++) {
+                if (qrCode.isDark(row, col) && 
+                        !qrCode.isDark(row, col + 1) && 
+                         qrCode.isDark(row, col + 2) && 
+                         qrCode.isDark(row, col + 3) && 
+                         qrCode.isDark(row, col + 4) && 
+                        !qrCode.isDark(row, col + 5) && 
+                         qrCode.isDark(row, col + 6) ) {
+                    lostPoint += 40;
+                }
+            }
+        }
+
+        for (col = 0; col < moduleCount; col++) {
+            for (row = 0; row < moduleCount - 6; row++) {
+                if (qrCode.isDark(row, col) &&
+                        !qrCode.isDark(row + 1, col) &&
+                         qrCode.isDark(row + 2, col) &&
+                         qrCode.isDark(row + 3, col) &&
+                         qrCode.isDark(row + 4, col) &&
+                        !qrCode.isDark(row + 5, col) &&
+                         qrCode.isDark(row + 6, col) ) {
+                    lostPoint += 40;
+                }
+            }
+        }
+
+        // LEVEL4
+        
+        var darkCount = 0;
+
+        for (col = 0; col < moduleCount; col++) {
+            for (row = 0; row < moduleCount; row++) {
+                if (qrCode.isDark(row, col) ) {
+                    darkCount++;
+                }
+            }
+        }
+        
+        var ratio = Math.abs(100 * darkCount / moduleCount / moduleCount - 50) / 5;
+        lostPoint += ratio * 10;
+
+        return lostPoint;       
+    }
+
+};
+
+module.exports = QRUtil;
+
+};
+__f["index"]=function(module,exports,require){
+//---------------------------------------------------------------------
+// QRCode for JavaScript
+//
+// Copyright (c) 2009 Kazuhiko Arase
+//
+// URL: http://www.d-project.com/
+//
+// Licensed under the MIT license:
+//   http://www.opensource.org/licenses/mit-license.php
+//
+// The word "QR Code" is registered trademark of 
+// DENSO WAVE INCORPORATED
+//   http://www.denso-wave.com/qrcode/faqpatent-e.html
+//
+//---------------------------------------------------------------------
+// Modified to work in node for this project (and some refactoring)
+//---------------------------------------------------------------------
+
+var QR8bitByte = __r("QR8bitByte");
+var QRUtil = __r("QRUtil");
+var QRPolynomial = __r("QRPolynomial");
+var QRRSBlock = __r("QRRSBlock");
+var QRBitBuffer = __r("QRBitBuffer");
+
+function QRCode(typeNumber, errorCorrectLevel) {
+	this.typeNumber = typeNumber;
+	this.errorCorrectLevel = errorCorrectLevel;
+	this.modules = null;
+	this.moduleCount = 0;
+	this.dataCache = null;
+	this.dataList = [];
+}
+
+QRCode.prototype = {
+	
+	addData : function(data) {
+		var newData = new QR8bitByte(data);
+		this.dataList.push(newData);
+		this.dataCache = null;
+	},
+	
+	isDark : function(row, col) {
+		if (row < 0 || this.moduleCount <= row || col < 0 || this.moduleCount <= col) {
+			throw new Error(row + "," + col);
+		}
+		return this.modules[row][col];
+	},
+
+	getModuleCount : function() {
+		return this.moduleCount;
+	},
+	
+	make : function() {
+		// Calculate automatically typeNumber if provided is < 1
+		if (this.typeNumber < 1 ){
+			var typeNumber = 1;
+			for (typeNumber = 1; typeNumber < 40; typeNumber++) {
+				var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, this.errorCorrectLevel);
+
+				var buffer = new QRBitBuffer();
+				var totalDataCount = 0;
+				for (var i = 0; i < rsBlocks.length; i++) {
+					totalDataCount += rsBlocks[i].dataCount;
+				}
+
+				for (var x = 0; x < this.dataList.length; x++) {
+					var data = this.dataList[x];
+					buffer.put(data.mode, 4);
+					buffer.put(data.getLength(), QRUtil.getLengthInBits(data.mode, typeNumber) );
+					data.write(buffer);
+				}
+				if (buffer.getLengthInBits() <= totalDataCount * 8)
+					break;
+			}
+			this.typeNumber = typeNumber;
+		}
+		this.makeImpl(false, this.getBestMaskPattern() );
+	},
+	
+	makeImpl : function(test, maskPattern) {
+		
+		this.moduleCount = this.typeNumber * 4 + 17;
+		this.modules = new Array(this.moduleCount);
+		
+		for (var row = 0; row < this.moduleCount; row++) {
+			
+			this.modules[row] = new Array(this.moduleCount);
+			
+			for (var col = 0; col < this.moduleCount; col++) {
+				this.modules[row][col] = null;//(col + row) % 3;
+			}
+		}
+	
+		this.setupPositionProbePattern(0, 0);
+		this.setupPositionProbePattern(this.moduleCount - 7, 0);
+		this.setupPositionProbePattern(0, this.moduleCount - 7);
+		this.setupPositionAdjustPattern();
+		this.setupTimingPattern();
+		this.setupTypeInfo(test, maskPattern);
+		
+		if (this.typeNumber >= 7) {
+			this.setupTypeNumber(test);
+		}
+	
+		if (this.dataCache === null) {
+			this.dataCache = QRCode.createData(this.typeNumber, this.errorCorrectLevel, this.dataList);
+		}
+	
+		this.mapData(this.dataCache, maskPattern);
+	},
+
+	setupPositionProbePattern : function(row, col)  {
+		
+		for (var r = -1; r <= 7; r++) {
+			
+			if (row + r <= -1 || this.moduleCount <= row + r) continue;
+			
+			for (var c = -1; c <= 7; c++) {
+				
+				if (col + c <= -1 || this.moduleCount <= col + c) continue;
+				
+				if ( (0 <= r && r <= 6 && (c === 0 || c === 6) ) || 
+                     (0 <= c && c <= 6 && (r === 0 || r === 6) ) || 
+                     (2 <= r && r <= 4 && 2 <= c && c <= 4) ) {
+					this.modules[row + r][col + c] = true;
+				} else {
+					this.modules[row + r][col + c] = false;
+				}
+			}		
+		}		
+	},
+	
+	getBestMaskPattern : function() {
+	
+		var minLostPoint = 0;
+		var pattern = 0;
+	
+		for (var i = 0; i < 8; i++) {
+			
+			this.makeImpl(true, i);
+	
+			var lostPoint = QRUtil.getLostPoint(this);
+	
+			if (i === 0 || minLostPoint >  lostPoint) {
+				minLostPoint = lostPoint;
+				pattern = i;
+			}
+		}
+	
+		return pattern;
+	},
+	
+	createMovieClip : function(target_mc, instance_name, depth) {
+	
+		var qr_mc = target_mc.createEmptyMovieClip(instance_name, depth);
+		var cs = 1;
+	
+		this.make();
+
+		for (var row = 0; row < this.modules.length; row++) {
+			
+			var y = row * cs;
+			
+			for (var col = 0; col < this.modules[row].length; col++) {
+	
+				var x = col * cs;
+				var dark = this.modules[row][col];
+			
+				if (dark) {
+					qr_mc.beginFill(0, 100);
+					qr_mc.moveTo(x, y);
+					qr_mc.lineTo(x + cs, y);
+					qr_mc.lineTo(x + cs, y + cs);
+					qr_mc.lineTo(x, y + cs);
+					qr_mc.endFill();
+				}
+			}
+		}
+		
+		return qr_mc;
+	},
+
+	setupTimingPattern : function() {
+		
+		for (var r = 8; r < this.moduleCount - 8; r++) {
+			if (this.modules[r][6] !== null) {
+				continue;
+			}
+			this.modules[r][6] = (r % 2 === 0);
+		}
+	
+		for (var c = 8; c < this.moduleCount - 8; c++) {
+			if (this.modules[6][c] !== null) {
+				continue;
+			}
+			this.modules[6][c] = (c % 2 === 0);
+		}
+	},
+	
+	setupPositionAdjustPattern : function() {
+	
+		var pos = QRUtil.getPatternPosition(this.typeNumber);
+		
+		for (var i = 0; i < pos.length; i++) {
+		
+			for (var j = 0; j < pos.length; j++) {
+			
+				var row = pos[i];
+				var col = pos[j];
+				
+				if (this.modules[row][col] !== null) {
+					continue;
+				}
+				
+				for (var r = -2; r <= 2; r++) {
+				
+					for (var c = -2; c <= 2; c++) {
+					
+						if (Math.abs(r) === 2 || 
+                            Math.abs(c) === 2 ||
+                            (r === 0 && c === 0) ) {
+							this.modules[row + r][col + c] = true;
+						} else {
+							this.modules[row + r][col + c] = false;
+						}
+					}
+				}
+			}
+		}
+	},
+	
+	setupTypeNumber : function(test) {
+	
+		var bits = QRUtil.getBCHTypeNumber(this.typeNumber);
+        var mod;
+	
+		for (var i = 0; i < 18; i++) {
+			mod = (!test && ( (bits >> i) & 1) === 1);
+			this.modules[Math.floor(i / 3)][i % 3 + this.moduleCount - 8 - 3] = mod;
+		}
+	
+		for (var x = 0; x < 18; x++) {
+			mod = (!test && ( (bits >> x) & 1) === 1);
+			this.modules[x % 3 + this.moduleCount - 8 - 3][Math.floor(x / 3)] = mod;
+		}
+	},
+	
+	setupTypeInfo : function(test, maskPattern) {
+	
+		var data = (this.errorCorrectLevel << 3) | maskPattern;
+		var bits = QRUtil.getBCHTypeInfo(data);
+        var mod;
+	
+		// vertical		
+		for (var v = 0; v < 15; v++) {
+	
+			mod = (!test && ( (bits >> v) & 1) === 1);
+	
+			if (v < 6) {
+				this.modules[v][8] = mod;
+			} else if (v < 8) {
+				this.modules[v + 1][8] = mod;
+			} else {
+				this.modules[this.moduleCount - 15 + v][8] = mod;
+			}
+		}
+	
+		// horizontal
+		for (var h = 0; h < 15; h++) {
+	
+			mod = (!test && ( (bits >> h) & 1) === 1);
+			
+			if (h < 8) {
+				this.modules[8][this.moduleCount - h - 1] = mod;
+			} else if (h < 9) {
+				this.modules[8][15 - h - 1 + 1] = mod;
+			} else {
+				this.modules[8][15 - h - 1] = mod;
+			}
+		}
+	
+		// fixed module
+		this.modules[this.moduleCount - 8][8] = (!test);
+	
+	},
+	
+	mapData : function(data, maskPattern) {
+		
+		var inc = -1;
+		var row = this.moduleCount - 1;
+		var bitIndex = 7;
+		var byteIndex = 0;
+		
+		for (var col = this.moduleCount - 1; col > 0; col -= 2) {
+	
+			if (col === 6) col--;
+	
+			while (true) {
+	
+				for (var c = 0; c < 2; c++) {
+					
+					if (this.modules[row][col - c] === null) {
+						
+						var dark = false;
+	
+						if (byteIndex < data.length) {
+							dark = ( ( (data[byteIndex] >>> bitIndex) & 1) === 1);
+						}
+	
+						var mask = QRUtil.getMask(maskPattern, row, col - c);
+	
+						if (mask) {
+							dark = !dark;
+						}
+						
+						this.modules[row][col - c] = dark;
+						bitIndex--;
+	
+						if (bitIndex === -1) {
+							byteIndex++;
+							bitIndex = 7;
+						}
+					}
+				}
+								
+				row += inc;
+	
+				if (row < 0 || this.moduleCount <= row) {
+					row -= inc;
+					inc = -inc;
+					break;
+				}
+			}
+		}
+		
+	}
+
+};
+
+QRCode.PAD0 = 0xEC;
+QRCode.PAD1 = 0x11;
+
+QRCode.createData = function(typeNumber, errorCorrectLevel, dataList) {
+	
+	var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, errorCorrectLevel);
+	
+	var buffer = new QRBitBuffer();
+	
+	for (var i = 0; i < dataList.length; i++) {
+		var data = dataList[i];
+		buffer.put(data.mode, 4);
+		buffer.put(data.getLength(), QRUtil.getLengthInBits(data.mode, typeNumber) );
+		data.write(buffer);
+	}
+
+	// calc num max data.
+	var totalDataCount = 0;
+	for (var x = 0; x < rsBlocks.length; x++) {
+		totalDataCount += rsBlocks[x].dataCount;
+	}
+
+	if (buffer.getLengthInBits() > totalDataCount * 8) {
+		throw new Error("code length overflow. (" + 
+            buffer.getLengthInBits() + 
+            ">" +  
+            totalDataCount * 8 + 
+            ")");
+	}
+
+	// end code
+	if (buffer.getLengthInBits() + 4 <= totalDataCount * 8) {
+		buffer.put(0, 4);
+	}
+
+	// padding
+	while (buffer.getLengthInBits() % 8 !== 0) {
+		buffer.putBit(false);
+	}
+
+	// padding
+	while (true) {
+		
+		if (buffer.getLengthInBits() >= totalDataCount * 8) {
+			break;
+		}
+		buffer.put(QRCode.PAD0, 8);
+		
+		if (buffer.getLengthInBits() >= totalDataCount * 8) {
+			break;
+		}
+		buffer.put(QRCode.PAD1, 8);
+	}
+
+	return QRCode.createBytes(buffer, rsBlocks);
+};
+
+QRCode.createBytes = function(buffer, rsBlocks) {
+
+	var offset = 0;
+	
+	var maxDcCount = 0;
+	var maxEcCount = 0;
+	
+	var dcdata = new Array(rsBlocks.length);
+	var ecdata = new Array(rsBlocks.length);
+	
+	for (var r = 0; r < rsBlocks.length; r++) {
+
+		var dcCount = rsBlocks[r].dataCount;
+		var ecCount = rsBlocks[r].totalCount - dcCount;
+
+		maxDcCount = Math.max(maxDcCount, dcCount);
+		maxEcCount = Math.max(maxEcCount, ecCount);
+		
+		dcdata[r] = new Array(dcCount);
+		
+		for (var i = 0; i < dcdata[r].length; i++) {
+			dcdata[r][i] = 0xff & buffer.buffer[i + offset];
+		}
+		offset += dcCount;
+		
+		var rsPoly = QRUtil.getErrorCorrectPolynomial(ecCount);
+		var rawPoly = new QRPolynomial(dcdata[r], rsPoly.getLength() - 1);
+
+		var modPoly = rawPoly.mod(rsPoly);
+		ecdata[r] = new Array(rsPoly.getLength() - 1);
+		for (var x = 0; x < ecdata[r].length; x++) {
+            var modIndex = x + modPoly.getLength() - ecdata[r].length;
+			ecdata[r][x] = (modIndex >= 0)? modPoly.get(modIndex) : 0;
+		}
+
+	}
+	
+	var totalCodeCount = 0;
+	for (var y = 0; y < rsBlocks.length; y++) {
+		totalCodeCount += rsBlocks[y].totalCount;
+	}
+
+	var data = new Array(totalCodeCount);
+	var index = 0;
+
+	for (var z = 0; z < maxDcCount; z++) {
+		for (var s = 0; s < rsBlocks.length; s++) {
+			if (z < dcdata[s].length) {
+				data[index++] = dcdata[s][z];
+			}
+		}
+	}
+
+	for (var xx = 0; xx < maxEcCount; xx++) {
+		for (var t = 0; t < rsBlocks.length; t++) {
+			if (xx < ecdata[t].length) {
+				data[index++] = ecdata[t][xx];
+			}
+		}
+	}
+
+	return data;
+
+};
+
+module.exports = QRCode;
+
+};
+var Q=__r("index"),E=__r("QRErrorCorrectLevel");window.SEFQR=function(text,lvl){var q=new Q(-1,E[lvl||"L"]);q.addData(text);q.make();var n=q.getModuleCount(),m=[];for(var r=0;r<n;r++){m[r]=[];for(var c=0;c<n;c++)m[r][c]=q.isDark(r,c)}return m}})();</script><script>(function(){
+var AL=["Gluten","Kabuklu deniz ürünleri","Yumurta","Balık","Yer fıstığı","Soya","Süt","Sert kabuklu yemiş","Kereviz","Hardal","Susam","Sülfit","Acı bakla","Yumuşakçalar"];
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function b64e(u8){var s="";for(var i=0;i<u8.length;i++)s+=String.fromCharCode(u8[i]);return btoa(s).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")}
+function b64d(t){t=t.replace(/-/g,"+").replace(/_/g,"/");while(t.length%4)t+="=";var s=atob(t),u=new Uint8Array(s.length);for(var i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u}
+async function pipe(u8,C){var cs=new C("deflate-raw"),w=cs.writable.getWriter();w.write(u8);w.close();return new Uint8Array(await new Response(cs.readable).arrayBuffer())}
+async function pack(o){var u=new TextEncoder().encode(JSON.stringify(o));if(window.CompressionStream){try{return "z"+b64e(await pipe(u,CompressionStream))}catch(e){}}return "j"+b64e(u)}
+async function unpack(t){var k=t.charAt(0),u=b64d(t.slice(1));if(k==="z")u=await pipe(u,DecompressionStream);return JSON.parse(new TextDecoder().decode(u))}
+/* ---- herkese açık menü görünümü ---- */
+var qm=null;try{qm=new URLSearchParams(location.search).get("qm")}catch(e){}
+if(qm){(async function(){var o=document.createElement("div");o.id="qmView";o.style.cssText="position:fixed;inset:0;z-index:2147483647;background:#0B1B3A;color:#F5EFDF;overflow:auto;font-family:system-ui,sans-serif;padding:20px 16px 60px";o.innerHTML='<div style="text-align:center;padding:40px">Menü yükleniyor…</div>';document.body.appendChild(o);document.body.style.overflow="hidden";
+  try{var d=await unpack(qm),skip={};
+   function draw(){var cats={};d.i.forEach(function(it){(cats[it[3]]=cats[it[3]]||[]).push(it)});
+    o.innerHTML='<div style="max-width:560px;margin:0 auto"><div style="text-align:center;color:#D4AF37;letter-spacing:.2em;font-size:12px;text-transform:uppercase">Menü</div><h1 style="text-align:center;margin:6px 0 16px;font-family:Georgia,serif;font-size:32px">'+esc(d.a)+'</h1>'
+     +'<div style="background:#13264D;border:1px solid #D4AF3788;border-radius:16px;padding:12px;margin-bottom:16px"><div style="font-weight:700;margin-bottom:8px">Alerjenin var mı? İşaretle, içeren yemekler soluklaşır</div><div style="display:flex;flex-wrap:wrap;gap:6px">'+AL.map(function(a,j){return '<button data-al="'+j+'" style="border:1px solid #D4AF37;background:'+(skip[j]?'#D4AF37':'transparent')+';color:'+(skip[j]?'#0B1B3A':'#F5EFDF')+';border-radius:999px;padding:6px 12px;font-size:13px">'+esc(a)+'</button>'}).join("")+'</div></div>'
+     +Object.keys(cats).map(function(k){return '<h2 style="color:#D4AF37;font-family:Georgia,serif;border-bottom:1px solid #D4AF3766;padding-bottom:4px">'+esc(k)+'</h2>'+cats[k].map(function(it){var bad=AL.map(function(a,j){return(it[4]>>j)&1&&skip[j]?a:null}).filter(Boolean),has=AL.filter(function(a,j){return(it[4]>>j)&1});
+      return '<div style="padding:10px 0;border-bottom:1px solid #ffffff22;opacity:'+(bad.length?.35:1)+'"><div style="display:flex;justify-content:space-between;gap:10px"><b>'+esc(it[0])+'</b><b style="color:#D4AF37;white-space:nowrap">'+(it[1]?esc(it[1])+' ₺':'')+'</b></div>'+(it[2]?'<div style="color:#D9D3C1;font-size:14px">'+esc(it[2])+'</div>':'')+(has.length?'<div style="font-size:12px;color:#F0A431;margin-top:2px">Alerjen: '+esc(has.join(", "))+'</div>':'')+(bad.length?'<div style="font-size:12px;color:#E5645B"><b>Seçtiğin alerjeni içerir: '+esc(bad.join(", "))+'</b></div>':'')+'</div>'}).join("")}).join("")
+     +'<div style="text-align:center;font-size:12px;color:#D9D3C1;margin-top:24px">Alerjen bilgisi işletme tarafından girilmiştir. Şüphe durumunda personele danışın.</div></div>'}
+   o.addEventListener("click",function(e){var b=e.target.closest("[data-al]");if(!b)return;var j=b.dataset.al;skip[j]=!skip[j];draw()});draw()}
+  catch(e){o.innerHTML='<div style="text-align:center;padding:40px">Menü açılamadı. QR kodu yeniden okutun.</div>'}})();return}
+/* ---- yönetim ---- */
+if(!$("qrmenu")||!window.SEFQR)return;
+function ld(k){try{var v=JSON.parse(localStorage.getItem(k)||"[]");return Array.isArray(v)?v:[]}catch(e){return[]}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function toast(m){try{window.ofToast(m)}catch(e){}}
+function uid(){return "q"+Date.now().toString(36)+Math.random().toString(36).slice(2,5)}
+var Q=ld("sefQrm");
+function meta(){return Q.filter(function(x){return x.k==="meta"})[0]}
+function items(){return Q.filter(function(x){return x.k!=="meta"})}
+$("qmA").innerHTML=AL.map(function(a,j){return '<label style="display:flex;gap:6px;align-items:center;font-weight:400;font-size:14px"><input type="checkbox" style="width:auto" data-a="'+j+'"> '+esc(a)+'</label>'}).join("");
+function draw(){var m=meta();if(m&&!$("qmAd").value)$("qmAd").value=m.n;var L=items();
+  $("qmL").innerHTML=L.length?L.map(function(x,i){var has=AL.filter(function(a,j){return(x.m>>j)&1});return '<div style="border-top:1px solid #dde5df;padding:8px 0"><b>'+esc(x.n)+'</b> · '+(x.p?esc(x.p)+' ₺':'-')+' <span class="small">· '+esc(x.c)+'</span>'+(x.d?'<div class="small">'+esc(x.d)+'</div>':'')+(has.length?'<div class="small">Alerjen: '+esc(has.join(", "))+'</div>':'')+'<button class="btn light" data-qx="'+esc(x.id)+'">Sil</button></div>'}).join(""):'<div class="small">Menü boş.</div>'}
+$("qrmenu").addEventListener("click",async function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="qmAdd"){var n=$("qmN").value.trim();if(!n){toast("Yemek adı yaz");return}var mk=0;[].forEach.call($("qmA").querySelectorAll("[data-a]"),function(c){if(c.checked)mk|=1<<(+c.dataset.a)});
+   Q.push({id:uid(),n:n,p:$("qmP").value,c:$("qmC").value,d:$("qmD").value.trim(),m:mk});sv("sefQrm",Q);["qmN","qmP","qmD"].forEach(function(i){$(i).value=""});[].forEach.call($("qmA").querySelectorAll("[data-a]"),function(c){c.checked=false});draw();toast("Eklendi");return}
+  if(b.dataset.qx){Q=Q.filter(function(x){return x.id!==b.dataset.qx});sv("sefQrm",Q);draw();return}
+  if(b.id==="qmGen"){var ad=$("qmAd").value.trim();if(!ad){toast("İşletme adını yaz");return}var m=meta();if(m)m.n=ad;else Q.push({id:"meta",k:"meta",n:ad});sv("sefQrm",Q);
+   var L=items();if(!L.length){toast("Menüye en az bir kalem ekle");return}
+   var order=["Başlangıçlar","Çorbalar","Ana yemekler","Izgaralar","Tatlılar","İçecekler","Diğer"];L.sort(function(a,b){return order.indexOf(a.c)-order.indexOf(b.c)});
+   var tok=await pack({a:ad,i:L.map(function(x){return[x.n,x.p,x.d,x.c,x.m]})}),base=/^https?:/.test(location.protocol)&&location.hostname&&!/localhost|127\.0\.0\.1/.test(location.hostname)?location.origin:"https://sefasistan.com.tr",url=base+"/?qm="+tok;
+   if(url.length>2300){$("qmOut").innerHTML='<div class="note warn">Menü çok uzun ('+url.length+' karakter), QR okunması zorlaşır. Kalem sayısını azalt veya açıklamaları kısalt.</div>';return}
+   var mx=SEFQR(url,"L"),k=mx.length,s=Math.max(4,Math.floor(560/(k+8))),q=4,cv=document.createElement("canvas");cv.width=cv.height=(k+q*2)*s;var x=cv.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,cv.width,cv.height);x.fillStyle="#000";mx.forEach(function(r,i){r.forEach(function(v,j){if(v)x.fillRect((j+q)*s,(i+q)*s,s,s)})});
+   var png=cv.toDataURL("image/png");$("qmOut").innerHTML='<img alt="QR" src="'+png+'" style="max-width:100%;width:320px"><div class="small">'+url.length+' karakter</div><div class="actions" style="justify-content:center"><button class="btn gold" data-p="1">Masa kartı yazdır</button><button class="btn light" data-o="1">Önizle</button><button class="btn light" data-c="1">Linki kopyala</button></div>';
+   $("qmOut").dataset.url=url;$("qmOut").dataset.png=png;$("qmOut").dataset.ad=ad;return}
+  if(b.dataset.o){window.open($("qmOut").dataset.url,"_blank");return}
+  if(b.dataset.c){try{await navigator.clipboard.writeText($("qmOut").dataset.url);toast("Link kopyalandı")}catch(er){toast("Kopyalanamadı")}return}
+  if(b.dataset.p){var d=$("qmOut").dataset,w=window.open("","_blank");if(!w){toast("Açılır pencere engellendi");return}w.document.write('<!doctype html><meta charset="utf-8"><title>Masa kartı</title><style>body{font-family:Georgia,serif;text-align:center;margin:40px}img{width:360px}h1{margin:0 0 8px}</style><h1>'+esc(d.ad)+'</h1><p>Menü ve alerjen bilgisi için QR kodu okutun</p><img src="'+d.png+'">');w.document.close();setTimeout(function(){try{w.print()}catch(er){}},500)}});
+document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-tab]");if(t&&t.dataset.tab==="qrmenu")setTimeout(function(){Q=ld("sefQrm");draw()},50)});
+window.SEF=window.SEF||{};var pv=SEF.opsReload;SEF.opsReload=function(){try{pv&&pv()}catch(e){}Q=ld("sefQrm");draw()};
+draw();
+})();</script>
+<script>(function(){
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function ld(k){try{var v=JSON.parse(localStorage.getItem(k)||"[]");return Array.isArray(v)?v:[]}catch(e){return[]}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function toast(m){try{window.ofToast(m)}catch(e){}}
+function uid(){return "f"+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function p2(n){return(n<10?"0":"")+n}
+function today(){var d=new Date();return d.getFullYear()+"-"+p2(d.getMonth()+1)+"-"+p2(d.getDate())}
+function fmtD(d){var a=String(d).split("-");return a[2]+"."+a[1]+"."+a[0]}
+function tl(n){return(Math.round((+n||0)*100)/100).toLocaleString("tr-TR")+" ₺"}
+function me(){try{return window.SEF_me&&window.SEF_me()}catch(e){return null}}
+/* ---- belge fotoğrafları ---- */
+var gid=$("gider");
+if(gid){var D=ld("sefDoc"),urls={};
+ var c=document.createElement("div");c.className="card";c.style.marginTop="14px";c.id="docCard";
+ c.innerHTML='<h3>📎 İrsaliye ve fatura fotoğrafları</h3><div class="small" id="docInfo"></div><label>Tür</label><select id="dcK"><option>İrsaliye</option><option>Fatura</option><option>Fiş</option><option>Diğer</option></select><label>Not (tedarikçi, tutar vb.)</label><input id="dcN" type="text" maxlength="100"><label>Fotoğraf</label><input id="dcF" type="file" accept="image/*" capture="environment"><div class="actions"><button class="btn gold" id="dcAdd">Fotoğrafı kaydet</button></div><div id="dcL" style="margin-top:10px;display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px"></div>';
+ gid.appendChild(c);
+ function cloud(){var m=me();return !!(window.SEF_sb&&m&&m.company_id)}
+ $("docInfo").textContent=cloud()?"Fotoğraflar şirketinin güvenli deposunda saklanır; ekip arkadaşların da görebilir.":"Bu cihazda saklanır. Giriş yapıp bir şirkete bağlıysan bulutta saklanır.";
+ function idb(){return new Promise(function(res,rej){var r=indexedDB.open("sefDocs",1);r.onupgradeneeded=function(){r.result.createObjectStore("b")};r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)}})}
+ function idbPut(k,b){return idb().then(function(db){return new Promise(function(res,rej){var t=db.transaction("b","readwrite");t.objectStore("b").put(b,k);t.oncomplete=res;t.onerror=rej})})}
+ function idbGet(k){return idb().then(function(db){return new Promise(function(res,rej){var r=db.transaction("b").objectStore("b").get(k);r.onsuccess=function(){res(r.result)};r.onerror=rej})})}
+ function idbDel(k){return idb().then(function(db){return new Promise(function(res){var t=db.transaction("b","readwrite");t.objectStore("b").delete(k);t.oncomplete=res})})}
+ function shrink(file){return new Promise(function(res,rej){var im=new Image(),u=URL.createObjectURL(file);im.onload=function(){var s=Math.min(1,1400/Math.max(im.width,im.height)),cv=document.createElement("canvas");cv.width=Math.round(im.width*s);cv.height=Math.round(im.height*s);cv.getContext("2d").drawImage(im,0,0,cv.width,cv.height);URL.revokeObjectURL(u);cv.toBlob(function(b){b?res(b):rej(new Error("Görsel işlenemedi"))},"image/jpeg",.8)};im.onerror=function(){rej(new Error("Görsel okunamadı"))};im.src=u})}
+ async function urlOf(x){if(urls[x.id])return urls[x.id];var u=null;
+  if(x.path){try{var r=await window.SEF_sb.storage.from("belgeler").createSignedUrl(x.path,3600);if(r.data)u=r.data.signedUrl}catch(e){}}
+  else{try{var b=await idbGet(x.id);if(b)u=URL.createObjectURL(b)}catch(e){}}
+  if(u)urls[x.id]=u;return u}
+ async function draw(){D=ld("sefDoc");var L=D.slice().sort(function(a,b){return(b.d||"").localeCompare(a.d||"")}).slice(0,24);
+  $("dcL").innerHTML=L.length?L.map(function(x){return '<div style="border:1px solid #dde5df;border-radius:12px;padding:6px"><div data-dv="'+esc(x.id)+'" style="height:90px;background:#eef3f0;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer" class="small">Aç</div><div class="small"><b>'+esc(x.k)+'</b> · '+fmtD(x.d)+(x.n?'<br>'+esc(x.n):'')+'</div><button class="btn light" style="padding:2px 8px" data-dd="'+esc(x.id)+'">Sil</button></div>'}).join(""):'<div class="small">Henüz fotoğraf yok.</div>';
+  for(var i=0;i<L.length;i++){var u=await urlOf(L[i]),el=$("dcL").querySelector('[data-dv="'+L[i].id+'"]');if(u&&el){el.style.background="center/cover url('"+u+"')";el.textContent=""}}}
+ c.addEventListener("click",async function(e){var b=e.target.closest("button,[data-dv]");if(!b)return;
+  if(b.id==="dcAdd"){var f=$("dcF").files[0];if(!f){toast("Fotoğraf seç");return}b.disabled=true;
+   try{var blob=await shrink(f),id=uid(),rec={id:id,d:today(),k:$("dcK").value,n:$("dcN").value.trim(),path:null,w:(me()&&(me().full_name||""))||""};
+    if(cloud()){try{var path=me().company_id+"/"+id+".jpg",up=await window.SEF_sb.storage.from("belgeler").upload(path,blob,{contentType:"image/jpeg"});if(up.error)throw up.error;rec.path=path}catch(er){toast("Buluta yüklenemedi, bu cihazda saklandı");await idbPut(id,blob)}}
+    else await idbPut(id,blob);
+    D.push(rec);sv("sefDoc",D);$("dcF").value="";$("dcN").value="";toast("Kaydedildi");draw()}catch(er){toast("Kaydedilemedi: "+(er.message||er))}b.disabled=false;return}
+  if(b.dataset.dd){var x=D.filter(function(z){return z.id===b.dataset.dd})[0];if(!x||!confirm("Fotoğraf silinsin mi?"))return;
+   try{if(x.path)await window.SEF_sb.storage.from("belgeler").remove([x.path]);else await idbDel(x.id)}catch(er){}
+   D=D.filter(function(z){return z.id!==x.id});sv("sefDoc",D);delete urls[x.id];draw();return}
+  if(b.dataset.dv){var y=D.filter(function(z){return z.id===b.dataset.dv})[0],u=y&&await urlOf(y);if(!u){toast("Görsel açılamadı");return}
+   var o=document.createElement("div");o.style.cssText="position:fixed;inset:0;background:#000d;z-index:99999;display:flex;align-items:center;justify-content:center;padding:12px";o.innerHTML='<img src="'+u+'" style="max-width:100%;max-height:100%;border-radius:8px">';o.onclick=function(){o.remove()};document.body.appendChild(o)}});
+ document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-tab]");if(t&&t.dataset.tab==="gider")setTimeout(function(){$("docInfo").textContent=cloud()?"Fotoğraflar şirketinin güvenli deposunda saklanır; ekip arkadaşların da görebilir.":"Bu cihazda saklanır. Giriş yapıp bir şirkete bağlıysan bulutta saklanır.";draw()},60)});
+ var pv=(window.SEF=window.SEF||{}).opsReload;SEF.opsReload=function(){try{pv&&pv()}catch(e){}draw()};draw()}
+/* ---- stoktan tarif önerisi ---- */
+var dsum=$("dpSum");if(dsum){var act=dsum.parentNode.querySelector(".actions");if(act){var bt=document.createElement("button");bt.className="btn light";bt.id="dpAiRec";bt.textContent="🍳 Stoktaki malzemeyle tarif öner";act.appendChild(bt);
+ bt.addEventListener("click",function(){var d;try{d=JSON.parse(localStorage.getItem("sefDepo")||"null")}catch(e){}var L=((d&&d.items)||[]).filter(function(i){return i.qty>0}).sort(function(a,b){return b.qty-a.qty}).slice(0,35).map(function(i){return i.name});
+  if(!L.length){toast("Önce stoğa giriş yap");return}
+  window.go&&go("specialCreator");setTimeout(function(){var r=$("aiReq");if(r){r.value="Elimizdeki malzemeler: "+L.join(", ")+". Bunlarla yapılabilecek pratik ve ekonomik bir yemek öner.";r.scrollIntoView({behavior:"smooth",block:"center"})}toast("İsteği kontrol edip Yapay zekâyla tarif üret'e bas")},250)})}}
+/* ---- israf analizi ---- */
+var isr=$("israf");if(isr){var ic=document.createElement("div");ic.className="card onlyUsta";ic.style.marginTop="14px";ic.innerHTML='<h3>💡 Tasarruf önerileri</h3><div class="small">Son 30 günün israf kayıtlarına göre.</div><div id="isTip" style="margin-top:8px"></div>';isr.appendChild(ic);
+ var TIPS={"Son kullanma tarihi geçti":"Depoda SKT'si yakın ürünleri öne al (ilk giren ilk çıkar), sipariş miktarını düşür, Depo'daki SKT uyarısını her sabah kontrol et.","Fazla üretim":"Porsiyon sayısını sipariş ve rezervasyona göre planla, Üretim Kaydı ile gerçek tüketimi karşılaştır, artanı ertesi gün menüsüne planla.","Yanma / hata":"Pişirme sürelerinde zamanlayıcı kullan, yeni personele reçete ve ocak eğitimi ver, hatalı partiyi kaydedip nedenini not et.","Müşteri iadesi":"İade nedenini nota yaz; tekrar eden yemeği reçete ve baharat dengesi açısından gözden geçir.","Dökülme / kırılma":"Taşıma kaplarını ve kapaklarını kontrol et, yoğun saatlerde taşıma düzenini gözden geçir.","Diğer":"Nedeni Not alanına yazarak kayıt tut; tekrar edenleri ayrı kategoriye çevir."};
+ function tip(){var f=new Date();f.setDate(f.getDate()-30);var fs=f.getFullYear()+"-"+p2(f.getMonth()+1)+"-"+p2(f.getDate()),L=ld("sefIsraf").filter(function(x){return(x.d||"")>=fs});
+  if(!L.length){$("isTip").innerHTML='<div class="small">Öneri için israf kaydı gerekli.</div>';return}
+  var by={},it={},tot=0;L.forEach(function(x){var v=+x.v||0;tot+=v;var b=by[x.r]=by[x.r]||{n:0,v:0};b.n++;b.v+=v;var k=by[x.r];var z=it[x.n]=it[x.n]||{n:0,v:0};z.n++;z.v+=v});
+  var rs=Object.keys(by).sort(function(a,b){return by[b].n-by[a].n}),ps=Object.keys(it).sort(function(a,b){return it[b].n-it[a].n||it[b].v-it[a].v}).slice(0,3);
+  $("isTip").innerHTML='<div class="small">'+L.length+' kayıt'+(tot?' · toplam '+tl(tot):'')+'</div><div style="margin-top:6px"><b>En sık israf edilenler:</b> '+ps.map(function(n){return esc(n)+' ('+it[n].n+')'}).join(", ")+'</div><div style="margin-top:8px"><b>Önce şuna odaklan: '+esc(rs[0])+'</b> ('+by[rs[0]].n+' kayıt'+(by[rs[0]].v?', '+tl(by[rs[0]].v):'')+')<div class="small">'+esc(TIPS[rs[0]]||TIPS["Diğer"])+'</div></div>'+(rs[1]?'<div style="margin-top:8px"><b>Sonra: '+esc(rs[1])+'</b><div class="small">'+esc(TIPS[rs[1]]||TIPS["Diğer"])+'</div></div>':'')}
+ tip();document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-tab]");if(t&&t.dataset.tab==="israf")setTimeout(tip,80)});isr.addEventListener("click",function(){setTimeout(tip,100)})}
+})();</script>
 <div id="sheet"><div class="in"><h3>Tüm bölümler</h3><div class="tiles" id="all"></div></div></div>
 <div id="bar"></div>
 <script>
 (function(){
-var IC={dashboard:"🏠",library:"📖",specialCreator:"✨",freeform:"🍳",standart:"📊",shop:"🛒",depo:"📦",maliyet:"💰",gunluk:"✅",skt:"⏳",uretKayit:"🧾",tedarik:"📇",musteri:"👤",sevkiyat:"🚚",takvim:"📅",rezerv:"🍽️",mise:"🔪",israf:"🗑️",vardiya:"👥",menumuh:"📈",numune:"🧪",bakim:"🧹",belge:"🪪",gider:"💵",haftalik:"📑",fire:"📉",spiceGuide:"🌿",recipeManage:"✏️",production:"⚖️",equipment:"🍲",menu:"🗓️",prep:"🔪",sauce:"🥣",safety:"🛡️",quality:"👅",notebook:"📓",backup:"💾"};
+var IC={dashboard:"🏠",library:"📖",specialCreator:"✨",freeform:"🍳",standart:"📊",shop:"🛒",depo:"📦",maliyet:"💰",gunluk:"✅",skt:"⏳",uretKayit:"🧾",tedarik:"📇",musteri:"👤",sevkiyat:"🚚",takvim:"📅",rezerv:"🍽️",mise:"🔪",israf:"🗑️",vardiya:"👥",menumuh:"📈",qrmenu:"📱",numune:"🧪",bakim:"🧹",belge:"🪪",gider:"💵",haftalik:"📑",fire:"📉",spiceGuide:"🌿",recipeManage:"✏️",production:"⚖️",equipment:"🍲",menu:"🗓️",prep:"🔪",sauce:"🥣",safety:"🛡️",quality:"👅",notebook:"📓",backup:"💾"};
 var NM={dashboard:"Ana Sayfa",library:"Reçeteler",production:"Üretim",menu:"Menü"};
 var btns=[].slice.call(document.querySelectorAll("nav button"));
 function tile(b){var t=document.createElement("button");t.className="tile";t.dataset.tab=b.dataset.tab;t.innerHTML="<i>"+(IC[b.dataset.tab]||"•")+"</i>"+b.textContent;t.onclick=function(){document.getElementById("sheet").classList.remove("open");go(b.dataset.tab)};return t}
@@ -3559,7 +5025,7 @@ function jset(k,v){raw(k,JSON.stringify(v))}
 
 var P=STORAGE;
 var K={rec:P+"_recipes",menu:P+"_menus",week:P+"_weekMenus",temp:P+"_temps",qual:P+"_quality",notes:P+"_notes",remote:P+"_remote",comm:P+"_community"};
-var KV=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure","sefMus","sefSip","sefEtk","sefRez","sefTuk","sefMise","sefDevir","sefIsraf","sefMenuMuh","sefVard","sefNum","sefBakim","sefBelge","sefGider","sefBorc","sefFav","sefRecFav","sefRecent","sefShop","sefFire","sefYield","sefStdRows",K.notes];
+var KV=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure","sefMus","sefSip","sefEtk","sefRez","sefTuk","sefMise","sefDevir","sefIsraf","sefMenuMuh","sefQrm","sefDoc","sefVard","sefNum","sefBakim","sefBelge","sefGider","sefBorc","sefFav","sefRecFav","sefRecent","sefShop","sefFire","sefYield","sefStdRows",K.notes];
 var WATCH={};[K.rec,K.menu,K.week,K.temp,K.qual].concat(KV).forEach(function(k){WATCH[k]=1});
 var UID_KEY="sef_cloud_uid",DIRTY="sef_dirty",KNOWN="sef_known";
 var ROLE_LABEL={super_admin:"Süper Admin",ev_kullanicisi:"Ev Kullanıcısı",ustabasi:"Usta Başı / Şef",personel:"Personel"};
@@ -4056,7 +5522,7 @@ b.onclick=function(){var n=document.getElementById("spName").value.trim(),c=docu
  .catch(function(){m("Gönderilemedi. İnternetini kontrol edip tekrar dene.")}).then(function(){b.disabled=false})}})();</script>
 
 <script>(function(){
-var G=[["","",["video"]],["📖","Tarifler",["library","community","pantryFinder","specialCreator","recipeManage"]],["🗓️","Planlama",["menu","production","shop","prep","gunluk"]],["🚚","Catering",["musteri","sevkiyat","takvim"]],["🍽️","Restoran",["rezerv","mise","israf","vardiya","menumuh"]],["🛡️","Uyum ve para",["numune","bakim","belge","gider","haftalik"]],["🏬","Depo ve maliyet",["depo","tedarik","maliyet","uretKayit"]],["📚","Rehber",["spiceGuide","sauce","safety","notebook"]],["🏭","Profesyonel",["standart","fire","quality","skt"]],["⚙️","Hesap ve yedek",["backup","admin"]]];
+var G=[["","",["video"]],["📖","Tarifler",["library","community","pantryFinder","specialCreator","recipeManage"]],["🗓️","Planlama",["menu","production","shop","prep","gunluk"]],["🚚","Catering",["musteri","sevkiyat","takvim"]],["🍽️","Restoran",["rezerv","mise","israf","vardiya","menumuh","qrmenu"]],["🛡️","Uyum ve para",["numune","bakim","belge","gider","haftalik"]],["🏬","Depo ve maliyet",["depo","tedarik","maliyet","uretKayit"]],["📚","Rehber",["spiceGuide","sauce","safety","notebook"]],["🏭","Profesyonel",["standart","fire","quality","skt"]],["⚙️","Hesap ve yedek",["backup","admin"]]];
 var IC2={community:"👥",admin:"🛡️",video:"▶️",pantryFinder:"🥕",shop:"🛒"};
 var nav=document.getElementById("nav");if(!nav)return;
 function sheetClose(){var sh=document.getElementById("sheet");if(sh)sh.classList.remove("open")}
@@ -4153,7 +5619,7 @@ if(typeof sr==="function")window.showRecipe=function(id){
 })();</script>
 <script>(function(){
 if(!document.getElementById("maliyet"))return;
-var KEYS=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure","sefMus","sefSip","sefEtk","sefRez","sefTuk","sefMise","sefDevir","sefIsraf","sefMenuMuh","sefVard","sefNum","sefBakim","sefBelge","sefGider","sefBorc"],TSK="sefCoTs";
+var KEYS=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure","sefMus","sefSip","sefEtk","sefRez","sefTuk","sefMise","sefDevir","sefIsraf","sefMenuMuh","sefQrm","sefDoc","sefVard","sefNum","sefBakim","sefBelge","sefGider","sefBorc"],TSK="sefCoTs";
 var dirty={},timers={},quiet=false,ready=false,cid=null,pulling=false;
 function me(){try{return window.SEF_me&&window.SEF_me()}catch(e){return null}}
 function sb(){return window.SEF_sb}
