@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V114</title>
+<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V115</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -276,6 +276,7 @@ body.locked #authOv{display:flex}
 <label for="aPass">Şifre (en az 6 karakter)</label><input id="aPass" type="password" autocomplete="current-password">
 <div id="aMsg" class="amsg err"></div>
 <button class="btn gold" id="aSubmit" style="width:100%">Giriş yap</button>
+<button type="button" id="aForgot" style="display:block;margin:10px auto 0;background:none;border:0;color:#c59655;font-weight:700;text-decoration:underline;cursor:pointer;font-size:14px">Şifremi unuttum</button>
 <button class="btn" id="aGuest" type="button" style="width:100%;margin-top:8px">Misafir olarak devam et</button>
 <div class="small" style="margin-top:6px;text-align:center">Misafir modunda hazır reçetelerin hepsini kullanırsın; bulut kaydı ve topluluk özellikleri için giriş gerekir.</div></div></div></div>
 <div id="authBar" class="cloud-only"></div>
@@ -5474,6 +5475,39 @@ wire();
 loadLib(function(){
   sb=window.supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON_KEY,{auth:{persistSession:true,autoRefreshToken:true}});window.SEF_sb=sb;window.SEF_me=function(){return ME};
   sb.auth.onAuthStateChange(function(ev){if(ev==="SIGNED_OUT"&&ME&&!window.__sefOut){window.__sefOut=1;clearUserData();location.reload()}});
+
+(function(){
+  var REC=false;try{REC=/type=recovery/.test(location.hash)}catch(e){}
+  function ov(){
+    if(document.getElementById("recOv"))return;
+    var d=document.createElement("div");d.id="recOv";
+    d.style.cssText="position:fixed;inset:0;z-index:99999;background:#0B1B3A;display:flex;align-items:center;justify-content:center;padding:16px";
+    d.innerHTML='<div style="background:#fff;color:#182638;border-radius:16px;padding:22px;max-width:380px;width:100%"><h2 style="margin:0 0 6px">Yeni şifre belirle</h2><div class="small" style="margin-bottom:10px">En az 8 karakterli yeni şifreni yaz.</div><input id="recP1" type="password" autocomplete="new-password" placeholder="Yeni şifre" style="width:100%;padding:10px;margin-bottom:8px;box-sizing:border-box"><input id="recP2" type="password" autocomplete="new-password" placeholder="Yeni şifre (tekrar)" style="width:100%;padding:10px;box-sizing:border-box"><div id="recM" style="color:#b3261e;font-size:13px;min-height:18px;margin:8px 0"></div><button id="recGo" class="btn gold" style="width:100%">Şifreyi kaydet</button></div>';
+    document.body.appendChild(d);
+    document.getElementById("recGo").onclick=async function(){
+      var a=document.getElementById("recP1").value,b=document.getElementById("recP2").value,m=document.getElementById("recM");
+      if(a.length<8){m.textContent="Şifre en az 8 karakter olmalı.";return}
+      if(a!==b){m.textContent="İki şifre aynı değil.";return}
+      this.disabled=true;
+      try{var r=await sb.auth.updateUser({password:a});if(r.error)throw r.error;
+        m.style.color="#1b7a3a";m.textContent="Şifren değişti. Giriş yapılıyor…";
+        setTimeout(function(){try{history.replaceState(null,"",location.pathname)}catch(e){}location.reload()},900)
+      }catch(e){m.style.color="#b3261e";m.textContent=(e&&e.message)||"Şifre değiştirilemedi. Bağlantı süresi dolmuş olabilir; yeniden \"Şifremi unuttum\" de.";this.disabled=false}
+    }
+  }
+  sb.auth.onAuthStateChange(function(ev){if(ev==="PASSWORD_RECOVERY")ov()});
+  if(REC)setTimeout(ov,400);
+  var fb=document.getElementById("aForgot");
+  if(fb)fb.onclick=async function(){
+    var em=document.getElementById("aEmail").value.trim();
+    if(!em){msg("Önce yukarıdaki E-posta alanına adresini yaz, sonra tekrar bas.");return}
+    fb.disabled=true;
+    try{var r=await sb.auth.resetPasswordForEmail(em,{redirectTo:location.origin+"/"});if(r.error)throw r.error;
+      msg("Şifre sıfırlama bağlantısı e-postana gönderildi. Gelen kutunu ve spam klasörünü kontrol et.","ok")
+    }catch(e){msg(trErr(e))}
+    fb.disabled=false
+  };
+})();
   sb.auth.getSession().then(function(r){
     if(r&&r.data&&r.data.session)start(r.data.session).catch(function(e){console.warn(e);showAuth(trErr(e))});
     else showAuth();
