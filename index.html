@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V99</title>
+<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V101</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -280,7 +280,7 @@ body.locked #authOv{display:flex}
 <div class="small" style="margin-top:6px;text-align:center">Misafir modunda hazır reçetelerin hepsini kullanırsın; bulut kaydı ve topluluk özellikleri için giriş gerekir.</div></div></div></div>
 <div id="authBar" class="cloud-only"></div>
 <nav id="nav">
-<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="video">▶ Video Tarif</button><button data-tab="specialCreator">Özel / Doğaçlama Yemek</button><button data-tab="standart">Standart Tablo</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="depo">Depo / Stok</button><button data-tab="maliyet">Maliyet</button><button data-tab="gunluk">Günlük İş Listesi</button><button data-tab="skt">Çözdürme &amp; SKT</button><button data-tab="uretKayit">Üretim Kaydı</button><button data-tab="tedarik">Tedarikçiler</button><button data-tab="fire">Fire & Verim</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Derin Küvet</button><button data-tab="menu">Menü Planlama</button><button data-tab="prep">Mise en Place</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
+<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="specialCreator">Özel / Doğaçlama Yemek</button><button data-tab="video">▶ Video Tarif</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="menu">Menü Planlama</button><button data-tab="standart">Standart Tablo</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Derin Küvet</button><button data-tab="fire">Fire & Verim</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="depo">Depo / Stok</button><button data-tab="tedarik">Tedarikçiler</button><button data-tab="maliyet">Maliyet</button><button data-tab="prep">Mise en Place</button><button data-tab="gunluk">Günlük İş Listesi</button><button data-tab="uretKayit">Üretim Kaydı</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="skt">Çözdürme &amp; SKT</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
 </nav>
 <main>
 <section id="dashboard" class="tab active">
@@ -2205,6 +2205,27 @@ function add(){var h=document.getElementById("adminBody");if(!h||document.getEle
 new MutationObserver(add).observe(document.body,{childList:true,subtree:true});
 })()</script>
 
+<script>(function(){
+function fold(s){return String(s||"").toLocaleLowerCase("tr").replace(/ı/g,"i").normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
+var cacheR=null,cacheN=0;
+function recipeNames(){var L=[];try{L=recipes||[]}catch(e){}if(cacheR&&cacheN===L.length)return cacheR;var seen={},o=[];L.forEach(function(r){if(r&&r.name&&!seen[r.name]){seen[r.name]=1;o.push({n:r.name,f:fold(r.name)})}});cacheR=o;cacheN=L.length;return o}
+function ingNames(){var o=[],dl=document.getElementById("mlPNL");if(dl)[].forEach.call(dl.options,function(x){o.push({n:x.value,f:fold(x.value)})});return o}
+function attach(id,src){var inp=document.getElementById(id);if(!inp||inp.dataset.sg)return;inp.dataset.sg=1;inp.removeAttribute("list");inp.setAttribute("autocomplete","off");
+  var box=document.createElement("div");box.style.cssText="display:none;border:1px solid #c59655;border-radius:12px;background:#fff;max-height:240px;overflow-y:auto;margin:4px 0 8px;box-shadow:0 6px 18px rgba(0,0,0,.15)";inp.insertAdjacentElement("afterend",box);
+  function show(){var q=fold(inp.value).trim();if(!q){box.style.display="none";return}var ws=q.split(/\s+/),L=src(),a=[],b=[];
+    for(var i=0;i<L.length&&a.length+b.length<60;i++){var x=L[i];if(ws.every(function(w){return x.f.indexOf(w)>=0})){(x.f.indexOf(ws[0])===0?a:b).push(x)}}
+    var r=a.concat(b).slice(0,15);
+    if(!r.length){box.innerHTML='<div style="padding:10px 12px;color:#667381;font-size:14px">Eşleşen kayıt yok</div>';box.style.display="block";return}
+    box.innerHTML="";r.forEach(function(x){var d=document.createElement("div");d.textContent=x.n;d.style.cssText="padding:11px 12px;font-size:15px;border-bottom:1px solid #eef1f4;cursor:pointer";
+      function pick(e){e.preventDefault();inp.value=x.n;box.style.display="none";inp.dispatchEvent(new Event("change",{bubbles:true}))}
+      d.addEventListener("mousedown",pick);d.addEventListener("touchstart",pick,{passive:false});box.appendChild(d)});
+    box.style.display="block"}
+  inp.addEventListener("input",show);inp.addEventListener("focus",show);
+  inp.addEventListener("blur",function(){setTimeout(function(){box.style.display="none"},200)})}
+function run(){["gvR","mlR","zmR","bsR","ukR"].forEach(function(i){attach(i,recipeNames)});attach("mlPN",ingNames)}
+run();document.addEventListener("click",function(){setTimeout(run,0)});
+})()</script>
+
 <div id="sheet"><div class="in"><h3>Tüm bölümler</h3><div class="tiles" id="all"></div></div></div>
 <div id="bar"></div>
 <script>
@@ -3476,7 +3497,7 @@ b.onclick=function(){var n=document.getElementById("spName").value.trim(),c=docu
  .catch(function(){m("Gönderilemedi. İnternetini kontrol edip tekrar dene.")}).then(function(){b.disabled=false})}})();</script>
 
 <script>(function(){
-var G=[["","",["video"]],["📖","Tarifler",["library","community","pantryFinder","specialCreator","recipeManage"]],["🗓️","Planlama",["menu","production","shop","prep"]],["📚","Rehber",["spiceGuide","sauce","safety","notebook"]],["🏭","Profesyonel",["standart","equipment","fire","quality"]],["⚙️","Hesap ve yedek",["backup","admin"]]];
+var G=[["","",["video"]],["📖","Tarifler",["library","community","pantryFinder","specialCreator","recipeManage"]],["🗓️","Planlama",["menu","production","shop","prep","gunluk"]],["🏬","Depo ve maliyet",["depo","tedarik","maliyet","uretKayit"]],["📚","Rehber",["spiceGuide","sauce","safety","notebook"]],["🏭","Profesyonel",["standart","equipment","fire","quality","skt"]],["⚙️","Hesap ve yedek",["backup","admin"]]];
 var IC2={community:"👥",admin:"🛡️",video:"▶️",pantryFinder:"🥕",shop:"🛒"};
 var nav=document.getElementById("nav");if(!nav)return;
 function sheetClose(){var sh=document.getElementById("sheet");if(sh)sh.classList.remove("open")}
