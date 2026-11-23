@@ -258,7 +258,7 @@ body.locked #authOv{display:flex}
 #authBar .mini{border:1px solid var(--line);background:#f6f8f7;border-radius:10px;padding:5px 10px;font-size:12px;color:var(--ink)}
 #authBar .sync{margin-left:auto;font-size:12px;color:var(--muted)}#authBar .sync.err{color:var(--red)}
 .ctoast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#182638;color:#fff;padding:10px 16px;border-radius:12px;z-index:100000;font-size:14px}
-</style><script src="config.js" onerror="void 0"></script>
+#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}</style><script src="config.js" onerror="void 0"></script>
 </head>
 <body>
 <header><div class="logo">♨</div><div><h1>PROFESYONEL ŞEF ASİSTANI</h1><div class="founder">Mehmet Ali Özkan tarafından kurulmuştur.</div></div><div class="subhead">Toplu yemek üretimi için<br>GASTRONOMİ · REÇETE · ÜRETİM</div><button id="kBtn" aria-label="Büyük yazı">Aa</button><button id="sBtn" aria-label="Ara">🔍</button></header>
@@ -273,10 +273,12 @@ body.locked #authOv{display:flex}
 <label for="aEmail">E-posta</label><input id="aEmail" type="email" autocomplete="email">
 <label for="aPass">Şifre (en az 6 karakter)</label><input id="aPass" type="password" autocomplete="current-password">
 <div id="aMsg" class="amsg err"></div>
-<button class="btn gold" id="aSubmit" style="width:100%">Giriş yap</button></div></div></div>
+<button class="btn gold" id="aSubmit" style="width:100%">Giriş yap</button>
+<button class="btn" id="aGuest" type="button" style="width:100%;margin-top:8px">Misafir olarak devam et</button>
+<div class="small" style="margin-top:6px;text-align:center">Misafir modunda hazır reçetelerin hepsini kullanırsın; bulut kaydı ve topluluk özellikleri için giriş gerekir.</div></div></div></div>
 <div id="authBar" class="cloud-only"></div>
 <nav id="nav">
-<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="video">▶ Video Tarif</button><button data-tab="specialCreator">Özel Yemek Tasarla</button><button data-tab="freeform">Doğaçlama Reçete</button><button data-tab="standart">Standart Tablo</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="fire">Fire & Verim</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Derin Küvet</button><button data-tab="menu">Menü Planlama</button><button data-tab="prep">Mise en Place</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
+<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="video">▶ Video Tarif</button><button data-tab="specialCreator">Özel / Doğaçlama Yemek</button><button data-tab="standart">Standart Tablo</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="fire">Fire & Verim</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Derin Küvet</button><button data-tab="menu">Menü Planlama</button><button data-tab="prep">Mise en Place</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
 </nav>
 <main>
 <section id="dashboard" class="tab active">
@@ -289,6 +291,21 @@ body.locked #authOv{display:flex}
 <div class="card s3"><div class="small">Ekipman asistanı</div><div class="stat">Hazır</div><div class="small">GN derinliği ve ekipman</div></div>
 <div class="card s8"><h3>Temel mutfak kuralları</h3><ul><li>Tuz ve baharat, porsiyon sayısı yükseldi diye otomatik ve gizlice azaltılmaz.</li><li>Salça, bulyon, peynir, zeytin, turşu ve hazır sos gibi tuz katkıları ayrıca hesaba katılır.</li><li>Çorba ana pişirme/servisinde uygun çorba kazanı veya sıcak servis ekipmanı kullanılır.</li><li>Reçete, fire ve besin değerleri gerçek malzeme ve üretim verileriyle doğrulanır.</li></ul></div>
 <div class="card s4"><h3>Hızlı işlemler</h3><div class="actions"><button class="btn" onclick="go('library')">Reçete ara</button><button class="btn light" onclick="go('production')">Üretim hesapla</button><button class="btn light" onclick="go('equipment')">Derin küvet</button><button class="btn light" onclick="go('menu')">Menü oluştur</button></div><div class="note">Bu sürüm yerel HTML prototipidir. Kayıtlar bu cihazın tarayıcısında tutulur; çevrimiçi eşitleme ve gerçek AI bağlantısı içermez.</div></div>
+<div class="card s12" id="contactCard"><h3>📩 İletişim ve reçete isteği</h3>
+<div class="small">Eklememi istediğin bir yemek mi var? Yaz, listeye alayım.</div>
+<textarea id="reqText" rows="2" maxlength="500" placeholder="Örn. Ezogelin çorbası, Hünkar beğendi…" style="width:100%;margin-top:6px"></textarea>
+<input id="reqContact" maxlength="100" placeholder="İsteğe bağlı: adın / iletişim" style="width:100%;margin-top:6px">
+<button class="btn gold" id="reqBtn" type="button" style="width:100%;margin-top:6px">Reçete isteği gönder</button>
+<div class="note" id="reqMsg" style="display:none"></div>
+<div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><a class="btn" id="igLink" href="https://instagram.com/mehmetaliii06" target="_blank" rel="noopener" style="flex:1;text-align:center;text-decoration:none">📷 Instagram @mehmetaliii06</a><a class="btn" id="waLink" href="https://wa.me/mehmetaliii06" target="_blank" rel="noopener" style="flex:1;text-align:center;text-decoration:none">💬 WhatsApp</a></div></div>
+<div class="card s12" id="sponsorCard"><h3>🤝 Sponsorluk ve iş ortaklığı</h3>
+<div class="small">Marka, işletme ya da üretici misin? İş birliği için bize ulaş.</div>
+<input id="spName" maxlength="100" placeholder="Firma / kişi adı" style="width:100%;margin-top:6px">
+<input id="spContact" maxlength="100" placeholder="Telefon veya e-posta" style="width:100%;margin-top:6px">
+<textarea id="spText" rows="2" maxlength="500" placeholder="Kısaca teklifin / mesajın" style="width:100%;margin-top:6px"></textarea>
+<button class="btn gold" id="spBtn" type="button" style="width:100%;margin-top:6px">Mesajı gönder</button>
+<div class="note" id="spMsg" style="display:none"></div>
+<div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><a class="btn" href="https://wa.me/mehmetaliii06" target="_blank" rel="noopener" style="flex:1;text-align:center;text-decoration:none">💬 WhatsApp</a><a class="btn" href="https://instagram.com/mehmetaliii06" target="_blank" rel="noopener" style="flex:1;text-align:center;text-decoration:none">📷 Instagram</a></div></div>
 <div class="card s12" id="installCard"><h3>📲 Ana ekrana ekle</h3><p>Uygulamayı telefonunun ana ekranına ekle; aşçı şapkası simgesiyle tam ekran açılır.</p><div class="actions"><button class="btn gold" id="installBtn">Ana ekrana ekle</button></div><div class="note" id="installHelp" style="display:none"></div></div>
 <div class="card s12"><h3>Reçete kütüphanesi hakkında</h3><p>Uygulamada örnek ve düzenlenebilir reçeteler bulunur. Bu katalog aşamalı olarak genişletilmektedir. Yeni eklenen reçetelerde gramajlar 1 porsiyon başlangıç standardıdır; işletme üretiminde verim ve pişirme testleriyle doğrulanmalıdır.</p></div>
 </div></section>
@@ -308,6 +325,7 @@ body.locked #authOv{display:flex}
 
 
 <section id="specialCreator" class="tab">
+<div class="ffseg" style="display:flex;gap:6px;margin:0 0 12px"><button type="button" class="btn gold" onclick="go('specialCreator')" style="flex:1">🍳 Malzemeden fikir</button><button type="button" class="btn" onclick="go('freeform')" style="flex:1">⚖️ Formülle doğaçlama</button></div>
 <div class="hero"><span class="pill">Şefin fikir mutfağı</span><h2>Malzemelerinden özel yemek oluştur</h2><div class="muted">Elindeki malzemeleri yaz; bunlara uygun bir yemek fikri, tamamlayıcı malzeme, ölçülü baharat önerisi ve aşamalı yapılış taslağı hazırlayalım.</div></div>
 <div class="card cloud-only" id="aiCard"><h3>✨ Yapay zekâyla tarif üret</h3><div class="small">Ne istediğini yaz; rolüne göre tarif hazırlanır. Ev: 4 kişilik pratik tarif. Usta başı: 1 porsiyon çiğ net gramaj, tuz dengesi, 14 alerjen, bağlayıcı tekniği ve GN derin küvet uygunluğu.</div>
 <label for="aiReq">İstek</label><textarea id="aiReq" rows="3" placeholder="Örn. Kremalı mantarlı tavuk sote"></textarea>
@@ -472,6 +490,7 @@ Et suyu (hazır): Süt, Kereviz"></textarea><div class="small">Bu alan, malzeme 
 
 <footer>PROFESYONEL ŞEF ASİSTANI · Mehmet Ali Özkan tarafından kurulmuştur.</footer>
 <section id="freeform" class="tab">
+<div class="ffseg" style="display:flex;gap:6px;margin:0 0 12px"><button type="button" class="btn" onclick="go('specialCreator')" style="flex:1">🍳 Malzemeden fikir</button><button type="button" class="btn gold" onclick="go('freeform')" style="flex:1">⚖️ Formülle doğaçlama</button></div>
 <div class="hero"><span class="pill">Reçetesiz yemek yap</span><h2>Doğaçlama Reçete: formülü bil, malzemeyi sen seç</h2><div class="muted">Elinde ne varsa onunla yemek yap. Bir formül seç, porsiyonu yaz, malzemeleri değiştir; oranlar sana göre hesaplansın.</div></div>
 <div id="ffChips" class="ffchips"></div>
 <div class="card" id="ffBody"></div><div id="ffFavs"></div>
@@ -2563,7 +2582,18 @@ function loadLib(cb){
   s.onload=cb;s.onerror=function(){showAuth("Bağlantı kitaplığı yüklenemedi. İnternetini kontrol edip sayfayı yenile.")};
   document.head.appendChild(s);
 }
-function showAuth(m){$("authLoading").style.display="none";$("authForm").style.display="block";document.body.classList.add("locked");if(m)msg(m)}
+function enterGuest(){
+  try{sessionStorage.setItem("sef_guest","1")}catch(e){}
+  document.body.classList.remove("locked");document.body.dataset.guest="1";
+  if(!$("guestBar")){var g=document.createElement("button");g.id="guestBar";g.type="button";g.textContent="👤 Misafir · Giriş yap";
+    g.style.cssText="position:fixed;right:10px;bottom:10px;z-index:9000;padding:8px 12px;border-radius:20px;border:1px solid #c59655;background:#182638;color:#fff;font-size:12px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.3)";
+    g.onclick=function(){try{sessionStorage.removeItem("sef_guest")}catch(e){}g.remove();delete document.body.dataset.guest;$("authLoading").style.display="none";$("authForm").style.display="block";document.body.classList.add("locked")};
+    document.body.appendChild(g)}
+}
+function showAuth(m){$("authLoading").style.display="none";$("authForm").style.display="block";
+  var gst=false;try{gst=sessionStorage.getItem("sef_guest")==="1"}catch(e){}
+  if(!m&&gst){enterGuest();return}
+  document.body.classList.add("locked");if(m)msg(m)}
 function setMode(m){mode=m;$("aTabLogin").classList.toggle("on",m==="login");$("aTabReg").classList.toggle("on",m==="reg");
   document.querySelectorAll(".reg-only").forEach(function(e){e.style.display=m==="reg"?"block":"none"});
   $("aSubmit").textContent=m==="login"?"Giriş yap":"Kayıt ol";if(m==="reg")roleChanged();msg("")}
@@ -2821,7 +2851,7 @@ document.addEventListener("visibilitychange",function(){if(ME&&document.visibili
 window.addEventListener("online",function(){if(ME&&get(DIRTY)==="1")flush()});
 function wire(){
   $("aTabLogin").onclick=function(){setMode("login")};$("aTabReg").onclick=function(){setMode("reg")};
-  $("aRole").onchange=roleChanged;$("aSubmit").onclick=submit;
+  $("aRole").onchange=roleChanged;$("aSubmit").onclick=submit;$("aGuest").onclick=enterGuest;
   ["aEmail","aPass"].forEach(function(i){$(i).addEventListener("keydown",function(e){if(e.key==="Enter")submit()})});
   $("aiGo").onclick=aiGenerate;$("commQ").oninput=renderCommunity;$("commRef").onclick=function(){pullRemote().then(renderCommunity)};
   setMode("login");
@@ -2855,4 +2885,25 @@ btn.addEventListener("click",function(){
 });
 }catch(e){}})();
 </script>
+<script>(function(){var g=window.go;if(!g)return;window.go=function(id){g.apply(this,arguments);document.querySelectorAll("nav button").forEach(function(b){if(b.dataset.tab==="specialCreator")b.classList.toggle("active",id==="specialCreator"||id==="freeform")})}})();</script>
+<script>(function(){var b=document.getElementById("reqBtn");if(!b)return;
+function m(t,ok){var e=document.getElementById("reqMsg");e.style.display="block";e.textContent=t}
+b.onclick=function(){var t=document.getElementById("reqText").value.trim(),c=document.getElementById("reqContact").value.trim();
+ if(t.length<2){m("Önce istediğin yemeği yaz.");return}
+ var C=window.SEF_CONFIG||{};
+ if(!(C.SUPABASE_URL&&C.SUPABASE_ANON_KEY)){window.open("https://ig.me/m/mehmetaliii06","_blank");m("İsteğini Instagram'dan mesaj olarak yazabilirsin.");return}
+ b.disabled=true;
+ fetch(C.SUPABASE_URL+"/rest/v1/recipe_requests",{method:"POST",headers:{"apikey":C.SUPABASE_ANON_KEY,"Authorization":"Bearer "+C.SUPABASE_ANON_KEY,"Content-Type":"application/json","Prefer":"return=minimal"},body:JSON.stringify({request_text:t,contact:c||null})})
+ .then(function(r){if(!r.ok)throw 0;document.getElementById("reqText").value="";m("Teşekkürler, isteğin alındı. 🙏")})
+ .catch(function(){m("Gönderilemedi. İnternetini kontrol edip tekrar dene.")}).then(function(){b.disabled=false})}})();</script>
+<script>(function(){var b=document.getElementById("spBtn");if(!b)return;
+function m(t){var e=document.getElementById("spMsg");e.style.display="block";e.textContent=t}
+b.onclick=function(){var n=document.getElementById("spName").value.trim(),c=document.getElementById("spContact").value.trim(),t=document.getElementById("spText").value.trim();
+ if(!c||t.length<2){m("İletişim bilgini ve kısa mesajını yaz.");return}
+ var C=window.SEF_CONFIG||{};
+ if(!(C.SUPABASE_URL&&C.SUPABASE_ANON_KEY)){window.open("https://ig.me/m/mehmetaliii06","_blank");m("Mesajını Instagram'dan yazabilirsin.");return}
+ b.disabled=true;
+ fetch(C.SUPABASE_URL+"/rest/v1/recipe_requests",{method:"POST",headers:{"apikey":C.SUPABASE_ANON_KEY,"Authorization":"Bearer "+C.SUPABASE_ANON_KEY,"Content-Type":"application/json","Prefer":"return=minimal"},body:JSON.stringify({kind:"sponsor",request_text:(n?n+": ":"")+t,contact:c})})
+ .then(function(r){if(!r.ok)throw 0;["spName","spContact","spText"].forEach(function(i){document.getElementById(i).value=""});m("Teşekkürler, mesajın ulaştı. En kısa sürede dönüş yapılacak.")})
+ .catch(function(){m("Gönderilemedi. İnternetini kontrol edip tekrar dene.")}).then(function(){b.disabled=false})}})();</script>
 </body></html>
