@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V101</title>
+<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V107</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -98,7 +98,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid #bfe5d3;border-color:v
 .fffix{color:#667381;font-size:13px;margin-top:3px}
 #ffBody h4{margin:20px 0 8px;color:var(--navy)}#ffBody li{margin:7px 0;line-height:1.55}
 
-.sthero{background:linear-gradient(135deg,#0c2b4a,#143e66);border-radius:24px;padding:22px 18px;text-align:center;color:#fff;margin-bottom:14px;border:2px solid #d4a259;box-shadow:0 8px 24px #0c2b4a33}
+body[data-role="personel"] .onlyUsta{display:none!important}.sthero{background:linear-gradient(135deg,#0c2b4a,#143e66);border-radius:24px;padding:22px 18px;text-align:center;color:#fff;margin-bottom:14px;border:2px solid #d4a259;box-shadow:0 8px 24px #0c2b4a33}
 .sthero .stk{font-family:Georgia,serif;font-style:italic;color:#f2c879;font-size:15px}
 .sthero h2{margin:6px 0;font-size:clamp(21px,5.4vw,34px);letter-spacing:.02em;color:#fff;text-transform:uppercase}
 .sthero .sts{color:#cfe0f1;font-size:14px}
@@ -258,7 +258,7 @@ body.locked #authOv{display:flex}
 #authBar .mini{border:1px solid var(--line);background:#f6f8f7;border-radius:10px;padding:5px 10px;font-size:12px;color:var(--ink)}
 #authBar .sync{margin-left:auto;font-size:12px;color:var(--muted)}#authBar .sync.err{color:var(--red)}
 .ctoast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#182638;color:#fff;padding:10px 16px;border-radius:12px;z-index:100000;font-size:14px}
-#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}body:not([data-role="super_admin"]) #catalogCount{display:none}body[data-guest="1"] [data-tab="depo"],body[data-guest="1"] [data-tab="maliyet"],body[data-guest="1"] [data-tab="gunluk"],body[data-guest="1"] [data-tab="skt"],body[data-guest="1"] [data-tab="uretKayit"],body[data-guest="1"] [data-tab="tedarik"]{display:none!important}
+#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}body:not([data-role="super_admin"]) #catalogCount{display:none}body[data-guest="1"] [data-tab="numune"],body[data-guest="1"] [data-tab="bakim"],body[data-guest="1"] [data-tab="belge"],body[data-guest="1"] [data-tab="gider"],body[data-guest="1"] [data-tab="haftalik"],body[data-guest="1"] [data-tab="rezerv"],body[data-guest="1"] [data-tab="mise"],body[data-guest="1"] [data-tab="israf"],body[data-guest="1"] [data-tab="vardiya"],body[data-guest="1"] [data-tab="menumuh"],body[data-guest="1"] [data-tab="musteri"],body[data-guest="1"] [data-tab="sevkiyat"],body[data-guest="1"] [data-tab="takvim"],body[data-guest="1"] [data-tab="depo"],body[data-guest="1"] [data-tab="maliyet"],body[data-guest="1"] [data-tab="gunluk"],body[data-guest="1"] [data-tab="skt"],body[data-guest="1"] [data-tab="uretKayit"],body[data-guest="1"] [data-tab="tedarik"]{display:none!important}
 .tgrp{grid-column:1/-1;font-weight:800;color:var(--navy);font-size:14px;margin:10px 2px 0;padding-top:6px;border-top:1px solid var(--line)}.tgrp:first-child{border-top:0;margin-top:0}
 </style><script src="config.js" onerror="void 0"></script>
 </head>
@@ -280,7 +280,7 @@ body.locked #authOv{display:flex}
 <div class="small" style="margin-top:6px;text-align:center">Misafir modunda hazır reçetelerin hepsini kullanırsın; bulut kaydı ve topluluk özellikleri için giriş gerekir.</div></div></div></div>
 <div id="authBar" class="cloud-only"></div>
 <nav id="nav">
-<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="specialCreator">Özel / Doğaçlama Yemek</button><button data-tab="video">▶ Video Tarif</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="menu">Menü Planlama</button><button data-tab="standart">Standart Tablo</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Derin Küvet</button><button data-tab="fire">Fire & Verim</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="depo">Depo / Stok</button><button data-tab="tedarik">Tedarikçiler</button><button data-tab="maliyet">Maliyet</button><button data-tab="prep">Mise en Place</button><button data-tab="gunluk">Günlük İş Listesi</button><button data-tab="uretKayit">Üretim Kaydı</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="skt">Çözdürme &amp; SKT</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
+<button class="active" data-tab="dashboard">Genel Bakış</button><button data-tab="library">Reçete Kütüphanesi</button><button data-tab="pantryFinder">Elimdeki Malzemeler</button><button data-tab="specialCreator">Özel / Doğaçlama Yemek</button><button data-tab="video">▶ Video Tarif</button><button data-tab="recipeManage">Reçete Yönetimi</button><button data-tab="spiceGuide">Baharat Rehberi</button><button data-tab="sauce">Sos & Teknik</button><button data-tab="menu">Menü Planlama</button><button data-tab="standart">Standart Tablo</button><button data-tab="production">Hızlı Üretim Planı</button><button data-tab="equipment">Derin Küvet</button><button data-tab="fire">Fire & Verim</button><button data-tab="shop">Alışveriş Listesi</button><button data-tab="depo">Depo / Stok</button><button data-tab="tedarik">Tedarikçiler</button><button data-tab="musteri">Müşteriler</button><button data-tab="sevkiyat">Sipariş ve Sevkiyat</button><button data-tab="takvim">Etkinlik Takvimi</button><button data-tab="rezerv">Rezervasyon ve Servis</button><button data-tab="mise">Mise en Place</button><button data-tab="israf">Fire ve İsraf</button><button data-tab="vardiya">Vardiya Planı</button><button data-tab="menumuh">Menü Mühendisliği</button><button data-tab="numune">Numune Kaydı</button><button data-tab="bakim">Bakım ve Temizlik</button><button data-tab="belge">Personel Belgeleri</button><button data-tab="gider">Gider ve Borç</button><button data-tab="haftalik">Haftalık Özet</button><button data-tab="maliyet">Maliyet</button><button data-tab="prep">Mise en Place</button><button data-tab="gunluk">Günlük İş Listesi</button><button data-tab="uretKayit">Üretim Kaydı</button><button data-tab="safety">Gıda Güvenliği</button><button data-tab="quality">Kalite & Tadım</button><button data-tab="skt">Çözdürme &amp; SKT</button><button data-tab="notebook">Şef Defteri</button><button data-tab="backup">Yedekleme</button>
 </nav>
 <main>
 <section id="dashboard" class="tab active">
@@ -613,6 +613,132 @@ Et suyu (hazır): Süt, Kereviz"></textarea><div class="small">Bu alan, malzeme 
 <label>Not (teslimat günü, ödeme vb.)</label><input id="tdNt" type="text" maxlength="160">
 <div class="actions"><button class="btn gold" id="tdAdd">Kaydet</button></div></div>
 <div class="card" style="margin-top:14px"><h3>📇 Liste</h3><input id="tdQ" type="text" placeholder="Ara..." style="margin-bottom:8px"><div id="tdL"></div></div>
+</section>
+<section id="musteri" class="tab">
+<div class="sthero"><div class="stk">Catering · Satış</div><h2>Müşteri Rehberi</h2><div class="sts">Müşteri kartı, adres, alerji notu ve geçmiş siparişler</div></div>
+<div class="card"><h3>➕ Müşteri ekle</h3>
+<label>Ad / firma</label><input id="muN" type="text" maxlength="80">
+<label>Telefon</label><input id="muP" type="tel" maxlength="30">
+<label>Teslimat adresi</label><input id="muA" type="text" maxlength="200">
+<label>Not (alerji, tercih, ödeme vb.)</label><input id="muNt" type="text" maxlength="200">
+<div class="actions"><button class="btn gold" id="muAdd">Kaydet</button></div></div>
+<div class="card" style="margin-top:14px"><h3>📇 Müşteriler</h3><input id="muQ" type="text" placeholder="Ara..." style="margin-bottom:8px"><div id="muL"></div></div>
+</section>
+<section id="sevkiyat" class="tab">
+<div class="sthero"><div class="stk">Catering · Teslimat</div><h2>Sipariş ve Sevkiyat</h2><div class="sts">Sipariş, yükleme listesi, şoför görevi, soğuk zincir ve teslim formu</div></div>
+<div class="card onlyUsta" id="svFormCard"><h3>➕ Yeni sipariş</h3>
+<label>Müşteri</label><select id="svC"></select>
+<label>Müşteri adı (listede yoksa yaz)</label><input id="svCN" type="text" maxlength="80">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Tarih</label><input id="svD" type="date"></div><div><label>Saat</label><input id="svT" type="time"></div></div>
+<label>Teslimat adresi</label><input id="svA" type="text" maxlength="200">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Kişi sayısı</label><input id="svK" type="number" min="1" inputmode="numeric"></div><div><label>Şoför</label><input id="svW" type="text" list="svWl" maxlength="60" placeholder="Ad"><datalist id="svWl"></datalist></div></div>
+<label>Menü</label><textarea id="svM" rows="3" maxlength="600" placeholder="Çorba, ana yemek, pilav, tatlı..."></textarea>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Kişi başı fiyat (₺)</label><input id="svPP" type="number" min="0" step="any" inputmode="decimal"></div><div><label>Kişi başı maliyet (₺)</label><input id="svCo" type="number" min="0" step="any" inputmode="decimal"></div></div>
+<label>Not</label><input id="svN" type="text" maxlength="200">
+<div class="actions"><button class="btn gold" id="svAdd">Siparişi kaydet</button></div></div>
+<div class="card" style="margin-top:14px"><div class="stseg" id="svSeg"><button class="on" data-f="act">Aktif</button><button data-f="done">Teslim edilen</button><button data-f="all">Tümü</button></div>
+<label style="display:flex;gap:8px;align-items:center;margin-top:10px"><input type="checkbox" id="svMine" style="width:auto"> Sadece bana atananlar</label></div>
+<div id="svL" style="margin-top:14px"></div>
+</section>
+<section id="takvim" class="tab">
+<div class="sthero"><div class="stk">Catering · Plan</div><h2>Etkinlik Takvimi</h2><div class="sts">Siparişler ve etkinlikler gün gün, çakışma uyarısıyla</div></div>
+<div class="card"><h3>➕ Etkinlik ekle</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Tarih</label><input id="tkD" type="date"></div><div><label>Saat</label><input id="tkT" type="time"></div></div>
+<label>Başlık</label><input id="tkB" type="text" maxlength="120" placeholder="Düğün, toplantı, tadım...">
+<div class="actions"><button class="btn gold" id="tkAdd">Ekle</button></div></div>
+<div class="card" style="margin-top:14px"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><button class="btn light" id="tkPrev">‹</button><b id="tkMon"></b><button class="btn light" id="tkNext">›</button></div><div id="tkL" style="margin-top:10px"></div></div>
+</section>
+<section id="rezerv" class="tab">
+<div class="sthero"><div class="stk">Restoran · Servis</div><h2>Rezervasyon ve Servis</h2><div class="sts">Günlük rezervasyonlar, alerji notu ve tükenen ürünler</div></div>
+<div class="card"><h3>➕ Rezervasyon</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Tarih</label><input id="rzD" type="date"></div><div><label>Saat</label><input id="rzT" type="time"></div></div>
+<label>Ad</label><input id="rzN" type="text" maxlength="80">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Kişi</label><input id="rzK" type="number" min="1" inputmode="numeric"></div><div><label>Masa</label><input id="rzM" type="text" maxlength="20"></div></div>
+<label>Telefon</label><input id="rzP" type="tel" maxlength="30">
+<label>Not / alerji</label><input id="rzNt" type="text" maxlength="160">
+<div class="actions"><button class="btn gold" id="rzAdd">Kaydet</button></div></div>
+<div class="card" style="margin-top:14px"><div style="display:flex;gap:8px;align-items:center"><button class="btn light" id="rzPrev">‹</button><input id="rzF" type="date" style="flex:1"><button class="btn light" id="rzNext">›</button></div><div id="rzL" style="margin-top:10px"></div></div>
+<div class="card" style="margin-top:14px"><h3>🚫 Tükenen ürünler</h3><div class="small">Servis sırasında biten yemeği ekle; ekip görsün.</div>
+<div style="display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:6px"><input id="tkN" type="text" maxlength="80" placeholder="örn. Kuzu tandır"><button class="btn gold" id="tkAddO">Tükendi</button></div><div id="tkLst" style="margin-top:8px"></div></div>
+</section>
+<section id="mise" class="tab">
+<div class="sthero"><div class="stk">Restoran · Hazırlık</div><h2>Mise en Place ve Vardiya Devri</h2><div class="sts">İstasyon bazlı hazırlık listesi ve vardiyadan vardiyaya not</div></div>
+<div class="card"><h3>✅ Bugünün hazırlığı</h3><div style="display:flex;gap:8px;align-items:center"><input id="msD" type="date" style="flex:1"><button class="btn light" id="msPrint">Yazdır</button></div><div id="msL" style="margin-top:10px"></div>
+<div class="onlyUsta" style="display:grid;grid-template-columns:110px 1fr auto;gap:6px;margin-top:10px"><select id="msS"><option>Soğuk</option><option>Sıcak</option><option>Izgara</option><option>Tatlı</option><option>Bar</option><option>Genel</option></select><input id="msT" type="text" maxlength="100" placeholder="örn. 5 kg soğan doğra"><button class="btn gold" id="msAdd">Ekle</button></div>
+<div class="small">Liste şablondur; her gün tikler sıfırdan başlar.</div></div>
+<div class="card" style="margin-top:14px"><h3>🔁 Vardiya devri</h3>
+<label>Not (yapılanlar, eksikler, uyarılar)</label><textarea id="dvT" rows="3" maxlength="600"></textarea>
+<div class="actions"><button class="btn gold" id="dvAdd">Devir notu bırak</button></div><div id="dvL" style="margin-top:8px"></div></div>
+</section>
+<section id="israf" class="tab">
+<div class="sthero"><div class="stk">Restoran · Kontrol</div><h2>Fire ve İsraf Kaydı</h2><div class="sts">Ne kadar, neden, kim; aylık özetle birlikte</div></div>
+<div class="card"><h3>➕ İsraf kaydı</h3>
+<label>Ürün / yemek</label><input id="isN" type="text" maxlength="80">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px"><div><label>Miktar</label><input id="isQ" type="number" min="0" step="any" inputmode="decimal"></div><div><label>Birim</label><select id="isU"><option>kg</option><option>adet</option><option>porsiyon</option><option>lt</option></select></div><div class="onlyUsta"><label>Tutar ₺</label><input id="isV" type="number" min="0" step="any" inputmode="decimal"></div></div>
+<label>Neden</label><select id="isR"><option>Son kullanma tarihi geçti</option><option>Fazla üretim</option><option>Yanma / hata</option><option>Müşteri iadesi</option><option>Dökülme / kırılma</option><option>Diğer</option></select>
+<label>Not</label><input id="isNt" type="text" maxlength="160">
+<div class="actions"><button class="btn gold" id="isAdd">Kaydet</button></div></div>
+<div class="card" style="margin-top:14px"><h3>📊 Bu ay</h3><div id="isSum"></div></div>
+<div class="card" style="margin-top:14px"><h3>🗒️ Kayıtlar</h3><div id="isL"></div></div>
+</section>
+<section id="vardiya" class="tab">
+<div class="sthero"><div class="stk">Restoran · Ekip</div><h2>Personel Vardiya Planı</h2><div class="sts">Kim hangi gün, hangi saat ve istasyonda</div></div>
+<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><button class="btn light" id="vdPrev">‹</button><b id="vdWk"></b><button class="btn light" id="vdNext">›</button></div>
+<div class="onlyUsta" style="display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:10px"><input id="vdN" type="text" list="vdDl" maxlength="60" placeholder="Personel adı"><datalist id="vdDl"></datalist><button class="btn gold" id="vdAdd">Satır ekle</button></div>
+<div id="vdL" style="margin-top:10px;overflow-x:auto"></div><div class="small">Hücreye saat ve istasyon yaz (örn. 08-16 Sıcak). Boş = izinli.</div></div>
+</section>
+<section id="menumuh" class="tab">
+<div class="sthero"><div class="stk">Restoran · Kârlılık</div><h2>Menü Mühendisliği</h2><div class="sts">Hangi yemek çok satıyor, hangisi kazandırıyor</div></div>
+<div class="card"><h3>➕ Yemek</h3>
+<label>Yemek</label><input id="mmN" type="text" maxlength="80">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px"><div><label>Satış fiyatı ₺</label><input id="mmPr" type="number" min="0" step="any" inputmode="decimal"></div><div><label>Maliyet ₺</label><input id="mmC" type="number" min="0" step="any" inputmode="decimal"></div><div><label>Satış adedi</label><input id="mmQ" type="number" min="0" inputmode="numeric"></div></div>
+<div class="actions"><button class="btn gold" id="mmAdd">Ekle</button></div></div>
+<div class="card" style="margin-top:14px"><h3>📈 Sonuç</h3><div class="small">Çok satan ve kârlı: Yıldız. Çok satan, az kârlı: Atbaşı. Az satan, kârlı: Bulmaca. İkisi de düşük: Gözden geçir.</div><div id="mmL" style="margin-top:8px"></div></div>
+</section>
+<section id="numune" class="tab">
+<div class="sthero"><div class="stk">Uyum · Gıda güvenliği</div><h2>Numune Saklama Kaydı</h2><div class="sts">Servis edilen yemekten numune al, 72 saat sakla, imha zamanını kaçırma</div></div>
+<div class="card"><h3>➕ Numune</h3>
+<label>Yemek</label><input id="nmN" type="text" maxlength="80">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Miktar (g)</label><input id="nmQ" type="number" min="0" value="100" inputmode="numeric"></div><div><label>Saklama yeri</label><input id="nmY" type="text" maxlength="40" value="Numune dolabı"></div></div>
+<label>Not (etkinlik, parti vb.)</label><input id="nmNt" type="text" maxlength="120">
+<div class="actions"><button class="btn gold" id="nmAdd">Şimdi numune al</button></div></div>
+<div class="card" style="margin-top:14px"><h3>🧪 Kayıtlar</h3><div id="nmL"></div></div>
+</section>
+<section id="bakim" class="tab">
+<div class="sthero"><div class="stk">Uyum · Düzen</div><h2>Bakım ve Temizlik Planı</h2><div class="sts">Ekipman bakımı, temizlik ve zararlı kontrolü: ne zaman, kim yaptı</div></div>
+<div class="card onlyUsta"><h3>➕ Madde</h3>
+<label>Ad</label><input id="bkN" type="text" maxlength="80" placeholder="örn. Davlumbaz filtresi, Soğutucu defrost">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Tür</label><select id="bkT"><option>Ekipman bakımı</option><option>Temizlik</option><option>Zararlı kontrolü</option></select></div><div><label>Sıklık (gün)</label><input id="bkS" type="number" min="1" value="7" inputmode="numeric"></div></div>
+<div class="actions"><button class="btn gold" id="bkAdd">Ekle</button></div></div>
+<div class="card" style="margin-top:14px"><h3>📋 Plan</h3><div id="bkL"></div></div>
+</section>
+<section id="belge" class="tab">
+<div class="sthero"><div class="stk">Uyum · Ekip</div><h2>Personel Belgeleri</h2><div class="sts">Sağlık raporu, hijyen belgesi ve diğerleri; bitiş tarihi uyarısıyla</div></div>
+<div class="card"><h3>➕ Belge</h3>
+<label>Personel</label><input id="blP" type="text" list="blDl" maxlength="60"><datalist id="blDl"></datalist>
+<label>Belge</label><select id="blB"><option>Sağlık raporu (portör muayenesi)</option><option>Hijyen eğitimi belgesi</option><option>Gıda güvenliği sertifikası</option><option>Mesleki yeterlilik belgesi</option><option>Diğer</option></select>
+<label>Geçerlilik bitiş tarihi</label><input id="blD" type="date">
+<div class="actions"><button class="btn gold" id="blAdd">Ekle</button></div></div>
+<div class="card" style="margin-top:14px"><h3>🪪 Belgeler</h3><div id="blL"></div></div>
+</section>
+<section id="gider" class="tab">
+<div class="sthero"><div class="stk">Para · Aylık</div><h2>Gider, Borç ve Kâr/Zarar</h2><div class="sts">Gider takibi, tedarikçi borç defteri ve aylık özet</div></div>
+<div class="card"><h3>📊 Aylık özet</h3><div style="display:flex;gap:8px;align-items:center"><button class="btn light" id="gdPrev">‹</button><b id="gdMon" style="flex:1;text-align:center"></b><button class="btn light" id="gdNext">›</button></div><div id="gdSum" style="margin-top:8px"></div></div>
+<div class="card" style="margin-top:14px"><h3>➕ Hareket</h3>
+<div class="stseg" id="gdT"><button class="on" data-t="g">Gider</button><button data-t="i">Gelir</button></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Tarih</label><input id="gdD" type="date"></div><div><label>Tutar ₺</label><input id="gdA" type="number" min="0" step="any" inputmode="decimal"></div></div>
+<label>Kategori</label><select id="gdK"><option>Mal alımı</option><option>Maaş</option><option>Kira</option><option>Elektrik / su / gaz</option><option>Yakıt / nakliye</option><option>Bakım / onarım</option><option>Diğer</option></select>
+<label>Not</label><input id="gdN" type="text" maxlength="120">
+<div class="actions"><button class="btn gold" id="gdAdd">Kaydet</button></div><div class="small">Teslim edilen siparişlerin tutarı geliri otomatik artırır; yalnızca ek gelirleri buraya gir.</div></div>
+<div class="card" style="margin-top:14px"><h3>🗒️ Bu ayın hareketleri</h3><div id="gdL"></div></div>
+<div class="card" style="margin-top:14px"><h3>📒 Tedarikçi borç defteri</h3>
+<label>Tedarikçi</label><input id="brT" type="text" list="brDl" maxlength="80"><datalist id="brDl"></datalist>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div><label>Tutar ₺</label><input id="brA" type="number" min="0" step="any" inputmode="decimal"></div><div><label>Vade</label><input id="brV" type="date"></div></div>
+<div class="actions"><button class="btn gold" id="brAdd">Borç ekle</button></div><div id="brL" style="margin-top:8px"></div></div>
+</section>
+<section id="haftalik" class="tab">
+<div class="sthero"><div class="stk">Rapor</div><h2>Haftalık Özet</h2><div class="sts">Son 7 günün siparişi, israfı, gideri ve uyarıları tek sayfada</div></div>
+<div class="card"><div id="hfL"></div><div class="actions"><button class="btn light" id="hfPrint">Yazdır</button></div></div>
 </section>
 <section id="shop" class="tab">
 <div class="sthero"><div class="stk">Sipariş · Satın alma</div><h2>Alışveriş Listesi</h2><div class="sts">Yemek gruplarını, reçeteleri ve formülleri ekle; toplam malzeme otomatik hesaplansın</div></div>
@@ -1601,9 +1727,9 @@ function saveQuality(){let x={dish:$("qualityDish").value,portions:$("qualityPor
 function renderQuality(){let a=JSON.parse(localStorage.getItem(STORAGE+"_quality")||"[]");$("qualityHistory").innerHTML=a.map(x=>`<div class="result"><b>${esc(x.dish)}</b> · ${esc(x.portions)} porsiyon<div class="small">${esc(x.date)}</div><div class="small">Tuz ${esc(x.salt)}/5 · Kıvam ${esc(x.texture)}/5 · Lezzet ${esc(x.taste)}/5 · Görünüş ${esc(x.look)}/5</div><p>${esc(x.note)}</p></div>`).join("")||"Henüz değerlendirme yok."}
 function saveNote(){let title=$("noteTitle").value.trim(),body=$("noteBody").value.trim();if(!title||!body){alert("Başlık ve not gerekli.");return}let a=JSON.parse(localStorage.getItem(STORAGE+"_notes")||"[]");a.unshift({title,body,date:new Date().toLocaleString("tr-TR")});localStorage.setItem(STORAGE+"_notes",JSON.stringify(a));$("noteTitle").value="";$("noteBody").value="";renderNotes()}
 function renderNotes(){let a=JSON.parse(localStorage.getItem(STORAGE+"_notes")||"[]");$("notes").innerHTML=a.map(x=>`<div class="result"><b>${esc(x.title)}</b><div class="small">${esc(x.date)}</div><p>${esc(x.body)}</p></div>`).join("")||"Henüz not yok."}
-function exportData(){let data={app:"Profesyonel Şef Asistanı",version:1,exportedAt:new Date().toISOString(),recipes:localStorage.getItem(STORAGE+"_recipes"),menus:localStorage.getItem(STORAGE+"_menus"),weekMenus:localStorage.getItem(STORAGE+"_weekMenus"),notes:localStorage.getItem(STORAGE+"_notes"),quality:localStorage.getItem(STORAGE+"_quality"),sef:{std:localStorage.getItem("sefStdRows"),shop:localStorage.getItem("sefShop"),fav:localStorage.getItem("sefFav"),fire:localStorage.getItem("sefFire"),yld:localStorage.getItem("sefYield"),rf:localStorage.getItem("sefRecFav"),rc:localStorage.getItem("sefRecent"),depo:localStorage.getItem("sefDepo"),fiyat:localStorage.getItem("sefFiyat"),gorev:localStorage.getItem("sefGorev"),skt:localStorage.getItem("sefSkt"),uret:localStorage.getItem("sefUretim"),ted:localStorage.getItem("sefTed")}};download("profesyonel-sef-asistani-yedek.json",JSON.stringify(data,null,2),"application/json");$("backupMsg").textContent="Yedek dosyası indirildi."}
+function exportData(){let data={app:"Profesyonel Şef Asistanı",version:1,exportedAt:new Date().toISOString(),recipes:localStorage.getItem(STORAGE+"_recipes"),menus:localStorage.getItem(STORAGE+"_menus"),weekMenus:localStorage.getItem(STORAGE+"_weekMenus"),notes:localStorage.getItem(STORAGE+"_notes"),quality:localStorage.getItem(STORAGE+"_quality"),sef:{std:localStorage.getItem("sefStdRows"),shop:localStorage.getItem("sefShop"),fav:localStorage.getItem("sefFav"),fire:localStorage.getItem("sefFire"),yld:localStorage.getItem("sefYield"),rf:localStorage.getItem("sefRecFav"),rc:localStorage.getItem("sefRecent"),depo:localStorage.getItem("sefDepo"),fiyat:localStorage.getItem("sefFiyat"),gorev:localStorage.getItem("sefGorev"),skt:localStorage.getItem("sefSkt"),uret:localStorage.getItem("sefUretim"),ted:localStorage.getItem("sefTed"),mus:localStorage.getItem("sefMus"),sip:localStorage.getItem("sefSip"),etk:localStorage.getItem("sefEtk"),rez:localStorage.getItem("sefRez"),tuk:localStorage.getItem("sefTuk"),mise:localStorage.getItem("sefMise"),dev:localStorage.getItem("sefDevir"),isr:localStorage.getItem("sefIsraf"),mm:localStorage.getItem("sefMenuMuh"),vard:localStorage.getItem("sefVard"),num:localStorage.getItem("sefNum"),bak:localStorage.getItem("sefBakim"),bel:localStorage.getItem("sefBelge"),gid:localStorage.getItem("sefGider"),bor:localStorage.getItem("sefBorc")}};download("profesyonel-sef-asistani-yedek.json",JSON.stringify(data,null,2),"application/json");$("backupMsg").textContent="Yedek dosyası indirildi."}
 function download(name,content,type){let blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
-function importData(e){let f=e.target.files[0];if(!f)return;let rd=new FileReader();rd.onload=()=>{try{let d=JSON.parse(rd.result);if(d.app!=="Profesyonel Şef Asistanı")throw Error("Dosya uygulama yedeği değil.");for(let k of ["recipes","menus","weekMenus","notes","quality"])if(d[k]!==null&&d[k]!==undefined)localStorage.setItem(STORAGE+"_"+k,d[k]);let rl=false;if(d.sef){const M={std:"sefStdRows",shop:"sefShop",fav:"sefFav",fire:"sefFire",yld:"sefYield",rf:"sefRecFav",rc:"sefRecent",depo:"sefDepo",fiyat:"sefFiyat",gorev:"sefGorev",skt:"sefSkt",uret:"sefUretim",ted:"sefTed"};for(const k in M)if(d.sef[k]!==null&&d.sef[k]!==undefined){localStorage.setItem(M[k],d.sef[k]);rl=true}}custom=JSON.parse(localStorage.getItem(STORAGE+"_recipes")||"[]");recipes=[...builtInRecipes,...custom,...remoteList()];initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();showMenus();showWeekMenus();renderNotes();renderQuality();$("backupMsg").textContent=rl?"Yedek geri yüklendi. Sayfa yenileniyor…":"Yedek başarıyla geri yüklendi.";if(rl)setTimeout(function(){location.reload()},900)}catch(err){$("backupMsg").textContent="Yükleme başarısız: "+err.message}};rd.readAsText(f)}
+function importData(e){let f=e.target.files[0];if(!f)return;let rd=new FileReader();rd.onload=()=>{try{let d=JSON.parse(rd.result);if(d.app!=="Profesyonel Şef Asistanı")throw Error("Dosya uygulama yedeği değil.");for(let k of ["recipes","menus","weekMenus","notes","quality"])if(d[k]!==null&&d[k]!==undefined)localStorage.setItem(STORAGE+"_"+k,d[k]);let rl=false;if(d.sef){const M={std:"sefStdRows",shop:"sefShop",fav:"sefFav",fire:"sefFire",yld:"sefYield",rf:"sefRecFav",rc:"sefRecent",depo:"sefDepo",fiyat:"sefFiyat",gorev:"sefGorev",skt:"sefSkt",uret:"sefUretim",ted:"sefTed",mus:"sefMus",sip:"sefSip",etk:"sefEtk",rez:"sefRez",tuk:"sefTuk",mise:"sefMise",dev:"sefDevir",isr:"sefIsraf",mm:"sefMenuMuh",vard:"sefVard",num:"sefNum",bak:"sefBakim",bel:"sefBelge",gid:"sefGider",bor:"sefBorc"};for(const k in M)if(d.sef[k]!==null&&d.sef[k]!==undefined){localStorage.setItem(M[k],d.sef[k]);rl=true}}custom=JSON.parse(localStorage.getItem(STORAGE+"_recipes")||"[]");recipes=[...builtInRecipes,...custom,...remoteList()];initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();showMenus();showWeekMenus();renderNotes();renderQuality();$("backupMsg").textContent=rl?"Yedek geri yüklendi. Sayfa yenileniyor…":"Yedek başarıyla geri yüklendi.";if(rl)setTimeout(function(){location.reload()},900)}catch(err){$("backupMsg").textContent="Yükleme başarısız: "+err.message}};rd.readAsText(f)}
 function recipeKey(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("tr-TR").replace(/ı/g,"i").replace(/[^a-z0-9]+/g," ").trim()}
 function exportRecipePackage(){const data={app:"Profesyonel Şef Asistanı",type:"recipe-package",schemaVersion:1,createdAt:new Date().toISOString(),recipes:custom};download("sef-asistani-recete-paketi.json",JSON.stringify(data,null,2),"application/json");$("recipePackageMsg").textContent=custom.length+" özel reçete pakete aktarıldı."}
 function importRecipePackage(e){const f=e.target.files&&e.target.files[0];if(!f)return;const rd=new FileReader();rd.onload=()=>{try{const d=JSON.parse(rd.result);const incoming=Array.isArray(d)?d:(d.recipes||d.items);if(!Array.isArray(incoming))throw Error("JSON içinde recipes dizisi bulunamadı.");const existingIds=new Set(custom.map(x=>String(x.id||"")));const existingNames=new Set(recipes.flatMap(x=>[x.name,...(x.aliases||[])]).map(recipeKey));let added=0,skipped=0;const clean=[];for(const raw of incoming){if(!raw||typeof raw.name!=="string"||!raw.name.trim()||!Array.isArray(raw.ingredients)||!raw.ingredients.length){skipped++;continue;}const nameKey=recipeKey(raw.name),aliasKeys=(raw.aliases||[]).map(recipeKey);if(existingIds.has(String(raw.id||""))||existingNames.has(nameKey)||aliasKeys.some(k=>existingNames.has(k))){skipped++;continue;}const r={...raw,id:String(raw.id||("IMP-"+Date.now()+"-"+(added+1))),aliases:Array.isArray(raw.aliases)?raw.aliases:[],base:Number(raw.base)||1,method:String(raw.method||""),tips:String(raw.tips||""),allergens:Array.isArray(raw.allergens)?raw.allergens:[]};if(!r.method.trim()){skipped++;continue;}clean.push(r);existingIds.add(r.id);[r.name,...r.aliases].forEach(n=>existingNames.add(recipeKey(n)));added++;}custom.push(...clean);localStorage.setItem(STORAGE+"_recipes",JSON.stringify(custom));recipes=[...builtInRecipes,...custom,...remoteList()];initCats();renderLibrary();renderCustomRecipeManager();fillProd();initMenuSelectors();if($("dashRecipes"))$("dashRecipes").textContent=recipes.length;$("recipePackageMsg").textContent="Aktarım tamamlandı: "+added+" yeni reçete eklendi, "+skipped+" kayıt eksik veya mükerrer olduğu için atlandı. Toplam kütüphane: "+recipes.length+".";}catch(err){$("recipePackageMsg").textContent="Paket okunamadı: "+err.message;}e.target.value="";};rd.readAsText(f,"UTF-8")}
@@ -2226,11 +2352,367 @@ function run(){["gvR","mlR","zmR","bsR","ukR"].forEach(function(i){attach(i,reci
 run();document.addEventListener("click",function(){setTimeout(run,0)});
 })()</script>
 
+<script>(function(){
+if(!document.getElementById("sevkiyat"))return;
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function uid(){return "v"+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function p2(n){return(n<10?"0":"")+n}
+function today(){var d=new Date();return d.getFullYear()+"-"+p2(d.getMonth()+1)+"-"+p2(d.getDate())}
+function ld(k){try{var v=JSON.parse(localStorage.getItem(k)||"[]");return Array.isArray(v)?v:[]}catch(e){return[]}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function toast(m){try{(window.ofToast||function(){})(m)}catch(e){}}
+function tl(n){return(Math.round((+n||0)*100)/100).toLocaleString("tr-TR")+" ₺"}
+function fold(s){return String(s||"").toLocaleLowerCase("tr").normalize("NFD").replace(/[̀-ͯ]/g,"")}
+function role(){return document.body.dataset.role||""}
+function meName(){try{var m=window.SEF_me&&window.SEF_me();return m&&(m.full_name||m.name)||""}catch(e){return""}}
+var M=ld("sefMus"),S=ld("sefSip"),E=ld("sefEtk"),flt="act",mon=new Date();mon.setDate(1);
+function reload(){M=ld("sefMus");S=ld("sefSip");E=ld("sefEtk");drawM();drawS();drawK()}
+window.SEF=window.SEF||{};var prevOps=SEF.opsReload;SEF.opsReload=function(){try{prevOps&&prevOps()}catch(e){}reload()};
+function fmtD(d){if(!d)return"";var a=d.split("-");return a[2]+"."+a[1]+"."+a[0]}
+/* ---- müşteriler ---- */
+function drawM(){var q=fold($("muQ").value);
+  var L=M.map(function(x,i){return{x:x,i:i}}).filter(function(o){return !q||fold(o.x.n+" "+o.x.a).indexOf(q)>=0}).sort(function(a,b){return a.x.n.localeCompare(b.x.n,"tr")});
+  $("muL").innerHTML=L.length?L.map(function(o){var x=o.x,os=S.filter(function(s){return s.cid===x.id}),tot=os.reduce(function(a,s){return a+(+s.pp||0)*(+s.k||0)},0),tel=String(x.p||"").replace(/[^0-9+]/g,"");
+    return '<div class="card" style="margin:0 0 8px"><b>'+esc(x.n)+'</b>'+(tel?' · <a href="tel:'+esc(tel)+'">'+esc(x.p)+'</a>':'')+(x.a?'<div class="small">'+esc(x.a)+'</div>':'')+(x.note?'<div class="small">Not: '+esc(x.note)+'</div>':'')+'<div class="small">'+os.length+' sipariş'+(tot?' · toplam '+tl(tot):'')+'</div><div class="actions"><button class="btn light" data-me="'+o.i+'">Düzenle</button><button class="btn light" data-md="'+o.i+'">Sil</button></div></div>'}).join(""):'<div class="small">Henüz müşteri yok.</div>';
+  var cur=$("svC").value;$("svC").innerHTML='<option value="">— listede yok, aşağıya yaz —</option>'+M.slice().sort(function(a,b){return a.n.localeCompare(b.n,"tr")}).map(function(x){return '<option value="'+esc(x.id)+'">'+esc(x.n)+'</option>'}).join("");$("svC").value=cur}
+$("musteri").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="muAdd"){var n=$("muN").value.trim();if(!n){toast("Ad yaz");return}M.push({id:uid(),n:n,p:$("muP").value.trim(),a:$("muA").value.trim(),note:$("muNt").value.trim()});sv("sefMus",M);["muN","muP","muA","muNt"].forEach(function(i){$(i).value=""});drawM();toast("Kaydedildi");return}
+  if(b.dataset.md!==undefined){var x=M[+b.dataset.md];if(!x||!confirm(x.n+" silinsin mi? Siparişleri kalır."))return;M.splice(+b.dataset.md,1);sv("sefMus",M);drawM();return}
+  if(b.dataset.me!==undefined){var y=M[+b.dataset.me];if(!y)return;var p=prompt("Telefon:",y.p||"");if(p===null)return;var a=prompt("Adres:",y.a||"");if(a===null)return;var nt=prompt("Not:",y.note||"");if(nt===null)return;y.p=p.trim();y.a=a.trim();y.note=nt.trim();sv("sefMus",M);drawM()}});
+$("muQ").addEventListener("input",drawM);
+/* ---- sevkiyat ---- */
+var ST=["Hazırlanıyor","Yolda","Teslim edildi"];
+function drawS(){
+  var staff=(window.SEF_staff||[]).slice();S.forEach(function(s){if(s.who&&staff.indexOf(s.who)<0)staff.push(s.who)});$("svWl").innerHTML=staff.map(function(n){return '<option value="'+esc(n)+'">'}).join("");
+  var me=meName(),L=S.map(function(x,i){return{x:x,i:i}});
+  if(flt==="act")L=L.filter(function(o){return o.x.st<2});else if(flt==="done")L=L.filter(function(o){return o.x.st===2});
+  if($("svMine").checked&&me)L=L.filter(function(o){return o.x.who===me});
+  L.sort(function(a,b){return((a.x.d||"")+(a.x.t||"")).localeCompare((b.x.d||"")+(b.x.t||""))});
+  $("svL").innerHTML=L.length?L.map(function(o){return card(o.x,o.i)}).join(""):'<div class="card"><div class="small">Bu görünümde sipariş yok.</div></div>'}
+function warnT(v,kind){if(v===""||v==null||isNaN(+v))return"";if(kind==="h"&&+v<60)return ' <b style="color:#b3261e">⚠ 60°C altı</b>';if(kind==="c"&&+v>5)return ' <b style="color:#b3261e">⚠ 5°C üstü</b>';return""}
+function card(x,i){var cu=M.filter(function(m){return m.id===x.cid})[0],tel=cu&&String(cu.p||"").replace(/[^0-9+]/g,""),ld_=x.load||[],ok=ld_.filter(function(l){return l.ok}).length;
+  var col=x.st===2?"#2e7d32":x.st===1?"#b26a00":"#0c2b4a";
+  var h='<div class="card" style="margin:0 0 10px;border-left:6px solid '+col+'"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><b>'+esc(x.c||"Müşteri")+'</b><span class="small"><b style="color:'+col+'">'+ST[x.st||0]+'</b></span></div>'
+   +'<div class="small">'+fmtD(x.d)+(x.t?' · '+esc(x.t):'')+(x.k?' · '+x.k+' kişi':'')+(x.who?' · Şoför: '+esc(x.who):'')+'</div>'
+   +(x.menu?'<div class="small" style="white-space:pre-line">'+esc(x.menu)+'</div>':'')
+   +(x.addr?'<div class="small">📍 <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(x.addr)+'">'+esc(x.addr)+'</a></div>':'')
+   +(tel?'<div class="small">📞 <a href="tel:'+esc(tel)+'">'+esc(cu.p)+'</a></div>':'')
+   +(x.note?'<div class="small">Not: '+esc(x.note)+'</div>':'')
+   +'<div class="onlyUsta small">'+(x.pp?'Fiyat: '+tl(x.pp)+' / kişi · toplam '+tl((+x.pp||0)*(+x.k||0)):'')+(x.pp&&x.co?' · kâr '+tl(((+x.pp)-(+x.co))*(+x.k||0))+' (%'+Math.round(((+x.pp)-(+x.co))/(+x.pp)*100)+')':'')+'</div>'
+   +'<div style="margin-top:8px"><b class="small">Yükleme listesi ('+ok+'/'+ld_.length+')</b>'+ld_.map(function(l,j){return '<label style="display:flex;gap:8px;align-items:center;margin:2px 0;font-weight:400"><input type="checkbox" style="width:auto" data-lk="'+i+'|'+j+'"'+(l.ok?' checked':'')+'> '+(l.k==="s"?'🔥 ':l.k==="c"?'❄️ ':'🧰 ')+esc(l.t)+' <button class="btn light" style="padding:2px 8px" data-ld="'+i+'|'+j+'">×</button></label>'}).join("")
+   +'<div style="display:grid;grid-template-columns:1fr 90px auto;gap:6px;margin-top:6px"><input type="text" id="la'+i+'" placeholder="örn. 10 gastronorm pilav" maxlength="80"><select id="lk'+i+'"><option value="s">Sıcak</option><option value="c">Soğuk</option><option value="e">Ekipman</option></select><button class="btn light" data-la="'+i+'">Ekle</button></div></div>'
+   +'<div style="margin-top:8px"><b class="small">Soğuk zincir (°C)</b><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:4px">'
+   +'<div><span class="small">Çıkış sıcak</span><input type="number" step="any" inputmode="decimal" data-tc="'+i+'|oh" value="'+esc((x.out||{}).h==null?"":x.out.h)+'"></div>'
+   +'<div><span class="small">Çıkış soğuk</span><input type="number" step="any" inputmode="decimal" data-tc="'+i+'|oc" value="'+esc((x.out||{}).c==null?"":x.out.c)+'"></div>'
+   +'<div><span class="small">Varış sıcak</span><input type="number" step="any" inputmode="decimal" data-tc="'+i+'|ah" value="'+esc((x.arr||{}).h==null?"":x.arr.h)+'"></div>'
+   +'<div><span class="small">Varış soğuk</span><input type="number" step="any" inputmode="decimal" data-tc="'+i+'|ac" value="'+esc((x.arr||{}).c==null?"":x.arr.c)+'"></div></div>'
+   +'<div class="small">'+warnT((x.out||{}).h,"h")+warnT((x.out||{}).c,"c")+warnT((x.arr||{}).h,"h")+warnT((x.arr||{}).c,"c")+'</div></div>'
+   +(x.st===2?'<div class="small" style="margin-top:8px">✅ Teslim alan: <b>'+esc(x.recv||"-")+'</b>'+(x.rt?' · '+esc(x.rt):'')+(x.rn?'<br>Not: '+esc(x.rn):'')+'</div>':'')
+   +'<div class="actions" style="margin-top:8px">'+(x.st===0?'<button class="btn gold" data-st="'+i+'|1">Yola çıktım</button>':'')+(x.st===1?'<button class="btn gold" data-st="'+i+'|2">Teslim ettim</button>':'')
+   +'<span class="onlyUsta"><button class="btn light" data-qt="'+i+'">Teklif çıktısı</button> <button class="btn light" data-sd="'+i+'">Şoför ata</button> <button class="btn light" data-sx="'+i+'">Sil</button></span></div></div>';
+  return h}
+$("sevkiyat").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="svAdd"){var cid=$("svC").value,cu=M.filter(function(m){return m.id===cid})[0],nm=cu?cu.n:$("svCN").value.trim(),d=$("svD").value;if(!nm){toast("Müşteri seç veya yaz");return}if(!d){toast("Tarih seç");return}
+    S.push({id:uid(),cid:cu?cu.id:"",c:nm,d:d,t:$("svT").value,addr:$("svA").value.trim()||(cu&&cu.a)||"",k:+$("svK").value||0,menu:$("svM").value.trim(),pp:+$("svPP").value||0,co:+$("svCo").value||0,who:$("svW").value.trim(),note:$("svN").value.trim(),st:0,load:[],out:{},arr:{}});
+    sv("sefSip",S);["svCN","svT","svA","svK","svM","svPP","svCo","svW","svN"].forEach(function(i){$(i).value=""});$("svC").value="";drawS();drawK();drawM();toast("Sipariş kaydedildi");return}
+  if(b.dataset.la!==undefined){var i=+b.dataset.la,t=$("la"+i).value.trim();if(!t||!S[i])return;(S[i].load=S[i].load||[]).push({t:t,k:$("lk"+i).value,ok:false});sv("sefSip",S);drawS();return}
+  if(b.dataset.ld!==undefined){var p=b.dataset.ld.split("|");S[+p[0]].load.splice(+p[1],1);sv("sefSip",S);drawS();return}
+  if(b.dataset.st!==undefined){var q=b.dataset.st.split("|"),o=S[+q[0]];if(!o)return;
+    if(+q[1]===2){var r=prompt("Teslim alan kişinin adı:","");if(r===null)return;var n=prompt("Teslimat notu (eksik/fazla vb., boş bırakabilirsin):","");o.recv=r.trim();o.rn=(n||"").trim();var d=new Date();o.rt=p2(d.getHours())+":"+p2(d.getMinutes())}
+    o.st=+q[1];sv("sefSip",S);drawS();drawK();return}
+  if(b.dataset.sd!==undefined){var o2=S[+b.dataset.sd];var w=prompt("Şoförün adı:",o2.who||"");if(w===null)return;o2.who=w.trim();sv("sefSip",S);drawS();return}
+  if(b.dataset.sx!==undefined){var o3=S[+b.dataset.sx];if(!o3||!confirm(o3.c+" siparişi silinsin mi?"))return;S.splice(+b.dataset.sx,1);sv("sefSip",S);drawS();drawK();drawM();return}
+  if(b.dataset.qt!==undefined){quote(S[+b.dataset.qt])}});
+$("sevkiyat").addEventListener("change",function(e){var t=e.target;
+  if(t.dataset.lk){var p=t.dataset.lk.split("|");S[+p[0]].load[+p[1]].ok=t.checked;sv("sefSip",S);setTimeout(drawS,0);return}
+  if(t.dataset.tc){var q=t.dataset.tc.split("|"),o=S[+q[0]],k=q[1];o.out=o.out||{};o.arr=o.arr||{};var tgt=k[0]==="o"?o.out:o.arr;tgt[k[1]]=t.value===""?null:+t.value;sv("sefSip",S);setTimeout(drawS,0)}});
+$("svSeg").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;flt=b.dataset.f;[].forEach.call($("svSeg").children,function(c){c.classList.toggle("on",c===b)});drawS()});
+$("svMine").addEventListener("change",drawS);
+$("svC").addEventListener("change",function(){var cu=M.filter(function(m){return m.id===$("svC").value})[0];if(cu&&!$("svA").value)$("svA").value=cu.a||""});
+function quote(o){if(!o)return;var tot=(+o.pp||0)*(+o.k||0);
+  var h='<!doctype html><meta charset="utf-8"><title>Teklif - '+esc(o.c)+'</title><style>body{font-family:Georgia,serif;max-width:720px;margin:32px auto;padding:0 20px;color:#111}h1{margin:0}table{width:100%;border-collapse:collapse;margin:16px 0}td,th{border-bottom:1px solid #ccc;padding:8px;text-align:left}.r{text-align:right}.s{color:#555;font-size:13px}</style>'
+   +'<h1>Menü Teklifi</h1><div class="s">Profesyonel Şef Asistanı · '+fmtD(today())+'</div><p><b>Müşteri:</b> '+esc(o.c)+'<br><b>Etkinlik tarihi:</b> '+fmtD(o.d)+(o.t?' '+esc(o.t):'')+'<br><b>Kişi sayısı:</b> '+(o.k||'-')+(o.addr?'<br><b>Teslimat adresi:</b> '+esc(o.addr):'')+'</p>'
+   +'<h3>Menü</h3><p style="white-space:pre-line">'+esc(o.menu||"-")+'</p>'
+   +'<table><tr><th>Kalem</th><th class="r">Birim fiyat</th><th class="r">Kişi</th><th class="r">Toplam</th></tr><tr><td>Menü (kişi başı)</td><td class="r">'+tl(o.pp)+'</td><td class="r">'+(o.k||0)+'</td><td class="r"><b>'+tl(tot)+'</b></td></tr></table>'
+   +'<p class="s">Teklif geçerlilik süresi: ........ gün · KDV durumu: ................</p><p class="s">Onay (ad, imza, tarih): ............................................</p>';
+  var w=window.open("","_blank");if(!w){toast("Açılır pencere engellendi");return}w.document.write(h);w.document.close();setTimeout(function(){try{w.print()}catch(e){}},400)}
+/* ---- takvim ---- */
+var AY=["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+function drawK(){var y=mon.getFullYear(),m=mon.getMonth();$("tkMon").textContent=AY[m]+" "+y;var pre=y+"-"+p2(m+1)+"-",days={};
+  S.forEach(function(s){if(s.d&&s.d.indexOf(pre)===0)(days[s.d]=days[s.d]||[]).push({t:s.t||"",txt:(s.c||"")+(s.k?" · "+s.k+" kişi":""),o:1,st:s.st})});
+  E.forEach(function(s,i){if(s.d&&s.d.indexOf(pre)===0)(days[s.d]=days[s.d]||[]).push({t:s.t||"",txt:s.b,e:i})});
+  var keys=Object.keys(days).sort(),td=today();
+  $("tkL").innerHTML=keys.length?keys.map(function(d){var it=days[d].sort(function(a,b){return a.t.localeCompare(b.t)}),no=it.filter(function(x){return x.o}).length,tm={},cf=false;it.forEach(function(x){if(x.t){if(tm[x.t])cf=true;tm[x.t]=1}});
+    return '<div style="border-top:1px solid #dde5df;padding:8px 0"><b'+(d===td?' style="color:#b26a00"':'')+'>'+fmtD(d)+(d===td?' · bugün':'')+'</b>'+(cf?' <b style="color:#b3261e" class="small">⚠ aynı saatte iki kayıt</b>':no>2?' <b style="color:#b26a00" class="small">⚠ gün yoğun ('+no+' sipariş)</b>':'')
+     +it.map(function(x){return '<div class="small">'+(x.t?esc(x.t)+' · ':'')+(x.o?'🚚 ':'📌 ')+esc(x.txt)+(x.o&&x.st===2?' ✅':'')+(x.e!=null?' <button class="btn light" style="padding:1px 8px" data-ke="'+x.e+'">×</button>':'')+'</div>'}).join("")+'</div>'}).join(""):'<div class="small">Bu ay kayıt yok.</div>'}
+$("takvim").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="tkPrev"){mon.setMonth(mon.getMonth()-1);drawK();return}if(b.id==="tkNext"){mon.setMonth(mon.getMonth()+1);drawK();return}
+  if(b.id==="tkAdd"){var d=$("tkD").value,t=$("tkB").value.trim();if(!d||!t){toast("Tarih ve başlık gerekli");return}E.push({id:uid(),d:d,t:$("tkT").value,b:t});sv("sefEtk",E);$("tkB").value="";$("tkT").value="";drawK();toast("Eklendi");return}
+  if(b.dataset.ke!==undefined){if(!confirm("Etkinlik silinsin mi?"))return;E.splice(+b.dataset.ke,1);sv("sefEtk",E);drawK()}});
+$("svD").value=today();$("tkD").value=today();
+if(role()==="personel")$("svMine").checked=true;
+reload();
+document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-tab]");if(t&&/^(musteri|sevkiyat|takvim)$/.test(t.dataset.tab))setTimeout(function(){if(role()==="personel")$("svMine").checked=true;reload()},50)});
+})();</script>
+<script>(function(){
+if(!document.getElementById("rezerv"))return;
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function uid(){return "r"+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function p2(n){return(n<10?"0":"")+n}
+function iso(d){return d.getFullYear()+"-"+p2(d.getMonth()+1)+"-"+p2(d.getDate())}
+function today(){return iso(new Date())}
+function ld(k){try{var v=JSON.parse(localStorage.getItem(k)||"[]");return Array.isArray(v)?v:[]}catch(e){return[]}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function toast(m){try{(window.ofToast||function(){})(m)}catch(e){}}
+function tl(n){return(Math.round((+n||0)*100)/100).toLocaleString("tr-TR")+" ₺"}
+function fmtD(d){if(!d)return"";var a=d.split("-");return a[2]+"."+a[1]+"."+a[0]}
+function addDays(d,n){var x=new Date(d+"T12:00:00");x.setDate(x.getDate()+n);return iso(x)}
+function meName(){try{var m=window.SEF_me&&window.SEF_me();return m&&(m.full_name||m.name)||""}catch(e){return""}}
+var R=ld("sefRez"),O=ld("sefTuk"),MS=ld("sefMise"),DV=ld("sefDevir"),IS=ld("sefIsraf"),MM=ld("sefMenuMuh"),VD=ld("sefVard"),wk0;
+function monday(d){var x=new Date(d+"T12:00:00"),g=(x.getDay()+6)%7;x.setDate(x.getDate()-g);return iso(x)}
+wk0=monday(today());
+function reload(){R=ld("sefRez");O=ld("sefTuk");MS=ld("sefMise");DV=ld("sefDevir");IS=ld("sefIsraf");MM=ld("sefMenuMuh");VD=ld("sefVard");drawAll()}
+function drawAll(){drawR();drawO();drawMS();drawDV();drawIS();drawVD();drawMM()}
+window.SEF=window.SEF||{};var prev=SEF.opsReload;SEF.opsReload=function(){try{prev&&prev()}catch(e){}reload()};
+/* rezervasyon */
+function drawR(){var d=$("rzF").value||today(),L=R.map(function(x,i){return{x:x,i:i}}).filter(function(o){return o.x.d===d}).sort(function(a,b){return(a.x.t||"").localeCompare(b.x.t||"")}),tot=L.reduce(function(a,o){return a+(+o.x.k||0)},0);
+  $("rzL").innerHTML='<div class="small"><b>'+fmtD(d)+'</b> · '+L.length+' rezervasyon · '+tot+' kişi</div>'+L.map(function(o){var x=o.x;return '<div style="border-top:1px solid #dde5df;padding:8px 0"><b>'+esc(x.t||"")+' · '+esc(x.n)+'</b> · '+(x.k||0)+' kişi'+(x.m?' · Masa '+esc(x.m):'')+(x.p?' · <a href="tel:'+esc(String(x.p).replace(/[^0-9+]/g,""))+'">'+esc(x.p)+'</a>':'')+(x.nt?'<div class="small">'+esc(x.nt)+'</div>':'')+'<div class="actions"><button class="btn light" data-rs="'+o.i+'">'+(x.ok?'Geldi ✅':'Geldi')+'</button><button class="btn light" data-rx="'+o.i+'">Sil</button></div></div>'}).join("")}
+$("rezerv").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="rzAdd"){var n=$("rzN").value.trim(),d=$("rzD").value;if(!n||!d){toast("Ad ve tarih gerekli");return}R.push({id:uid(),d:d,t:$("rzT").value,n:n,k:+$("rzK").value||0,m:$("rzM").value.trim(),p:$("rzP").value.trim(),nt:$("rzNt").value.trim()});sv("sefRez",R);["rzN","rzK","rzM","rzP","rzNt"].forEach(function(i){$(i).value=""});$("rzF").value=d;drawR();toast("Kaydedildi");return}
+  if(b.id==="rzPrev"){$("rzF").value=addDays($("rzF").value||today(),-1);drawR();return}if(b.id==="rzNext"){$("rzF").value=addDays($("rzF").value||today(),1);drawR();return}
+  if(b.dataset.rs!==undefined){R[+b.dataset.rs].ok=!R[+b.dataset.rs].ok;sv("sefRez",R);drawR();return}
+  if(b.dataset.rx!==undefined){if(!confirm("Rezervasyon silinsin mi?"))return;R.splice(+b.dataset.rx,1);sv("sefRez",R);drawR();return}
+  if(b.id==="tkAddO"){var n2=$("tkN").value.trim();if(!n2)return;O.push({id:uid(),n:n2,d:today(),back:false});sv("sefTuk",O);$("tkN").value="";drawO();return}
+  if(b.dataset.ob!==undefined){O[+b.dataset.ob].back=true;sv("sefTuk",O);drawO();return}
+  if(b.dataset.ox!==undefined){O.splice(+b.dataset.ox,1);sv("sefTuk",O);drawO()}});
+$("rzF").addEventListener("change",drawR);
+function drawO(){var L=O.map(function(x,i){return{x:x,i:i}}).filter(function(o){return !o.x.back});
+  $("tkLst").innerHTML=L.length?L.map(function(o){return '<div style="display:flex;justify-content:space-between;gap:8px;align-items:center;padding:4px 0"><b style="color:#b3261e">🚫 '+esc(o.x.n)+'</b><span><button class="btn light" data-ob="'+o.i+'">Geri geldi</button> <button class="btn light" data-ox="'+o.i+'">×</button></span></div>'}).join(""):'<div class="small">Tükenen ürün yok.</div>'}
+/* mise en place */
+function drawMS(){var d=$("msD").value||today(),by={};MS.forEach(function(x,i){(by[x.s]=by[x.s]||[]).push({x:x,i:i})});
+  var ks=Object.keys(by),all=MS.length,dn=MS.filter(function(x){return x.dn&&x.dn[d]}).length;
+  $("msL").innerHTML=all?'<div class="small"><b>'+dn+'/'+all+' tamam</b></div>'+ks.map(function(k){return '<div style="margin-top:8px"><b>'+esc(k)+'</b>'+by[k].map(function(o){var on=o.x.dn&&o.x.dn[d];return '<label style="display:flex;gap:8px;align-items:center;margin:2px 0;font-weight:400"><input type="checkbox" style="width:auto" data-mk="'+o.i+'"'+(on?' checked':'')+'><span'+(on?' style="text-decoration:line-through;color:#6b7a73"':'')+'>'+esc(o.x.t)+'</span><button class="btn light onlyUsta" style="padding:1px 8px" data-mx="'+o.i+'">×</button></label>'}).join("")+'</div>'}).join(""):'<div class="small">Liste boş. Usta başı istasyon maddelerini ekleyebilir.</div>'}
+$("mise").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="msAdd"){var t=$("msT").value.trim();if(!t)return;MS.push({id:uid(),s:$("msS").value,t:t,dn:{}});sv("sefMise",MS);$("msT").value="";drawMS();return}
+  if(b.dataset.mx!==undefined){e.preventDefault();MS.splice(+b.dataset.mx,1);sv("sefMise",MS);drawMS();return}
+  if(b.id==="msPrint"){var w=window.open("","_blank");if(!w){toast("Açılır pencere engellendi");return}var by={};MS.forEach(function(x){(by[x.s]=by[x.s]||[]).push(x)});w.document.write('<!doctype html><meta charset="utf-8"><title>Mise en place</title><style>body{font-family:sans-serif;margin:24px}li{margin:6px 0;list-style:none}</style><h2>Mise en place · '+fmtD($("msD").value||today())+'</h2>'+Object.keys(by).map(function(k){return '<h3>'+esc(k)+'</h3><ul>'+by[k].map(function(x){return '<li>☐ '+esc(x.t)+'</li>'}).join("")+'</ul>'}).join(""));w.document.close();setTimeout(function(){try{w.print()}catch(e){}},400);return}
+  if(b.id==="dvAdd"){var n=$("dvT").value.trim();if(!n){toast("Not yaz");return}var d=new Date();DV.unshift({id:uid(),d:today(),h:p2(d.getHours())+":"+p2(d.getMinutes()),w:meName(),t:n});if(DV.length>200)DV.length=200;sv("sefDevir",DV);$("dvT").value="";drawDV();toast("Kaydedildi");return}});
+$("mise").addEventListener("change",function(e){var t=e.target;if(t.dataset.mk!==undefined){var x=MS[+t.dataset.mk],d=$("msD").value||today();x.dn=x.dn||{};if(t.checked)x.dn[d]=1;else delete x.dn[d];sv("sefMise",MS);setTimeout(drawMS,0)}else if(t.id==="msD")drawMS()});
+function drawDV(){$("dvL").innerHTML=DV.slice(0,20).map(function(x){return '<div style="border-top:1px solid #dde5df;padding:8px 0"><div class="small">'+fmtD(x.d)+' '+esc(x.h||"")+(x.w?' · '+esc(x.w):'')+'</div><div style="white-space:pre-line">'+esc(x.t)+'</div></div>'}).join("")||'<div class="small">Devir notu yok.</div>'}
+/* israf */
+function drawIS(){var pre=today().slice(0,7),m=IS.filter(function(x){return(x.d||"").indexOf(pre)===0}),why={},tot=0;m.forEach(function(x){why[x.r]=(why[x.r]||0)+1;tot+=+x.v||0});
+  var role=document.body.dataset.role;
+  $("isSum").innerHTML=m.length?'<div class="small">'+m.length+' kayıt'+(role!=="personel"&&tot?' · toplam '+tl(tot):'')+'</div>'+Object.keys(why).sort(function(a,b){return why[b]-why[a]}).map(function(k){return '<div class="small">'+esc(k)+': <b>'+why[k]+'</b></div>'}).join(""):'<div class="small">Bu ay kayıt yok.</div>';
+  $("isL").innerHTML=IS.slice(0,40).map(function(x,i){return '<div style="border-top:1px solid #dde5df;padding:8px 0"><b>'+esc(x.n)+'</b> · '+esc(x.q)+' '+esc(x.u)+(role!=="personel"&&x.v?' · '+tl(x.v):'')+'<div class="small">'+fmtD(x.d)+' · '+esc(x.r)+(x.w?' · '+esc(x.w):'')+(x.nt?' · '+esc(x.nt):'')+'</div><button class="btn light onlyUsta" data-ix="'+i+'">Sil</button></div>'}).join("")||'<div class="small">Kayıt yok.</div>'}
+$("israf").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="isAdd"){var n=$("isN").value.trim(),q=$("isQ").value;if(!n||!q){toast("Ürün ve miktar gerekli");return}IS.unshift({id:uid(),d:today(),n:n,q:+q,u:$("isU").value,v:+$("isV").value||0,r:$("isR").value,nt:$("isNt").value.trim(),w:meName()});if(IS.length>1000)IS.length=1000;sv("sefIsraf",IS);["isN","isQ","isV","isNt"].forEach(function(i){$(i).value=""});drawIS();toast("Kaydedildi");return}
+  if(b.dataset.ix!==undefined){if(!confirm("Kayıt silinsin mi?"))return;IS.splice(+b.dataset.ix,1);sv("sefIsraf",IS);drawIS()}});
+/* vardiya */
+var GN=["Pzt","Sal","Çar","Per","Cum","Cmt","Paz"];
+function drawVD(){$("vdWk").textContent=fmtD(wk0)+" – "+fmtD(addDays(wk0,6));
+  var staff=(window.SEF_staff||[]).slice();VD.forEach(function(v){if(staff.indexOf(v.who)<0)staff.push(v.who)});$("vdDl").innerHTML=staff.map(function(n){return '<option value="'+esc(n)+'">'}).join("");
+  var L=VD.map(function(x,i){return{x:x,i:i}}).filter(function(o){return o.x.w===wk0});
+  $("vdL").innerHTML=L.length?'<table style="width:100%;border-collapse:collapse;min-width:620px"><tr><th></th>'+GN.map(function(g,j){return '<th class="small">'+g+'<br>'+addDays(wk0,j).slice(8)+'</th>'}).join("")+'</tr>'+L.map(function(o){return '<tr><td class="small"><b>'+esc(o.x.who)+'</b> <button class="btn light onlyUsta" style="padding:0 6px" data-vx="'+o.i+'">×</button></td>'+GN.map(function(g,j){return '<td><input type="text" style="padding:6px;font-size:12px" maxlength="30" data-vc="'+o.i+'|'+j+'" value="'+esc((o.x.d||[])[j]||"")+'"'+(document.body.dataset.role==="personel"?' readonly':'')+'></td>'}).join("")+'</tr>'}).join("")+'</table>':'<div class="small">Bu hafta için satır yok.</div>'}
+$("vardiya").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="vdPrev"){wk0=addDays(wk0,-7);drawVD();return}if(b.id==="vdNext"){wk0=addDays(wk0,7);drawVD();return}
+  if(b.id==="vdAdd"){var n=$("vdN").value.trim();if(!n)return;VD.push({id:uid(),w:wk0,who:n,d:["","","","","","",""]});sv("sefVard",VD);$("vdN").value="";drawVD();return}
+  if(b.dataset.vx!==undefined){if(!confirm("Satır silinsin mi?"))return;VD.splice(+b.dataset.vx,1);sv("sefVard",VD);drawVD()}});
+$("vardiya").addEventListener("change",function(e){var t=e.target;if(t.dataset.vc){var p=t.dataset.vc.split("|"),x=VD[+p[0]];x.d=x.d||["","","","","","",""];x.d[+p[1]]=t.value.trim();sv("sefVard",VD)}});
+/* menü mühendisliği */
+function drawMM(){if(!MM.length){$("mmL").innerHTML='<div class="small">Yemek ekle, satış adedini güncelle.</div>';return}
+  var tq=MM.reduce(function(a,x){return a+(+x.q||0)},0),avgQ=tq/MM.length*0.7,tm=MM.reduce(function(a,x){return a+((+x.p||0)-(+x.c||0))*(+x.q||0)},0),avgM=tm/Math.max(1,tq);
+  $("mmL").innerHTML='<div class="small">Ortalama birim kâr: '+tl(avgM)+' · Çok satış eşiği: '+Math.round(avgQ)+' adet</div>'+MM.map(function(x,i){var m=(+x.p||0)-(+x.c||0),hi=(+x.q||0)>=avgQ,hm=m>=avgM,c=hi&&hm?["⭐ Yıldız","#2e7d32"]:hi?["🐴 Atbaşı","#b26a00"]:hm?["❓ Bulmaca","#0c2b4a"]:["⚠ Gözden geçir","#b3261e"];
+    return '<div style="border-top:1px solid #dde5df;padding:8px 0"><b>'+esc(x.n)+'</b> <b style="color:'+c[1]+'">'+c[0]+'</b><div class="small">Fiyat '+tl(x.p)+' · maliyet '+tl(x.c)+' · birim kâr '+tl(m)+(x.p?' (%'+Math.round(m/x.p*100)+')':'')+' · toplam kâr '+tl(m*(+x.q||0))+'</div><div style="display:flex;gap:8px;align-items:center"><span class="small">Adet</span><input type="number" min="0" style="width:90px" data-mq="'+i+'" value="'+(+x.q||0)+'"><button class="btn light" data-mm="'+i+'">Sil</button></div></div>'}).join("")}
+$("menumuh").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="mmAdd"){var n=$("mmN").value.trim();if(!n){toast("Yemek adı yaz");return}MM.push({id:uid(),n:n,p:+$("mmPr").value||0,c:+$("mmC").value||0,q:+$("mmQ").value||0});sv("sefMenuMuh",MM);["mmN","mmPr","mmC","mmQ"].forEach(function(i){$(i).value=""});drawMM();return}
+  if(b.dataset.mm!==undefined){if(!confirm("Yemek silinsin mi?"))return;MM.splice(+b.dataset.mm,1);sv("sefMenuMuh",MM);drawMM()}});
+$("menumuh").addEventListener("change",function(e){var t=e.target;if(t.dataset.mq!==undefined){MM[+t.dataset.mq].q=+t.value||0;sv("sefMenuMuh",MM);setTimeout(drawMM,0)}});
+$("rzD").value=today();$("rzF").value=today();$("msD").value=today();
+reload();
+document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-tab]");if(t&&/^(rezerv|mise|israf|vardiya|menumuh)$/.test(t.dataset.tab))setTimeout(reload,50)});
+})();</script>
+<script>(function(){
+if(!document.getElementById("numune"))return;
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function uid(){return "u"+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function p2(n){return(n<10?"0":"")+n}
+function iso(d){return d.getFullYear()+"-"+p2(d.getMonth()+1)+"-"+p2(d.getDate())}
+function today(){return iso(new Date())}
+function ld(k){try{var v=JSON.parse(localStorage.getItem(k)||"[]");return Array.isArray(v)?v:[]}catch(e){return[]}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function toast(m){try{(window.ofToast||function(){})(m)}catch(e){}}
+function tl(n){return(Math.round((+n||0)*100)/100).toLocaleString("tr-TR")+" ₺"}
+function fmtD(d){if(!d)return"";var a=String(d).slice(0,10).split("-");return a[2]+"."+a[1]+"."+a[0]}
+function dayDiff(d){return Math.round((new Date(d+"T12:00:00")-new Date(today()+"T12:00:00"))/864e5)}
+function meName(){try{var m=window.SEF_me&&window.SEF_me();return m&&(m.full_name||m.name)||""}catch(e){return""}}
+var NM=ld("sefNum"),BK=ld("sefBakim"),BL=ld("sefBelge"),GD=ld("sefGider"),BR=ld("sefBorc"),gt="g",gm=new Date();gm.setDate(1);
+function reload(){NM=ld("sefNum");BK=ld("sefBakim");BL=ld("sefBelge");GD=ld("sefGider");BR=ld("sefBorc");drawAll()}
+function drawAll(){drawNM();drawBK();drawBL();drawGD();drawBR();drawHF()}
+window.SEF=window.SEF||{};var prev=SEF.opsReload;SEF.opsReload=function(){try{prev&&prev()}catch(e){}reload()};
+/* numune */
+function drawNM(){var now=Date.now();
+  $("nmL").innerHTML=NM.slice(0,60).map(function(x,i){var end=x.ts+72*36e5,left=(end-now)/36e5,cls=x.imha?"#2e7d32":left<=0?"#b3261e":left<12?"#b26a00":"#0c2b4a";
+    var st=x.imha?"İmha edildi":left<=0?"⚠ Süre doldu, imha et":"Kalan: "+Math.floor(left)+" saat";var dt=new Date(x.ts);
+    return '<div style="border-top:1px solid #dde5df;padding:8px 0"><b>'+esc(x.n)+'</b> · '+esc(x.q)+' g<div class="small">Alındı: '+fmtD(iso(dt))+' '+p2(dt.getHours())+':'+p2(dt.getMinutes())+' · '+esc(x.y)+(x.w?' · '+esc(x.w):'')+(x.nt?' · '+esc(x.nt):'')+'</div><b style="color:'+cls+'" class="small">'+st+'</b>'+(x.imha?'':' <button class="btn light" data-ni="'+i+'">İmha edildi</button>')+'</div>'}).join("")||'<div class="small">Kayıt yok.</div>'}
+$("numune").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="nmAdd"){var n=$("nmN").value.trim();if(!n){toast("Yemek adı yaz");return}NM.unshift({id:uid(),n:n,q:+$("nmQ").value||100,y:$("nmY").value.trim(),nt:$("nmNt").value.trim(),w:meName(),ts:Date.now(),imha:false});if(NM.length>500)NM.length=500;sv("sefNum",NM);$("nmN").value="";$("nmNt").value="";drawNM();toast("Numune kaydedildi");return}
+  if(b.dataset.ni!==undefined){NM[+b.dataset.ni].imha=true;sv("sefNum",NM);drawNM()}});
+/* bakım */
+function drawBK(){var L=BK.map(function(x,i){x._i=i;var due=x.son?dayDiff(x.son)+x.s:-1;x._due=x.son?due:-9999;return x}).sort(function(a,b){return a._due-b._due});
+  $("bkL").innerHTML=L.length?L.map(function(x){var d=x._due,txt=!x.son?"Hiç yapılmadı":d<0?Math.abs(d)+" gün gecikti":d===0?"Bugün":d+" gün sonra",c=!x.son||d<0?"#b3261e":d<=1?"#b26a00":"#2e7d32";
+    return '<div style="border-top:1px solid #dde5df;padding:8px 0"><b>'+esc(x.n)+'</b> <span class="small">· '+esc(x.t)+' · her '+x.s+' günde</span><div class="small">Son: '+(x.son?fmtD(x.son)+(x.w?' · '+esc(x.w):''):'-')+' · <b style="color:'+c+'">'+txt+'</b></div><div class="actions"><button class="btn gold" data-bd="'+x._i+'">Yapıldı</button><button class="btn light onlyUsta" data-bx="'+x._i+'">Sil</button></div></div>'}).join(""):'<div class="small">Plan boş. Usta başı madde ekleyebilir.</div>'}
+$("bakim").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="bkAdd"){var n=$("bkN").value.trim();if(!n){toast("Ad yaz");return}BK.push({id:uid(),n:n,t:$("bkT").value,s:Math.max(1,+$("bkS").value||7),son:"",w:""});sv("sefBakim",BK);$("bkN").value="";drawBK();return}
+  if(b.dataset.bd!==undefined){var x=BK[+b.dataset.bd];x.son=today();x.w=meName();sv("sefBakim",BK);drawBK();toast("Kaydedildi");return}
+  if(b.dataset.bx!==undefined){if(!confirm("Madde silinsin mi?"))return;BK.splice(+b.dataset.bx,1);sv("sefBakim",BK);drawBK()}});
+/* belge */
+function drawBL(){var staff=(window.SEF_staff||[]).slice();BL.forEach(function(x){if(staff.indexOf(x.p)<0)staff.push(x.p)});$("blDl").innerHTML=staff.map(function(n){return '<option value="'+esc(n)+'">'}).join("");
+  var L=BL.map(function(x,i){return{x:x,i:i,d:dayDiff(x.e)}}).sort(function(a,b){return a.d-b.d});
+  $("blL").innerHTML=L.length?L.map(function(o){var c=o.d<0?"#b3261e":o.d<=30?"#b26a00":"#2e7d32",t=o.d<0?"Süresi "+Math.abs(o.d)+" gün önce doldu":o.d===0?"Bugün bitiyor":o.d+" gün kaldı";
+    return '<div style="border-top:1px solid #dde5df;padding:8px 0"><b>'+esc(o.x.p)+'</b> · '+esc(o.x.b)+'<div class="small">Bitiş: '+fmtD(o.x.e)+' · <b style="color:'+c+'">'+t+'</b></div><button class="btn light" data-lx="'+o.i+'">Sil</button></div>'}).join(""):'<div class="small">Belge yok.</div>'}
+$("belge").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="blAdd"){var p=$("blP").value.trim(),d=$("blD").value;if(!p||!d){toast("Personel ve tarih gerekli");return}BL.push({id:uid(),p:p,b:$("blB").value,e:d});sv("sefBelge",BL);$("blP").value="";$("blD").value="";drawBL();return}
+  if(b.dataset.lx!==undefined){if(!confirm("Belge silinsin mi?"))return;BL.splice(+b.dataset.lx,1);sv("sefBelge",BL);drawBL()}});
+/* gider */
+var AY=["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+function mpre(){return gm.getFullYear()+"-"+p2(gm.getMonth()+1)}
+function orderIncome(pre){var S=ld("sefSip");return S.filter(function(s){return s.st===2&&(s.d||"").indexOf(pre)===0}).reduce(function(a,s){return a+(+s.pp||0)*(+s.k||0)},0)}
+function drawGD(){var pre=mpre();$("gdMon").textContent=AY[gm.getMonth()]+" "+gm.getFullYear();
+  var M=GD.map(function(x,i){return{x:x,i:i}}).filter(function(o){return(o.x.d||"").indexOf(pre)===0}).sort(function(a,b){return b.x.d.localeCompare(a.x.d)});
+  var g=0,gi=0,by={};M.forEach(function(o){if(o.x.t==="i")gi+=+o.x.a||0;else{g+=+o.x.a||0;by[o.x.k]=(by[o.x.k]||0)+(+o.x.a||0)}});
+  var oi=orderIncome(pre),inc=oi+gi,net=inc-g;
+  $("gdSum").innerHTML='<div class="small">Sipariş geliri (teslim edilen): <b>'+tl(oi)+'</b></div><div class="small">Ek gelir: <b>'+tl(gi)+'</b></div><div class="small">Gider: <b>'+tl(g)+'</b></div><div style="margin-top:6px"><b style="color:'+(net>=0?"#2e7d32":"#b3261e")+'">'+(net>=0?"Kâr":"Zarar")+': '+tl(Math.abs(net))+'</b></div>'+Object.keys(by).sort(function(a,b){return by[b]-by[a]}).map(function(k){return '<div class="small">'+esc(k)+': '+tl(by[k])+'</div>'}).join("");
+  $("gdL").innerHTML=M.map(function(o){return '<div style="display:flex;justify-content:space-between;gap:8px;border-top:1px solid #dde5df;padding:6px 0"><span class="small">'+fmtD(o.x.d)+' · '+(o.x.t==="i"?'Gelir':esc(o.x.k))+(o.x.n?' · '+esc(o.x.n):'')+'</span><span><b>'+tl(o.x.a)+'</b> <button class="btn light" style="padding:1px 8px" data-gx="'+o.i+'">×</button></span></div>'}).join("")||'<div class="small">Hareket yok.</div>'}
+$("gider").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.closest("#gdT")){gt=b.dataset.t;[].forEach.call($("gdT").children,function(c){c.classList.toggle("on",c===b)});return}
+  if(b.id==="gdPrev"){gm.setMonth(gm.getMonth()-1);drawGD();return}if(b.id==="gdNext"){gm.setMonth(gm.getMonth()+1);drawGD();return}
+  if(b.id==="gdAdd"){var a=+$("gdA").value,d=$("gdD").value||today();if(!(a>0)){toast("Tutar gir");return}GD.push({id:uid(),t:gt,d:d,a:a,k:$("gdK").value,n:$("gdN").value.trim()});sv("sefGider",GD);$("gdA").value="";$("gdN").value="";drawGD();toast("Kaydedildi");return}
+  if(b.dataset.gx!==undefined){if(!confirm("Hareket silinsin mi?"))return;GD.splice(+b.dataset.gx,1);sv("sefGider",GD);drawGD();return}
+  if(b.id==="brAdd"){var t=$("brT").value.trim(),am=+$("brA").value;if(!t||!(am>0)){toast("Tedarikçi ve tutar gerekli");return}BR.push({id:uid(),t:t,a:am,v:$("brV").value,ok:false});sv("sefBorc",BR);$("brT").value="";$("brA").value="";$("brV").value="";drawBR();return}
+  if(b.dataset.bo!==undefined){BR[+b.dataset.bo].ok=!BR[+b.dataset.bo].ok;sv("sefBorc",BR);drawBR();return}
+  if(b.dataset.bz!==undefined){if(!confirm("Kayıt silinsin mi?"))return;BR.splice(+b.dataset.bz,1);sv("sefBorc",BR);drawBR()}});
+function drawBR(){var T=ld("sefTed"),names=T.map(function(x){return x.n});BR.forEach(function(x){if(names.indexOf(x.t)<0)names.push(x.t)});$("brDl").innerHTML=names.map(function(n){return '<option value="'+esc(n)+'">'}).join("");
+  var open=BR.filter(function(x){return !x.ok}).reduce(function(a,x){return a+(+x.a||0)},0);
+  $("brL").innerHTML='<div class="small"><b>Açık borç: '+tl(open)+'</b></div>'+BR.map(function(x,i){return{x:x,i:i}}).sort(function(a,b){return(a.x.ok-b.x.ok)||(a.x.v||"9").localeCompare(b.x.v||"9")}).map(function(o){var x=o.x,d=x.v?dayDiff(x.v):null,c=x.ok?"#2e7d32":d!==null&&d<0?"#b3261e":d!==null&&d<=7?"#b26a00":"#0c2b4a";
+    return '<div style="border-top:1px solid #dde5df;padding:6px 0"><b>'+esc(x.t)+'</b> · '+tl(x.a)+'<div class="small" style="color:'+c+'">'+(x.ok?"Ödendi":x.v?"Vade "+fmtD(x.v)+(d<0?" · "+Math.abs(d)+" gün gecikti":" · "+d+" gün kaldı"):"Vadesiz")+'</div><button class="btn light" data-bo="'+o.i+'">'+(x.ok?'Geri al':'Ödendi')+'</button> <button class="btn light" data-bz="'+o.i+'">Sil</button></div>'}).join("")}
+$("gdD").value=today();
+/* haftalık */
+function weekData(){var from=new Date();from.setDate(from.getDate()-6);var f=iso(from),t=today(),S=ld("sefSip").filter(function(s){return s.d>=f&&s.d<=t}),IS=ld("sefIsraf").filter(function(s){return s.d>=f&&s.d<=t}),G=GD.filter(function(x){return x.t!=="i"&&x.d>=f&&x.d<=t}),N=NM.filter(function(x){return iso(new Date(x.ts))>=f});
+  return{f:f,t:t,ord:S.length,done:S.filter(function(s){return s.st===2}).length,inc:S.filter(function(s){return s.st===2}).reduce(function(a,s){return a+(+s.pp||0)*(+s.k||0)},0),isr:IS.length,isv:IS.reduce(function(a,x){return a+(+x.v||0)},0),gid:G.reduce(function(a,x){return a+(+x.a||0)},0),num:N.length}}
+window.SEF.alerts=function(){var A=[],now=Date.now();
+  NM.forEach(function(x){if(!x.imha&&x.ts+72*36e5<=now)A.push({k:"numune",t:"Numune imha zamanı geçti: "+x.n})});
+  BK.forEach(function(x){var d=x.son?dayDiff(x.son)+x.s:-1;if(!x.son||d<0)A.push({k:"bakim",t:"Bakım/temizlik gecikti: "+x.n})});
+  BL.forEach(function(x){var d=dayDiff(x.e);if(d<=30)A.push({k:"belge",t:(d<0?"Belge süresi doldu: ":"Belge bitiyor ("+d+" gün): ")+x.p+" · "+x.b})});
+  BR.forEach(function(x){if(!x.ok&&x.v){var d=dayDiff(x.v);if(d<=3)A.push({k:"gider",t:(d<0?"Borç vadesi geçti: ":"Borç vadesi yakın: ")+x.t+" "+tl(x.a)})}});
+  return A};
+function drawHF(){var w=weekData(),a=window.SEF.alerts(),role=document.body.dataset.role;
+  $("hfL").innerHTML='<div class="small">'+fmtD(w.f)+' – '+fmtD(w.t)+'</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-top:8px">'
+   +[["Sipariş",w.ord+" ("+w.done+" teslim)"],["Teslim geliri",tl(w.inc)],["İsraf kaydı",w.isr+(w.isv?" · "+tl(w.isv):"")],["Gider",tl(w.gid)],["Net (gelir−gider)",tl(w.inc-w.gid)],["Numune",w.num+" adet"]].map(function(c){return '<div style="background:#eef3f0;border-radius:12px;padding:10px"><div class="small">'+c[0]+'</div><b>'+c[1]+'</b></div>'}).join("")+'</div>'
+   +'<h3 style="margin-top:14px">⚠ Uyarılar</h3>'+(a.length?a.map(function(x){return '<div class="small">• '+esc(x.t)+'</div>'}).join(""):'<div class="small">Açık uyarı yok.</div>')}
+$("hfPrint").addEventListener("click",function(){var w=window.open("","_blank");if(!w){toast("Açılır pencere engellendi");return}w.document.write('<!doctype html><meta charset="utf-8"><title>Haftalık Özet</title><style>body{font-family:sans-serif;margin:24px}.small{color:#333;margin:4px 0}</style><h2>Haftalık Özet</h2>'+$("hfL").innerHTML);w.document.close();setTimeout(function(){try{w.print()}catch(e){}},400)});
+reload();
+document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-tab]");if(t&&/^(numune|bakim|belge|gider|haftalik)$/.test(t.dataset.tab))setTimeout(reload,50)});
+})();</script>
+<script>(function(){
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function p2(n){return(n<10?"0":"")+n}
+function iso(d){return d.getFullYear()+"-"+p2(d.getMonth()+1)+"-"+p2(d.getDate())}
+function plus(n){var d=new Date();d.setDate(d.getDate()+n);return iso(d)}
+function today(){return plus(0)}
+function ld(k,def){try{var v=JSON.parse(localStorage.getItem(k));return v==null?def:v}catch(e){return def}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function toast(m){try{(window.ofToast||function(){})(m)}catch(e){}}
+function gs(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function ss(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+/* karanlık mod (deneysel, isteğe bağlı) */
+var st=document.createElement("style");st.textContent='html.sefDk{filter:invert(1) hue-rotate(180deg);background:#111}html.sefDk img,html.sefDk video,html.sefDk canvas,html.sefDk #sheet .tiles span{filter:invert(1) hue-rotate(180deg)}html.sefBig{font-size:112%}';document.head.appendChild(st);
+function applyView(){document.documentElement.classList.toggle("sefDk",gs("sefDark")==="1");document.documentElement.classList.toggle("sefBig",gs("sefBigTx")==="1")}applyView();
+/* uyarı kutusu */
+function alerts(){var A=[];try{A=(window.SEF&&SEF.alerts&&SEF.alerts())||[]}catch(e){}
+  try{var d=ld("sefDepo",{items:[]});(d.items||[]).forEach(function(x){if(x.min>0&&(+x.qty||0)<=+x.min)A.push({t:"Stok azaldı: "+x.name+" ("+(+x.qty||0)+" "+(x.unit||"")+")"});(x.b||[]).forEach(function(b){if(b.skt){var df=Math.round((new Date(b.skt+"T12:00:00")-new Date(today()+"T12:00:00"))/864e5);if(df<=2&&(+b.q||0)>0)A.push({t:(df<0?"SKT geçti: ":"SKT yakın: ")+x.name+" ("+b.skt.split("-").reverse().join(".")+")"})}})})}catch(e){}
+  try{ld("sefTuk",[]).forEach(function(x){if(!x.back)A.push({t:"Tükendi: "+x.n})})}catch(e){}
+  return A}
+function drawAlerts(){var box=$("alertBox");if(!box)return;if(document.body.dataset.role==="ev_kullanicisi"){box.innerHTML="";return}var A=alerts();
+  box.innerHTML=A.length?'<div class="card" style="border-left:6px solid #b3261e;margin-bottom:12px"><h3>⚠ Dikkat ('+A.length+')</h3>'+A.slice(0,8).map(function(x){return '<div class="small">• '+esc(x.t)+'</div>'}).join("")+(A.length>8?'<div class="small">… ve '+(A.length-8)+' uyarı daha (Haftalık Özet)</div>':'')+'</div>':''}
+var dash=$("dashboard");if(dash){var bx=document.createElement("div");bx.id="alertBox";dash.insertBefore(bx,dash.children[1]||null)}
+document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-tab]");if(t&&t.dataset.tab==="dashboard")setTimeout(drawAlerts,80)});
+setInterval(drawAlerts,60000);
+/* görünüm / yardım / demo kartı */
+function sample(){var id=function(n){return "demo-"+n};
+  var d=ld("sefDepo",{items:[],log:[]});if(!d.items)d.items=[];if(!d.log)d.log=[];
+  d.items=d.items.filter(function(x){return String(x.id).indexOf("demo-")!==0}).concat([
+   {id:id("d1"),name:"Tavuk but",cat:"Et",unit:"kg",qty:18,min:10,sup:"",b:[{q:18,skt:plus(4)}]},
+   {id:id("d2"),name:"Pirinç",cat:"Bakliyat",unit:"kg",qty:6,min:15,sup:"",b:[{q:6,skt:plus(200)}]},
+   {id:id("d3"),name:"Süt",cat:"Süt ürünü",unit:"lt",qty:12,min:5,sup:"",b:[{q:12,skt:plus(1)}]},
+   {id:id("d4"),name:"Zeytinyağı",cat:"Yağ",unit:"lt",qty:9,min:4,sup:"",b:[{q:9,skt:plus(300)}]}]);
+  sv("sefDepo",d);
+  var add=function(k,items){var a=ld(k,[]);if(!Array.isArray(a))a=[];a=a.filter(function(x){return String(x.id).indexOf("demo-")!==0}).concat(items);sv(k,a)};
+  add("sefMus",[{id:id("m1"),n:"Örnek Düğün Salonu",p:"0500 000 00 00",a:"Örnek Mah. Örnek Cad. No:1",note:"Fıstık alerjisi var"}]);
+  add("sefSip",[{id:id("s1"),cid:id("m1"),c:"Örnek Düğün Salonu",d:plus(2),t:"12:00",addr:"Örnek Mah. Örnek Cad. No:1",k:150,menu:"Mercimek çorbası\nTavuk sote\nPirinç pilavı\nSütlaç",pp:220,co:135,who:"",note:"",st:0,load:[{t:"10 gastronorm pilav",k:"s",ok:false},{t:"6 kap sütlaç",k:"c",ok:false}],out:{},arr:{}}]);
+  add("sefEtk",[{id:id("e1"),d:plus(1),t:"15:00",b:"Örnek tadım"}]);
+  add("sefRez",[{id:id("r1"),d:today(),t:"20:00",n:"Örnek Rezervasyon",k:4,m:"5",p:"",nt:"Gluten hassasiyeti"}]);
+  add("sefMise",[{id:id("ms1"),s:"Soğuk",t:"Salata malzemelerini hazırla",dn:{}},{id:id("ms2"),s:"Sıcak",t:"Çorba tabanını pişir",dn:{}}]);
+  add("sefBakim",[{id:id("b1"),n:"Davlumbaz filtre temizliği",t:"Temizlik",s:7,son:plus(-9),w:""}]);
+  add("sefBelge",[{id:id("bl1"),p:"Örnek Personel",b:"Sağlık raporu (portör muayenesi)",e:plus(12)}]);
+  add("sefGider",[{id:id("g1"),t:"g",d:today(),a:4200,k:"Mal alımı",n:"Örnek"},{id:id("g2"),t:"i",d:today(),a:1500,k:"",n:"Örnek ek gelir"}]);
+  add("sefMenuMuh",[{id:id("mm1"),n:"Örnek Kebap",p:260,c:110,q:80},{id:id("mm2"),n:"Örnek Çorba",p:70,c:20,q:120}]);
+  if(window.SEF&&SEF.depoReload)try{SEF.depoReload()}catch(e){}
+  if(window.SEF&&SEF.opsReload)try{SEF.opsReload()}catch(e){}}
+function unsample(){var d=ld("sefDepo",{items:[],log:[]});if(d.items){d.items=d.items.filter(function(x){return String(x.id).indexOf("demo-")!==0});sv("sefDepo",d)}
+  ["sefMus","sefSip","sefEtk","sefRez","sefMise","sefBakim","sefBelge","sefGider","sefMenuMuh"].forEach(function(k){var a=ld(k,[]);if(Array.isArray(a)){var n=a.filter(function(x){return String(x.id).indexOf("demo-")!==0});if(n.length!==a.length)sv(k,n)}});
+  if(window.SEF&&SEF.depoReload)try{SEF.depoReload()}catch(e){}
+  if(window.SEF&&SEF.opsReload)try{SEF.opsReload()}catch(e){}}
+var bk=$("backup");if(bk){var c=document.createElement("div");c.className="card";c.style.marginTop="14px";c.id="viewCard";
+  c.innerHTML='<h3>🎛️ Görünüm ve yardım</h3><label style="display:flex;gap:8px;align-items:center;font-weight:400"><input type="checkbox" id="vwDk" style="width:auto"> Karanlık mod (deneysel)</label><label style="display:flex;gap:8px;align-items:center;font-weight:400"><input type="checkbox" id="vwBig" style="width:auto"> Büyük yazı</label><div class="actions"><button class="btn light" id="vwHelp">Kullanım rehberini göster</button></div>'
+   +'<div class="onlyUsta" style="margin-top:10px"><b>Örnek verilerle dene</b><div class="small">Depo, sipariş, rezervasyon, gider gibi bölümlere örnek kayıt ekler. Gerçek verilerine dokunmaz; istediğin an tek tuşla silebilirsin.</div><div class="actions"><button class="btn gold" id="vwDemo">Örnek verileri yükle</button><button class="btn light" id="vwUndemo">Örnek verileri sil</button></div></div>';
+  bk.appendChild(c);$("vwDk").checked=gs("sefDark")==="1";$("vwBig").checked=gs("sefBigTx")==="1";
+  c.addEventListener("change",function(e){if(e.target.id==="vwDk"){ss("sefDark",e.target.checked?"1":"0");applyView()}if(e.target.id==="vwBig"){ss("sefBigTx",e.target.checked?"1":"0");applyView()}});
+  c.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+    if(b.id==="vwHelp")guide(true);
+    if(b.id==="vwDemo"){if(!confirm("Örnek veriler eklensin mi? (Sonradan silebilirsin)"))return;sample();toast("Örnek veriler eklendi")}
+    if(b.id==="vwUndemo"){if(!confirm("Örnek veriler silinsin mi? Kendi kayıtların silinmez."))return;unsample();toast("Örnek veriler silindi")}})}
+/* ilk kullanım rehberi */
+var STEPS={ev:[["Tarif bul","Reçete Kütüphanesi'nde ara, Elimdeki Malzemeler ile dolaptakine göre tarif bul."],["Menünü planla","Menü sekmesinde haftanı planla, Alışveriş Listesi'ni otomatik çıkar."],["Kendi tarifini ekle","Özel / Doğaçlama Yemek ile kendi tarifini kaydet, istersen toplulukla paylaş."]],
+  pro:[["Depo ve maliyet","Depo / Stok'a malzemeleri gir, Maliyet'te fiyatları belirle; porsiyon ve menü maliyeti kendiliğinden hesaplanır."],["Günlük işler","Günlük İş Listesi'nden ekibe görev ata; HACCP, SKT ve numune kayıtlarını tut."],["Catering ve restoran","Müşteri, Sipariş ve Sevkiyat ile teslimatı yönet; Rezervasyon, Mise en Place ve Vardiya bölümleriyle servisi planla."],["Örnek verilerle dene","Hesap ve yedek sayfasından örnek veri yükleyip her bölümü risksiz gör."]]};
+function guide(force){if(!force&&gs("sefOnb")==="1")return;var ev=document.body.dataset.role==="ev_kullanicisi",L=STEPS[ev?"ev":"pro"],i=0;
+  var o=document.createElement("div");o.style.cssText="position:fixed;inset:0;background:#0b1b3acc;z-index:99999;display:flex;align-items:center;justify-content:center;padding:20px";
+  o.innerHTML='<div style="background:#fff;color:#202a34;border-radius:20px;max-width:420px;width:100%;padding:22px;border:2px solid #c59655"><div class="small" id="gdN"></div><h3 id="gdH" style="margin:6px 0"></h3><p id="gdP" style="margin:0 0 14px"></p><div style="display:flex;gap:8px;justify-content:space-between"><button class="btn light" id="gdS">Atla</button><button class="btn gold" id="gdX">İleri</button></div></div>';
+  document.body.appendChild(o);
+  function show(){$("gdN").textContent=(i+1)+" / "+L.length;$("gdH").textContent=L[i][0];$("gdP").textContent=L[i][1];$("gdX").textContent=i===L.length-1?"Başla":"İleri"}
+  function close(){ss("sefOnb","1");o.remove()}
+  o.querySelector("#gdS").onclick=close;o.querySelector("#gdX").onclick=function(){if(i===L.length-1)close();else{i++;show()}};show()}
+var tries=0,iv=setInterval(function(){tries++;if(tries>120){clearInterval(iv);return}
+  if(document.body.dataset.role&&!document.body.classList.contains("locked")){clearInterval(iv);drawAlerts();try{guide(false)}catch(e){}}},1000);
+})();</script>
+<script>(function(){
+var anchor=document.getElementById("depo");if(!anchor)return;
+var CAT={"Dana eti":["kg","Dana kıyma","Dana kuşbaşı","Dana but","Dana antrikot","Dana bonfile","Dana ribeye","Dana kaburga","Dana incik","Dana boyun","Dana omuz","Dana döş","Dana dil","Dana karaciğer","Dana böbrek","Dana ciğer","Dana kemik","Dana kemik iliği","Dana yanak","Dana kuyruk","Dana pirzola","Dana T-bone","Dana sırt","Dana but (sinirsiz)","Dana sucuk eti","Dana dönerlik","Dana tulum","Dana jambon","Dana pastırma","Dana bacak","Dana kafa","Dana işkembe","Dana paça","Dana dalak","Dana yürek","Dana beyin","Dana bağırsak","Dana yağı"],"Kuzu ve koyun":["kg","Kuzu but","Kuzu kol","Kuzu pirzola","Kuzu incik","Kuzu kaburga","Kuzu sırt","Kuzu kıyma","Kuzu kuşbaşı","Kuzu bonfile","Kuzu boyun","Kuzu ciğer","Kuzu böbrek","Kuzu dil","Kuzu kelle","Kuzu paça","Kuzu işkembe","Kuzu kuyruk yağı","Kuzu bütün","Kuzu tandır","Kuzu şiş","Kuzu gerdan","Koyun eti","Koyun incik","Koyun kıyma","Keçi eti","Oğlak eti","Kuzu beyin","Kuzu kemik","Kuzu yürek","Kuzu dalak","Kuzu bağırsak (kokoreç)","Kuzu sakatat karışık"],"Tavuk, hindi, kanatlı":["kg","Bütün tavuk","Tavuk göğüs","Tavuk but","Tavuk baget","Tavuk kanat","Tavuk bonfile","Tavuk kıyma","Tavuk ciğer","Tavuk yürek","Tavuk taşlık","Tavuk boyun","Tavuk sırt","Tavuk ayak","Tavuk fileto","Tavuk döner","Tavuk şnitzel","Tavuk nugget","Tavuk but (kemiksiz)","Tavuk but (kemikli)","Tavuk pirzola","Hindi göğüs","Hindi but","Hindi kıyma","Hindi bütün","Hindi kanat","Hindi jambon","Ördek","Ördek göğüs","Ördek but","Kaz","Bıldırcın","Güvercin","Tavşan","Hindi sucuk","Hindi salam","Hindi pastırma","Piliç bütün","Piliç pirzola","Piliç şiş","Tavuk kebap","Tavuk haşlanmış (hazır)"],"İşlenmiş et":["kg","Sucuk","Sosis","Salam","Pastırma","Jambon","Sosis (cocktail)","Sosis (frankfurter)","Bacon","Prosciutto","Chorizo","Pepperoni","Mortadella","Kavurma","Konserve et","Döner (hazır)","Köfte (hazır)","Hamburger köftesi","Kaşarlı sucuk","Hindi füme","Kangal sucuk","Kemik suyu (hazır)","Et suyu (toz)","Et bulyonu","Pate","Şarküteri karışık","Kokoreç","Kebap (hazır)","Çiğ köfte (hazır)"],"Balık":["kg","Levrek","Çipura","Somon","Hamsi","Sardalya","Uskumru","Palamut","Lüfer","Mezgit","Barbunya (balık)","Kalkan","Dil balığı","Alabalık","Sazan","Turna","Ton balığı","Kılıç balığı","Orkinos","Mercan","İstavrit","Çinekop","Tekir","Gümüş","Karagöz","Sinarit","Lagos","Zargana","Kefal","Hamsi (temiz)","Morina","Pisi balığı","Mersin balığı","Havyar (kg)","Somon füme","Ringa","Hamsi (tuzlu)","Lakerda","Balık fileto","Balık kafası","Yılan balığı","Tilapia","Panga","Levrek fileto"],"Deniz ürünleri":["kg","Karides","Kalamar","Ahtapot","Midye","İstiridye","Yengeç","Istakoz","Deniz tarağı","Kerevit","Sübye","Karides (jumbo)","Karides (temiz)","Kalamar halka","Midye (temiz)","Yengeç bacağı","Surimi","Deniz mahsulü karışık","Deniz yosunu (nori)|paket","Deniz börülcesi","Dil midyesi","Yengeç eti","Karides kabuğu","Kalamar mürekkebi|paket"],"Süt ve süt ürünleri":["kg","Süt|lt","Süt (UHT)|lt","Süt (yarım yağlı)|lt","Süt (az yağlı)|lt","Süt (laktozsuz)|lt","Süt tozu","Yoğurt","Yoğurt (süzme)","Yoğurt (yağsız)","Ayran|lt","Kefir|lt","Tereyağı","Sade yağ","Margarin","Krema|lt","Krem şanti|lt","Çırpılmış krema","Labne","Lor","Çökelek","Kaymak","Süzme peynir","Beyaz peynir","Tulum peyniri","Ezine peyniri","Kaşar","Taze kaşar","Eski kaşar","Mozzarella","Cheddar","Gouda","Edam","Parmesan","Pecorino","Gorgonzola","Ricotta","Mascarpone","Cream cheese","Feta","Halloumi","Brie","Camembert","Emmental","Gruyère","Krem peynir","Üçgen peynir|paket","Dil peyniri","Örgü peyniri","Mihaliç","Civil peyniri","Hellim","Rendelenmiş kaşar","Rendelenmiş mozzarella","Krem fraiche","Ekşi krema","Sütlü tatlı karışımı|paket","Yoğurt (kova)|kutu","Peynir altı suyu|lt","Koyu süt","Buttermilk|lt","Kondanse süt|kutu","Buharlaştırılmış süt|kutu"],"Yumurta":["adet","Yumurta","Yumurta (L)","Yumurta (M)","Yumurta (organik)","Yumurta (köy)","Yumurta akı (pastörize)|lt","Yumurta sarısı (pastörize)|lt","Yumurta (haşlanmış hazır)","Yumurta tozu","Bıldırcın yumurtası","Hindi yumurtası","Ördek yumurtası","Sıvı yumurta (tam)|lt"],"Yeşil yapraklılar ve otlar":["kg","Marul","Göbek marul","Kıvırcık","Roka","Tere","Ispanak","Pazı","Semizotu","Lahana (beyaz)","Lahana (kırmızı)","Çin lahanası","Kara lahana","Brüksel lahanası","Karnabahar","Brokoli","Radika","Hindiba","Marul (iceberg)","Marul (romaine)","Baby ıspanak","Maydanoz|adet","Dereotu|adet","Nane (taze)|adet","Fesleğen (taze)|adet","Kişniş|adet","Biberiye (taze)|adet","Kekik (taze)|adet","Adaçayı (taze)|adet","Tarhun|adet","Frenk soğanı|adet","Taze soğan|adet","Taze sarımsak|adet","Ekşi kuzukulağı","Isırgan","Ebegümeci","Madımak","Radika otu","Su teresi","Mikro yeşillik|paket","Yaprak sarma (taze asma)","Asma yaprağı (salamura)","Lahana yaprağı"],"Kök ve yumru sebzeler":["kg","Patates","Tatlı patates","Havuç","Pancar","Turp","Kırmızı turp","Şalgam","Kereviz kökü","Yer elması","Zencefil","Zerdeçal kökü","Maydanoz kökü","Havuç (mini)","Sarımsak","Soğan (kuru)","Soğan (kırmızı)","Soğan (arpacık)","Soğan (beyaz)","Pırasa","Mısır (taze)","Patates (baby)","Patates (kızartmalık)","Patates (fırınlık)","Patates (haşlamalık)","Hindiba kökü","Wasabi","Taro","Manyok"],"Meyve sebzeler":["kg","Domates","Domates (salkım)","Domates (cherry)","Domates (kurutulmuş)","Domates (rendelenmiş)","Salatalık","Cornichon","Biber (yeşil)","Biber (kırmızı)","Biber (sivri)","Biber (dolmalık)","Biber (çarliston)","Biber (kapya)","Biber (acı)","Biber (jalapeno)","Biber (habanero)","Biber (isot)","Patlıcan","Patlıcan (kemer)","Patlıcan (beyaz)","Kabak","Kabak (sakız)","Kabak (bal)","Kabak (çekirdek)","Balkabağı","Kabak çiçeği|adet","Bamya","Taze fasulye","Barbunya (taze)","Bezelye (taze)","Bakla (taze)","Enginar|adet","Kuşkonmaz","Mısır (koçan)|adet","Avokado","Zeytin (taze)","Kapari","Hıyar turşusu","Biber turşusu","Karnıyarık (hazır)","Dolma (hazır)","Domates sos (hazır)"],"Mantar":["kg","Kültür mantarı","Kestane mantarı","İstiridye mantarı","Shiitake","Portobello","Porcini","Chanterelle","Trüf (siyah)","Trüf (beyaz)","Enoki","Mantar (kurutulmuş)","Mantar (konserve)|kutu","Morel"],"Meyveler":["kg","Limon","Portakal","Mandalina","Greyfurt","Lime","Elma","Elma (yeşil)","Armut","Ayva","Muz","Çilek","Böğürtlen","Ahududu","Yaban mersini","Kiraz","Vişne","Kayısı","Şeftali","Nektarin","Erik","Üzüm (sofralık)","Üzüm (çekirdeksiz)","İncir","Nar","Karpuz","Kavun","Ananas","Mango","Kivi","Papaya","Hindistan cevizi|adet","Hurma","Avokado (meyve)","Dut","Kızılcık","Muşmula","Ahlat","Yeni dünya","Trabzon hurması","Passion fruit","Liçi","Ejder meyvesi","Guava","Tamarind","Pomelo","Kumkuat","Bergamot","Portakal kabuğu (rendelenmiş)","Limon kabuğu (rendelenmiş)"],"Kuru meyve ve kuruyemiş":["kg","Kuru kayısı","Kuru incir","Kuru üzüm","Kuru erik","Kuru elma","Kuru muz","Kuru hurma","Kuru dut","Kuru kiraz","Kuru vişne","Kuru ahududu","Kuru çilek","Kuru yaban mersini","Kuru mango","Kuru ananas","Hurma (Medjool)","Fındık","Fındık (kavrulmuş)","Fındık (kıyılmış)","Ceviz","Ceviz (kıyılmış)","Badem","Badem (kıyılmış)","Badem (dilimlenmiş)","Badem unu","Antep fıstığı","Antep fıstığı (toz)","Yer fıstığı","Fıstık ezmesi","Kaju","Kestane","Çam fıstığı","Pekan cevizi","Makadamya","Brezilya cevizi","Ay çekirdeği","Kabak çekirdeği","Susam","Keten tohumu","Chia tohumu","Haşhaş","Hindistan cevizi (rendelenmiş)","Hindistan cevizi sütü|kutu","Hindistan cevizi kreması|kutu","Çekirdek karışık","Granola","Müsli"],"Tahıllar ve pirinç":["kg","Pirinç (baldo)","Pirinç (osmancık)","Pirinç (jasmine)","Pirinç (basmati)","Pirinç (arborio)","Pirinç (yabani)","Pirinç (kahverengi)","Pirinç (sushi)","Pirinç (nişastalı)","Pirinç unu","Bulgur (pilavlık)","Bulgur (köftelik)","Bulgur (ince)","Bulgur (iri)","Bulgur (pilavlık yarma)","Kinoa","Karabuğday","Yulaf (ezme)","Yulaf (kepeği)","Arpa","Arpa (inci)","Çavdar","Darı","Mısır (patlatmalık)","Mısır (irmik)","Kuskus","İrmik (ince)","İrmik (kalın)","Yarma","Firik","Kavut","Kızartılmış ekmek (kuru)","Amarant","Teff","Sorgum"],"Bakliyat":["kg","Kırmızı mercimek","Yeşil mercimek","Siyah mercimek","Sarı mercimek","Mercimek (köftelik)","Nohut","Nohut (kabuklu)","Nohut (konserve)|kutu","Kuru fasulye","Kuru fasulye (dermason)","Kuru fasulye (şeker)","Kuru fasulye (horoz)","Barbunya (kuru)","Börülce","Bakla (kuru)","Bezelye (kuru)","Maş fasulyesi","Soya fasulyesi","Soya (haşlanmış)","Lima fasulyesi","Siyah fasulye","Kırmızı fasulye","Adzuki","Fasulye (konserve)|kutu","Humus (hazır)","Falafel karışımı|paket","Tofu","Tempeh","Soya kıyma","Soya sütü|lt","Nohut unu","Mercimek unu","Fasulye unu","Bezelye proteini","Edamame","Nohut ezmesi"],"Un ve nişasta":["kg","Un (buğday)","Un (tam buğday)","Un (çavdar)","Un (mısır)","Un (pirinç)","Un (nohut)","Un (badem)","Un (hindistan cevizi)","Un (yulaf)","Un (karabuğday)","Un (galeta)","Un (börek)","Un (pizza)","Un (ekmek)","Un (pasta)","Un (kek)","Un (mısır nişastası)","Nişasta (mısır)","Nişasta (patates)","Nişasta (buğday)","Nişasta (tapyoka)","Galeta unu","Panko","Hazır kek karışımı","Hazır börek hamuru","Hazır pizza hamuru","Hazır tatlı karışımı|paket","Glütensiz un","Vital gluten","Arrowroot","Tapyoka incisi","Sago","Irmik helvası (hazır)","Pudra (kabartma)","Maya (instant)|paket","Maya (yaş)","Maya (kuru)|paket","Kabartma tozu|paket","Karbonat|paket","Vanilya (toz)|paket","Jelatin|paket","Agar agar|paket"],"Makarna ve hamur işleri":["kg","Makarna (burgu)","Makarna (penne)","Makarna (spagetti)","Makarna (fettuccine)","Makarna (linguine)","Makarna (rigatoni)","Makarna (fusilli)","Makarna (farfalle)","Makarna (lazanya)","Makarna (kelebek)","Makarna (kalem)","Makarna (dirsek)","Makarna (yıldız)","Makarna (arpa şehriye)","Makarna (tel şehriye)","Makarna (erişte)","Makarna (manti)","Makarna (cannelloni)","Makarna (ravioli)","Makarna (tortellini)","Makarna (gnocchi)","Makarna (orzo)","Makarna (noodle)","Makarna (udon)","Makarna (soba)","Makarna (ramen)","Makarna (pirinç eriştesi)","Makarna (cam eriştesi)","Yufka|adet","Baklavalık yufka|paket","Kadayıf|paket","Tel kadayıf|paket","Phyllo","Mantı (hazır)","Mantı hamuru","Su böreği yufkası","Gözleme yufkası|adet","Lavaş|adet","Pide|adet","Pita|adet","Tortilla|adet","Tortilla (mısır)|adet","Ekmek (somun)|adet","Ekmek (tost)|paket","Ekmek (baget)|adet","Ekmek (hamburger)|adet","Ekmek (sandviç)|adet","Ekmek (çavdar)|adet","Ekmek (kepekli)|adet","Ekmek (ciabatta)|adet","Ekmek (pideleri)|adet","Simit|adet","Poğaça (hazır)|adet","Açma|adet","Kruvasan (donuk)|adet","Börek (donuk)|adet","Çörek|adet","Galeta|paket","Kraker|paket","Grissini|paket","Bisküvi|paket","Gofret|paket"],"Yağlar":["lt","Zeytinyağı (sızma)","Zeytinyağı (rafine)","Zeytinyağı (riviera)","Ayçiçek yağı","Mısırözü yağı","Fındık yağı","Kanola yağı","Soya yağı","Pamuk yağı","Palm yağı","Hindistan cevizi yağı|kg","Susam yağı","Ceviz yağı","Badem yağı","Avokado yağı","Üzüm çekirdeği yağı","Trüf yağı","Fritöz yağı","Sıvı yağ (kızartma)","Katı yağ|kg","Kuyruk yağı|kg","Sade yağ|kg","Kaz yağı|kg","Ördek yağı|kg","Domuz yağı|kg","Yağ spreyi|adet","Margarin (paket)|kg","Margarin (kova)|kg","Margarin (börek)","Margarin (pasta)","Tereyağı (kalıp)|kg","Tereyağı (paket)|paket"],"Sirke, ekşi ve sos":["lt","Sirke (üzüm)","Sirke (elma)","Sirke (balzamik)","Sirke (şarap)","Sirke (pirinç)","Sirke (malt)","Sirke (beyaz)","Nar ekşisi","Limon suyu","Limon tuzu|kg","Ekşi mayası","Ketçap|kg","Mayonez|kg","Hardal|kg","Hardal (Dijon)","Hardal (bal)","BBQ sosu","Soya sosu","Soya sosu (koyu)","Teriyaki sosu","Worcestershire sosu","Tabasco","Sriracha","Acı sos","Chili sosu","Balık sosu","İstiridye sosu","Hoisin sosu","Miso|kg","Gochujang|kg","Tahini","Pesto (hazır)|kg","Pesto (kırmızı)","Alfredo sos","Beşamel (hazır)","Domates sosu (hazır)|kg","Salsa|kg","Guacamole|kg","Humus|kg","Cacık (hazır)|kg","Tartar sos","Ranch sos","Sezar sos","Vinaigrette","Barbekü marinasyon","Marine (tavuk)","Marine (et)","Marine (balık)","Köfte harcı","Döner harcı","Salça (domates)|kg","Salça (biber)|kg","Salça (ekşi)|kg","Pekmez (üzüm)|kg","Pekmez (dut)|kg","Pekmez (harnup)|kg","Bal|kg","Bal (petek)|kg","Akçaağaç şurubu","Glikoz şurubu|kg","Karamel sos|kg","Çikolata sos|kg","Meyve sosu|kg","Vanilya özü"],"Baharat ve tuz":["kg","Tuz (kaya)","Tuz (sofra)","Tuz (iyotlu)","Tuz (deniz)","Tuz (Himalaya)","Tuz (kaba)","Tuz (kızarmış)","Karabiber","Karabiber (çekilmiş)","Karabiber (tane)","Beyaz biber","Yeşil biber (tane)","Kırmızı biber (tane)","Pul biber","Pul biber (acı)","Pul biber (tatlı)","Isot","Toz biber","Toz biber (acı)","Paprika","Paprika (füme)","Kimyon","Kimyon (tane)","Kişniş (tohum)","Kişniş (toz)","Zerdeçal","Köri","Köri (yeşil)","Köri (kırmızı)","Garam masala","Tandoori","Ras el hanout","Za'atar","Baharat (yedi)","Baharat (köfte)","Baharat (et)","Baharat (tavuk)","Baharat (balık)","Baharat (karışık)","Yenibahar","Karanfil","Tarçın (çubuk)","Tarçın (toz)","Zencefil (toz)","Zencefil (taze)","Hindistan cevizi (rendelenmiş)","Muskat","Meyan kökü","Kakule","Safran|paket","Vanilya (çubuk)|paket","Anason","Rezene","Kekik (kuru)","Nane (kuru)","Defne yaprağı|paket","Biberiye (kuru)","Adaçayı (kuru)","Fesleğen (kuru)","Kekik (taze)","Tarhun (kuru)","Maydanoz (kuru)","Dereotu (kuru)","Frenk soğanı (kuru)","Mercanköşk","Çemen","Çörek otu","Susam (beyaz)","Susam (siyah)","Susam (kavrulmuş)","Haşhaş","Hardal (tohum)","Hardal (toz)","Wasabi (toz)","Sumak","Nar ekşisi (toz)","Limon tuzu (toz)","Sarımsak (toz)","Soğan (toz)","Zencefil (kristal)","Mastika","Sakız","Damla sakızı","Zahter","Isırgan (kuru)","Keçiboynuzu (toz)","Kakao","Hindistan cevizi unu","Tereyağı aroması","Vanilya (şeker)|paket","Aroma (portakal)","Aroma (limon)","Aroma (çilek)","Aroma (badem)","Aroma (rom)","Aroma (süt)"],"Şeker ve tatlandırıcı":["kg","Şeker (toz)","Şeker (küp)","Şeker (esmer)","Şeker (pudra)","Şeker (hindistan cevizi)","Şeker (karamel)","Şeker (kırmızı)","Şeker (vanilya)","Stevia","Aspartam","Bal (çiçek)","Bal (çam)","Bal (kestane)","Glukoz","Fruktoz","Pekmez (şeker)","Şeker şurubu|lt","Şeker hamuru","Fondan","Marzipan","Kakao (toz)","Çikolata (sütlü)","Çikolata (bitter)","Çikolata (beyaz)","Çikolata (damla)","Çikolata (kuvertür)","Çikolata (sos)","Çikolata (fındıklı krem)","Pralin","Karamel","Karamel (tuzlu)","Lokum","Helva","Tahin helvası","Pişmaniye","Akide şekeri","Draje","Şekerleme","Meyve jölesi|paket","Jöle|paket","Pudding (vanilya)|paket","Pudding (çikolata)|paket","Muhallebi|paket","Sütlaç (hazır)","Kazandibi (hazır)","Dondurma|lt","Dondurma (vanilya)|lt","Dondurma (çikolata)|lt","Sorbe|lt","Pasta sosu|kg","Pasta şurubu|lt","Pasta kreması|lt"],"Hazır gıda ve konserve":["kutu","Domates (konserve)","Domates (rendelenmiş) (konserve)","Domates (bütün soyulmuş)","Salça (konserve)","Mısır (konserve)","Bezelye (konserve)","Nohut (konserve)","Fasulye (konserve)","Mercimek (konserve)","Ton balığı (konserve)","Sardalya (konserve)","Somon (konserve)","Hamsi (konserve)","Midye (konserve)","Yengeç (konserve)","Mantar (konserve)","Enginar (konserve)","Kuşkonmaz (konserve)","Zeytin (konserve)","Zeytin (yeşil) (konserve)","Zeytin (siyah) (konserve)","Dolma (konserve)","Yaprak sarma (konserve)","Ananas (konserve)","Şeftali (konserve)","Armut (konserve)","Meyve kokteyli (konserve)","Hurma (konserve)","Hindistan cevizi sütü (konserve)","Karamel (konserve)","Süt (konserve)","Krema (konserve)","Et (konserve)","Çorba (hazır)|paket","Çorba (toz)|paket","Bulyon (tavuk)|paket","Bulyon (sebze)|paket","Bulyon (et)|paket","Bulyon (balık)|paket","Sos (hazır)|paket","Sos (toz)|paket","Noodle (hazır)|paket","Püre (hazır)|paket","Pilav (hazır)|paket","Makarna (hazır)|paket","Hamur (hazır)|paket","Tatlı (hazır)|paket"],"Turşu ve salamura":["kg","Turşu (karışık)","Turşu (salatalık)","Turşu (biber)","Turşu (lahana)","Turşu (karnabahar)","Turşu (havuç)","Turşu (domates)","Turşu (patlıcan)","Turşu (sarımsak)","Turşu (soğan)","Turşu (pancar)","Turşu (kabak)","Turşu (zeytin)","Turşu (limon)","Turşu (kapari)","Turşu (mantar)","Turşu (kornişon)","Turşu suyu|lt","Şalgam suyu|lt","Boza|lt","Zeytin (yeşil)","Zeytin (siyah)","Zeytin (kırmızı)","Zeytin (çizik)","Zeytin (sele)","Zeytin (gemlik)","Zeytin (domat)","Zeytin (ezmesi)","Kapari","Kornişon","Mısır turşusu","Asma yaprağı (salamura)","Lahana (salamura)","Dolmalık biber (salamura)","Peynir (salamura)","Balık (salamura)"],"İçecekler":["lt","Su (damacana)|adet","Su (0","5 lt)|adet","Su (1","Su (soda)|adet","Su (maden)","Su (gazlı)","Meyve suyu (portakal)","Meyve suyu (elma)","Meyve suyu (vişne)","Meyve suyu (şeftali)","Meyve suyu (karışık)","Meyve suyu (nar)","Meyve suyu (üzüm)","Limonata","Ayran (kutu)","Kefir","Şalgam","Boza","Salep|paket","Kola|adet","Gazoz|adet","Soda|adet","Enerji içeceği|adet","Buzlu çay|adet","Çay (siyah)|kg","Çay (yeşil)|kg","Çay (bitki)|kg","Çay (poşet)|kutu","Çay (kış çayı)","Çay (ıhlamur)|kg","Çay (papatya)|kg","Çay (nane-limon)|paket","Çay (adaçayı)|kg","Çay (rezene)|kg","Kahve (Türk)|kg","Kahve (filtre)|kg","Kahve (espresso)|kg","Kahve (çekirdek)|kg","Kahve (hazır)|kg","Kahve (kapsül)|kutu","Kahve (3'ü 1 arada)|paket","Sıcak çikolata|kg","Şerbet|lt","Bira|adet","Şarap|adet","Rakı|adet","Viski|adet","Votka|adet","Rom|adet","Cin|adet","Tekila|adet","Likör|adet","Konyak|adet","Şampanya|adet","Şarap (yemek için)|lt","Şarap (pişirme)|lt","Bira (pişirme)|lt","Rom (aromalı)|lt"],"Ambalaj":["adet","Streç film","Alüminyum folyo","Yağlı kağıt","Pişirme kağıdı","Vakum poşeti","Zip poşet","Çöp poşeti (küçük)|paket","Çöp poşeti (orta)|paket","Çöp poşeti (büyük)|paket","Poşet (fileli)","Poşet (kağıt)|paket","Poşet (naylon)|paket","Kutu (pizza)","Kutu (pasta)","Kutu (börek)","Kutu (yemek)","Kutu (sandviç)","Kutu (köpük)","Kutu (karton)","Tabak (plastik)|paket","Tabak (karton)|paket","Tabak (köpük)|paket","Bardak (plastik)|paket","Bardak (karton)|paket","Bardak (kağıt)|paket","Kaşık (plastik)|paket","Çatal (plastik)|paket","Bıçak (plastik)|paket","Çubuk (yemek)|paket","Kürdan|paket","Pipet|paket","Peçete|paket","Kağıt havlu|paket","Tuvalet kağıdı|paket","Mendil|paket","Gastronom kabı (GN 1/1)|adet","Gastronom kabı (GN 1/2)","Gastronom kabı (GN 1/3)","Gastronom kapağı","Sefer tası|adet","Termos kap|adet","Kapaklı kap|adet","Yağlı kağıt (pasta)","Etiket rulosu","Etiket (SKT)","Etiket (alerjen)","Bant (koli)","Bant (etiket)","Koli","Palet","Streç (koli)"],"Temizlik ve hijyen":["adet","Bulaşık deterjanı|lt","Bulaşık makinesi deterjanı|kg","Parlatıcı|lt","Yüzey dezenfektanı|lt","El dezenfektanı|lt","El sabunu|lt","Çamaşır suyu|lt","Çamaşır deterjanı|kg","Yağ çözücü|lt","Kireç çözücü|lt","Cam temizleyici|lt","Zemin temizleyici|lt","Tuvalet temizleyici|lt","Sünger|paket","Bulaşık bezi|paket","Temizlik bezi (mikrofiber)|paket","Paspas|adet","Süpürge|adet","Faraş|adet","Kova|adet","Eldiven (lateks)|kutu","Eldiven (nitril)|kutu","Eldiven (vinil)|kutu","Eldiven (bulaşık)|paket","Maske|kutu","Bone|paket","Önlük|paket","Galoş|paket","Koruyucu gözlük|adet","İlkyardım malzemesi|kutu","Böcek ilacı|adet","Kemirgen tuzağı|adet","Hava spreyi|adet","Çöp kovası|adet","Sabunluk|adet","Havlu (el)|adet","Havlu (mutfak)|adet","Havlu (kağıt)|paket"],"Mutfak sarf ve ekipman":["adet","Ocak tüpü|adet","Mazot|lt","Kömür|kg","Odun|kg","Briket|kg","Mangal kömürü|kg","Yakıt (çakmak)|adet","Kibrit|paket","Çakmak|adet","Mum|paket","Pil|paket","Ampul|adet","Şarj aleti|adet","Bıçak (şef)","Bıçak (ekmek)","Bıçak (et)","Bıçak (soyma)","Bileme taşı","Çelik bileyici","Kesme tahtası (plastik)","Kesme tahtası (ahşap)","Tencere|adet","Tava|adet","Sahan|adet","Güveç|adet","Tepsi|adet","Kevgir|adet","Süzgeç|adet","Rende|adet","Çırpıcı|adet","Spatula|adet","Kepçe|adet","Kaşık (servis)|adet","Maşa|adet","Çatal (servis)|adet","Termometre (gıda)|adet","Terazi (dijital)|adet","Ölçü kabı|adet","Zamanlayıcı|adet","Önlük (şef)|adet","Şef ceketi|adet","Bere (şef)|adet","Pantolon (şef)|adet","Ayakkabı (iş)|adet"],"Pastane malzemeleri":["kg","Un (pasta)","Şeker (pasta)","Tereyağı (pasta)","Krema (pasta)|lt","Çikolata (kuvertür)","Jelatin (yaprak)|paket","Jelatin (toz)|paket","Gıda boyası|paket","Gıda boyası (jel)|paket","Pasta süsü|paket","Pasta mumu|paket","Pasta altlığı|adet","Pasta kutusu|adet","Dekor şekeri","Dekor (renkli şeker)","Dekor (çikolata)","Dekor (fındık)","Dekor (hindistan cevizi)","Dekor (badem)","Dekor (fıstık)","Dekor (altın)|paket","Krema (tatlı)","Krema (şanti)|lt","Krema (vanilya)","Krema (çikolata)","Krema (karamel)","Krema (limon)","Meyve püresi|kg","Meyve (dondurulmuş)|kg","Çilek (donuk)|kg","Vişne (donuk)|kg","Yaban mersini (donuk)|kg","Ahududu (donuk)|kg","Mango (donuk)|kg","Böğürtlen (donuk)|kg","Meyve karışık (donuk)|kg","Hamur (puf)|paket","Hamur (milföy)|paket","Hamur (kruvasan)|paket","Hamur (börek)|paket","Hamur (pizza)|paket","Hamur (baklava)|paket","Hamur (tart)|adet","Tart kalıbı|adet","Kek kalıbı|adet","Kek kağıdı|paket","Muffin kağıdı|paket","Eclair hamuru|paket","Profiterol hamuru|paket","Bisküvi (tatlı)|paket","Bisküvi (petibör)|paket","Bisküvi (savoiardi)|paket","Bisküvi (graham)|paket","Pasta jelesi|kg","Pasta parlatıcı|kg"],"Donuk gıda":["kg","Patates (dondurulmuş)","Patates (kroket)","Patates (elma dilim)","Sebze karışık (donuk)","Bezelye (donuk)","Mısır (donuk)","Ispanak (donuk)","Brokoli (donuk)","Karnabahar (donuk)","Havuç (donuk)","Biber (donuk)","Bamya (donuk)","Fasulye (donuk)","Enginar (donuk)","Pırasa (donuk)","Mantar (donuk)","Meyve (donuk)","Pizza (donuk)|adet","Börek (donuk)|adet","Mantı (donuk)","Köfte (donuk)","Nugget (donuk)","Şnitzel (donuk)","Hamburger (donuk)","Balık (donuk)","Karides (donuk)","Kalamar (donuk)","Tavuk (donuk)","Et (donuk)","Hamur (donuk)","Dondurma (donuk)|lt","Ekmek (donuk)|adet","Kruvasan (donuk)|adet","Poğaça (donuk)|adet","Simit (donuk)|adet","Pide (donuk)|adet","Lahmacun (donuk)|adet","Baklava (donuk)","Tatlı (donuk)|adet","Çorba (donuk)|lt","Yemek (donuk)|adet","Sos (donuk)|kg"]};
+var card=document.createElement("div");card.className="card onlyUsta";card.id="dpHazir";
+var names=Object.keys(CAT);
+card.innerHTML='<h3>⚡ Hazır malzeme listesi</h3><div class="small">Yazmak yerine kategori seç; toplam 1.200 üzerinde malzeme var; seçtiklerin stok 0 ile eklenir. Sonra yalnızca giriş yapman yeter. Var olanlar tekrar eklenmez.</div><div id="dpHz" style="display:flex;flex-direction:column;gap:6px;margin-top:8px">'+names.map(function(n,i){return '<label style="display:flex;gap:8px;align-items:center;font-weight:400"><input type="checkbox" style="width:auto" data-hz="'+i+'"> '+n+' <span class="small">('+(CAT[n].length-1)+')</span></label>'}).join("")+'</div><div class="actions"><button class="btn gold" id="dpHzAdd">Seçilenleri depoya ekle</button><button class="btn light" id="dpHzAll">Hepsini seç</button></div>';
+var first=anchor.querySelector(".card:nth-of-type(2)")||anchor.children[2];anchor.insertBefore(card,first);
+card.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+  if(b.id==="dpHzAll"){[].forEach.call(card.querySelectorAll("[data-hz]"),function(c){c.checked=true});return}
+  if(b.id==="dpHzAdd"){var sel=[].filter.call(card.querySelectorAll("[data-hz]"),function(c){return c.checked}).map(function(c){return names[+c.dataset.hz]});if(!sel.length){try{window.ofToast("Kategori seç")}catch(e){}return}
+    var D;try{D=JSON.parse(localStorage.getItem("sefDepo")||"null")}catch(er){D=null}if(!D||!Array.isArray(D.items))D={items:[],log:[]};if(!Array.isArray(D.log))D.log=[];
+    var have={};D.items.forEach(function(i){have[String(i.name).toLocaleLowerCase("tr")+"|"+i.unit]=1});var added=0;
+    sel.forEach(function(cn){var arr=CAT[cn],du=arr[0];arr.slice(1).forEach(function(r){var p=r.split("|"),nm=p[0],un=p[1]||du,k=nm.toLocaleLowerCase("tr")+"|"+un;if(have[k])return;have[k]=1;
+      D.items.push({id:"h"+Date.now().toString(36)+Math.random().toString(36).slice(2,6),name:nm,cat:cn,unit:un,qty:0,min:0,sup:"",b:[]});added++})});
+    try{localStorage.setItem("sefDepo",JSON.stringify(D))}catch(er){}
+    try{SEF.depoReload&&SEF.depoReload()}catch(er){}
+    [].forEach.call(card.querySelectorAll("[data-hz]"),function(c){c.checked=false});
+    try{window.ofToast(added+" malzeme eklendi")}catch(er){}}});
+})();</script>
+
 <div id="sheet"><div class="in"><h3>Tüm bölümler</h3><div class="tiles" id="all"></div></div></div>
 <div id="bar"></div>
 <script>
 (function(){
-var IC={dashboard:"🏠",library:"📖",specialCreator:"✨",freeform:"🍳",standart:"📊",shop:"🛒",depo:"📦",maliyet:"💰",gunluk:"✅",skt:"⏳",uretKayit:"🧾",tedarik:"📇",fire:"📉",spiceGuide:"🌿",recipeManage:"✏️",production:"⚖️",equipment:"🍲",menu:"🗓️",prep:"🔪",sauce:"🥣",safety:"🛡️",quality:"👅",notebook:"📓",backup:"💾"};
+var IC={dashboard:"🏠",library:"📖",specialCreator:"✨",freeform:"🍳",standart:"📊",shop:"🛒",depo:"📦",maliyet:"💰",gunluk:"✅",skt:"⏳",uretKayit:"🧾",tedarik:"📇",musteri:"👤",sevkiyat:"🚚",takvim:"📅",rezerv:"🍽️",mise:"🔪",israf:"🗑️",vardiya:"👥",menumuh:"📈",numune:"🧪",bakim:"🧹",belge:"🪪",gider:"💵",haftalik:"📑",fire:"📉",spiceGuide:"🌿",recipeManage:"✏️",production:"⚖️",equipment:"🍲",menu:"🗓️",prep:"🔪",sauce:"🥣",safety:"🛡️",quality:"👅",notebook:"📓",backup:"💾"};
 var NM={dashboard:"Ana Sayfa",library:"Reçeteler",production:"Üretim",menu:"Menü"};
 var btns=[].slice.call(document.querySelectorAll("nav button"));
 function tile(b){var t=document.createElement("button");t.className="tile";t.dataset.tab=b.dataset.tab;t.innerHTML="<i>"+(IC[b.dataset.tab]||"•")+"</i>"+b.textContent;t.onclick=function(){document.getElementById("sheet").classList.remove("open");go(b.dataset.tab)};return t}
@@ -3000,11 +3482,11 @@ function jset(k,v){raw(k,JSON.stringify(v))}
 
 var P=STORAGE;
 var K={rec:P+"_recipes",menu:P+"_menus",week:P+"_weekMenus",temp:P+"_temps",qual:P+"_quality",notes:P+"_notes",remote:P+"_remote",comm:P+"_community"};
-var KV=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure","sefFav","sefRecFav","sefRecent","sefShop","sefFire","sefYield","sefStdRows",K.notes];
+var KV=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure","sefMus","sefSip","sefEtk","sefRez","sefTuk","sefMise","sefDevir","sefIsraf","sefMenuMuh","sefVard","sefNum","sefBakim","sefBelge","sefGider","sefBorc","sefFav","sefRecFav","sefRecent","sefShop","sefFire","sefYield","sefStdRows",K.notes];
 var WATCH={};[K.rec,K.menu,K.week,K.temp,K.qual].concat(KV).forEach(function(k){WATCH[k]=1});
 var UID_KEY="sef_cloud_uid",DIRTY="sef_dirty",KNOWN="sef_known";
 var ROLE_LABEL={super_admin:"Süper Admin",ev_kullanicisi:"Ev Kullanıcısı",ustabasi:"Usta Başı / Şef",personel:"Personel"};
-var TABS={ev_kullanicisi:["library","video","community","pantryFinder","specialCreator","shop","notebook","recipeManage"],personel:["library","safety","prep","quality","depo","gunluk","skt","uretKayit","tedarik"]};
+var TABS={ev_kullanicisi:["library","video","community","pantryFinder","specialCreator","shop","notebook","recipeManage"],personel:["library","safety","prep","quality","depo","gunluk","skt","uretKayit","tedarik","sevkiyat","rezerv","mise","israf","vardiya","numune","bakim"]};
 
 var sb=null,ME=null,SESSION=null,hydrating=false,mode="login",lastCommPull=0;
 
@@ -3497,7 +3979,7 @@ b.onclick=function(){var n=document.getElementById("spName").value.trim(),c=docu
  .catch(function(){m("Gönderilemedi. İnternetini kontrol edip tekrar dene.")}).then(function(){b.disabled=false})}})();</script>
 
 <script>(function(){
-var G=[["","",["video"]],["📖","Tarifler",["library","community","pantryFinder","specialCreator","recipeManage"]],["🗓️","Planlama",["menu","production","shop","prep","gunluk"]],["🏬","Depo ve maliyet",["depo","tedarik","maliyet","uretKayit"]],["📚","Rehber",["spiceGuide","sauce","safety","notebook"]],["🏭","Profesyonel",["standart","equipment","fire","quality","skt"]],["⚙️","Hesap ve yedek",["backup","admin"]]];
+var G=[["","",["video"]],["📖","Tarifler",["library","community","pantryFinder","specialCreator","recipeManage"]],["🗓️","Planlama",["menu","production","shop","prep","gunluk"]],["🚚","Catering",["musteri","sevkiyat","takvim"]],["🍽️","Restoran",["rezerv","mise","israf","vardiya","menumuh"]],["🛡️","Uyum ve para",["numune","bakim","belge","gider","haftalik"]],["🏬","Depo ve maliyet",["depo","tedarik","maliyet","uretKayit"]],["📚","Rehber",["spiceGuide","sauce","safety","notebook"]],["🏭","Profesyonel",["standart","equipment","fire","quality","skt"]],["⚙️","Hesap ve yedek",["backup","admin"]]];
 var IC2={community:"👥",admin:"🛡️",video:"▶️",pantryFinder:"🥕",shop:"🛒"};
 var nav=document.getElementById("nav");if(!nav)return;
 function sheetClose(){var sh=document.getElementById("sheet");if(sh)sh.classList.remove("open")}
@@ -3594,7 +4076,7 @@ if(typeof sr==="function")window.showRecipe=function(id){
 })();</script>
 <script>(function(){
 if(!document.getElementById("maliyet"))return;
-var KEYS=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure"],TSK="sefCoTs";
+var KEYS=["sefDepo","sefFiyat","sefGorev","sefSkt","sefUretim","sefTed","sefSure","sefMus","sefSip","sefEtk","sefRez","sefTuk","sefMise","sefDevir","sefIsraf","sefMenuMuh","sefVard","sefNum","sefBakim","sefBelge","sefGider","sefBorc"],TSK="sefCoTs";
 var dirty={},timers={},quiet=false,ready=false,cid=null,pulling=false;
 function me(){try{return window.SEF_me&&window.SEF_me()}catch(e){return null}}
 function sb(){return window.SEF_sb}
