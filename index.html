@@ -289,6 +289,7 @@ body.locked #authOv{display:flex}
 <div class="card s3"><div class="small">Ekipman asistanı</div><div class="stat">Hazır</div><div class="small">GN derinliği ve ekipman</div></div>
 <div class="card s8"><h3>Temel mutfak kuralları</h3><ul><li>Tuz ve baharat, porsiyon sayısı yükseldi diye otomatik ve gizlice azaltılmaz.</li><li>Salça, bulyon, peynir, zeytin, turşu ve hazır sos gibi tuz katkıları ayrıca hesaba katılır.</li><li>Çorba ana pişirme/servisinde uygun çorba kazanı veya sıcak servis ekipmanı kullanılır.</li><li>Reçete, fire ve besin değerleri gerçek malzeme ve üretim verileriyle doğrulanır.</li></ul></div>
 <div class="card s4"><h3>Hızlı işlemler</h3><div class="actions"><button class="btn" onclick="go('library')">Reçete ara</button><button class="btn light" onclick="go('production')">Üretim hesapla</button><button class="btn light" onclick="go('equipment')">Derin küvet</button><button class="btn light" onclick="go('menu')">Menü oluştur</button></div><div class="note">Bu sürüm yerel HTML prototipidir. Kayıtlar bu cihazın tarayıcısında tutulur; çevrimiçi eşitleme ve gerçek AI bağlantısı içermez.</div></div>
+<div class="card s12" id="installCard"><h3>📲 Ana ekrana ekle</h3><p>Uygulamayı telefonunun ana ekranına ekle; aşçı şapkası simgesiyle tam ekran açılır.</p><div class="actions"><button class="btn gold" id="installBtn">Ana ekrana ekle</button></div><div class="note" id="installHelp" style="display:none"></div></div>
 <div class="card s12"><h3>Reçete kütüphanesi hakkında</h3><p>Uygulamada örnek ve düzenlenebilir reçeteler bulunur. Bu katalog aşamalı olarak genişletilmektedir. Yeni eklenen reçetelerde gramajlar 1 porsiyon başlangıç standardıdır; işletme üretiminde verim ve pişirme testleriyle doğrulanmalıdır.</p></div>
 </div></section>
 
@@ -2836,5 +2837,22 @@ loadLib(function(){
 });
 })();
 
+</script>
+<script>
+(function(){try{
+var card=document.getElementById("installCard"),btn=document.getElementById("installBtn"),help=document.getElementById("installHelp");
+if(!card||!btn)return;
+var standalone=(window.matchMedia&&window.matchMedia("(display-mode: standalone)").matches)||window.navigator.standalone===true;
+if(standalone){card.style.display="none";return}
+var dp=null;
+window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();dp=e});
+window.addEventListener("appinstalled",function(){card.style.display="none"});
+btn.addEventListener("click",function(){
+ if(dp){dp.prompt();dp.userChoice.then(function(){dp=null}).catch(function(){});return}
+ var ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
+ help.style.display="block";
+ help.textContent=ios?"Safari'de alttaki Paylaş düğmesine dokun, ardından \"Ana Ekrana Ekle\" seçeneğini seç.":"Tarayıcının sağ üstündeki üç nokta menüsünü aç ve \"Ana ekrana ekle\" ya da \"Uygulamayı yükle\" seçeneğine dokun. Gizli sekmede bu seçenek çıkmaz; normal sekmede aç.";
+});
+}catch(e){}})();
 </script>
 </body></html>
