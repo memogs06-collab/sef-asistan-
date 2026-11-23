@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V115</title>
+<meta name="theme-color" content="#182638"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" type="image/png" href="/icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Şef Asistanı"><title>Profesyonel Şef Asistanı · V116</title>
 <style>
 :root{--navy:#182638;--navy2:#263c52;--gold:#c59655;--bg:#f2f4f6;--paper:#fff;--ink:#202a34;--muted:#667381;--line:#dfe5ea;--green:#237b58;--red:#ad453e;--amber:#9a681d}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.48 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}header{background:linear-gradient(120deg,var(--navy),var(--navy2));color:white;padding:19px max(16px,calc((100% - 1240px)/2));display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border:1px solid #b58b54;border-radius:15px;display:grid;place-items:center;color:#e8c58f;font-size:25px}h1{font-size:clamp(19px,3.5vw,28px);margin:0;letter-spacing:.02em}.founder{font-size:13px;color:#d6dee6;margin-top:2px}.subhead{margin-left:auto;color:#d8e0e8;font-size:12px;text-align:right}
@@ -4251,6 +4251,69 @@ var isr=$("israf");if(isr){var ic=document.createElement("div");ic.className="ca
   var rs=Object.keys(by).sort(function(a,b){return by[b].n-by[a].n}),ps=Object.keys(it).sort(function(a,b){return it[b].n-it[a].n||it[b].v-it[a].v}).slice(0,3);
   $("isTip").innerHTML='<div class="small">'+L.length+' kayıt'+(tot?' · toplam '+tl(tot):'')+'</div><div style="margin-top:6px"><b>En sık israf edilenler:</b> '+ps.map(function(n){return esc(n)+' ('+it[n].n+')'}).join(", ")+'</div><div style="margin-top:8px"><b>Önce şuna odaklan: '+esc(rs[0])+'</b> ('+by[rs[0]].n+' kayıt'+(by[rs[0]].v?', '+tl(by[rs[0]].v):'')+')<div class="small">'+esc(TIPS[rs[0]]||TIPS["Diğer"])+'</div></div>'+(rs[1]?'<div style="margin-top:8px"><b>Sonra: '+esc(rs[1])+'</b><div class="small">'+esc(TIPS[rs[1]]||TIPS["Diğer"])+'</div></div>':'')}
  tip();document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-tab]");if(t&&t.dataset.tab==="israf")setTimeout(tip,80)});isr.addEventListener("click",function(){setTimeout(tip,100)})}
+})();</script>
+<script>(function(){
+var dep=document.getElementById("depo");if(!dep)return;
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function toast(m){try{window.ofToast(m)}catch(e){}}
+function today(){var d=new Date();return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2)}
+function uid(){return "p"+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+var U=["kg","lt","adet","paket","kutu"],R=null,MODE="malzeme";
+var c=document.createElement("div");c.className="card cloud-only onlyUsta";c.id="fotoCard";c.style.marginTop="14px";
+c.innerHTML='<h3>📷 Fotoğraftan tanı</h3><div class="small">Fotoğraf çek ya da seç; yapay zekâ malzemeleri, alerjenleri veya irsaliye/fatura satırlarını okusun. Sonucu sen onaylamadan hiçbir şey kaydedilmez. Fotoğraf saklanmaz.</div>'
++'<label for="ftM">Ne tanınsın?</label><select id="ftM"><option value="malzeme">Raf / dolap / tezgâhtaki malzemeler</option><option value="belge">İrsaliye veya fatura satırları</option><option value="alerjen">Yemek veya ambalajdan alerjen</option></select>'
++'<label for="ftF">Fotoğraf</label><input id="ftF" type="file" accept="image/*" capture="environment">'
++'<div class="actions"><button class="btn gold" id="ftGo">Tanı</button></div><div id="ftOut" style="margin-top:10px"></div>';
+dep.appendChild(c);
+function shrink(file){return new Promise(function(res,rej){var im=new Image(),u=URL.createObjectURL(file);im.onload=function(){var s=Math.min(1,1280/Math.max(im.width,im.height)),cv=document.createElement("canvas");cv.width=Math.round(im.width*s);cv.height=Math.round(im.height*s);cv.getContext("2d").drawImage(im,0,0,cv.width,cv.height);URL.revokeObjectURL(u);var d=cv.toDataURL("image/jpeg",.8);res(d.split(",")[1])};im.onerror=function(){rej(new Error("Görsel okunamadı"))};im.src=u})}
+async function token(){try{var r=await window.SEF_sb.auth.getSession();return r&&r.data&&r.data.session&&r.data.session.access_token}catch(e){return null}}
+function draw(){var o=$("ftOut");if(!R){o.innerHTML="";return}
+ var h="";
+ if(R.ozet)h+='<div class="small" style="margin-bottom:8px">'+esc(R.ozet)+'</div>';
+ if(MODE==="belge"&&(R.tedarikci||R.tarih||R.toplam))h+='<div class="small" style="margin-bottom:8px"><b>'+esc(R.tedarikci||"Tedarikçi okunamadı")+'</b>'+(R.tarih?" · "+esc(R.tarih):"")+(R.toplam?" · toplam "+R.toplam+" ₺":"")+'</div>';
+ if(MODE==="alerjen"){
+  h+='<div><b>Olası alerjenler:</b> '+(R.alerjenler.length?R.alerjenler.map(function(a){return '<span style="display:inline-block;background:#fbebeb;border:1px solid #e3b7b7;border-radius:12px;padding:2px 9px;margin:2px">'+esc(a)+'</span>'}).join(""):'<span class="small">Belirgin alerjen görülmedi</span>')+'</div>';
+  if(R.urunler.length)h+='<div class="small" style="margin-top:8px">Görülen içerik: '+R.urunler.map(function(u){return esc(u.ad)}).join(", ")+'</div>';
+  h+='<div class="small" style="margin-top:8px;color:#a33">Bu yalnızca yardımcıdır; hata yapabilir. Ambalaj üzerindeki alerjen uyarısını mutlaka kontrol et.</div>';
+ }else{
+  if(!R.urunler.length)h+='<div class="small">Fotoğrafta malzeme bulunamadı. Daha yakın ve aydınlık çekip tekrar dene.</div>';
+  else{h+='<div id="ftRows">'+R.urunler.map(function(u,i){return '<div style="display:grid;grid-template-columns:auto 1fr 70px 80px;gap:6px;align-items:center;margin-bottom:6px"><input type="checkbox" checked data-ck="'+i+'" style="width:auto"><input data-nm="'+i+'" value="'+esc(u.ad)+'"><input data-q="'+i+'" type="number" step="any" min="0" value="'+u.miktar+'"><select data-u="'+i+'">'+U.map(function(x){return '<option'+(x===u.birim?' selected':'')+'>'+x+'</option>'}).join("")+'</select></div>'}).join("")+'</div>'
+   +'<div class="small">Adı, miktarı ve birimi düzeltebilirsin. Miktarı 0 olanlar listeye 0 stokla eklenir.</div>'
+   +'<div class="actions"><button class="btn gold" id="ftAdd">Seçilenleri depoya giriş yap</button></div>';
+   if(MODE==="belge")h+='<div class="small" style="margin-top:6px">Satırlar stok girişi olarak yazılır; irsaliye/fatura fotoğrafını ayrıca Gider sekmesinde saklayabilirsin.</div>'}
+ }
+ o.innerHTML=h}
+function addToDepo(){
+ var D;try{D=JSON.parse(localStorage.getItem("sefDepo")||"null")}catch(e){D=null}
+ if(!D||!Array.isArray(D.items))D={items:[],log:[]};if(!Array.isArray(D.log))D.log=[];
+ var n=0,note=(MODE==="belge"?"İrsaliye/fatura"+(R.tedarikci?": "+R.tedarikci:""):"Fotoğraftan giriş"),date=(MODE==="belge"&&R.tarih)||today();
+ R.urunler.forEach(function(_,i){
+  var ck=document.querySelector('[data-ck="'+i+'"]');if(!ck||!ck.checked)return;
+  var nm=document.querySelector('[data-nm="'+i+'"]').value.trim(),q=parseFloat(String(document.querySelector('[data-q="'+i+'"]').value).replace(",","."))||0,un=document.querySelector('[data-u="'+i+'"]').value;
+  if(!nm)return;
+  var it=D.items.filter(function(x){return String(x.name).toLocaleLowerCase("tr")===nm.toLocaleLowerCase("tr")&&x.unit===un})[0];
+  if(!it){it={id:uid(),name:nm,cat:"",unit:un,qty:0,min:0,sup:MODE==="belge"?(R.tedarikci||""):"",b:[]};D.items.push(it)}
+  if(q>0){it.qty=(+it.qty||0)+q;it.b=Array.isArray(it.b)?it.b:[];it.b.push({q:q,skt:""});
+   D.log.push({id:uid(),item:it.id,name:it.name,unit:it.unit,type:"in",q:q,note:note,date:date})}
+  n++});
+ if(D.log.length>2000)D.log=D.log.slice(-2000);
+ try{localStorage.setItem("sefDepo",JSON.stringify(D))}catch(e){}
+ try{window.SEF_depoChanged&&window.SEF_depoChanged()}catch(e){}
+ try{SEF.depoReload&&SEF.depoReload()}catch(e){}
+ toast(n+" malzeme depoya işlendi");R=null;$("ftF").value="";draw()}
+c.addEventListener("click",async function(e){var b=e.target.closest("button");if(!b)return;
+ if(b.id==="ftAdd"){addToDepo();return}
+ if(b.id==="ftGo"){var f=$("ftF").files[0];if(!f){toast("Önce fotoğraf seç");return}
+  MODE=$("ftM").value;b.disabled=true;$("ftOut").innerHTML='<div class="small">Fotoğraf okunuyor…</div>';
+  try{var tk=await token();if(!tk)throw new Error("Bu özellik için giriş yapmalısın");
+   var img=await shrink(f);
+   var r=await fetch("/api/foto-tani",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+tk},body:JSON.stringify({mod:MODE,mime:"image/jpeg",image:img})});
+   var j=await r.json().catch(function(){return{}});
+   if(!r.ok||!j.ok)throw new Error(j.error||("Sunucu hatası ("+r.status+")"));
+   R=j.sonuc;draw()
+  }catch(er){R=null;$("ftOut").innerHTML='<div class="small" style="color:#a33">'+esc(er.message||er)+'</div>'}
+  b.disabled=false}});
 })();</script>
 <div id="sheet"><div class="in"><h3>Tüm bölümler</h3><div class="tiles" id="all"></div></div></div>
 <div id="bar"></div>
