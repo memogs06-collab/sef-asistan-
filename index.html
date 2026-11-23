@@ -2393,7 +2393,7 @@ function init(){
 }
 function mainActions(d){return Array.prototype.slice.call(d.querySelectorAll(".actions")).filter(function(a){return /Üretim hesabında aç/.test(a.textContent)})[0]||null}
 window.mainActions=mainActions;
-function recipeText(r){return r.name+" ("+(r.base||1)+" porsiyon)\n\nMalzemeler:\n"+(r.ingredients||[]).map(function(x){return"- "+x[0]+": "+x[1]+" "+x[2]}).join("\n")+"\n\nYapılış:\n"+(r.method||"")+"\n\n— Profesyonel Şef Asistanı"}
+function recipeText(r){return r.name+" ("+(r.base||1)+" porsiyon)\n\nMalzemeler:\n"+(r.ingredients||[]).map(function(x){return"- "+x[0]+": "+x[1]+" "+x[2]}).join("\n")+"\n\nYapılış:\n"+(r.method||"")+"\n\n— Profesyonel Şef Asistanı\nhttps://sef-asistan.vercel.app"}
 var _sr=window.showRecipe;
 window.showRecipe=function(id){_sr.apply(this,arguments);var d=document.getElementById("recipeDetail");if(!d)return;var g=mainActions(d);if(!g)return;
   var r=recipes.find(function(x){return x.id===id});if(!r)return;var has=!!load()[id];
