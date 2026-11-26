@@ -2005,6 +2005,7 @@ function menuClass(r){
  const cat=n(r.cat||""),name=n([r.name,r.sub].join(" ")),ing=n((r.ingredients||[]).map(x=>x[0]).join(" "));
  // Bileşen/sos tarifleri menü kalemi değildir
  if(cat==="soslar"||/pastaci kremasi|jolesi|\bdemi.?glace\b/.test(name))return "other";
+ if(/tursu|konserve|recel|icecek|surup|kompostosu/.test(cat)||/\b(tursu|tursusu|recel|receli|sirke|salamura)\b/.test(name))return "other";
  const SOUP=/\bcorba|\bsoup|tarhana|lebeni|\bayran asi\b|\bayranasi\b/,
   DESSERT=/tatli|helva|baklava|kadayif|pelte|muhallebi|sutlac|puding|\bkek\b|kurabiye|cheesecake|tiramisu|mousse|brulee|brownie|pavlova|crumble|panna cotta|profiterol|revani|asure|magnolia|\btart\b|sambali|lokum|dondurma|\bkrep\b|crepe|waffle|ekler|supangle|kazandibi|tavuk gogsu|irmik helvasi|kunefe|sekerpare|tulumba|lokma|paris-?brest|ile flottante|izmir bombasi/,
   SALAD=/salata|borani|batirik|dible|piyaz|cacik|haydari|meze|ezme|humus|hummus|muhammara|babagannus|baba ganoush|tabule|coban|labne|tzatziki|guacamole|rus salatasi|patlican soslu/,
@@ -2028,8 +2029,11 @@ function menuClass(r){
 var WORLD_SUB=/dünya|dunya|tayland|singapur|fransız|fransiz|ispanyol|italyan|japon|meksika|latin|afrika|asya|amerikan|yunan|lübnan|kore|vietnam|hindistan|hint mutfağı|(^|[\s\/])çin(\s|\/|$)|orta doğu/i;
 function isWorldRecipe(r){if(r.cuisine==="dunya")return true;if(r.cuisine==="turk")return false;return !!(r._dunya||/^Dünya mutfağı/.test(r.cat||"")||WORLD_SUB.test(r.sub||""))}
 var FOREIGN_RX=/spagetti|spaghetti|lazanya|lasagna|risotto|pizza|burger|taco|burrito|enchilada|sushi|k[oö]ri\b|curry|pad thai|ramen|paella|ratatouille|gazpacho|chili con|jollof|moussaka|yunan|hint |tayland|japon|cin |çin |meksika|italyan|fransiz|fransız|ispanyol|penne|bolonez|bolognese|ciabatta|stroganoff|\bwok\b|puttanesca|gnocchi|cannelloni|english|macar|caprese|focaccia|pesto|panini|fettuccine|philly|shawarma|schnitzel|noodle|falafel|salsa|muffin|tiramisu|minestrone|bruschetta|ravioli|carbonara|quiche|brownie|cheesecake|pancake|waffle|hot dog|nachos|tortilla|quesadilla|fajita|guacamole|tempura|miso|kimchi|teriyaki|tikka|masala|baguette|croissant|alfredo|trofie|arjantin|ingiliz|alman|viyana/i;
-function cuisineOK(r,cuisine){if(cuisine==="dunya")return true;return !isWorldRecipe(r)&&!FOREIGN_RX.test(r.name||"")}
-function chooseCuisine(pool,cuisine,slot,profile,prev,ctx,used){let r=null;if(cuisine==="dunya"){r=chooseMenuItem(pool.filter(isWorldRecipe),used,slot,profile,prev,ctx)}if(!r)r=chooseMenuItem(pool,used,slot,profile,prev,ctx);return r}
+var TURK_NO=/kinoa|quinoa|couscous|kuskus|kus kus|kuskus|polenta|farro|burrata|mozzarella|ricotta|parmesan|pommes|r[oö][sş]ti|orzo|gratin|graten|duchesse|dauphin|hash brown|karabuğday|karabugday|tabbouleh|tabule|chia/i;
+var TURK_SIDE=/pilav|bulgur|makarna|eri[sş]te|[sş]ehriye|patates|p[uü]resi|manti|mantı|yarma|firik|b[oö]rek|g[oö]zleme|pide/i;
+function cuisineOK(r,cuisine){if(cuisine==="dunya")return true;return !isWorldRecipe(r)&&!FOREIGN_RX.test(r.name||"")&&!TURK_NO.test(r.name||"")}
+function turkSideOK(r){return TURK_SIDE.test((r.name||"")+" "+(r.sub||"")+" "+(r.cat||""))}
+function chooseCuisine(pool,cuisine,slot,profile,prev,ctx,used){let r=null;if(cuisine==="turk"&&slot==="side"){const sp=pool.filter(turkSideOK);if(sp.length)r=chooseMenuItem(sp,used,slot,profile,prev,ctx);if(r)return r}if(cuisine==="dunya"){r=chooseMenuItem(pool.filter(isWorldRecipe),used,slot,profile,prev,ctx)}if(!r)r=chooseMenuItem(pool,used,slot,profile,prev,ctx);return r}
 function menuPool(category,diet,cuisine){
  return recipes.filter(r=>{
   if(category&&category.length&&!category.includes(r.cat))return false;
@@ -2066,6 +2070,7 @@ function chooseMenuItem(pool,used,slot,profile,previous=null,ctx={}){
   for(let k of ["yogurt","bechamel","creamy"]){if(profile[k]&&p[k])n+=25;if(p[k])n+=2}
   if(profile.heavy&&p.heavy)n+=8;
   if(slot==="main"&&p.heavy)n-=0.5;
+  if(slot==="side"&&/borek|hamur|ekmek/.test(normalizedText(r.cat||"")))n+=3;
   const group=menuSimilarGroup(r);
   if(previous&&group&&group===menuSimilarGroup(previous))n+=100;
   if(slot==="side"&&previous){
