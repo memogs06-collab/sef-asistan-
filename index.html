@@ -689,10 +689,10 @@ Et suyu (hazır): Süt, Kereviz"></textarea><div class="small">Bu alan, malzeme 
 <section id="menu" class="tab">
 <div class="hero"><h2>Menü Planlama</h2><div class="muted">Günlük menü taslağı kaydet. Tekrar, bakliyat dengesi ve üretim uyumu için not ekle.</div></div>
 <div class="grid">
-<div class="card s4"><h3>Menü oluşturma ayarları</h3><label>Tarih</label><input type="date" id="menuDate"><label>Menü kişi sayısı</label><input type="number" id="menuPeople" value="500" min="1"><label>Menü türü</label><select id="menuDiet"><option value="normal">Normal menü</option><option value="milk">Süt proteini alerjisi olanlar için</option><option value="gluten">Gluten içermeyen menü</option><option value="both">Süt ve süt ürünleri + gluten içermeyen menü</option></select><div class="note warn">Alerjen menüsü oluşturulurken reçete içeriği taranır. Bu özellik çapraz bulaşmayı ortadan kaldırmaz. Alerjisi olan kişilere servis öncesi tüm ambalaj etiketleri, tedarikçi beyanları ve mutfak ekipmanı/hat temizliği ayrıca doğrulanmalıdır.</div><div class="actions"><button class="btn" onclick="generateMenu()">Uyumlu menü oluştur</button><button class="btn light" onclick="clearMenu()">Temizle</button><button class="btn gold" id="menuShop">🛒 Menüyü alışveriş listesine ekle</button></div></div>
+<div class="card s4"><h3>Menü oluşturma ayarları</h3><label>Tarih</label><input type="date" id="menuDate"><label>Menü kişi sayısı</label><input type="number" id="menuPeople" value="500" min="1"><label>Mutfak</label><select id="menuCuisine"><option value="turk">Türk mutfağı</option><option value="dunya">Dünya mutfağı</option></select><label>Menü türü</label><select id="menuDiet"><option value="normal">Normal menü</option><option value="milk">Süt proteini alerjisi olanlar için</option><option value="gluten">Gluten içermeyen menü</option><option value="both">Süt ve süt ürünleri + gluten içermeyen menü</option></select><div class="note warn">Alerjen menüsü oluşturulurken reçete içeriği taranır. Bu özellik çapraz bulaşmayı ortadan kaldırmaz. Alerjisi olan kişilere servis öncesi tüm ambalaj etiketleri, tedarikçi beyanları ve mutfak ekipmanı/hat temizliği ayrıca doğrulanmalıdır.</div><div class="actions"><button class="btn" onclick="generateMenu()">Uyumlu menü oluştur</button><button class="btn light" onclick="clearMenu()">Temizle</button><button class="btn gold" id="menuShop">🛒 Menüyü alışveriş listesine ekle</button></div></div>
 <div class="card s8"><h3>Oluşturulan menü</h3><div id="menuCompatibility" class="small muted">Menü oluşturulduğunda uyum ve alerjen kontrolü burada gösterilir.</div><div class="two"><div><label>Çorba</label><select id="menuSoup"></select><button class="btn light" type="button" onclick="openSelectedMenuRecipe('menuSoup')">Tarifi aç</button></div><div><label>Ana yemek</label><select id="menuMain"></select><button class="btn light" type="button" onclick="openSelectedMenuRecipe('menuMain')">Tarifi aç</button></div><div><label>Yardımcı yemek / pilav</label><select id="menuSide"></select><button class="btn light" type="button" onclick="openSelectedMenuRecipe('menuSide')">Tarifi aç</button></div><div><label>Salata / meze</label><select id="menuSalad"></select><button class="btn light" type="button" onclick="openSelectedMenuRecipe('menuSalad')">Tarifi aç</button></div><div><label>Tatlı</label><select id="menuDessert"></select><button class="btn light" type="button" onclick="openSelectedMenuRecipe('menuDessert')">Tarifi aç</button></div></div><label>Şef notu</label><textarea id="menuNote" rows="2"></textarea><div class="actions"><button class="btn" onclick="saveMenu()">Menüyü kaydet</button><button class="btn light" onclick="printMenu()">Menüyü yazdır</button></div></div>
 <div class="card s12"><h3>Kayıtlı menüler</h3><div id="menuSaved" class="result muted">Henüz menü kaydedilmedi.</div></div></div>
-<div class="card s12"><h3>7 günlük otomatik menü planlayıcı</h3><div class="muted small">Mevcut reçete kütüphanesinden günlere farklı menüler dağıtır. Yoğurtlu, beşamelli ve ağır ürün tekrarlarını aynı güne yığmamaya; aynı ana yemeği hafta içinde tekrarlamamaya çalışır.</div><div class="two"><div><label>Haftanın başlangıç tarihi</label><input id="weekStart" type="date"></div><div><label>Haftalık menü türü</label><select id="weekDiet"><option value="normal">Normal</option><option value="milk">Süt proteini alerjisi</option><option value="gluten">Glutensiz</option><option value="both">Süt proteini alerjisi + glutensiz</option></select></div></div><div class="actions"><button class="btn" onclick="generateWeekMenu()">7 günlük menü oluştur</button><button class="btn gold" onclick="saveWeekMenu()">Haftalık menüyü kaydet</button><button class="btn light" onclick="printWeekMenu()">Haftalık menüyü yazdır / PDF</button></div><div id="weekMenuResult" class="result muted">Haftalık menü burada oluşacak.</div><h3 style="margin-top:18px">Kayıtlı haftalık menüler</h3><div id="weekMenuSaved" class="result muted">Henüz haftalık menü kaydedilmedi.</div></div>
+<div class="card s12"><h3>7 günlük otomatik menü planlayıcı</h3><div class="muted small">Mevcut reçete kütüphanesinden günlere farklı menüler dağıtır. Yoğurtlu, beşamelli ve ağır ürün tekrarlarını aynı güne yığmamaya; aynı ana yemeği hafta içinde tekrarlamamaya çalışır.</div><div class="two"><div><label>Haftanın başlangıç tarihi</label><input id="weekStart" type="date"></div><div><label>Mutfak</label><select id="weekCuisine"><option value="turk">Türk mutfağı</option><option value="dunya">Dünya mutfağı</option></select></div><div><label>Haftalık menü türü</label><select id="weekDiet"><option value="normal">Normal</option><option value="milk">Süt proteini alerjisi</option><option value="gluten">Glutensiz</option><option value="both">Süt proteini alerjisi + glutensiz</option></select></div></div><div class="actions"><button class="btn" onclick="generateWeekMenu()">7 günlük menü oluştur</button><button class="btn gold" onclick="saveWeekMenu()">Haftalık menüyü kaydet</button><button class="btn light" onclick="printWeekMenu()">Haftalık menüyü yazdır / PDF</button></div><div id="weekMenuResult" class="result muted">Haftalık menü burada oluşacak.</div><h3 style="margin-top:18px">Kayıtlı haftalık menüler</h3><div id="weekMenuSaved" class="result muted">Henüz haftalık menü kaydedilmedi.</div></div>
 </section>
 
 <section id="prep" class="tab">
@@ -2025,11 +2025,17 @@ function menuClass(r){
  if(/\b(tavuk|dana|kuzu|kiyma|hindi|balik|somon|levrek|karides|biftek|et)\b/.test(ing))return "main";
  return "other";
 }
-function menuPool(category,diet){
+var WORLD_SUB=/dünya|dunya|tayland|singapur|fransız|fransiz|ispanyol|italyan|japon|meksika|latin|afrika|asya|amerikan|yunan|lübnan|kore|vietnam|hindistan|hint mutfağı|(^|[\s\/])çin(\s|\/|$)|orta doğu/i;
+function isWorldRecipe(r){if(r.cuisine==="dunya")return true;if(r.cuisine==="turk")return false;return !!(r._dunya||/^Dünya mutfağı/.test(r.cat||"")||WORLD_SUB.test(r.sub||""))}
+var FOREIGN_RX=/spagetti|spaghetti|lazanya|lasagna|risotto|pizza|burger|taco|burrito|enchilada|sushi|k[oö]ri\b|curry|pad thai|ramen|paella|ratatouille|gazpacho|chili con|jollof|moussaka|yunan|hint |tayland|japon|cin |çin |meksika|italyan|fransiz|fransız|ispanyol|penne|bolonez|bolognese|ciabatta|stroganoff|\bwok\b|puttanesca|gnocchi|cannelloni|english|macar|caprese|focaccia|pesto|panini|fettuccine|philly|shawarma|schnitzel|noodle|falafel|salsa|muffin|tiramisu|minestrone|bruschetta|ravioli|carbonara|quiche|brownie|cheesecake|pancake|waffle|hot dog|nachos|tortilla|quesadilla|fajita|guacamole|tempura|miso|kimchi|teriyaki|tikka|masala|baguette|croissant|alfredo|trofie|arjantin|ingiliz|alman|viyana/i;
+function cuisineOK(r,cuisine){if(cuisine==="dunya")return true;return !isWorldRecipe(r)&&!FOREIGN_RX.test(r.name||"")}
+function chooseCuisine(pool,cuisine,slot,profile,prev,ctx,used){let r=null;if(cuisine==="dunya"){r=chooseMenuItem(pool.filter(isWorldRecipe),used,slot,profile,prev,ctx)}if(!r)r=chooseMenuItem(pool,used,slot,profile,prev,ctx);return r}
+function menuPool(category,diet,cuisine){
  return recipes.filter(r=>{
   if(category&&category.length&&!category.includes(r.cat))return false;
   if((diet==="milk"||diet==="both")&&hasAllergen(r,"milk"))return false;
   if((diet==="gluten"||diet==="both")&&hasAllergen(r,"gluten"))return false;
+  if(cuisine&&!cuisineOK(r,cuisine))return false;
   return menuClass(r)!=="other";
  });
 }
@@ -2099,12 +2105,12 @@ function checkMenuCompatibility(){
  $("menuCompatibility").innerHTML=(issues.length?`<div class="note warn">${issues.map(esc).join("<br>")}</div>`:`<div class="note ok">Menü uyum taraması tamamlandı. Alerjen güvenliği için aşağıdaki beyanları ayrıca doğrulayın.</div>`)+summary+warning
 }
 function generateMenu(){
- const diet=$("menuDiet").value,pool=menuPool([],diet),used=new Set();
+ const diet=$("menuDiet").value,cuisine=($("menuCuisine")||{}).value||"turk",pool=menuPool([],diet,cuisine),used=new Set();
  const profile={yogurt:false,bechamel:false,creamy:false,heavy:false};
  const slots=[["menuSoup","soup"],["menuMain","main"],["menuSide","side"],["menuSalad","salad"],["menuDessert","dessert"]];
  let main=null;const chosenToday=[];
  for(const [id,slot] of slots){
-  const r=chooseMenuItem(pool,used,slot,profile,slot==="side"?main:null,{same:chosenToday});
+  const r=chooseCuisine(pool,cuisine,slot,profile,slot==="side"?main:null,{same:chosenToday},used);
   setMenuSelect(id,r);
   if(r){chosenToday.push(r);used.add(r.id);if(slot==="main")main=r;const p=recipeProfile(r);Object.keys(profile).forEach(k=>profile[k]=profile[k]||p[k]);}
  }
@@ -2170,7 +2176,7 @@ function generateWeekMenu(){
  window._editingWeekMenuIndex=null;
  const start=$("weekStart").value;
  if(!start){alert("Haftanın başlangıç tarihini seç.");return}
- const diet=$("weekDiet").value,pool=menuPool([],diet),days=[];
+ const diet=$("weekDiet").value,cuisine=($("weekCuisine")||{}).value||"turk",pool=menuPool([],diet,cuisine),days=[];
  const slots=["soup","main","side","salad","dessert"];
  const usedWeek={soup:new Set(),main:new Set(),side:new Set(),salad:new Set(),dessert:new Set()};
  const base=new Date(start+"T12:00:00");
@@ -2182,7 +2188,7 @@ function generateWeekMenu(){
    // hafta boyunca aynı yemek tekrarlanmaz; havuz biterse o yuva için liste sıfırlanır
    let localPool=pool.filter(r=>!usedWeek[slot].has(r.id));
    if(!localPool.some(r=>menuClass(r)===slot)){usedWeek[slot].clear();localPool=pool}
-   const r=chooseMenuItem(localPool,used,slot,profile,slot==="side"?chosen.main:null,{same:chosenToday,prevDay:prevDay[slot]});
+   const r=chooseCuisine(localPool,cuisine,slot,profile,slot==="side"?chosen.main:null,{same:chosenToday,prevDay:prevDay[slot]},used);
    chosen[slot]=r;
    if(r){
     used.add(r.id);usedWeek[slot].add(r.id);chosenToday.push(r);
