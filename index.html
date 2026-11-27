@@ -548,11 +548,36 @@ body:not([data-role="super_admin"]) #dashboard>.grid>.card:has(#dashRecipes){dis
 .tkChip{border:1px solid #ecd9b8;background:var(--gold-soft);color:var(--gold-ink);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;cursor:pointer;min-height:32px}
 body.kmode .mxSw button,body.kmode #ogX .mxOpt{min-height:56px;font-size:17px}
 body.kmode .tkChip{min-height:44px;font-size:15px}
+.tmk{padding:12px 14px}.tmk h3{font-size:16px;margin:0 0 8px}.tmk ul{margin:0;padding-left:18px}.tmk li{font-size:13.5px;line-height:1.45;margin-bottom:6px}.tmk li b{color:var(--gold,#d4a84b)}@media(max-width:600px){.tmk{padding:10px 12px}.tmk li{font-size:13px}}
+#aClose{position:absolute;right:12px;top:10px;width:36px;height:36px;border-radius:12px;border:1px solid var(--line);background:#f6f8f7;color:var(--ink);font-size:16px;cursor:pointer}
+#authOv .box{position:relative}
+header{position:relative}
+#pBtn{flex:none;width:42px;height:42px;border-radius:50%;border:1.5px solid var(--gold);background:rgba(255,255,255,.1);color:#fff;display:grid;place-items:center;cursor:pointer;padding:0;margin-left:8px}
+#pBtn:hover,#pBtn[aria-expanded="true"]{background:rgba(197,150,85,.28)}
+#pMenu{display:none;position:fixed;right:max(12px,env(safe-area-inset-right,0px));z-index:100000;min-width:230px;max-width:calc(100vw - 24px);background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 14px 40px rgba(20,33,50,.28);padding:6px;overflow:hidden}
+#pMenu.open{display:block}
+#pMenu button{display:block;width:100%;text-align:left;border:0;background:none;padding:12px 14px;border-radius:10px;font-size:15px;font-weight:600;color:var(--ink);cursor:pointer}
+#pMenu button:hover,#pMenu button:active{background:#f3ede3}
+#pMenu .hd{padding:10px 14px;font-weight:800;color:var(--navy);border-bottom:1px solid var(--line);margin-bottom:4px;font-size:14px;overflow-wrap:anywhere}
+#sefSh{position:fixed;inset:0;z-index:100001;background:rgba(20,33,50,.6);display:flex;align-items:flex-end;justify-content:center;padding:0}
+#sefSh .shb{position:relative;background:#fff;width:100%;max-width:460px;border-radius:22px 22px 0 0;padding:20px 16px calc(20px + env(safe-area-inset-bottom,0px));max-height:88vh;overflow:auto;border-top:3px solid var(--gold)}
+@media(min-width:600px){#sefSh{align-items:center;padding:16px}#sefSh .shb{border-radius:22px}}
+#sefSh h3{margin:0 40px 8px 0;color:var(--navy);font-size:19px}
+#sefSh .shx{position:absolute;right:12px;top:12px;width:36px;height:36px;border-radius:12px;border:1px solid var(--line);background:#f6f8f7;font-size:16px;cursor:pointer}
+.mopt{display:flex;gap:12px;align-items:center;width:100%;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:12px;margin-bottom:8px;cursor:pointer;color:var(--ink)}
+.mopt i{font-style:normal;font-size:24px;width:34px;text-align:center;flex:none}
+.mopt span{display:flex;flex-direction:column;min-width:0}.mopt b{font-size:15px}.mopt small{font-size:12.5px;color:var(--muted);line-height:1.35}
+.mopt.on{border-color:var(--gold);background:#fbf5ea}
+.prow{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}.prow span{color:var(--muted)}.prow b{text-align:right;overflow-wrap:anywhere}
+.shact{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.shact .btn{flex:1;min-width:130px}
+#quickTiles .tile.evx:not(.on){display:none}
+body[data-mode="ev"] #dashboard>.grid>.card.s3{display:none}
+@media(max-width:520px){#pBtn{width:40px;height:40px;margin-left:6px}}
 </style><script src="config.js" onerror="void 0"></script>
 </head>
 <body>
 <header><div class="logo">♨</div><div><h1>PROFESYONEL ŞEF ASİSTANI</h1><div class="founder">Mehmet Ali Özkan tarafından kurulmuştur.</div></div><div class="subhead">Toplu yemek üretimi için<br>GASTRONOMİ · REÇETE · ÜRETİM</div><button id="kBtn" aria-label="Büyük yazı">Aa</button><button id="sBtn" aria-label="Ara">🔍</button></header>
-<div id="authOv"><div class="box"><h2>Profesyonel Şef Asistanı</h2><div class="sub">Hesabınla giriş yap; reçetelerin ve kayıtların güvenle saklansın.</div>
+<div id="authOv"><div class="box"><button type="button" id="aClose" aria-label="Kapat">✕</button><h2>Profesyonel Şef Asistanı</h2><div class="sub">Hesabınla giriş yap; reçetelerin ve kayıtların güvenle saklansın.</div>
 <div id="authLoading" class="small">Yükleniyor…</div>
 <div id="authForm" style="display:none">
 <div class="atabs"><button id="aTabLogin">Giriş</button><button id="aTabReg">Kayıt ol</button></div>
@@ -565,7 +590,7 @@ body.kmode .tkChip{min-height:44px;font-size:15px}
 <div id="aMsg" class="amsg err"></div>
 <button class="btn gold" id="aSubmit" style="width:100%">Giriş yap</button>
 <button type="button" id="aForgot" style="display:block;margin:10px auto 0;background:none;border:0;color:#c59655;font-weight:700;text-decoration:underline;cursor:pointer;font-size:14px">Şifremi unuttum</button>
-<button class="btn" id="aGuest" type="button" style="width:100%;margin-top:8px">Misafir olarak devam et</button>
+<button class="btn" id="aGuest" type="button" style="width:100%;margin-top:8px">Şimdi değil, misafir devam et</button>
 <div class="small" style="margin-top:6px;text-align:center">Misafir modunda hazır reçetelerin hepsini kullanırsın; bulut kaydı ve topluluk özellikleri için giriş gerekir.</div></div></div></div>
 <div id="authBar" class="cloud-only"></div>
 <nav id="nav">
@@ -592,7 +617,12 @@ body.kmode .tkChip{min-height:44px;font-size:15px}
 <div class="card s3"><div class="small">Kategori</div><div class="stat">18</div><div class="small">Ana yemek, çorba, tatlı vb.</div></div>
 <div class="card s3"><div class="small">Üretim hesapları</div><div class="stat">Hazır</div><div class="small">Gramaj, tuz, baharat, fire</div></div>
 <div class="card s3"><div class="small">Ekipman asistanı</div><div class="stat">Hazır</div><div class="small">GN derinliği ve ekipman</div></div>
-<div class="card s8"><h3>Temel mutfak kuralları</h3><ul><li>Tuz ve baharat, porsiyon sayısı yükseldi diye otomatik ve gizlice azaltılmaz.</li><li>Salça, bulyon, peynir, zeytin, turşu ve hazır sos gibi tuz katkıları ayrıca hesaba katılır.</li><li>Çorba ana pişirme/servisinde uygun çorba kazanı veya sıcak servis ekipmanı kullanılır.</li><li>Reçete, fire ve besin değerleri gerçek malzeme ve üretim verileriyle doğrulanır.</li></ul></div>
+<div class="card s8 tmk"><h3>Temel mutfak kuralları</h3><ul>
+<li><b>Tuz ve baharat dozajı:</b> Büyük üretimlerde miktarlar, porsiyon çarpanı uygulanarak reçeteden hesaplanır; tuz ve baharat lineer artırılmaz, kontrollü tadımla ayarlanır. Önce reçete oranının %70-80'i eklenir, kazan tadılıp son düzeltme yapılır.</li>
+<li><b>Gizli tuz kaynakları:</b> Salça, bulyon, peynir, zeytin, turşu ve hazır soslardaki tuz, toplam tuz hesabına dahil edilir; bu girdiler kullanılan reçetede ayrıca düşülerek ilave tuz belirlenir.</li>
+<li><b>Ekipman ayrımı:</b> Çorba pişirme kazanı (pişirme ekipmanı) ile sıcak muhafaza ve servis ekipmanı (benmari, sıcak büfe, termos/GN muhafaza) farklı ekipmanlardır. Pişirme kazanı muhafaza amacıyla kullanılmaz; sıcak ürün servis sıcaklığında (min. 63 °C) tutulur.</li>
+<li><b>Veri esaslı hesaplama:</b> Reçete, fire ve besin değeri hesapları gerçek malzeme (tedarikçi/ürün etiketi) ve üretim verilerine (brüt-net gramaj, verim, fire oranı) dayandırılır; tahmini değerler kullanılmaz, düzenli olarak doğrulanır.</li>
+</ul></div>
 <div class="card s4"><h3>Hızlı işlemler</h3><div class="actions"><button class="btn" onclick="go('library')">Reçete ara</button><button class="btn light" onclick="go('production')">Üretim hesapla</button><button class="btn light" onclick="go('menu')">Menü oluştur</button></div><div class="note">Bu sürüm yerel HTML prototipidir. Kayıtlar bu cihazın tarayıcısında tutulur; çevrimiçi eşitleme ve gerçek AI bağlantısı içermez.</div></div>
 <div class="card s12" id="contactCard"><h3>📩 İletişim ve reçete isteği</h3>
 <div class="small">Eklememi istediğin bir yemek mi var? Yaz, listeye alayım.</div>
@@ -5630,7 +5660,7 @@ var TABS={ev_kullanicisi:["library","video","ogren","community","pantryFinder","
 
 var sb=null,ME=null,SESSION=null,hydrating=false,mode="login",lastCommPull=0;
 
-document.body.classList.add("cloud","locked");
+document.body.classList.add("cloud");
 
 /* ---------- yardımcılar ---------- */
 function canon(v){if(Array.isArray(v))return"["+v.map(canon).join(",")+"]";if(v&&typeof v==="object")return"{"+Object.keys(v).sort().map(function(k){return JSON.stringify(k)+":"+canon(v[k])}).join(",")+"}";return JSON.stringify(v)}
@@ -5764,7 +5794,7 @@ async function pullRemote(){
 function loadLib(cb){
   if(window.supabase&&window.supabase.createClient)return cb();
   var s=document.createElement("script");s.src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js";
-  s.onload=cb;s.onerror=function(){showAuth("Bağlantı kitaplığı yüklenemedi. İnternetini kontrol edip sayfayı yenile.")};
+  s.onload=cb;s.onerror=function(){enterGuest()};
   document.head.appendChild(s);
 }
 async function guestPull(){
@@ -5781,18 +5811,19 @@ async function guestPull(){
   }catch(e){console.warn("guest",e)}
 }
 function enterGuest(){
-  try{sessionStorage.setItem("sef_guest","1")}catch(e){}
-  guestPull();
+  if(ME)return;
   document.body.classList.remove("locked");document.body.dataset.guest="1";
-  if(!$("guestBar")){var g=document.createElement("button");g.id="guestBar";g.type="button";g.textContent="👤 Misafir · Giriş yap";
-    g.style.cssText="position:fixed;right:10px;bottom:10px;z-index:9000;padding:8px 12px;border-radius:20px;border:1px solid #c59655;background:#182638;color:#fff;font-size:12px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.3)";
-    g.onclick=function(){try{sessionStorage.removeItem("sef_guest")}catch(e){}g.remove();delete document.body.dataset.guest;$("authLoading").style.display="none";$("authForm").style.display="block";document.body.classList.add("locked")};
-    document.body.appendChild(g)}
+  if(!window.__guestPulled){window.__guestPulled=1;try{guestPull()}catch(e){}}
+  applyMode();
 }
+function openAuth(tab){
+  $("authLoading").style.display="none";$("authForm").style.display="block";
+  document.body.classList.add("locked");setMode(tab||"login");
+}
+function closeAuth(){document.body.classList.remove("locked");if(!ME)enterGuest()}
 function showAuth(m){$("authLoading").style.display="none";$("authForm").style.display="block";
-  var gst=false;try{gst=sessionStorage.getItem("sef_guest")==="1"}catch(e){}
-  if(!m&&gst){enterGuest();return}
-  document.body.classList.add("locked");if(m)msg(m)}
+  if(!m){enterGuest();return}
+  document.body.classList.add("locked");msg(m)}
 function setMode(m){mode=m;$("aTabLogin").classList.toggle("on",m==="login");$("aTabReg").classList.toggle("on",m==="reg");
   document.querySelectorAll(".reg-only").forEach(function(e){e.style.display=m==="reg"?"block":"none"});
   $("aSubmit").textContent=m==="login"?"Giriş yap":"Kayıt ol";if(m==="reg")roleChanged();msg("")}
@@ -5842,9 +5873,10 @@ async function start(session){
 function allowed(id){
   if(id==="admin")return ME.role==="super_admin";
   if(id==="community"||id==="shareRecipes")return ME.role==="ev_kullanicisi"||ME.role==="super_admin";
+  if(ME.role==="ev_kullanicisi")return true;
   var a=TABS[ME.role];return !a||a.indexOf(id)>=0;
 }
-function startTab(){return TABS[ME.role]?"library":"dashboard"}
+function startTab(){return ME.role==="personel"?"library":"dashboard"}
 function enterApp(){
   document.body.classList.remove("locked");document.body.dataset.role=ME.role;
   var nav=$("nav");
@@ -5852,7 +5884,7 @@ function enterApp(){
     var ref=afterId&&nav.querySelector('[data-tab="'+afterId+'"]');if(ref)nav.insertBefore(b,ref.nextSibling);else nav.appendChild(b)}
   addBtn("community","Topluluk Tarifleri","library");addBtn("admin","Admin Paneli");
   nav.querySelectorAll("button").forEach(function(b){b.style.display=allowed(b.dataset.tab)?"":"none"});
-  var rm=nav.querySelector('[data-tab="recipeManage"]');if(rm&&ME.role==="ev_kullanicisi")rm.textContent="Tarif Ekle";
+  applyMode();
   var ownsShare=ME.role==="ev_kullanicisi"||ME.role==="super_admin";
   var sh=$("shareBox");if(sh){sh.classList.toggle("noshare",!ownsShare);$("newPublicLbl").textContent=ME.role==="super_admin"?"Genel Kütüphane'ye ekle (herkes görür, kimse düzenleyemez)":"Toplulukla Paylaş (diğer ev kullanıcıları bu tarifi görebilir)"}
   var ai=$("aiCard");if(ai)ai.classList.toggle("noshare",ME.role==="personel");
@@ -5868,6 +5900,7 @@ function enterApp(){
 }
 var origGo=window.go;
 window.go=function(id){
+  if(!ME&&(id==="community"||id==="shareRecipes"||id==="admin")){toast("Bu özellik için giriş yapman gerekiyor");openAuth("login");return}
   if(ME&&!allowed(id))id=startTab();
   origGo(id);
   if(!ME)return;
@@ -6062,12 +6095,98 @@ document.addEventListener("visibilitychange",function(){if(ME&&document.visibili
 window.addEventListener("online",function(){if(ME&&get(DIRTY)==="1")flush()});
 function wire(){
   $("aTabLogin").onclick=function(){setMode("login")};$("aTabReg").onclick=function(){setMode("reg")};
-  $("aRole").onchange=roleChanged;$("aSubmit").onclick=submit;$("aGuest").onclick=enterGuest;
+  $("aRole").onchange=roleChanged;$("aSubmit").onclick=submit;$("aGuest").onclick=closeAuth;$("aClose").onclick=closeAuth;
   ["aEmail","aPass"].forEach(function(i){$(i).addEventListener("keydown",function(e){if(e.key==="Enter")submit()})});
   $("aiGo").onclick=aiGenerate;$("commQ").oninput=renderCommunity;$("commRef").onclick=function(){pullRemote().then(renderCommunity)};
   setMode("login");
 }
 wire();
+
+/* ---------- Kullanım modları, profil menüsü, misafir ---------- */
+var EVT=["dashboard","library","pantryFinder","specialCreator","menu","video","ogren","spiceGuide","sauce","shop","notebook","recipeManage","backup","community"];
+var KUT=EVT.concat(["standart","production","depo","maliyet","fire","tedarik","gider","safety","skt","gunluk","uretKayit","mise","prep","israf","haftalik","musteri","sevkiyat","takvim","qrmenu","quality"]);
+var MODES={
+ ev:{n:"Ev Kullanıcısı",i:"🏠",d:"Tarif bul, porsiyon ayarla, menü planla, evdeki malzemeyle yemek bul.",t:EVT},
+ kucuk:{n:"Küçük İşletme / Küçük Mutfak",i:"🍳",d:"Ev özellikleri + stok, maliyet, üretim planı, tedarikçi ve gıda güvenliği.",t:KUT},
+ pro:{n:"Profesyonel İşletme",i:"👨‍🍳",d:"Tüm bölümler: catering, depo, vardiya, HACCP, menü mühendisliği ve daha fazlası.",t:null}};
+function useMode(){var v=null;try{v=localStorage.getItem("sefUseMode")}catch(e){}
+  if(v&&MODES[v])return v;
+  if(ME&&(ME.role==="ustabasi"||ME.role==="super_admin"||ME.role==="personel"))return"pro";
+  return"ev"}
+function setUseMode(m){if(!MODES[m])return;try{localStorage.setItem("sefUseMode",m)}catch(e){}
+  applyMode();
+  var cur=document.querySelector(".tab.active"),nb=cur&&$("nav").querySelector('[data-tab="'+cur.id+'"]');
+  if(cur&&cur.id!=="dashboard"&&nb&&nb.style.display==="none")window.go("dashboard");
+  toast("Kullanım modu: "+MODES[m].n)}
+function applyMode(){
+  var nav=$("nav"),m=useMode(),pers=ME&&ME.role==="personel";
+  document.body.dataset.mode=m;
+  if(!ME&&!nav.querySelector('[data-tab="community"]')){var cb=document.createElement("button");cb.dataset.tab="community";cb.textContent="Topluluk Tarifleri";cb.onclick=function(){window.go("community")};var lib=nav.querySelector('[data-tab="library"]');lib?nav.insertBefore(cb,lib.nextSibling):nav.appendChild(cb)}
+  nav.querySelectorAll("button[data-tab]").forEach(function(b){
+    var id=b.dataset.tab,roleOK=ME?allowed(id):id!=="admin",modeOK=pers||id==="admin"||id==="dashboard"||!MODES[m].t||MODES[m].t.indexOf(id)>=0;
+    b.style.display=(roleOK&&modeOK)?"":"none"});
+  var rm=nav.querySelector('[data-tab="recipeManage"]');if(rm)rm.textContent=(m==="ev")?"Tarif Ekle":"Reçete Yönetimi";
+  function hid(id){var b=nav.querySelector('[data-tab="'+id+'"]');return !b||b.style.display==="none"}
+  document.querySelectorAll(".tile[data-tab]").forEach(function(t){t.style.display=hid(t.dataset.tab)?"none":""});
+  document.querySelectorAll("#quickTiles .tile").forEach(function(t){var x=/go\('(\w+)'\)/.exec(t.getAttribute("onclick")||"");if(!x)return;
+    if(t.classList.contains("evx"))t.classList.toggle("on",m==="ev"&&!hid(x[1]));else t.style.display=hid(x[1])?"none":""});
+  document.querySelectorAll("#bar [data-k]").forEach(function(x){var k=x.dataset.k;if(k==="more"||k==="dashboard")return;x.style.display=hid(k)?"none":""});
+  var h=document.querySelector("#dashboard .hero");
+  if(h){var h2=h.querySelector("h2"),mu=h.querySelector(".muted"),pl=h.querySelector(".pill");
+    if(!h.dataset.o){h.dataset.o="1";h._o=[pl&&pl.textContent,h2&&h2.textContent,mu&&mu.textContent]}
+    var T=m==="ev"?["Ev mutfağı","Bugün ne pişirelim?","Reçete ara, evdeki malzemeyle yemek bul, menünü planla."]:h._o;
+    if(pl)pl.textContent=T[0];if(h2)h2.textContent=T[1];if(mu)mu.textContent=T[2]}
+  var pm=$("pMenu");if(pm)buildMenu();
+}
+function sheet(html){
+  closeSheet();var o=document.createElement("div");o.id="sefSh";
+  o.innerHTML='<div class="shb"><button type="button" class="shx" aria-label="Kapat">✕</button>'+html+'</div>';
+  o.onclick=function(e){if(e.target===o)closeSheet()};o.querySelector(".shx").onclick=closeSheet;
+  document.body.appendChild(o);return o}
+function closeSheet(){var o=$("sefSh");if(o)o.remove()}
+function modeSheet(){
+  var m=useMode();
+  var o=sheet('<h3>Kullanım modu</h3><div class="small" style="margin-bottom:10px">Dilediğin zaman değiştirebilirsin. Seçimin bu cihazda hatırlanır.</div>'+
+   Object.keys(MODES).map(function(k){var x=MODES[k];return'<button type="button" class="mopt'+(k===m?" on":"")+'" data-m="'+k+'"><i>'+x.i+'</i><span><b>'+x.n+(k===m?' ✓':'')+'</b><small>'+x.d+'</small></span></button>'}).join(""));
+  o.querySelectorAll("[data-m]").forEach(function(b){b.onclick=function(){setUseMode(b.dataset.m);closeSheet()}})}
+function profileSheet(){
+  var m=MODES[useMode()].n,h;
+  if(ME){h='<h3>Profilim</h3><div class="prow"><span>Ad</span><b>'+E(authorName())+'</b></div><div class="prow"><span>E-posta</span><b>'+E(ME.email||"")+'</b></div><div class="prow"><span>Hesap türü</span><b>'+E(ROLE_LABEL[ME.role]||ME.role)+'</b></div>'+(ME.company?'<div class="prow"><span>İşletme</span><b>'+E(ME.company.name)+'</b></div>':'')+'<div class="prow"><span>Kullanım modu</span><b>'+E(m)+'</b></div><div class="shact"><button class="btn light" id="psMode">Modu değiştir</button><button class="btn gold" id="psOut">Çıkış yap</button></div>'}
+  else{h='<h3>Profilim</h3><div class="prow"><span>Durum</span><b>Misafir</b></div><div class="prow"><span>Kullanım modu</span><b>'+E(m)+'</b></div><div class="small" style="margin:10px 0">Misafir olarak tarifleri, menü planlamayı ve porsiyon hesabını kullanabilirsin. Ücretsiz hesap açarsan verilerin bulutta saklanır, topluluk tariflerine erişirsin ve cihaz değiştirsen de kaybolmaz.</div><div class="shact"><button class="btn gold" id="psReg">Ücretsiz hesap oluştur</button><button class="btn light" id="psLog">Giriş yap</button></div>'}
+  var o=sheet(h);var g=function(i,f){var e=o.querySelector("#"+i);if(e)e.onclick=f};
+  g("psMode",function(){modeSheet()});g("psOut",function(){closeSheet();signOut()});g("psReg",function(){closeSheet();openAuth("reg")});g("psLog",function(){closeSheet();openAuth("login")})}
+function settingsSheet(){
+  var kb=document.body.classList.contains("kmode");
+  var o=sheet('<h3>Ayarlar</h3><button type="button" class="mopt" id="stMode"><i>🔀</i><span><b>Kullanım modu</b><small>'+E(MODES[useMode()].n)+'</small></span></button><button type="button" class="mopt" id="stBig"><i>Aa</i><span><b>Büyük yazı</b><small>'+(kb?"Açık":"Kapalı")+' · dokunarak değiştir</small></span></button><button type="button" class="mopt" id="stBk"><i>💾</i><span><b>Yedek ve veriler</b><small>Verilerini yedekle veya geri yükle</small></span></button>'+(ME?'<button type="button" class="mopt" id="stOut"><i>🚪</i><span><b>Çıkış yap</b><small>'+E(ME.email||"")+'</small></span></button>':'<button type="button" class="mopt" id="stIn"><i>🔑</i><span><b>Giriş yap / hesap oluştur</b><small>Bulut kaydı için</small></span></button>')+'<div class="small" style="margin-top:10px">Profesyonel Şef Asistanı</div>');
+  var g=function(i,f){var e=o.querySelector("#"+i);if(e)e.onclick=f};
+  g("stMode",modeSheet);g("stBig",function(){var b=$("kBtn");if(b)b.click();closeSheet()});
+  g("stBk",function(){closeSheet();if($("nav").querySelector('[data-tab="backup"]'))window.go("backup");else toast("Yedek bölümü bu modda kapalı")});
+  g("stOut",function(){closeSheet();signOut()});g("stIn",function(){closeSheet();openAuth("login")})}
+function buildMenu(){
+  var pm=$("pMenu");if(!pm)return;
+  var it=[];
+  if(ME)it.push(["👤 "+E(authorName()),null,"hd"]);
+  else{it.push(["Giriş Yap",function(){openAuth("login")}]);it.push(["Ücretsiz Hesap Oluştur",function(){openAuth("reg")}])}
+  it.push(["Kullanım Modunu Değiştir",modeSheet]);it.push(["Profilim",profileSheet]);it.push(["Ayarlar",settingsSheet]);
+  if(ME)it.push(["Çıkış Yap",signOut]);
+  pm.innerHTML="";
+  it.forEach(function(x){var b=document.createElement(x[2]==="hd"?"div":"button");b.innerHTML=x[0];if(x[2]==="hd")b.className="hd";else{b.type="button";b.onclick=function(){closeMenu();x[1]()}}pm.appendChild(b)})}
+function openMenu(){var pm=$("pMenu"),pb=$("pBtn");buildMenu();var r=pb.getBoundingClientRect();pm.style.top=(r.bottom+8)+"px";pm.classList.add("open");pb.setAttribute("aria-expanded","true")}
+function closeMenu(){var pm=$("pMenu"),pb=$("pBtn");if(pm)pm.classList.remove("open");if(pb)pb.setAttribute("aria-expanded","false")}
+(function(){
+  var hd=document.querySelector("header");if(!hd||$("pBtn"))return;
+  var b=document.createElement("button");b.id="pBtn";b.type="button";b.setAttribute("aria-label","Profil menüsü");b.setAttribute("aria-haspopup","true");b.setAttribute("aria-expanded","false");
+  b.innerHTML='<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.2" r="3.9"/><path d="M4.4 20.2c.9-3.9 3.8-5.9 7.6-5.9s6.7 2 7.6 5.9"/></svg>';
+  hd.appendChild(b);
+  var pm=document.createElement("div");pm.id="pMenu";pm.setAttribute("role","menu");document.body.appendChild(pm);
+  b.onclick=function(e){e.stopPropagation();pm.classList.contains("open")?closeMenu():openMenu()};
+  document.addEventListener("click",function(e){if(!pm.contains(e.target)&&e.target!==b)closeMenu()});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"){closeMenu();closeSheet();if(!ME&&document.body.classList.contains("locked"))closeAuth()}});
+  window.addEventListener("resize",closeMenu);
+  /* ev modunda ek hızlı kutular */
+  var q=$("quickTiles");if(q){[["pantryFinder","🥕","Elimdeki Malzemeler"],["specialCreator","✨","Özel / Doğaçlama Yemek"],["shop","🛒","Alışveriş Listesi"],["ogren","🎓","Öğren"]].forEach(function(x){var t=document.createElement("button");t.type="button";t.className="tile evx";t.setAttribute("onclick","go('"+x[0]+"')");t.innerHTML="<i>"+x[1]+"</i>"+x[2];q.appendChild(t)})}
+  applyMode();
+})();
 loadLib(function(){
   sb=window.supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON_KEY,{auth:{persistSession:true,autoRefreshToken:true}});window.SEF_sb=sb;window.SEF_me=function(){return ME};
   sb.auth.onAuthStateChange(function(ev){if(ev==="SIGNED_OUT"&&ME&&!window.__sefOut){window.__sefOut=1;clearUserData();location.reload()}});
@@ -6106,8 +6225,8 @@ loadLib(function(){
 })();
   sb.auth.getSession().then(function(r){
     if(r&&r.data&&r.data.session)start(r.data.session).catch(function(e){console.warn(e);showAuth(trErr(e))});
-    else showAuth();
-  }).catch(function(e){showAuth(trErr(e))});
+    else enterGuest();
+  }).catch(function(e){enterGuest()});
 });
 })();
 
