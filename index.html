@@ -254,7 +254,7 @@ body.locked #authOv{display:flex}
 #authBar .mini{border:1px solid var(--line);background:#f6f8f7;border-radius:10px;padding:5px 10px;font-size:12px;color:var(--ink)}
 #authBar .sync{margin-left:auto;font-size:12px;color:var(--muted)}#authBar .sync.err{color:var(--red)}
 .ctoast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#182638;color:#fff;padding:10px 16px;border-radius:12px;z-index:100000;font-size:14px}
-#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}body:not([data-role="super_admin"]) #catalogCount{display:none}body[data-guest="1"] [data-tab="qrmenu"],body[data-guest="1"] [data-tab="numune"],body[data-guest="1"] [data-tab="bakim"],body[data-guest="1"] [data-tab="belge"],body[data-guest="1"] [data-tab="gider"],body[data-guest="1"] [data-tab="haftalik"],body[data-guest="1"] [data-tab="rezerv"],body[data-guest="1"] [data-tab="mise"],body[data-guest="1"] [data-tab="israf"],body[data-guest="1"] [data-tab="vardiya"],body[data-guest="1"] [data-tab="menumuh"],body[data-guest="1"] [data-tab="musteri"],body[data-guest="1"] [data-tab="sevkiyat"],body[data-guest="1"] [data-tab="takvim"],body[data-guest="1"] [data-tab="depo"],body[data-guest="1"] [data-tab="maliyet"],body[data-guest="1"] [data-tab="gunluk"],body[data-guest="1"] [data-tab="skt"],body[data-guest="1"] [data-tab="uretKayit"],body[data-guest="1"] [data-tab="tedarik"]{display:none!important}
+#recipeCards .recipe{content-visibility:auto;contain-intrinsic-size:auto 92px}body:not([data-role="super_admin"]) #catalogCount{display:none}
 .tgrp{grid-column:1/-1;font-weight:800;color:var(--navy);font-size:14px;margin:10px 2px 0;padding-top:6px;border-top:1px solid var(--line)}.tgrp:first-child{border-top:0;margin-top:0}
 #ogren .ogbar{height:10px;background:var(--line,#e3e8ee);border-radius:6px;margin-top:8px;overflow:hidden}
 #ogren .ogbar i{display:block;height:100%;background:var(--gold,#c59655);border-radius:6px}
@@ -571,6 +571,7 @@ header{position:relative}
 .prow{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}.prow span{color:var(--muted)}.prow b{text-align:right;overflow-wrap:anywhere}
 .shact{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.shact .btn{flex:1;min-width:130px}
 #quickTiles .tile.evx:not(.on){display:none}
+#modeNote{display:none;align-items:center;gap:10px;justify-content:space-between;background:#fbf5ea;color:var(--navy);border-bottom:2px solid var(--gold);padding:8px max(16px,env(safe-area-inset-left,0px));font-size:13px;line-height:1.35}#modeNote button{flex:none;border:1px solid var(--navy);background:var(--navy);color:#fff;border-radius:10px;padding:6px 12px;font-weight:700;font-size:13px;cursor:pointer}
 body[data-mode="ev"] #dashboard>.grid>.card.s3{display:none}
 @media(max-width:520px){#pBtn{width:40px;height:40px;margin-left:6px}}
 </style><script src="config.js" onerror="void 0"></script>
@@ -2164,11 +2165,18 @@ function menuClass(r){
 var WORLD_SUB=/dünya|dunya|tayland|singapur|fransız|fransiz|ispanyol|italyan|japon|meksika|latin|afrika|asya|amerikan|yunan|lübnan|kore|vietnam|hindistan|hint mutfağı|(^|[\s\/])çin(\s|\/|$)|orta doğu/i;
 function isWorldRecipe(r){if(r.cuisine==="dunya")return true;if(r.cuisine==="turk")return false;return !!(r._dunya||/^Dünya mutfağı/.test(r.cat||"")||WORLD_SUB.test(r.sub||""))}
 var FOREIGN_RX=/spagetti|spaghetti|lazanya|lasagna|risotto|pizza|burger|taco|burrito|enchilada|sushi|k[oö]ri\b|curry|pad thai|ramen|paella|ratatouille|gazpacho|chili con|jollof|moussaka|yunan|hint |tayland|japon|cin |çin |meksika|italyan|fransiz|fransız|ispanyol|penne|bolonez|bolognese|ciabatta|stroganoff|\bwok\b|puttanesca|gnocchi|cannelloni|english|macar|caprese|focaccia|pesto|panini|fettuccine|philly|shawarma|schnitzel|noodle|falafel|salsa|muffin|tiramisu|minestrone|bruschetta|ravioli|carbonara|quiche|brownie|cheesecake|pancake|waffle|hot dog|nachos|tortilla|quesadilla|fajita|guacamole|tempura|miso|kimchi|teriyaki|tikka|masala|baguette|croissant|alfredo|trofie|arjantin|ingiliz|alman|viyana/i;
-var TURK_NO=/kinoa|quinoa|couscous|kuskus|kus kus|kuskus|polenta|farro|burrata|mozzarella|ricotta|parmesan|pommes|r[oö][sş]ti|orzo|gratin|graten|duchesse|dauphin|hash brown|karabuğday|karabugday|tabbouleh|tabule|chia/i;
+var TURK_NO=/ceviche|crumble|linguine|pappardelle|rag[uù]\b|tagliatelle|fusilli|farfalle|rigatoni|tortellini|orecchiette|bucatini|carpaccio|tartare|panna cotta|souffl|mousse|panzanella|sezar|caesar|waldorf|ni[cç]oise|nişuaz|coleslaw|cobb |tzatziki|kinoa|quinoa|couscous|kuskus|kus kus|kuskus|polenta|farro|burrata|mozzarella|ricotta|parmesan|pommes|r[oö][sş]ti|orzo|gratin|graten|duchesse|dauphin|hash brown|karabuğday|karabugday|tabbouleh|tabule|chia/i;
 var TURK_SIDE=/pilav|bulgur|makarna|eri[sş]te|[sş]ehriye|patates|p[uü]resi|manti|mantı|yarma|firik|b[oö]rek|g[oö]zleme|pide/i;
 function cuisineOK(r,cuisine){if(cuisine==="dunya")return true;return !isWorldRecipe(r)&&!FOREIGN_RX.test(r.name||"")&&!TURK_NO.test(r.name||"")}
-function turkSideOK(r){return TURK_SIDE.test((r.name||"")+" "+(r.sub||"")+" "+(r.cat||""))}
-function chooseCuisine(pool,cuisine,slot,profile,prev,ctx,used){let r=null;if(cuisine==="turk"&&slot==="side"){const sp=pool.filter(turkSideOK);if(sp.length)r=chooseMenuItem(sp,used,slot,profile,prev,ctx);if(r)return r}if(cuisine==="dunya"){r=chooseMenuItem(pool.filter(isWorldRecipe),used,slot,profile,prev,ctx)}if(!r)r=chooseMenuItem(pool,used,slot,profile,prev,ctx);return r}
+var SIDE_DOUGH=/boreg|borek|pogaca|pide|simit|simid|gozleme|coreg|corek|ekmek|ekmeg|pisi\b|baklava|lahmacun|manti|acma|kete|katmer|boyoz|sigara|yufka|bazlama|hangel|hingel|cibörek|cimcik|cizlama|yaglama|feselli|kiliçe|kilice|sembusek|banduma|dondurme|bukme|peruhi|cantik|kayseri tahinli/,SIDE_NO=/tavuk|etli|kavurma|kiyma|hamsi|midye|karides|keskek|buryan|kusbasi|pastirma|sucuk|salata|kofte|kabune|perde|duvakli|oruklu|banduma|nokul|\bbati\b|hindi|ragu|linguine|pappardelle|dible|batirik|ekşili|eksili|gendime|safran/;
+function turkSideOK(r){const t=normalizedText((r.name||"")+" "+(r.sub||"")).replace(/ı/g,"i");return TURK_SIDE.test((r.name||"")+" "+(r.sub||"")+" "+(r.cat||""))&&!SIDE_DOUGH.test(t)&&!SIDE_NO.test(t)}
+var FAM={soup:/mercimek|ezogelin|domates|tarhana|yayla|sehriye|dugun|sebze|tavuk|brokoli|mantar|havuc|kabak|yogurt|arabasi|toyga|ayran|bamya|ispanak/,main:/kofte|kebap|kavurma|guvec|tas kebabi|musakka|karniyarik|imam bayildi|dolma|sarma|izgara|sote|kuru fasulye|nohut|turlu|orman kebabi|hunkar|yahni|pirzola|tandir|sac tava|beyti|iskender|patlican|biber|hamsi|levrek|tavuk|manti|borek/,side:/^(pirinc pilavi|bulgur pilavi|sehriyeli|domatesli|sebzeli|nohutlu|mantarli|havuclu|mercimekli bulgur|mengen|meyhane|ic pilav|arpa sehriye|patates puresi|domates soslu makarna|eriste)/,salad:/coban|mevsim|gavurdagi|piyaz|cacik|haydari|rus salatasi|havuclu|yogurtlu|marul|roka|kisir/,dessert:/sutlac|baklava|kunefe|revani|kazandibi|muhallebi|helva|ayva|komposto|supangle|kadayif|tulumba|lokma|asure|keskul|incir|irmik|elma|kabak tatlisi|trilece/};
+var HEAVYD=/baklava|kadayif|sekerpare|tulumba|lokma|kunefe|revani|helva|kurabiye|aside|hasuta|tahinli|cevizli/,LIGHTD=/sutlac|muhallebi|komposto|supangle|meyve|ayva|kazandibi|elma|incir|keskul|trilece|kabak tatlisi/,SEAF=/balik|levrek|somon|hamsi|karides|midye|kalamar|ahtapot|deniz|istavrit|sardalya|lufer/,DOUGH=/borek|manti|pide|lahmacun|gozleme|makarna|eriste|kete|hamur|lazanya|pizza|cig borek|su boregi/;
+function isDoughMain(r){return DOUGH.test(normalizedText(r.name||"").replace(/ı/g,"i"))}
+function chooseCuisine(pool,cuisine,slot,profile,prev,ctx,used){let r=null;if(cuisine==="turk"){ctx=Object.assign({},ctx,{turk:true});
+ if(slot==="side"&&prev&&isDoughMain(prev)){const lt=pool.filter(x=>!used.has(x.id)&&menuClass(x)==="salad"&&/cacik|haydari|yogurtlu|ayran/.test(normalizedText(x.name||"")));if(lt.length){return lt[Math.floor(Math.random()*lt.length)]}}}
+ if(cuisine==="turk"&&slot==="side"){const sp=pool.filter(turkSideOK);if(sp.length)r=chooseMenuItem(sp,used,slot,profile,prev,ctx);if(r)return r}if(cuisine==="dunya"){r=chooseMenuItem(pool.filter(isWorldRecipe),used,slot,profile,prev,ctx)}if(!r)r=chooseMenuItem(pool,used,slot,profile,prev,ctx);return r}
+function _unusedChooseCuisine(pool,cuisine,slot,profile,prev,ctx,used){let r=null;if(cuisine==="turk"&&slot==="side"){const sp=pool.filter(turkSideOK);if(sp.length)r=chooseMenuItem(sp,used,slot,profile,prev,ctx);if(r)return r}if(cuisine==="dunya"){r=chooseMenuItem(pool.filter(isWorldRecipe),used,slot,profile,prev,ctx)}if(!r)r=chooseMenuItem(pool,used,slot,profile,prev,ctx);return r}
 function menuPool(category,diet,cuisine){
  return recipes.filter(r=>{
   if(category&&category.length&&!category.includes(r.cat))return false;
@@ -2180,7 +2188,7 @@ function menuPool(category,diet,cuisine){
 }
 function menuSimilarGroup(r){
  const t=normalizedText([r.name,r.sub,(r.ingredients||[]).map(x=>x[0]).join(" ")].join(" "));
- if(/pirinc|pirinç|bulgur|makarna|eriste|erişte|noodle|gnocchi|kuskus/.test(t))return "starch";
+ if(/pirinc|pirinç|bulgur|makarna|eriste|erişte|sehriye|şehriye|noodle|gnocchi|kuskus/.test(t))return "starch";
  if(/patates/.test(t))return "potato";
  if(/nohut|mercimek|fasulye|barbunya|bakla|bezelye/.test(t))return "legume";
  if(/yogurt|yoğurt|ayran|cacik|cacık/.test(t))return "yogurt";
@@ -2201,9 +2209,15 @@ function chooseMenuItem(pool,used,slot,profile,previous=null,ctx={}){
  const candidates=pool.filter(r=>!used.has(r.id)&&menuClass(r)===slot);
  if(!candidates.length)return null;
  const score=r=>{
-  const p=recipeProfile(r);let n=Math.random()*0.15;
+  const p=recipeProfile(r);let n=Math.random()*(ctx.turk?2.2:0.15);
+  if(ctx.turk){const nm=normalizedText(r.name||"").replace(/ı/g,"i"),mainR=(ctx.same||[]).find(x=>menuClass(x)==="main")||(slot==="side"?previous:null),mNm=mainR?normalizedText(mainR.name||"").replace(/ı/g,"i"):"";
+   if(FAM[slot]&&FAM[slot].test(nm))n-=3;
+   if(slot==="side"&&/^(pirinc|bulgur) pilavi/.test(nm))n-=4;
+   if(slot==="salad"&&/ahtapot|karides|midye|kalamar|deniz/.test(nm)&&!(mainR&&SEAF.test(mNm)))n+=100;
+   if(slot==="main"&&DOUGH.test(nm)&&(ctx.same||[]).some(x=>menuClass(x)==="soup"&&/sehriye|eriste|makarna|tarhana|arpa|un /.test(normalizedText(x.name||""))))n+=60;
+   if(slot==="dessert"){const hv=profile.heavy||(ctx.same||[]).some(x=>isDoughMain(x)||/kizart/.test(normalizedText(x.name||"")));if(hv&&HEAVYD.test(nm))n+=30;if(hv&&LIGHTD.test(nm))n-=3}}
   for(let k of ["yogurt","bechamel","creamy"]){if(profile[k]&&p[k])n+=25;if(p[k])n+=2}
-  if(profile.heavy&&p.heavy)n+=8;
+  if(profile.heavy&&p.heavy&&!(ctx.turk&&slot==="side"))n+=8;
   if(slot==="main"&&p.heavy)n-=0.5;
   if(slot==="side"&&/borek|hamur|ekmek/.test(normalizedText(r.cat||"")))n+=3;
   const group=menuSimilarGroup(r);
@@ -2217,7 +2231,7 @@ function chooseMenuItem(pool,used,slot,profile,previous=null,ctx={}){
   const dg=menuDayGroup(r);
   if(dg){
    // aynı gün içinde başka bir kalemle aynı grup (patates, hamur, pilav/makarna, bakliyat, yoğurt, kızartma) olmasın
-   if((ctx.same||[]).some(x=>x&&menuDayGroup(x)===dg))n+=60;
+   if((ctx.same||[]).some(x=>{if(!x)return false;if(dg==="starch"&&menuClass(x)==="soup"&&!/sehriye|eriste|makarna|pilav|bulgur|pirinc|arpa|yarma/.test(normalizedText(x.name||"")))return false;return menuDayGroup(x)===dg}))n+=60;
    // önceki günün aynı kalemiyle aynı grup olmasın
    if(ctx.prevDay&&menuDayGroup(ctx.prevDay)===dg)n+=20;
   }
@@ -2255,7 +2269,7 @@ function generateMenu(){
   if(r){chosenToday.push(r);used.add(r.id);if(slot==="main")main=r;const p=recipeProfile(r);Object.keys(profile).forEach(k=>profile[k]=profile[k]||p[k]);}
  }
  checkMenuCompatibility();
- const missing=slots.filter(([id])=>!$(id).value).map(([,slot])=>({soup:"çorba",main:"ana yemek",side:"yardımcı yemek/pilav",salad:"salata/meze",dessert:"tatlı"}[slot]));
+ const missing=slots.filter(([id])=>!$(id).value&&!(id==="menuSide"&&main&&isDoughMain(main))).map(([,slot])=>({soup:"çorba",main:"ana yemek",side:"yardımcı yemek/pilav",salad:"salata/meze",dessert:"tatlı"}[slot]));
  if(missing.length)$("menuCompatibility").innerHTML+='<div class="note warn">Kütüphanede şu kategoriler için uygun reçete bulunamadı: '+missing.join(", ")+'. Reçete eklenince otomatik seçim de kullanabilecektir.</div>';
 }
 function clearMenu(){window._editingMenuIndex=null;["menuSoup","menuMain","menuSide","menuSalad","menuDessert"].forEach(id=>$(id).value="");$("menuNote").value="";checkMenuCompatibility()}
@@ -5843,7 +5857,7 @@ async function submit(){
         if(!c.data){msg("Davet kodu geçersiz. Usta başından kodu tekrar iste.");busy(false);return}meta.invite_code=code}
       var s=await sb.auth.signUp({email:email,password:pass,options:{data:meta}});if(s.error)throw s.error;
       if(s.data&&s.data.session)await start(s.data.session);
-      else{msg("Kayıt alındı. E-postana gelen doğrulama bağlantısına tıkla, sonra giriş yap.","ok");setMode("login")}
+      else{setMode("login");msg("Kayıt alındı. E-postana gelen doğrulama bağlantısına tıkla, sonra giriş yap.","ok")}
     }
   }catch(e){msg(trErr(e))}
   busy(false);
@@ -5878,7 +5892,7 @@ function allowed(id){
 }
 function startTab(){return ME.role==="personel"?"library":"dashboard"}
 function enterApp(){
-  document.body.classList.remove("locked");document.body.dataset.role=ME.role;
+  document.body.classList.remove("locked");delete document.body.dataset.guest;document.body.dataset.role=ME.role;
   var nav=$("nav");
   function addBtn(id,label,afterId){if(nav.querySelector('[data-tab="'+id+'"]'))return;var b=document.createElement("button");b.dataset.tab=id;b.textContent=label;b.onclick=function(){window.go(id)};
     var ref=afterId&&nav.querySelector('[data-tab="'+afterId+'"]');if(ref)nav.insertBefore(b,ref.nextSibling);else nav.appendChild(b)}
@@ -5902,6 +5916,8 @@ var origGo=window.go;
 window.go=function(id){
   if(!ME&&(id==="community"||id==="shareRecipes"||id==="admin")){toast("Bu özellik için giriş yapman gerekiyor");openAuth("login");return}
   if(ME&&!allowed(id))id=startTab();
+  if(id!=="dashboard"&&!(ME&&ME.role==="personel")){var nbm=$("nav").querySelector('[data-tab="'+id+'"]');
+    if(nbm&&nbm.style.display==="none"&&(!ME||allowed(id))){toast("Bu bölüm "+MODES[useMode()].n+" modunda kapalı. Profil menüsünden kullanım modunu değiştirebilirsin.");return}}
   origGo(id);
   if(!ME)return;
   if(id==="community")renderCommunity();
@@ -6136,6 +6152,10 @@ function applyMode(){
     if(!h.dataset.o){h.dataset.o="1";h._o=[pl&&pl.textContent,h2&&h2.textContent,mu&&mu.textContent]}
     var T=m==="ev"?["Ev mutfağı","Bugün ne pişirelim?","Reçete ara, evdeki malzemeyle yemek bul, menünü planla."]:h._o;
     if(pl)pl.textContent=T[0];if(h2)h2.textContent=T[1];if(mu)mu.textContent=T[2]}
+  var nt=$("modeNote");
+  if(!nt){nt=document.createElement("div");nt.id="modeNote";var hd0=document.querySelector("header");hd0.parentNode.insertBefore(nt,hd0.nextSibling)}
+  if(!ME&&m!=="ev"){nt.innerHTML='<span>İşletme araçlarında veriler yalnızca bu cihazda saklanır. Buluta kaydetmek ve ekiple paylaşmak için giriş yapman gerekir.</span><button type="button" id="mnLogin">Giriş yap</button>';nt.style.display="flex";$("mnLogin").onclick=function(){openAuth("login")}}
+  else nt.style.display="none";
   var pm=$("pMenu");if(pm)buildMenu();
 }
 function sheet(html){
@@ -6224,7 +6244,7 @@ loadLib(function(){
   };
 })();
   sb.auth.getSession().then(function(r){
-    if(r&&r.data&&r.data.session)start(r.data.session).catch(function(e){console.warn(e);showAuth(trErr(e))});
+    if(r&&r.data&&r.data.session)start(r.data.session).catch(function(e){console.warn(e);enterGuest();toast("Oturum açılamadı: "+trErr(e))});
     else enterGuest();
   }).catch(function(e){enterGuest()});
 });
